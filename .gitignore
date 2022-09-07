@@ -1,0 +1,15 @@
+*.xml
+!collocation-structures.xml
+*.tbl
+*.csv
+*.pdf
+*.sage.py
+
+.idea
+.vscode
+__pycache__
+
+run.sh
+old
+data
+venv
