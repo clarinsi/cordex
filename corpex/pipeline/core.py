@@ -10,6 +10,7 @@ from corpex.writers.writer import Writer
 from corpex.readers.loader import load_files
 from corpex.database.database import Database
 from corpex.utils.time_info import TimeInfo
+from conversion_utils.jos_msds_and_properties import Converter
 
 from corpex.postprocessors.postprocessor import Postprocessor
 import logging
@@ -68,8 +69,11 @@ class Pipeline:
         word_stats.generate_renders()
         match_store.determine_collocation_dispersions()
 
+        # sets up converter for msd translations and msd conversions to properties
+        converter = Converter()
+
         # figure out representations!
-        match_store.set_representations(word_stats, self.structures, sloleks_db=self.sloleks_db)
+        match_store.set_representations(word_stats, self.structures, converter, sloleks_db=self.sloleks_db)
 
         if self.args['statistics']:
             Writer.make_output_writer(self.args, self.max_num_components, match_store, word_stats).write_out(

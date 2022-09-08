@@ -44,7 +44,7 @@ class RepresentationAssigner:
         return self.representation_factory(self.more, word_renderer)
 
     @staticmethod
-    def set_representations(match, word_renderer, sloleks_db=None):
+    def set_representations(match, word_renderer, converter, sloleks_db=None):
         """ Assigns representations to words. """
         representations = {}
         for c in match.structure.components:
@@ -75,7 +75,7 @@ class RepresentationAssigner:
 
         for cid, reps in representations.items():
             for rep in reps:
-                rep.render(sloleks_db=sloleks_db)
+                rep.render(converter, sloleks_db=sloleks_db)
         
         for cid, reps in representations.items():
             reps_text = [rep.rendition_text for rep in reps]

@@ -25,17 +25,17 @@ class ComponentRepresentation:
         """ Adds word to representation. """
         self.words.append(word)
 
-    def render(self, sloleks_db=None):
+    def render(self, converter, sloleks_db=None):
         """ Render when text is not already rendered. """
         if self.rendition_text is None:
-            self.rendition_text, self.rendition_msd = self._render(sloleks_db=sloleks_db)
+            self.rendition_text, self.rendition_msd = self._render(converter, sloleks_db=sloleks_db)
 
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         raise NotImplementedError("Not implemented for class: {}".format(type(self)))
 
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         # TODO FIX THIS TO LEMMA MSD
         if len(self.words) > 0:
             return self.words[0].lemma, self.words[0].msd
@@ -44,12 +44,12 @@ class LemmaCR(ComponentRepresentation):
 
 class LexisCR(ComponentRepresentation):
     """ Handles fixed word as component representation. """
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         return self.data['lexis'], 'Q'
 
 class WordFormAllCR(ComponentRepresentation):
     """ Returns all possible word forms separated with '/' as component representation. """
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         if len(self.words) == 0:
             return None, None
         else:
@@ -60,7 +60,7 @@ class WordFormAllCR(ComponentRepresentation):
 
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         text_forms = {}
         msd_lemma_txt_triplets = Counter([(w.msd, w.lemma, w.text) for w in self.words])
         for (msd, lemma, text), _n in reversed(msd_lemma_txt_triplets.most_common()):
@@ -81,7 +81,7 @@ class WordFormAnyCR(ComponentRepresentation):
             if sloleks_db is not None and not all(agreements_matched):
                 for i, agr in enumerate(self.agreement):
                     if not agr.match(word_msd):
-                        msd, lemma, text = sloleks_db.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd)
+                        msd, lemma, text = sloleks_db.get_word_form(agr.lemma, agr.msd(), agr.data, converter, align_msd=word_msd)
                         if msd is not None:
                             agr.msds[0] = msd
                             agr.words.append(WordDummy(msd, lemma, text))
@@ -150,13 +150,13 @@ class WordFormMsdCR(WordFormAnyCR):
         if self.check_msd(word.msd):
             super().add_word(word)
 
-    def _render(self, sloleks_db=None):
+    def _render(self, converter, sloleks_db=None):
         if len(self.words) == 0 and sloleks_db is not None:
-            msd, lemma, text = sloleks_db.get_word_form(self.lemma, self.msd(), self.data)
+            msd, lemma, text = sloleks_db.get_word_form(self.lemma, self.msd(), self.data, converter)
             if msd is not None:
                 self.words.append(WordDummy(msd, lemma, text))
         self.words.append(WordDummy(self._common_msd()))
-        return super()._render(sloleks_db)
+        return super()._render(converter, sloleks_db)
     
     def _common_msd(self):
         msds = sorted(self.msds, key=len)
@@ -234,5 +234,5 @@ class WordFormAgreementCR(WordFormMsdCR):
 
         return True
 
-    def render(self, sloleks_db=None):
+    def render(self, converter, sloleks_db=None):
         pass

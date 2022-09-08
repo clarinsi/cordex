@@ -3,7 +3,7 @@ Connections to lexicon via API or file reading
 """
 import lzma
 import pickle
-from corpex.utils.codes_tagset import TAGSET, CODES, CODES_TRANSLATION
+from corpex.utils.codes_tagset import TAGSET, CODES
 from conversion_utils.jos_msds_and_properties import Msd
 
 
@@ -21,7 +21,7 @@ class Lexicon:
         with lzma.open(file_path, "rb") as f:
             self.file_data = pickle.load(f)
 
-    def decypher_msd(self, msd):
+    def decypher_msd(self, msd, converter):
         """ Function that takes xpos tag and returns a dictionary that might be of interest in structures.
 
         :param msd: Slovenian xpos tag
@@ -30,27 +30,26 @@ class Lexicon:
         t = msd[0]
         decypher = {}
         msd_model = Msd(''.join(msd), 'en')
+        properties = converter.msd_to_properties(msd_model, 'en')
         # IF ADDING OR CHANGING ATTRIBUTES HERE ALSO FIX POSSIBLE_WORD_FORM_FEATURE_VALUES
-        if t == 'N':
-            # gender = CODES_TRANSLATION[t][2][msd[2]]
-            number = CODES_TRANSLATION[t][3][msd[3]]
-            case = CODES_TRANSLATION[t][4][msd[4]]
+        if properties.category == 'noun':
+            number = properties.form_feature_map['number']
+            case = properties.form_feature_map['case']
             decypher = {'number': number, 'case': case}
-        elif t == 'V':
-            # gender = CODES_TRANSLATION[t][6][msd[6]]
-            vform = CODES_TRANSLATION[t][3][msd[3]]
-            number = CODES_TRANSLATION[t][5][msd[5]]
+        elif properties.category == 'verb':
+            vform = properties.form_feature_map['vform']
+            number = properties.form_feature_map['number']
             person = 'third'
             decypher = {'vform': vform, 'number': number, 'person': person}
-        elif t == 'A':
-            gender = CODES_TRANSLATION[t][3][msd[3]]
-            number = CODES_TRANSLATION[t][4][msd[4]]
-            case = CODES_TRANSLATION[t][5][msd[5]]
+        elif properties.category == 'adjective':
+            gender = properties.form_feature_map['gender']
+            number = properties.form_feature_map['number']
+            case = properties.form_feature_map['case']
             decypher = {'gender': gender, 'number': number, 'case': case}
 
         return decypher
 
-    def get_word_form(self, lemma, msd, data, align_msd=False):
+    def get_word_form(self, lemma, msd, data, converter, align_msd=False):
         """ Returns word form from lemma and msd that were stored in lookup lexicon. """
         # modify msd as required
         msd = list(msd)
@@ -76,7 +75,7 @@ class Lexicon:
 
                 msd[v + 1] = align_msd[v_align_msd + 1]
 
-        decypher_msd = self.decypher_msd(msd)
+        decypher_msd = self.decypher_msd(msd, converter)
 
         if not decypher_msd:
             return None, None, None
