@@ -30,7 +30,8 @@ class MatchStore:
             word_lemma varchar(32) NOT NULL,
             word_id varchar(32) NOT NULL,
             sentence_id varchar(32) NOT NULL,
-            word_msd varchar(16) NOT NULL,
+            word_xpos varchar(16) NOT NULL,
+            word_udpos varchar(32) NOT NULL,
             word_text varchar(32) NOT NULL)
             """)
         self.db.init("""CREATE TABLE CollocationMatches (
@@ -77,12 +78,13 @@ class MatchStore:
         
         for component_id, word in match.items():
             self.db.execute("""
-            INSERT INTO Matches (match_id, component_id, word_lemma, word_text, word_msd, word_id, sentence_id) 
-            VALUES (:match_id, :component_id, :word_lemma, :word_text, :word_msd, :word_id, :sentence_id)""", {
+            INSERT INTO Matches (match_id, component_id, word_lemma, word_text, word_xpos, word_udpos, word_id, sentence_id) 
+            VALUES (:match_id, :component_id, :word_lemma, :word_text, :word_xpos, :word_udpos, :word_id, :sentence_id)""", {
                 "component_id": component_id,
                 "match_id": self.match_num,
                 "word_lemma": word.lemma,
-                "word_msd": word.msd,
+                "word_xpos": word.xpos,
+                "word_udpos": str(word.udpos),
                 "word_text": word.text,
                 "word_id": word.id,
                 "sentence_id": word.sentence_id,
@@ -114,7 +116,7 @@ class MatchStore:
                     INSERT INTO Representations (collocation_id, component_id, text, msd) 
                     VALUES (?,?,?,?)""", (match.match_id, component_id, text, msd))
 
-    def set_representations(self, word_renderer, structures, converter, sloleks_db=None):
+    def set_representations(self, word_renderer, structures, sloleks_db=None):
         """ Adds representations to matches. """
 
         step_name = 'representation'
@@ -131,7 +133,7 @@ class MatchStore:
         for cid, sid in progress(self.db.execute("SELECT collocation_id, structure_id FROM Collocations"), "representations", total=num_representations):
             structure = structures_dict[sid]
             match = StructureMatch.from_db(self.db, cid, structure)
-            RepresentationAssigner.set_representations(match, word_renderer, converter, sloleks_db=sloleks_db)
+            RepresentationAssigner.set_representations(match, word_renderer, sloleks_db=sloleks_db)
 
             inserts.append(match)
             if len(inserts) > num_inserts:

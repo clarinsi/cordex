@@ -3,6 +3,8 @@ A class for saving statistics.
 """
 from collections import defaultdict, Counter
 
+from ast import literal_eval
+
 from corpex.utils.progress_bar import progress
 import logging
 
@@ -14,29 +16,32 @@ class WordStats:
         self.db.init("""CREATE TABLE UniqWords (
             uw_id INTEGER PRIMARY KEY, 
             lemma varchar(64), 
-            msd varchar(16), 
+            xpos varchar(16), 
+            udpos varchar(32), 
             text varchar(64), 
             frequency int
             )""")
-        self.db.init("CREATE TABLE WordCount (lemma varchar(64), msd0 char, frequency int)")
+        self.db.init("CREATE TABLE WordCountXPOS (lemma varchar(64), xpos0 char, frequency int)")
+        self.db.init("CREATE TABLE WordCountUPOS (lemma varchar(64), upos varchar(32), frequency int)")
         self.db.init("CREATE TABLE NumWords (id INTEGER PRIMARY KEY, n INTEGER)")
 
-        self.db.init("CREATE INDEX lemma_msd_text_on_uw ON UniqWords (lemma, msd, text)")
+        self.db.init("CREATE INDEX lemma_msd_text_on_uw ON UniqWords (lemma, xpos, udpos, text)")
         self.db.init("CREATE INDEX lemma_on_uw ON UniqWords (lemma)")
-        self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCount (lemma, msd0)")
+        # self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCount (lemma, msd0)")
+        # self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCount (lemma, msd0)")
 
     def add_words(self, words):
         """ Adds words to database. """
         for w in progress(words, "adding-words"):
             if w.fake_word:
                 continue
-            params = {'lemma': w.lemma, 'msd': w.msd, 'text': w.text}
+            params = {'lemma': w.lemma, 'udpos': str(w.udpos), 'xpos': str(w.xpos), 'text': w.text}
             res = self.db.execute("""UPDATE UniqWords SET frequency=frequency + 1
-                WHERE lemma=:lemma AND msd=:msd AND text=:text""", params)
+                WHERE lemma=:lemma AND xpos=:xpos AND udpos=:udpos AND text=:text""", params)
 
             if res.rowcount == 0:
-                self.db.execute("""INSERT INTO UniqWords (lemma, msd, text, frequency) 
-                    VALUES (:lemma, :msd, :text, 1)""", params)
+                self.db.execute("""INSERT INTO UniqWords (lemma, xpos, udpos, text, frequency) 
+                    VALUES (:lemma, :xpos, :udpos, :text, 1)""", params)
 
         self.db.execute("INSERT INTO NumWords (n) VALUES (?)", (len(words),))
 
@@ -57,13 +62,21 @@ class WordStats:
 
         lemmas = [lemma for (lemma, ) in self.db.execute("SELECT DISTINCT lemma FROM UniqWords")]
         for lemma in progress(lemmas, 'word-count'):
-            num_words = defaultdict(int)
-            for (msd, freq) in self.db.execute("SELECT msd, frequency FROM UniqWords WHERE lemma=?", (lemma,)):
-                num_words[msd[0]] += freq
-                
-            for msd0, freq in num_words.items():
-                self.db.execute("INSERT INTO WordCount (lemma, msd0, frequency) VALUES (?,?,?)",
-                    (lemma, msd0, freq))
+            num_words_xpos = defaultdict(int)
+            num_words_upos = defaultdict(int)
+            for (xpos, udpos, freq) in self.db.execute("SELECT xpos, udpos, frequency FROM UniqWords WHERE lemma=?", (lemma,)):
+                upos = literal_eval(udpos)['POS']
+                xpos0 = xpos[0]
+                num_words_xpos[xpos0] += freq
+                num_words_upos[upos] += freq
+
+            for xpos0, freq in num_words_xpos.items():
+                self.db.execute("INSERT INTO WordCountXPOS (lemma, xpos0, frequency) VALUES (?,?,?)",
+                    (lemma, xpos0, freq))
+
+            for upos, freq in num_words_xpos.items():
+                self.db.execute("INSERT INTO WordCountUPOS (lemma, upos, frequency) VALUES (?,?,?)",
+                    (lemma, upos, freq))
 
         self.db.step_is_done(step_name)
 
@@ -77,21 +90,30 @@ class WordStats:
         if cur.rowcount > 0:
             return cur.fetchone()[0]
 
-    def available_words(self, lemma, existing_texts):
+    def available_words(self, lemma, existing_texts, system_type):
         """ Lists possible words for agreements and lists them in descending order. """
         counted_texts = Counter(existing_texts)
-        for (msd, text), _n in counted_texts.most_common():
-            yield (msd, text)
+        for (pos, text), _n in counted_texts.most_common():
+            if system_type == 'UD':
+                pos = literal_eval(pos)
+            yield (pos, text)
 
-        statement = """SELECT msd, text, frequency FROM UniqWords WHERE 
-        lemma=:lemma ORDER BY frequency DESC"""
-        for msd, text, _f in self.db.execute(statement, {'lemma': lemma}):
-            if (msd, text) not in counted_texts:
-                yield (msd, text)
-    
-    def num_words(self, lemma, msd0):
+        statement = """SELECT xpos, udpos, text, frequency FROM UniqWords WHERE 
+                    lemma=:lemma ORDER BY frequency DESC"""
+        for xpos, udpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
+            if system_type == 'UD':
+                if (udpos, text) not in counted_texts:
+                    yield (literal_eval(udpos), text)
+            else:
+                if (xpos, text) not in counted_texts:
+                    yield (xpos, text)
+
+    def num_words(self, lemma, msd0, system_type):
         """ Returns first word frequency when lemma and msd match. """
-        statement = "SELECT frequency FROM WordCount WHERE lemma=? AND msd0=? LIMIT 1"
+        if system_type == 'UD':
+            statement = "SELECT frequency FROM WordCountUPOS WHERE lemma=? AND upos=? LIMIT 1"
+        else:
+            statement = "SELECT frequency FROM WordCountXPOS WHERE lemma=? AND xpos0=? LIMIT 1"
         cur = self.db.execute(statement, (lemma, msd0))
         result = cur.fetchone()[0]
         return result

@@ -44,7 +44,7 @@ class RepresentationAssigner:
         return self.representation_factory(self.more, word_renderer)
 
     @staticmethod
-    def set_representations(match, word_renderer, converter, sloleks_db=None):
+    def set_representations(match, word_renderer, sloleks_db=None):
         """ Assigns representations to words. """
         representations = {}
         for c in match.structure.components:
@@ -71,12 +71,22 @@ class RepresentationAssigner:
             for w_id, w in words.items():
                 component_representations = representations[w_id]
                 for representation in component_representations:
-                    representation.add_word(w)
+                    representation.add_word(w, match.structure.system_type)
 
         for cid, reps in representations.items():
             for rep in reps:
-                rep.render(converter, sloleks_db=sloleks_db)
-        
+                rep.render(match.structure.system_type, sloleks_db=sloleks_db)
+
+        # Convert output to same format as in conllu
+        def convert_dict_to_string(dictionary):
+            if type(dictionary) == str:
+                return dictionary
+            result = []
+            for k, v in dictionary.items():
+                result.append(f'{k}={v}')
+
+            return '|'.join(result)
+
         for cid, reps in representations.items():
             reps_text = [rep.rendition_text for rep in reps]
             reps_msd = [rep.rendition_msd for rep in reps]
@@ -85,4 +95,6 @@ class RepresentationAssigner:
             elif all(r is None for r in reps_text):
                 match.representations[cid] = (None, None)
             else:
-                match.representations[cid] = (" ".join(("" if r is None else r) for r in reps_text), " ".join(("" if r is None else r) for r in reps_msd))
+                reps_text_joined = " ".join(("" if r is None else r) for r in reps_text)
+                reps_msd_joined = " ".join(("" if r is None else convert_dict_to_string(r)) for r in reps_msd)
+                match.representations[cid] = (reps_text_joined, reps_msd_joined)

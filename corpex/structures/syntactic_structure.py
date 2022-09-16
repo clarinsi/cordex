@@ -15,6 +15,7 @@ class SyntacticStructure:
         # self.lbs = None
         self.components = []
         self.fake_root_included = False
+        self.system_type = None
 
     @staticmethod
     def from_xml(xml, no_stats):
@@ -30,6 +31,7 @@ class SyntacticStructure:
 
         assert system.get('type') == 'JOS' or system.get('type') == 'UD'
         system_type = system.get('type')
+        st.system_type = system_type
 
         components, dependencies, definitions = list(system)
 
@@ -75,7 +77,7 @@ class SyntacticStructure:
         """ Determines two core words in UD collocation. """
         deprels = {}
         for c in self.components:
-            for next_el in c.next_element:
+            for next_el in c.children:
                 deprels[next_el[0]] = next_el[1]
         ppb_components_num = 0
         for c in self.components:
@@ -123,6 +125,8 @@ class SyntacticStructure:
         forms[n].append(to_add)
 
     def match(self, word):
+        if self.id == '98':
+            print('HERE')
         matches = self.components[0].match(word)
         return [] if matches is None else matches
 

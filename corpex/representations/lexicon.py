@@ -6,6 +6,8 @@ import pickle
 from corpex.utils.codes_tagset import TAGSET, CODES
 from conversion_utils.jos_msds_and_properties import Msd
 
+from corpex.utils.converter import msd_to_properties
+
 
 class Lexicon:
     """ Object that access external data. """
@@ -21,7 +23,7 @@ class Lexicon:
         with lzma.open(file_path, "rb") as f:
             self.file_data = pickle.load(f)
 
-    def decypher_msd(self, msd, converter):
+    def decypher_msd(self, msd):
         """ Function that takes xpos tag and returns a dictionary that might be of interest in structures.
 
         :param msd: Slovenian xpos tag
@@ -29,8 +31,8 @@ class Lexicon:
         """
         t = msd[0]
         decypher = {}
-        msd_model = Msd(''.join(msd), 'en')
-        properties = converter.msd_to_properties(msd_model, 'en')
+        # msd_model = Msd(''.join(msd), 'en')
+        properties = msd_to_properties(''.join(msd), 'en')
         # IF ADDING OR CHANGING ATTRIBUTES HERE ALSO FIX POSSIBLE_WORD_FORM_FEATURE_VALUES
         if properties.category == 'noun':
             number = properties.form_feature_map['number']
@@ -49,7 +51,7 @@ class Lexicon:
 
         return decypher
 
-    def get_word_form(self, lemma, msd, data, converter, align_msd=False):
+    def get_word_form(self, lemma, msd, data, align_msd=False):
         """ Returns word form from lemma and msd that were stored in lookup lexicon. """
         # modify msd as required
         msd = list(msd)
@@ -75,7 +77,7 @@ class Lexicon:
 
                 msd[v + 1] = align_msd[v_align_msd + 1]
 
-        decypher_msd = self.decypher_msd(msd, converter)
+        decypher_msd = self.decypher_msd(msd)
 
         if not decypher_msd:
             return None, None, None

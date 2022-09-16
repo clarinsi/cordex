@@ -69,11 +69,8 @@ class Pipeline:
         word_stats.generate_renders()
         match_store.determine_collocation_dispersions()
 
-        # sets up converter for msd translations and msd conversions to properties
-        converter = Converter()
-
         # figure out representations!
-        match_store.set_representations(word_stats, self.structures, converter, sloleks_db=self.sloleks_db)
+        match_store.set_representations(word_stats, self.structures, sloleks_db=self.sloleks_db)
 
         if self.args['statistics']:
             Writer.make_output_writer(self.args, self.max_num_components, match_store, word_stats).write_out(
@@ -120,7 +117,8 @@ class Pipeline:
             'new_tei': False,
             'out': None,
             'statistics': True,
-            'lang': 'sl'
+            'lang': 'sl',
+            'pos': 'upos'
         }
 
         self.args = {**default_args, **kwargs}

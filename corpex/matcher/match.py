@@ -1,6 +1,8 @@
 """
 Class for loading matches
 """
+from ast import literal_eval
+
 from corpex.words.word import Word
 
 
@@ -18,20 +20,21 @@ class StructureMatch:
         result = StructureMatch(collocation_id, structure)
         prev_match_id = None
 
-        stmt = """SELECT match_id, component_id, word_lemma, word_text, word_msd, word_id, sentence_id
+        stmt = """SELECT match_id, component_id, word_lemma, word_text, word_xpos, word_udpos, word_id, sentence_id
                   FROM CollocationMatches 
                   JOIN Matches ON Matches.match_id=CollocationMatches.mid_match_id 
                   WHERE mid_collocation_id=? 
                   ORDER BY match_id"""
 
         for row in db.execute(stmt, (collocation_id,)):
-            match_id, component_id, word_lemma, word_text, word_msd, word_id, sentence_id = row
+            match_id, component_id, word_lemma, word_text, word_xpos, word_udpos, word_id, sentence_id = row
 
             if match_id != prev_match_id:
                 result.matches.append({})
                 prev_match_id = match_id
 
-            result.matches[-1][str(component_id)] = Word(word_lemma, word_msd, sentence_id + '.' + word_id, word_text, False)
+            word_udpos = literal_eval(word_udpos)
+            result.matches[-1][str(component_id)] = Word(word_lemma, '', word_xpos, sentence_id + '.' + word_id, word_text, False, feats=word_udpos)
         
         for component_id, text, msd in db.execute("SELECT component_id, text, msd FROM Representations WHERE collocation_id=?", (collocation_id,)):
             result.representations[str(component_id)] = (text, msd)

@@ -21,67 +21,81 @@ class ComponentRepresentation:
         """ By default, there are no agreements. """
         return []
 
-    def add_word(self, word):
+    def add_word(self, word, system_type):
         """ Adds word to representation. """
         self.words.append(word)
 
-    def render(self, converter, sloleks_db=None):
+    def render(self, system_type, sloleks_db=None):
         """ Render when text is not already rendered. """
         if self.rendition_text is None:
-            self.rendition_text, self.rendition_msd = self._render(converter, sloleks_db=sloleks_db)
+            self.rendition_text, self.rendition_msd = self._render(system_type, sloleks_db=sloleks_db)
 
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         raise NotImplementedError("Not implemented for class: {}".format(type(self)))
 
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         # TODO FIX THIS TO LEMMA MSD
         if len(self.words) > 0:
-            return self.words[0].lemma, self.words[0].msd
+            if system_type == 'UD':
+                pos = self.words[0].udpos
+            else:
+                pos = self.words[0].xpos
+            return self.words[0].lemma, pos
         else:
             return None, None
 
 class LexisCR(ComponentRepresentation):
     """ Handles fixed word as component representation. """
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         return self.data['lexis'], 'Q'
 
 class WordFormAllCR(ComponentRepresentation):
     """ Returns all possible word forms separated with '/' as component representation. """
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         if len(self.words) == 0:
             return None, None
         else:
             forms = [w.text.lower() for w in self.words]
-            msds = [w.msd for w in self.words]
+            if system_type == 'UD':
+                raise NotImplementedError
+            else:
+                msds = [w.xpos for w in self.words]
 
             return "/".join(set(forms)), "/".join(set(msds))
 
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         text_forms = {}
-        msd_lemma_txt_triplets = Counter([(w.msd, w.lemma, w.text) for w in self.words])
+        if system_type == 'UD':
+            raise NotImplementedError
+        else:
+            msd_lemma_txt_triplets = Counter([(w.xpos, w.lemma, w.text) for w in self.words])
+
         for (msd, lemma, text), _n in reversed(msd_lemma_txt_triplets.most_common()):
             text_forms[(msd, lemma)] = text
 
         words_counter = []
         for word in self.words:
-            words_counter.append((word.msd, word.lemma))
+            if system_type == 'UD':
+                raise NotImplementedError
+            else:
+                words_counter.append((word.xpos, word.lemma))
         sorted_words = sorted(
             set(words_counter), key=lambda x: -words_counter.count(x) + (sum(ord(l) for l in x[1]) / 1e5 if x[1] is not None else .5))
 
         # so lets got through all words, sorted by frequency
         for word_msd, word_lemma in sorted_words:
             # check if agreements match
-            agreements_matched = [agr.match(word_msd) for agr in self.agreement]
+            agreements_matched = [agr.match(word_msd, system_type) for agr in self.agreement]
 
             # in case all agreements do not match try to get data from sloleks and change properly
             if sloleks_db is not None and not all(agreements_matched):
                 for i, agr in enumerate(self.agreement):
-                    if not agr.match(word_msd):
-                        msd, lemma, text = sloleks_db.get_word_form(agr.lemma, agr.msd(), agr.data, converter, align_msd=word_msd)
+                    if not agr.match(word_msd, system_type):
+                        msd, lemma, text = sloleks_db.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd)
                         if msd is not None:
                             agr.msds[0] = msd
                             agr.words.append(WordDummy(msd, lemma, text))
@@ -141,22 +155,25 @@ class WordFormMsdCR(WordFormAnyCR):
 
         return True
 
-    def add_word(self, word):
+    def add_word(self, word, system_type):
         """ Adds lemma and msd. Also adds word if word matches msd check. """
         if self.lemma is None:
             self.lemma = word.lemma
 
-        self.msds.append(word.msd)
-        if self.check_msd(word.msd):
-            super().add_word(word)
+        if system_type == 'UD':
+            raise NotImplementedError
+        else:
+            self.msds.append(word.xpos)
+            if self.check_msd(word.xpos):
+                super().add_word(word, system_type)
 
-    def _render(self, converter, sloleks_db=None):
+    def _render(self, system_type, sloleks_db=None):
         if len(self.words) == 0 and sloleks_db is not None:
-            msd, lemma, text = sloleks_db.get_word_form(self.lemma, self.msd(), self.data, converter)
+            msd, lemma, text = sloleks_db.get_word_form(self.lemma, self.msd(), self.data)
             if msd is not None:
                 self.words.append(WordDummy(msd, lemma, text))
         self.words.append(WordDummy(self._common_msd()))
-        return super()._render(converter, sloleks_db)
+        return super()._render(system_type, sloleks_db)
     
     def _common_msd(self):
         msds = sorted(self.msds, key=len)
@@ -177,19 +194,25 @@ class WordFormAgreementCR(WordFormMsdCR):
         """ Returns agreement head component id. """
         return self.data['other']
 
-    def match(self, word_msd):
+    def match(self, word_msd, system_type):
         """ Checks if word_msd matches any of possible words in agreements. """
-        existing = [(w.msd, w.text) for w in self.words]
+        if system_type == 'UD':
+            existing = [(w.xpos, w.text) for w in self.words]
+        else:
+            existing = [(str(w.udpos), w.text) for w in self.words]
+        #existing = [(w.xpos, str(w.udpos), w.text) for w in self.words]
 
-        lemma_available_words = self.word_renderer.available_words(self.lemma, existing)
-        for candidate_msd, candidate_text in lemma_available_words:
-            if self.msd()[0] != candidate_msd[0]:
+        lemma_available_words = self.word_renderer.available_words(self.lemma, existing, system_type)
+        for candidate_pos, candidate_text in lemma_available_words:
+            if system_type == 'UD':
+                raise NotImplementedError
+            if self.msd()[0] != candidate_pos[0]:
                 continue
 
-            if WordFormAgreementCR.check_agreement(word_msd, candidate_msd, self.data['agreement']):
-                if self.check_msd(candidate_msd):
+            if WordFormAgreementCR.check_agreement(word_msd, candidate_pos, self.data['agreement']):
+                if self.check_msd(candidate_pos):
                     self.rendition_candidate = candidate_text
-                    self.rendition_msd_candidate = candidate_msd
+                    self.rendition_msd_candidate = candidate_pos
                     return True
 
         return False
@@ -234,5 +257,5 @@ class WordFormAgreementCR(WordFormMsdCR):
 
         return True
 
-    def render(self, converter, sloleks_db=None):
+    def render(self, system_type, sloleks_db=None):
         pass

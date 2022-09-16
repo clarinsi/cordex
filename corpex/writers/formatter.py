@@ -120,7 +120,12 @@ class StatsFormatter(Formatter):
                 freq = 0
             else:
                 word = match.matches[0][cid]
-                freq = self.word_renderer.num_words(word.lemma, word.msd[0])
+                if match.structure.system_type == 'UD':
+                    word_msd0 = word.udpos['POS']
+                else:
+                    word_msd0 = word.xpos[0]
+
+                freq = self.word_renderer.num_words(word.lemma, word_msd0, match.structure.system_type)
 
             self.stats["freq"][cid] = freq
 

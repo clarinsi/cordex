@@ -53,7 +53,6 @@ def load_files(args, database):
 
 def load_conllu(filename, args):
     """ Loads corpus file in conllu format. """
-    do_msd_translate = not args['no_msd_translate']
     if args['no_msd_translate']:
         raise NotImplementedError('no_msd_translate = True is not implemented for conllu data!')
     result = []
@@ -85,7 +84,7 @@ def load_conllu(filename, args):
                     if type(word['id']) == tuple:
                         continue
 
-                    words[str(word['id'])] = Word.from_conllu_element(word, sent, do_msd_translate)
+                    words[str(word['id'])] = Word.from_conllu_element(word, sent)
                     links.append((str(word['head']), str(word['id']), word['deprel']))
                 sentence_end(False, sent.metadata['sent_id'])
                 links = []

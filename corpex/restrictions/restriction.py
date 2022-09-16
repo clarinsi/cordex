@@ -5,6 +5,7 @@ import re
 from enum import Enum
 
 from corpex.utils.codes_tagset import CODES, TAGSET, CODES_UD
+from corpex.utils.converter import msd_to_properties
 
 
 class RestrictionType(Enum):
@@ -30,19 +31,21 @@ def determine_ppb_ud(rgxs):
         return 4
 
 
-def determine_ppb(rgxs):
+def determine_ppb(restrictions):
     """ Determine if a word has full meaning - JOS (returns priority). """
-    if len(rgxs) != 1:
+    if len(restrictions['POS'][0]) != 1:
         return 0
-    rgx = rgxs[0]
-    if rgx[0] in ("A", "N", "R"):
+    category = list(restrictions['POS'][0])[0]
+    # rgx = rgxs[0]
+    if category in ("adjective", "noun", "adverb"):
         return 0
-    elif rgx[0] == "V":
-        if len(rgx) == 1:
+    elif category == "verb":
+        if len(restrictions) == 1:
             return 2
-        elif 'a' in rgx[1]:
+        type = list(restrictions['type'][0])[0] if 'type' in restrictions else ''
+        if type == 'auxiliary':
             return 3
-        elif 'm' in rgx[1]:
+        elif type == 'main':
             return 1
         else:
             return 2
@@ -58,78 +61,107 @@ class MorphologyRegex:
         for feature in restriction:
             feature_dict = dict(feature.items())
 
-            match_type = True
+            negate = False
             if "filter" in feature_dict:
                 assert feature_dict['filter'] == "negative"
-                match_type = False
+                negate = True
                 del feature_dict['filter']
 
             assert len(feature_dict) == 1
             key, value = next(iter(feature_dict.items()))
-            restr_dict[key] = (value, match_type)
+            if len(value.split('|'))>1:
+                print('here')
+            restr_dict[key] = (set(value.split('|')), negate)
 
         assert 'POS' in restr_dict
+        self.restrictions = restr_dict
 
-        # handle multiple word types
-        if '|' in restr_dict['POS'][0]:
-            categories = restr_dict['POS'][0].split('|')
-        else:
-            categories = [restr_dict['POS'][0]]
-
-        self.rgxs = []
-        self.re_objects = []
-        self.min_msd_lengths = []
-
-        del restr_dict['POS']
-
-        for category in categories:
-            min_msd_length = 1
-            category = category.capitalize()
-            cat_code = CODES[category]
-            rgx = [cat_code] + ['.'] * 10
-
-            for attribute, (value, typ) in restr_dict.items():
-                if attribute.lower() not in TAGSET[cat_code]:
-                    continue
-                index = TAGSET[cat_code].index(attribute.lower())
-                assert index >= 0
-
-                if '|' in value:
-                    match = "".join(CODES[val] for val in value.split('|'))
-                else:
-                    match = CODES[value]
-
-                match = "[{}{}]".format("" if typ else "^", match)
-                rgx[index + 1] = match
-
-                if typ:
-                    min_msd_length = max(index + 1, min_msd_length)
-
-            # strip rgx
-            for i in reversed(range(len(rgx))):
-                if rgx[i] == '.':
-                    rgx = rgx[:-1]
-                else:
-                    break
-
-            self.re_objects.append([re.compile(r) for r in rgx])
-            self.rgxs.append(rgx)
-            self.min_msd_lengths.append(min_msd_length)
+        # # handle multiple word types
+        # if '|' in restr_dict['POS'][0]:
+        #     categories = restr_dict['POS'][0].split('|')
+        # else:
+        #     categories = [restr_dict['POS'][0]]
+        #
+        # self.rgxs = []
+        # self.re_objects = []
+        # self.min_msd_lengths = []
+        #
+        # del restr_dict['POS']
+        #
+        # for category in categories:
+        #     min_msd_length = 1
+        #     category = category.capitalize()
+        #     cat_code = CODES[category]
+        #     rgx = [cat_code] + ['.'] * 10
+        #
+        #     for attribute, (value, neg) in restr_dict.items():
+        #         if attribute.lower() not in TAGSET[cat_code]:
+        #             continue
+        #         index = TAGSET[cat_code].index(attribute.lower())
+        #         assert index >= 0
+        #
+        #         if '|' in value:
+        #             match = "".join(CODES[val] for val in value.split('|'))
+        #         else:
+        #             match = CODES[value]
+        #         # if attribute == 'negative':
+        #         #     print('aaa')
+        #         # if not typ:
+        #         #     print('HERE!')
+        #
+        #         # When typ==False character should be anything but set char.
+        #         match = "[{}{}]".format("" if not neg else "^", match)
+        #         rgx[index + 1] = match
+        #
+        #         if not neg:
+        #             min_msd_length = max(index + 1, min_msd_length)
+        #
+        #     # strip rgx
+        #     for i in reversed(range(len(rgx))):
+        #         if rgx[i] == '.':
+        #             rgx = rgx[:-1]
+        #         else:
+        #             break
+        #
+        #     self.re_objects.append([re.compile(r) for r in rgx])
+        #     self.rgxs.append(rgx)
+        #     self.min_msd_lengths.append(min_msd_length)
     
-    def __call__(self, text):
-        for i, re_object in enumerate(self.re_objects):
-            if len(text) < self.min_msd_lengths[i]:
-                continue
-            match = True
+    def __call__(self, text, lemma):
+        if not text:
+            return False
 
-            for c, r in zip(text, re_object):
-                if not r.match(c):
-                    match = False
-                    break
-            if match:
-                return True
-        return False
+        properties = msd_to_properties(text, 'en', lemma)
 
+        for res_name, res_val in self.restrictions.items():
+            res_name = res_name.lower()
+
+            # handles category
+            if res_name == 'pos':
+                if not properties.category in res_val[0]:
+                    return False
+
+            # handles form other restrictions
+            # handles restrictions where we negate filter is off
+            elif res_val[1] == False:
+                if res_name in properties.form_feature_map:
+                    if not properties.form_feature_map[res_name] in res_val[0]:
+                        return False
+                elif res_name in properties.lexeme_feature_map:
+                    if not properties.lexeme_feature_map[res_name] in res_val[0]:
+                        return False
+                else:
+                    return False
+            # handle restrictions with negate filter on
+            elif res_val[1] == True:
+                if res_name in properties.form_feature_map:
+                    if properties.form_feature_map[res_name] in res_val[0]:
+                        return False
+                elif res_name in properties.lexeme_feature_map:
+                    if properties.lexeme_feature_map[res_name] in res_val[0]:
+                        return False
+
+        return True
 
 class MorphologyUDRegex:
     """
@@ -140,36 +172,71 @@ class MorphologyUDRegex:
         for feature in restriction:
             feature_dict = dict(feature.items())
 
-            match_type = True
+            negate = False
+            if "filter" in feature_dict:
+                negate = True
+                del feature_dict['filter']
 
             assert len(feature_dict) == 1
             key, value = next(iter(feature_dict.items()))
-            restr_dict[key] = (value, match_type)
+            restr_dict[key] = (set(value.split('|')), negate)
 
         assert 'POS' in restr_dict
 
-        # handle multiple word types
-        if '|' in restr_dict['POS'][0]:
-            categories = restr_dict['POS'][0].split('|')
-        else:
-            categories = [restr_dict['POS'][0]]
+        self.restrictions = restr_dict
 
-        self.rgxs = []
-        self.re_objects = []
-        self.min_msd_lengths = []
+        # # handle multiple word types
+        # if '|' in restr_dict['POS'][0]:
+        #     categories = restr_dict['POS'][0].split('|')
+        # else:
+        #     categories = [restr_dict['POS'][0]]
 
-        del restr_dict['POS']
 
-        for category in categories:
-            min_msd_length = 1
-            category = category.upper()
-            assert category in CODES_UD
-            rgx = category
 
-            self.rgxs.append(rgx)
-            self.min_msd_lengths.append(min_msd_length)
+        # self.rgxs = []
+        # self.re_objects = []
+        # self.min_msd_lengths = []
+        #
+        # del restr_dict['POS']
+        #
+        # for category in categories:
+        #     min_msd_length = 1
+        #     category = category.upper()
+        #     assert category in CODES_UD
+        #     rgx = category
+        #
+        #     self.rgxs.append(rgx)
+        #     self.min_msd_lengths.append(min_msd_length)
 
-    def __call__(self, text):
+    def __call__(self, msd, lemma):
+        udpos = msd.udpos
+        if not udpos:
+            return False
+
+        for res_name, res_val in self.restrictions.items():
+            # res_name = res_name.lower()
+
+            # # handles category
+            # if res_name == 'POS':
+            #     if not udpos['POS'] in res_val[0]:
+            #         return False
+
+            # handles form other restrictions
+            # handles restrictions where we negate filter is off
+            if res_val[1] == False:
+                if res_name in udpos:
+                    if not udpos[res_name] in res_val[0]:
+                        return False
+                else:
+                    return False
+            # handle restrictions with negate filter on
+            elif res_val[1] == True:
+                if res_name in udpos:
+                    if udpos[res_name] in res_val[0]:
+                        return False
+
+        return True
+
         assert len(self.rgxs) == 1
         return self.rgxs[0] == text
 
@@ -186,7 +253,7 @@ class LexisRegex:
         assert "lemma" in restr_dict
         self.match_list = restr_dict['lemma'].split('|')
     
-    def __call__(self, text):
+    def __call__(self, text, lemma):
         return text in self.match_list
 
 
@@ -202,7 +269,7 @@ class SpaceRegex:
             if el not in ['both', 'right', 'left', 'neither']:
                 raise Exception('Value of space restriction is not supported (it may be both, left, right or neither).')
 
-    def __call__(self, word):
+    def __call__(self, word, lemma):
         match = False
         if 'neither' in self.space:
             match = match or (not word.previous_glue and not word.glue)
@@ -234,7 +301,7 @@ class Restriction:
             if system_type == 'JOS':
                 self.type = RestrictionType.Morphology
                 self.matcher = MorphologyRegex(list(restriction_tag))
-                self.ppb = determine_ppb(self.matcher.rgxs)
+                self.ppb = determine_ppb(self.matcher.restrictions)
             # UD system is handled based on deprel
             elif system_type == 'UD':
                 self.type = RestrictionType.MorphologyUD
@@ -253,8 +320,10 @@ class Restriction:
 
     def match(self, word):
         """ Obtains data necessary for matcher and runs it. """
-        if self.type == RestrictionType.Morphology or self.type == RestrictionType.MorphologyUD:
-            match_to = word.msd
+        if self.type == RestrictionType.Morphology:
+            match_to = word.xpos
+        elif self.type == RestrictionType.MorphologyUD:
+            match_to = word
         elif self.type == RestrictionType.Lexis:
             match_to = word.lemma
         elif self.type == RestrictionType.MatchAll:
@@ -264,5 +333,5 @@ class Restriction:
         else:
             raise RuntimeError("Unreachable!")
 
-        return self.matcher(match_to)
+        return self.matcher(match_to, word.lemma)
 
