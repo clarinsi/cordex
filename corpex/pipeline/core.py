@@ -1,7 +1,7 @@
 import time
 import gc
 
-from corpex.representations.lexicon import Lexicon
+from corpex.representations.lookup_lexicon import LookupLexicon
 from corpex.utils.progress_bar import progress
 from corpex.structures.syntactic_structure import build_structures
 from corpex.matcher.match_store import MatchStore
@@ -23,17 +23,18 @@ class Pipeline:
         kwargs['structures'] = structures
         self.set_default_args(kwargs)
 
-        if self.args['sloleks_db'] is not None:
-            self.sloleks_db = Lexicon(False, 'data/lexicon/forms.xz')
+        if self.args['lookup_lexicon'] is not None:
+            self.lookup_lexicon = LookupLexicon(False, 'data/lexicon/forms.xz')
         else:
-            self.sloleks_db = None
+            self.lookup_lexicon = None
 
-        self.structures, self.max_num_components = build_structures(kwargs)
+        self.structures, self.max_num_components = build_structures(self.args)
 
-    def __call__(self, corpus):
+    def __call__(self, corpus, output):
         if type(corpus) == str:
             corpus = [corpus]
         self.args['corpus'] = corpus
+        self.args['out'] = output
         time_info = TimeInfo(len(self.args['corpus']))
 
         database = Database(self.args)
@@ -70,7 +71,7 @@ class Pipeline:
         match_store.determine_collocation_dispersions()
 
         # figure out representations!
-        match_store.set_representations(word_stats, self.structures, sloleks_db=self.sloleks_db)
+        match_store.set_representations(word_stats, self.structures, lookup_lexicon=self.lookup_lexicon)
 
         if self.args['statistics']:
             Writer.make_output_writer(self.args, self.max_num_components, match_store, word_stats).write_out(
@@ -109,16 +110,17 @@ class Pipeline:
             'collocation_sentence_map_dest': None,
             'no_msd_translate': False,
             'multiple_output': False,
-            'load_sloleks': False,
             'sort_reversed': False,
             'new_db': False,
             'ignore_punctuations': False,
             'fixed_restriction_order': False,
             'new_tei': False,
             'out': None,
+            'lookup_lexicon': None,
             'statistics': True,
             'lang': 'sl',
-            'pos': 'upos'
+            'pos': 'upos',
+            'no_stats': False
         }
 
         self.args = {**default_args, **kwargs}

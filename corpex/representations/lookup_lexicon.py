@@ -9,7 +9,7 @@ from conversion_utils.jos_msds_and_properties import Msd
 from corpex.utils.converter import msd_to_properties
 
 
-class Lexicon:
+class LookupLexicon:
     """ Object that access external data. """
     def __init__(self, use_api, file_path=''):
         self.file_data = None

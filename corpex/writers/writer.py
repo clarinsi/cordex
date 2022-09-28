@@ -84,7 +84,7 @@ class Writer:
     def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map):
         rows = []
         components = structure.components
-        for match in progress(collocation_ids.get_matches_for(structure), "Writing matches: {}".format(structure.id)):
+        for match in collocation_ids.get_matches_for(structure):
             if len(match) < self.min_frequency:
                 continue
 

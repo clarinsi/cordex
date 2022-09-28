@@ -74,7 +74,7 @@ class WordStats:
                 self.db.execute("INSERT INTO WordCountXPOS (lemma, xpos0, frequency) VALUES (?,?,?)",
                     (lemma, xpos0, freq))
 
-            for upos, freq in num_words_xpos.items():
+            for upos, freq in num_words_upos.items():
                 self.db.execute("INSERT INTO WordCountUPOS (lemma, upos, frequency) VALUES (?,?,?)",
                     (lemma, upos, freq))
 
@@ -96,17 +96,17 @@ class WordStats:
         for (pos, text), _n in counted_texts.most_common():
             if system_type == 'UD':
                 pos = literal_eval(pos)
-            yield (pos, text)
+            yield (pos, text, lemma)
 
         statement = """SELECT xpos, udpos, text, frequency FROM UniqWords WHERE 
                     lemma=:lemma ORDER BY frequency DESC"""
         for xpos, udpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
             if system_type == 'UD':
                 if (udpos, text) not in counted_texts:
-                    yield (literal_eval(udpos), text)
+                    yield (literal_eval(udpos), text, lemma)
             else:
                 if (xpos, text) not in counted_texts:
-                    yield (xpos, text)
+                    yield (xpos, text, lemma)
 
     def num_words(self, lemma, msd0, system_type):
         """ Returns first word frequency when lemma and msd match. """

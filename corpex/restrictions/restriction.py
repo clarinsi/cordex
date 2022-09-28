@@ -69,64 +69,11 @@ class MorphologyRegex:
 
             assert len(feature_dict) == 1
             key, value = next(iter(feature_dict.items()))
-            if len(value.split('|'))>1:
-                print('here')
             restr_dict[key] = (set(value.split('|')), negate)
 
         assert 'POS' in restr_dict
         self.restrictions = restr_dict
 
-        # # handle multiple word types
-        # if '|' in restr_dict['POS'][0]:
-        #     categories = restr_dict['POS'][0].split('|')
-        # else:
-        #     categories = [restr_dict['POS'][0]]
-        #
-        # self.rgxs = []
-        # self.re_objects = []
-        # self.min_msd_lengths = []
-        #
-        # del restr_dict['POS']
-        #
-        # for category in categories:
-        #     min_msd_length = 1
-        #     category = category.capitalize()
-        #     cat_code = CODES[category]
-        #     rgx = [cat_code] + ['.'] * 10
-        #
-        #     for attribute, (value, neg) in restr_dict.items():
-        #         if attribute.lower() not in TAGSET[cat_code]:
-        #             continue
-        #         index = TAGSET[cat_code].index(attribute.lower())
-        #         assert index >= 0
-        #
-        #         if '|' in value:
-        #             match = "".join(CODES[val] for val in value.split('|'))
-        #         else:
-        #             match = CODES[value]
-        #         # if attribute == 'negative':
-        #         #     print('aaa')
-        #         # if not typ:
-        #         #     print('HERE!')
-        #
-        #         # When typ==False character should be anything but set char.
-        #         match = "[{}{}]".format("" if not neg else "^", match)
-        #         rgx[index + 1] = match
-        #
-        #         if not neg:
-        #             min_msd_length = max(index + 1, min_msd_length)
-        #
-        #     # strip rgx
-        #     for i in reversed(range(len(rgx))):
-        #         if rgx[i] == '.':
-        #             rgx = rgx[:-1]
-        #         else:
-        #             break
-        #
-        #     self.re_objects.append([re.compile(r) for r in rgx])
-        #     self.rgxs.append(rgx)
-        #     self.min_msd_lengths.append(min_msd_length)
-    
     def __call__(self, text, lemma):
         if not text:
             return False

@@ -1,0 +1,687 @@
+﻿<!-- Ta verzija datoteke (v1) vsebuje opis 20 struktur, ki smo jih dorekli na sestanku 21. 10. 2019
+in so zbrane v datoteki UD-kolokacije_v3.xlsx.
+
+Kot representation form je zaenkrat povsod navedena lema.
+
+-->
+<syntactic_structures>
+  <!-- Section 01: collocations with UD relation 'advmod' -->
+  <syntactic_structure type="collocation" id="1">
+    <!-- 
+  tree: VERB -advmod-> anything
+  example: neznosno boleti
+  corresponds to LBS-NSS structure: 19
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="verbal_head" />
+        <component cid="2" type="core" name="adverbial_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="advmod"/> 
+        <dependency from="#" to="1" label="#"/> <!-- [KD] root formaliziram, ker tako predvideva sistem, še vedno pa se mi zdi odveč -->
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="VERB"/>
+          </restriction>
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <syntactic_structure type="collocation" id="2">
+    <!-- 
+  tree: ADJ -advmod-> anything
+  example: resnično izjemen
+  corresponds to LBS-NSS structure: 24 (resnično izjemen), delno tudi 26 ([biti] dovolj zrel)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="adjectival_head" />
+        <component cid="2" type="core" name="adverbial_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="advmod"/> 
+        <dependency from="#" to="1" label="#"/> 
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="ADJ"/>
+          </restriction>
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <syntactic_structure type="collocation" id="3">
+    <!-- 
+  tree: ADV -advmod-> anything
+  example: izjemno besno
+  corresponds to LBS-NSS structure: 25 (izjemno besno)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="adverbial_head" />
+        <component cid="2" type="core" name="adverbial_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="advmod"/> 
+        <dependency from="#" to="1" label="#"/> 
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="ADV"/>
+          </restriction>
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 02: collocations with UD relation 'amod' -->
+  <syntactic_structure type="collocation" id="4">
+    <!-- 
+  tree: anything -amod-> anything
+  example: bela zastava
+  corresponds to LBS-NSS structure: 1 (bela zastava), delno tudi 4 ([biti] modre barve)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_head" />
+        <component cid="2" type="core" name="adjectival_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="amod"/> 
+        <dependency from="#" to="1" label="#"/> 
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 03: collocations with UD relation 'compound' -->
+  <syntactic_structure type="collocation" id="5">
+    <!-- 
+  tree: anything -compound-> anything
+  example: information retrieval
+  corresponds to LBS-NSS structure: 
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="compounding_word_1" />
+        <component cid="2" type="core" name="compounding_word_2" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="compound"/> 
+        <dependency from="#" to="1" label="#"/> 
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 04: collocations with UD relation 'conj' -->
+  <syntactic_structure type="collocation" id="6">
+    <!-- 
+  tree: anything -conj-> anything -cc-> anything
+  example: dober ali slab
+  corresponds to LBS-NSS structure: 64 (dober ali slab), 65 (vino ali pivo), 66 (govoriti ali šepetati), 67 (včeraj ali danes)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="first_element_in_coordination" />
+        <component cid="2" type="core" name="coordinating_conjunction" />
+        <component cid="3" type="core" name="second_element_in_coordination"/>
+      </components>
+      <dependencies>
+        <dependency from="1" to="3" label="conj"/> 
+        <dependency from="#" to="1" label="#"/> 
+        <dependency from="3" to="2" label="cc"/>         
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 05: collocations with UD relation 'fixed' -->
+  <syntactic_structure type="collocation" id="7">
+    <!-- 
+  tree: anything -fixed-> anything 
+  example: kakor koli
+  corresponds to LBS-NSS structure: MWE-SkZ
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="first_element_in_fixed_phrase" />
+        <component cid="2" type="core" name="second_element_in_fixed_phrase" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="fixed"/> 
+        <dependency from="#" to="1" label="#"/>       
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 06: collocations with UD relation 'flat' -->
+  <syntactic_structure type="collocation" id="8">
+    <!-- 
+  tree: anything -flat-> anything 
+  example: kakor koli
+  corresponds to LBS-NSS structure: mostly named entities
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="first_element_in_flat_phrase" />
+        <component cid="2" type="core" name="second_element_in_flat_phrase" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="flat"/> 
+        <dependency from="#" to="1" label="#"/>       
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <!-- Section 07: collocations with UD relation 'iobj' -->
+  <syntactic_structure type="collocation" id="9">
+    <!-- 
+  tree: anything -iobj-> anything 
+  example: spregovoriti ljudstvu
+  corresponds to LBS-NSS structure: 7 (spregovoriti ljudstvu)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="verbal_head" />
+        <component cid="2" type="core" name="indirect_object" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="iobj"/> 
+        <dependency from="#" to="1" label="#"/>       
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <!-- Section 07: collocations with UD relation 'nmod' -->
+  <syntactic_structure type="collocation" id="10">
+    <!-- 
+  tree: anything -nmod-> anything (!-case-> anything)
+  example: pranje denarja
+  corresponds to LBS-NSS structure: 12 (človek pajek), 13 (pranje denarja), 14 (pismo predsedniku)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_head" />
+        <component cid="2" type="other" status="forbidden" name="case_marker" />
+        <component cid="3" type="core" name="nominal_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="3" label="nmod"/> 
+        <dependency from="#" to="1" label="#"/>  
+        <dependency from="3" to="2" label="case"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2" />
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <syntactic_structure type="collocation" id="11">
+    <!-- 
+  tree: anything -nmod-> anything (-case-> anything)
+  example: listina iz spisa
+  corresponds to LBS-NSS structure: 29-33 (listina iz spisa, poziv k odstopu …), 49 (prijatelj za vedno)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_head" />
+        <component cid="2" type="core" name="case_marker" />
+        <component cid="3" type="core" name="nominal_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="3" label="nmod"/> 
+        <dependency from="#" to="1" label="#"/>  
+        <dependency from="3" to="2" label="case"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <!-- Section 08: collocations with UD relation 'nsubj' -->
+  <syntactic_structure type="collocation" id="12">
+    <!-- 
+  tree: VERB -nsubj-> anything 
+  example: panika zavlada
+  corresponds to LBS-NSS structure: 9 (panika zavlada), 10-2 (človek nima), tudi 10-1 (človek ne vidi)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_subject" />
+        <component cid="2" type="core" name="verbal_predicate" />
+      </components>
+      <dependencies>
+        <dependency from="2" to="1" label="nsubj"/> 
+        <dependency from="#" to="2" label="#"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+          <restriction type="morphology">
+            <feature POS="VERB"/>
+          </restriction>
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <syntactic_structure type="collocation" id="13">
+    <!-- 
+  tree: anything <-cop- anything -nsubj-> anything 
+  example: rezultati so dobri
+  corresponds to LBS-NSS structure: 5 (rezultati so dobri)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_subject" />
+        <component cid="2" type="core" name="nonverbal_predicate" />
+        <component cid="3" type="core" name="copula_verb" />
+      </components>
+      <dependencies>
+        <dependency from="2" to="1" label="nsubj"/> 
+        <dependency from="#" to="2" label="#"/>  
+        <dependency from="2" to="3" label="cop"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure> 
+  <!-- Section 09: collocations with UD relation 'nummod' -->
+  <syntactic_structure type="collocation" id="14">
+    <!-- 
+  tree: anything -nummod-> anything 
+  example: pet števil
+  corresponds to LBS-NSS structure: 
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="nominal_head" />
+        <component cid="2" type="core" name="numeral_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="nummod"/> 
+        <dependency from="#" to="1" label="#"/>       
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <!-- Section 10: collocations with UD relation 'obj' -->
+  <syntactic_structure type="collocation" id="15">
+    <!-- 
+  tree: VERB -obj-> anything 
+  example: pogrniti mizo
+  corresponds to LBS-NSS structure: 8 (pogrniti mizo), 6 (želeti si zdravja), tudi 11-1 (ne prepuščati zraka), tudi 11-2 (ne hoteti odgovora), tudi 18-1 (ne razumeti prebranega), tudi 18-2 (ne imeti zaposlenih)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="verbal_predicate" />
+        <component cid="2" type="core" name="nominal_object" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="obj"/> 
+        <dependency from="#" to="1" label="#"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="VERB"/>
+          </restriction>
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <syntactic_structure type="collocation" id="16">
+    <!-- 
+  tree: anything <-cop- anything -obj-> anything 
+  example: biti obtožen utaje
+  corresponds to LBS-NSS structure: 2 (biti obtožen utaje), 3 (biti zvest gospodarju)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="copula_verb" />
+        <component cid="2" type="core" name="nonverbal_predicate" />
+        <component cid="3" type="core" name="nominal_object" />
+      </components>
+      <dependencies>
+        <dependency from="2" to="1" label="cop"/> 
+        <dependency from="#" to="2" label="#"/>  
+        <dependency from="2" to="3" label="obj"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>     
+  <!-- Section 11: collocations with UD relation 'obl' -->
+  <syntactic_structure type="collocation" id="17">
+    <!-- 
+  tree:  VERB -obl-> anything -case-> anything
+  example: odgovoriti brez razmisleka
+  corresponds to LBS-NSS structure: 34-38 (odgovoriti brez razmisleka, steči k vratom …), tudi 59-63 (biti brez volje, biti na voljo)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="verbal_predicate" />
+        <component cid="2" type="core" name="case_marker" />
+        <component cid="3" type="core" name="oblique_nominal" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="3" label="obl"/> 
+        <dependency from="#" to="1" label="#"/>  
+        <dependency from="3" to="2" label="case"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="VERB"/>
+            <feature type="auxiliary"/>
+          </restriction>         
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure> 
+  <syntactic_structure type="collocation" id="18">
+    <!-- 
+  tree:  anything <-cop- anything -obl-> anything -case-> anything
+  example: odgovoriti brez razmisleka
+  corresponds to LBS-NSS structure: 34-38 (odgovoriti brez razmisleka, steči k vratom …), tudi 59-63 (biti brez volje, biti na voljo)
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="copula_verb" />
+        <component cid="2" type="core" name="nonverbal_predicate" />
+        <component cid="3" type="core" name="case_marker" />
+        <component cid="4" type="core" name="oblique_nominal" />
+      </components>
+      <dependencies>
+        <dependency from="2" to="1" label="cop"/> 
+        <dependency from="#" to="2" label="#"/>  
+        <dependency from="2" to="4" label="obl"/>
+        <dependency from="4" to="3" label="case"/>    
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="4">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+  <syntactic_structure type="collocation" id="19">
+    <!-- 
+  tree:  VERB -obl-> anything ( !-case-> anything)
+  example: oblique arguments of verbal predicates in languages without PPs
+  corresponds to LBS-NSS structure: 
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="verbal_predicate" />
+        <component cid="2" type="other" status="forbidden" name="case_marker" />
+        <component cid="3" type="core" name="oblique_nominal" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="3" label="obl"/> 
+        <dependency from="#" to="1" label="#"/>  
+        <dependency from="3" to="2" label="case"/>     
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+            <feature POS="VERB"/>
+          </restriction>
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2" />
+        <component cid="3">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure> 
+  <syntactic_structure type="collocation" id="20">
+    <!-- 
+  tree:  anythign <-cop- anything -obl-> anything (!-case-> anything)
+  example: oblique arguments of nonverbal predicates in languages without PPs
+  corresponds to LBS-NSS structure: 
+     -->
+    <system type="UD">
+      <components order="fixed"> 
+        <component cid="1" type="core" name="copula_verb" />
+        <component cid="2" type="core" name="nonverbal_predicate" />
+        <component cid="3" type="other" status="forbidden" name="case_marker" />
+        <component cid="4" type="core" name="oblique_nominal" />
+      </components>
+      <dependencies>
+        <dependency from="2" to="1" label="cop"/> 
+        <dependency from="#" to="2" label="#"/>  
+        <dependency from="2" to="4" label="obl"/>
+        <dependency from="4" to="3" label="case"/>    
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <representation>
+            <feature rendition="lemma"/>
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+        <component cid="3" />
+        <component cid="4">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>  
+</syntactic_structures>

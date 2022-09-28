@@ -1,0 +1,1084 @@
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sl" xml:id="newsfeed.2022-01-03">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Event Registry - slovenske novice (2022-01-03)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>2.1</edition>
+      </editionStmt>
+      <extent/>
+      <publicationStmt>
+        <publisher xml:lang="sl">Univerza v Ljubljani, Center za jezikovne vire in tehnologije</publisher>
+        <publisher xml:lang="en">University of Ljubljana, Centre for Language Resources and Technologies</publisher>
+        <idno type="NEWSFEED">newsfeed.2022-01-03</idno>
+        <availability status="restricted">
+          <p xml:lang="sl">Avtorske pravice za to izdajo urejata Pogodba o zbiranju in uporabi besedilnega korpusa v okviru projekta Sporazumevanje v slovenskem jeziku, dostopna na URL <ref target="http://www.slovenscina.eu/korpusi/pogodba/">www.slovenscina.eu/korpusi/pogodba/</ref>, in Pogodba o zbiranju in uporabi besedilnega korpusa v okviru projekta Nadgradnja korpusov Gigafida, Kres, ccGigafida in ccKres, dostopna na <ref target="https://www.cjvt.si/gigafida/publikacije/pogodba">www.cjvt.si/gigafida/publikacije/pogodba</ref>.</p>
+          <p xml:lang="en">The copyright for this edition is governed by the Agreement on Collection and Use of the Text Corpus under the framework of the Communication in Slovene project available at <ref target="http://eng.slovenscina.eu/korpusi/pogodba">eng.slovenscina.eu/korpusi/pogodba</ref>, and by the Agreement on Collection and Use of the Text Corpus under the framework of the Upgrading of the Gigafida, Kres, ccGigafida and ccKres Corpora project available at <ref target="https://www.cjvt.si/gigafida/en/publications/pogodba">www.cjvt.si/gigafida/en/publications/pogodba</ref>.</p>
+        </availability>
+        <date when="2022-01-03">2022-01-03</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>slovenskenovice.si</title>
+          <date>2022-01-03</date>
+          <publisher>Slovenske novice</publisher>
+        </bibl>
+        <bibl>
+          <title>primorske.si</title>
+          <date>2022-01-03</date>
+          <publisher>Primorske novice</publisher>
+        </bibl>
+        <bibl>
+          <title>24ur.com</title>
+          <date>2022-01-03</date>
+          <publisher>24ur.com</publisher>
+        </bibl>
+        <bibl>
+          <title>dnevnik.si</title>
+          <date>2022-01-03</date>
+          <publisher>Dnevnik</publisher>
+        </bibl>
+        <bibl>
+          <title>mladina.si</title>
+          <date>2022-01-03</date>
+          <publisher>Mladina</publisher>
+        </bibl>
+        <bibl>
+          <title>sta.si</title>
+          <date>2022-01-03</date>
+          <publisher>STA d.o.o.</publisher>
+        </bibl>
+        <bibl>
+          <title>zurnal24.si</title>
+          <date>2022-01-03</date>
+          <publisher>Spletni portal, ki mu lahko zaupate - Žurnal24</publisher>
+        </bibl>
+        <bibl>
+          <title>morel.si</title>
+          <date>2022-01-03</date>
+          <publisher>Morel</publisher>
+        </bibl>
+        <bibl>
+          <title>delo.si</title>
+          <date>2022-01-03</date>
+          <publisher>Delo</publisher>
+        </bibl>
+        <bibl>
+          <title>rtvslo.si</title>
+          <date>2022-01-03</date>
+          <publisher>MMC RTV Slovenija</publisher>
+        </bibl>
+        <bibl>
+          <title>avto-magazin.metropolitan.si</title>
+          <date>2022-01-03</date>
+          <publisher>Avto-magazin.si</publisher>
+        </bibl>
+        <bibl>
+          <title>politikis.si</title>
+          <date>2022-01-03</date>
+          <publisher>PortalPolitikis</publisher>
+        </bibl>
+        <bibl>
+          <title>siol.net</title>
+          <date>2022-01-03</date>
+          <publisher>SiOL</publisher>
+        </bibl>
+        <bibl>
+          <title>mladipodjetnik.si</title>
+          <date>2022-01-03</date>
+          <publisher>Mladipodjetnik.si</publisher>
+        </bibl>
+        <bibl>
+          <title>vestnik.si</title>
+          <date>2022-01-03</date>
+          <publisher>vestnik.si</publisher>
+        </bibl>
+        <bibl>
+          <title>vecer.com</title>
+          <date>2022-01-03</date>
+          <publisher>vecer.com</publisher>
+        </bibl>
+        <bibl>
+          <title>n1info.si</title>
+          <date>2022-01-03</date>
+          <publisher>N1</publisher>
+        </bibl>
+        <bibl>
+          <title>novice.svet24.si</title>
+          <date>2022-01-03</date>
+          <publisher>Svet24.si - Vsa resnica na enem mestu</publisher>
+        </bibl>
+        <bibl>
+          <title>casnik.si</title>
+          <date>2022-01-03</date>
+          <publisher>Časnik</publisher>
+        </bibl>
+        <bibl>
+          <title>ekipa.svet24.si</title>
+          <date>2022-01-03</date>
+          <publisher>Ekipa24.si</publisher>
+        </bibl>
+        <bibl>
+          <title>demokracija.si</title>
+          <date>2022-01-03</date>
+          <publisher>Tednik Demokracija</publisher>
+        </bibl>
+        <bibl>
+          <title>avto.finance.si</title>
+          <date>2022-01-03</date>
+          <publisher>Finance.si</publisher>
+        </bibl>
+        <bibl>
+          <title>novice.si</title>
+          <date>2022-01-03</date>
+          <publisher>Novice.si</publisher>
+        </bibl>
+        <bibl>
+          <title>lokalec.si</title>
+          <date>2022-01-03</date>
+          <publisher>Lokalec.si</publisher>
+        </bibl>
+        <bibl>
+          <title>domovina.je</title>
+          <date>2022-01-03</date>
+          <publisher>Domovina</publisher>
+        </bibl>
+        <bibl>
+          <title>live.finance.si</title>
+          <date>2022-01-03</date>
+          <publisher>Finance Live</publisher>
+        </bibl>
+        <bibl>
+          <title>gorenjskiglas.si</title>
+          <date>2022-01-03</date>
+          <publisher>Gorenjski Glas</publisher>
+        </bibl>
+        <bibl>
+          <title>prlekija-on.net</title>
+          <date>2022-01-03</date>
+          <publisher>Prlekija-on.net</publisher>
+        </bibl>
+        <bibl>
+          <title>dolenjskilist.si</title>
+          <date>2022-01-03</date>
+          <publisher>Dolenjski list</publisher>
+        </bibl>
+        <bibl>
+          <title>necenzurirano.si</title>
+          <date>2022-01-03</date>
+          <publisher>Necenzurirano.si</publisher>
+        </bibl>
+        <bibl>
+          <title>celje.info</title>
+          <date>2022-01-03</date>
+          <publisher>Celje.info</publisher>
+        </bibl>
+        <bibl>
+          <title>data.si</title>
+          <date>2022-01-03</date>
+          <publisher>Data d.o.o.</publisher>
+        </bibl>
+        <bibl>
+          <title>nova24tv.si</title>
+          <date>2022-01-03</date>
+          <publisher>Nova24TV</publisher>
+        </bibl>
+        <bibl>
+          <title>aktivni.metropolitan.si</title>
+          <date>2022-01-03</date>
+          <publisher>Aktivni.si</publisher>
+        </bibl>
+        <bibl>
+          <title>njena.svet24.si</title>
+          <date>2022-01-03</date>
+          <publisher>Njena.si</publisher>
+        </bibl>
+        <bibl>
+          <title>si.aleteia.org</title>
+          <date>2022-01-03</date>
+          <publisher>Aleteia.si</publisher>
+        </bibl>
+        <bibl>
+          <title>krog.sta.si</title>
+          <date>2022-01-03</date>
+          <publisher>Krog STA</publisher>
+        </bibl>
+        <bibl>
+          <title>reporter.si</title>
+          <date>2022-01-03</date>
+          <publisher>Revija Reporter</publisher>
+        </bibl>
+        <bibl>
+          <title>molitev.si</title>
+          <date>2022-01-03</date>
+          <publisher>Molitev</publisher>
+        </bibl>
+        <bibl>
+          <title>metropolitan.si</title>
+          <date>2022-01-03</date>
+          <publisher>Metropolitan.si</publisher>
+        </bibl>
+        <bibl>
+          <title>cosmopolitan.metropolitan.si</title>
+          <date>2022-01-03</date>
+          <publisher>Cosmopolitan.si</publisher>
+        </bibl>
+        <bibl>
+          <title>misli.sta.si</title>
+          <date>2022-01-03</date>
+          <publisher>misli.sta.si</publisher>
+        </bibl>
+        <bibl>
+          <title>monitor.si</title>
+          <date>2022-01-03</date>
+          <publisher>Monitor</publisher>
+        </bibl>
+        <bibl>
+          <title>racunalniske-novice.com</title>
+          <date>2022-01-03</date>
+          <publisher>Računalniške novice</publisher>
+        </bibl>
+        <bibl>
+          <title>radio1.si</title>
+          <date>2022-01-03</date>
+          <publisher>Radio 1</publisher>
+        </bibl>
+        <bibl>
+          <title>mmjevnikar.kmeckiglas.com</title>
+          <date>2022-01-03</date>
+          <publisher>mmjevnikar.kmeckiglas.com</publisher>
+        </bibl>
+        <bibl>
+          <title>kum24.si</title>
+          <date>2022-01-03</date>
+          <publisher>Kum24.si</publisher>
+        </bibl>
+        <bibl>
+          <title>znanost.sta.si</title>
+          <date>2022-01-03</date>
+          <publisher>Znanost STA</publisher>
+        </bibl>
+        <bibl>
+          <title>zadovoljna.si</title>
+          <date>2022-01-03</date>
+          <publisher>Naslovnica - Zadovoljna.si</publisher>
+        </bibl>
+        <bibl>
+          <title>marketingmagazin.si</title>
+          <date>2022-01-03</date>
+          <publisher>Marketing magazin</publisher>
+        </bibl>
+        <bibl>
+          <title>kozjansko.info</title>
+          <date>2022-01-03</date>
+          <publisher>Kozjansko.info</publisher>
+        </bibl>
+        <bibl>
+          <title>okusno.je</title>
+          <date>2022-01-03</date>
+          <publisher>okusno.je</publisher>
+        </bibl>
+        <bibl>
+          <title>micna.slovenskenovice.si</title>
+          <date>2022-01-03</date>
+          <publisher>Mična – Vaša svetovalka za modo, lepoto in življenjski slog</publisher>
+        </bibl>
+        <bibl>
+          <title>kmeckiglas.com</title>
+          <date>2022-01-03</date>
+          <publisher>kmeckiglas.com</publisher>
+        </bibl>
+        <bibl>
+          <title>cekin.si</title>
+          <date>2022-01-03</date>
+          <publisher>cekin.si</publisher>
+        </bibl>
+        <bibl>
+          <title>financnitrgi.com</title>
+          <date>2022-01-03</date>
+          <publisher>Finančni trgi</publisher>
+        </bibl>
+        <bibl>
+          <title>dostop.si</title>
+          <date>2022-01-03</date>
+          <publisher>Dostop.si</publisher>
+        </bibl>
+        <bibl>
+          <title>bibaleze.si</title>
+          <date>2022-01-03</date>
+          <publisher>bibaleze.si</publisher>
+        </bibl>
+        <bibl>
+          <title>odprtakuhinja.delo.si</title>
+          <date>2022-01-03</date>
+          <publisher>Odprta kuhinja</publisher>
+        </bibl>
+        <bibl>
+          <title>tovarna.finance.si</title>
+          <date>2022-01-03</date>
+          <publisher>Tovarna leta</publisher>
+        </bibl>
+        <bibl>
+          <title>onaplus.delo.si</title>
+          <date>2022-01-03</date>
+          <publisher>onaplus.delo.si</publisher>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+<classDecl>
+  <taxonomy xml:id="UD-SYN">
+    <desc xml:lang="sl">Skladenjske relacije UD</desc>
+    <desc xml:lang="en">UD syntactic relations</desc>
+    <category xml:id="acl">
+      <catDesc xml:lang="en"><term>acl</term>: Clausal modifier of noun (adjectival clause)</catDesc>
+    </category>
+    <category xml:id="advcl">
+      <catDesc xml:lang="en"><term>advcl</term>: Adverbial clause modifier</catDesc>
+    </category>
+    <category xml:id="advmod">
+      <catDesc xml:lang="en"><term>advmod</term>: Adverbial modifier</catDesc>
+    </category>
+    <category xml:id="amod">
+      <catDesc xml:lang="en"><term>amod</term>: Adjectival modifier</catDesc>
+    </category>
+    <category xml:id="appos">
+      <catDesc xml:lang="en"><term>appos</term>: Appositional modifier</catDesc>
+    </category>
+    <category xml:id="aux">
+      <catDesc xml:lang="en"><term>aux</term>: Auxiliary</catDesc>
+    </category>
+    <category xml:id="case">
+      <catDesc xml:lang="en"><term>case</term>: Case marking</catDesc>
+    </category>
+    <category xml:id="cc">
+      <catDesc xml:lang="en"><term>cc</term>: Coordinating conjunction</catDesc>
+    </category>
+    <category xml:id="ccomp">
+      <catDesc xml:lang="en"><term>ccomp</term>: Clausal complement</catDesc>
+    </category>
+    <category xml:id="cc_preconj">
+      <catDesc xml:lang="en"><term>cc:preconj</term>: Preconjunct</catDesc>
+    </category>
+    <category xml:id="conj">
+      <catDesc xml:lang="en"><term>conj</term>: Conjunct</catDesc>
+    </category>
+    <category xml:id="cop">
+      <catDesc xml:lang="en"><term>cop</term>: Copula</catDesc>
+    </category>
+    <category xml:id="csubj">
+      <catDesc xml:lang="en"><term>csubj</term>: Clausal subject</catDesc>
+    </category>
+    <category xml:id="dep">
+      <catDesc xml:lang="en"><term>dep</term>: Unspecified dependency</catDesc>
+    </category>
+    <category xml:id="det">
+      <catDesc xml:lang="en"><term>det</term>: Determiner</catDesc>
+    </category>
+    <category xml:id="discourse">
+      <catDesc xml:lang="en"><term>discourse</term>: Discourse element</catDesc>
+    </category>
+    <category xml:id="expl">
+      <catDesc xml:lang="en"><term>expl</term>: Expletive</catDesc>
+    </category>
+    <category xml:id="fixed">
+      <catDesc xml:lang="en"><term>fixed</term>: Fixed multiword expression</catDesc>
+    </category>
+    <category xml:id="flat">
+      <catDesc xml:lang="en"><term>flat</term>: Flat multiword expression</catDesc>
+    </category>
+    <category xml:id="flat_foreign">
+      <catDesc xml:lang="en"><term>flat:foreign</term>: Flat multiword expression: foreign</catDesc>
+    </category>
+    <category xml:id="flat_name">
+      <catDesc xml:lang="en"><term>flat:name</term>: Flat name</catDesc>
+    </category>
+    <category xml:id="iobj">
+      <catDesc xml:lang="en"><term>iobj</term>: Indirect object</catDesc>
+    </category>
+    <category xml:id="mark">
+      <catDesc xml:lang="en"><term>mark</term>: Marker</catDesc>
+    </category>
+    <category xml:id="nmod">
+      <catDesc xml:lang="en"><term>nmod</term>: Nominal modifier</catDesc>
+    </category>
+    <category xml:id="nsubj">
+      <catDesc xml:lang="en"><term>nsubj</term>: Nominal subject</catDesc>
+    </category>
+    <category xml:id="nummod">
+      <catDesc xml:lang="en"><term>nummod</term>: Numeric modifier</catDesc>
+    </category>
+    <category xml:id="obj">
+      <catDesc xml:lang="en"><term>obj</term>: Object</catDesc>
+    </category>
+    <category xml:id="obl">
+      <catDesc xml:lang="en"><term>obl</term>: Oblique nominal</catDesc>
+    </category>
+    <category xml:id="parataxis">
+      <catDesc xml:lang="en"><term>parataxis</term>: Parataxis</catDesc>
+    </category>
+    <category xml:id="punct">
+      <catDesc xml:lang="en"><term>punct</term>: Punctuation</catDesc>
+    </category>
+    <category xml:id="root">
+      <catDesc xml:lang="en"><term>root</term>: Root</catDesc>
+    </category>
+    <category xml:id="xcomp">
+      <catDesc xml:lang="en"><term>xcomp</term>: Open clausal complement</catDesc>
+    </category>
+  </taxonomy>
+  <taxonomy xml:id="JOS-SYN">
+    <desc xml:lang="sl">Skladenjske relacije JOS</desc>
+    <desc xml:lang="en">JOS syntactic relations</desc>
+    <category xml:id="Root">
+      <catDesc><term>Root dependency</term>: Root forms a link between the abstract node of the
+    clause or sentence, as the source, with elements which form further connections in a
+    dependency tree. The targets are typically clause predicates, predicateless elliptical
+    parts of sentences or independent particles within a sentence. Furthermore, it forms a
+    link with all other tokens (word or punctuation) without an explicit syntactic role in a
+    sentence.</catDesc>
+    </category>
+    <category xml:id="PPart">
+      <catDesc><term>Predicate part</term>: PPart forms a link between elements without a
+    dependency relation in the usual head-dependent sense which are consequently defined
+    merely as parts of a word phrase. Typically it is used to link parts of verb phrases with
+    the finite verb form or a participle ending in -l, as the source, and morphemes »ne«,
+    »se«, »si«, »bi«, or the forms of the auxiliary verb be used to form future and past
+    tenses, i. e. »bo«, »je«, etc., as the target.</catDesc>
+    </category>
+    <category xml:id="Atr">
+      <catDesc><term>Attribute</term>: Atr is used to link heads and their dependents in word
+    phrases. The source is the head of the phrase, the target is its dependent. Typically it
+    is used in noun phrases, adjectival and adverbial phrases or to connect parts of complex
+    verb phrases with modal verbs and non-finite verb forms, as well as to link subject or
+    object complements to the verb.</catDesc>
+    </category>
+    <category xml:id="Sb">
+      <catDesc><term>Subject</term>: Sb is used to link parts of clauses or sentences that can
+    be defined as traditional subjects. However, the nodes linked with this relation do not
+    comply entirely with the definition of a subject in traditional grammars. On the clause
+    level, it forms a link between the predicate node and the subject node, with the head of
+    the verb phrase in the predicate, as the source, and the head of the noun phrase or other
+    kinds of phrases in the subject, as the target. On the sentence level, it forms a link
+    between the main clause and the subject clause with the head of verb phrase in the main
+    clause, as the source, and the head of the verb phrase in the subject clause, as the
+    target.</catDesc>
+    </category>
+    <category xml:id="Obj">
+      <catDesc><term>Object</term>: Obj is used to link parts of clauses or sentences that can
+    be defined as traditional objects. However, the nodes linked with this relation do not
+    comply entirely with the definition of an object in traditional grammars. On the clause
+    level, it forms a link between the predicate node and the object node, with the head of
+    the verb phrase in the predicate, as the source, and the head of the noun phrase or other
+    kinds of phrases in the object, as the target. On the sentence level, it forms a link
+    between the main clause and the object clause with the head of verb phrase in the main
+    clause, as the source, and the head of the verb phrase in the object clause, as the
+    target.</catDesc>
+    </category>
+    <category xml:id="AdvM">
+      <catDesc><term>Adverbial of manner</term>: AdvM is used to link parts of clauses or
+    sentences that can be defined as traditional adverbials of manner. However, the nodes
+    linked with this relation do not comply entirely with the definition of such adverbials in
+    traditional grammars. On the clause level, it forms a link between the predicate node and
+    the adverbial node, with the head of the verb phrase in the predicate, as the source, and
+    the head of the noun phrase or other kinds of phrases in the adverbial, as the target. On
+    the sentence level, it forms a link between the main clause and the adverbial clause with
+    the head of verb phrase in the main clause, as the source, and the head of the verb phrase
+    in the adverbial clause, as the target.</catDesc>
+    </category>
+    <category xml:id="AdvO">
+      <catDesc><term>Adverbial, other</term>: AdvO is used to link parts of clauses or sentences
+    that can be defined as traditional adverbials, with the exception of adverbials of
+    manner. However, the nodes linked with this relation do not comply entirely with the
+    definition of such adverbials in traditional grammars. On the clause level, it forms a
+    link between the predicate node and the adverbial node, with the head of the verb phrase
+    in the predicate, as the source, and the head of the noun phrase or other kinds of phrases
+    in the adverbial, as the target. On the sentence level, it forms a link between the main
+    clause and the adverbial clause with the head of verb phrase in the main clause, as the
+    source, and the head of the verb phrase in the adverbial clause, as the target.</catDesc>
+    </category>
+    <category xml:id="Coord">
+      <catDesc><term>Coordination</term>: Coord is used to link parts of coordinate structures
+    on phrase level. It forms a link between the head of the first part of the coordinate
+    structure and the head of the second part of the structure. The source is always the head
+    in the left part of the structure and the target is the head in the right part of the
+    structure. </catDesc>
+    </category>
+    <category xml:id="Conj">
+      <catDesc><term>Conjunction</term>: Conj is used in combination with the Coord relation to
+    link three elements – connected with Coord and Conj – in a triangle. Conj is used to link
+    the head of the second part of the coordinate structure on the phrase level, as the
+    source, and the coordinating conjunction or punctuation mark (if it functions as the
+    coordinating conjunction), as the target.</catDesc>
+    </category>
+    <category xml:id="MWU">
+      <catDesc><term>Multi-word unit</term>: MWU is used to link words which have a very strong
+    tendency to appear together as a group forming a multiword unit and do not show
+    characteristics of a head-dependant phrase structure. Typically, this relation is used to
+    link words with a variant spelling with or without a space, some multi-word conjunctions
+    and similar elements.</catDesc>
+    </category>
+  </taxonomy>
+  <taxonomy xml:id="NER">
+    <desc xml:lang="en">
+      <term>Named entities</term>
+    </desc>
+    <desc xml:lang="sl">
+      <term>Imenske entitete</term>
+    </desc>
+    <category xml:id="per">
+      <catDesc xml:lang="sl">
+        <term>oseba</term>
+      </catDesc>
+      <catDesc xml:lang="en">
+        <term>person</term>
+      </catDesc>
+    </category>
+    <category xml:id="loc">
+      <catDesc xml:lang="sl">
+        <term>lokacija</term>
+      </catDesc>
+      <catDesc xml:lang="en">
+        <term>location</term>
+      </catDesc>
+    </category>
+    <category xml:id="org">
+      <catDesc xml:lang="sl">
+        <term>organizacija</term>
+      </catDesc>
+      <catDesc xml:lang="en">
+        <term>organization</term>
+      </catDesc>
+    </category>
+    <category xml:id="misc">
+      <catDesc xml:lang="sl">
+        <term>drugo</term>
+      </catDesc>
+      <catDesc xml:lang="en">
+        <term>miscellaneous</term>
+      </catDesc>
+    </category>
+  </taxonomy>
+  <taxonomy xml:id="PARSEME.VMWE">
+    <category xml:id="VID">
+      <catDesc xml:lang="sl">glagolski idiom</catDesc>
+      <catDesc xml:lang="en">verbal idiom</catDesc>
+    </category>
+    <category xml:id="IRV">
+      <catDesc xml:lang="sl">inherentno povratni glagol</catDesc>
+      <catDesc xml:lang="en">inherently reflexive verb</catDesc>
+    </category>
+    <category xml:id="LVC.full">
+      <catDesc xml:lang="sl">zveza z glagolom z oslabljenim pomenom</catDesc>
+      <catDesc xml:lang="en">light verb construction (full)</catDesc>
+    </category>
+    <category xml:id="LVC.cause">
+      <catDesc xml:lang="sl">vzročna zveza z glagolom z oslabljenim pomenom</catDesc>
+      <catDesc xml:lang="en">light verb construction (cause)</catDesc>
+    </category>
+    <category xml:id="IAV">
+      <catDesc xml:lang="sl">predložna glagolska zveza</catDesc>
+      <catDesc xml:lang="en">inherently adpositional verb</catDesc>
+    </category>
+  </taxonomy>
+  <taxonomy xml:id="SRL">
+    <category xml:id="ACT">
+      <catDesc xml:lang="sl">vršilec</catDesc>
+      <catDesc xml:lang="en">actor</catDesc>
+    </category>
+    <category xml:id="PAT">
+      <catDesc xml:lang="sl">prizadeto</catDesc>
+      <catDesc xml:lang="en">patient</catDesc>
+    </category>
+    <category xml:id="REC">
+      <catDesc xml:lang="sl">prejemnik</catDesc>
+      <catDesc xml:lang="en">receiver</catDesc>
+    </category>
+    <category xml:id="ORIG">
+      <catDesc xml:lang="sl">izvor</catDesc>
+      <catDesc xml:lang="en">origin</catDesc>
+    </category>
+    <category xml:id="RESLT">
+      <catDesc xml:lang="sl">učinek</catDesc>
+      <catDesc xml:lang="en">result</catDesc>
+    </category>
+    <category xml:id="TIME">
+      <catDesc xml:lang="sl">čas</catDesc>
+      <catDesc xml:lang="en">time</catDesc>
+    </category>
+    <category xml:id="DUR">
+      <catDesc xml:lang="sl">trajanje</catDesc>
+      <catDesc xml:lang="en">duration</catDesc>
+    </category>
+    <category xml:id="FREQ">
+      <catDesc xml:lang="sl">pogostnost</catDesc>
+      <catDesc xml:lang="en">frequency</catDesc>
+    </category>
+    <category xml:id="LOC">
+      <catDesc xml:lang="sl">kraj</catDesc>
+      <catDesc xml:lang="en">location</catDesc>
+    </category>
+    <category xml:id="SOURCE">
+      <catDesc xml:lang="sl">začetna lokacija</catDesc>
+      <catDesc xml:lang="en">source</catDesc>
+    </category>
+    <category xml:id="GOAL">
+      <catDesc xml:lang="sl">končna lokacija</catDesc>
+      <catDesc xml:lang="en">goal</catDesc>
+    </category>
+    <category xml:id="EVENT">
+      <catDesc xml:lang="sl">dogodek</catDesc>
+      <catDesc xml:lang="en">event</catDesc>
+    </category>
+    <category xml:id="AIM">
+      <catDesc xml:lang="sl">namen</catDesc>
+      <catDesc xml:lang="en">aim</catDesc>
+    </category>
+    <category xml:id="CAUSE">
+      <catDesc xml:lang="sl">vzrok</catDesc>
+      <catDesc xml:lang="en">cause</catDesc>
+    </category>
+    <category xml:id="CONTR">
+      <catDesc xml:lang="sl">protivnost</catDesc>
+      <catDesc xml:lang="en">contradiction</catDesc>
+    </category>
+    <category xml:id="COND">
+      <catDesc xml:lang="sl">pogoj</catDesc>
+      <catDesc xml:lang="en">condition</catDesc>
+    </category>
+    <category xml:id="REG">
+      <catDesc xml:lang="sl">ozir</catDesc>
+      <catDesc xml:lang="en">regard</catDesc>
+    </category>
+    <category xml:id="ACMP">
+      <catDesc xml:lang="sl">spremstvo</catDesc>
+      <catDesc xml:lang="en">accompaniment</catDesc>
+    </category>
+    <category xml:id="RESTR">
+      <catDesc xml:lang="sl">omejitev</catDesc>
+      <catDesc xml:lang="en">restriction</catDesc>
+    </category>
+    <category xml:id="MANN">
+      <catDesc xml:lang="sl">način</catDesc>
+      <catDesc xml:lang="en">manner</catDesc>
+    </category>
+    <category xml:id="MEANS">
+      <catDesc xml:lang="sl">sredstvo</catDesc>
+      <catDesc xml:lang="en">means</catDesc>
+    </category>
+    <category xml:id="QUANT">
+      <catDesc xml:lang="sl">količina</catDesc>
+      <catDesc xml:lang="en">quantity</catDesc>
+    </category>
+    <category xml:id="MWPRED">
+      <catDesc xml:lang="sl">zveza z nedoločnikom</catDesc>
+      <catDesc xml:lang="en">multiword predicate</catDesc>
+    </category>
+    <category xml:id="MODAL">
+      <catDesc xml:lang="sl">zveza z modalnim glagolom</catDesc>
+      <catDesc xml:lang="en">modal</catDesc>
+    </category>
+    <category xml:id="PHRAS">
+      <catDesc xml:lang="sl">frazeološka zveza</catDesc>
+      <catDesc xml:lang="en">phraseme</catDesc>
+    </category>
+  </taxonomy>
+</classDecl>
+<listPrefixDef>
+  <prefixDef ident="mte" matchPattern="(.+)" replacementPattern="http://nl.ijs.si/ME/V6/msd/tables/msd-fslib-sl.xml#$1">
+    <p xml:lang="en">Private URIs with this prefix point to feature-structure elements
+      defining the Slovenian MULTEXT-East Version 6 MSDs.</p>
+  </prefixDef>
+  <prefixDef ident="jos-syn" matchPattern="(.+)" replacementPattern="#$1">
+    <p xml:lang="en">Private URIs with this prefix point to elements giving their
+      explanation and mapping to English and Slovene. In this document they are simply
+      local references to the JOS-SYN taxonomy categories in this TEI header..</p>
+    <p xml:lang="sl">Zasebni naslovi URI s to predpono kažejo na elemente, ki jih
+      pojasnijo in podajo njihovo preslikavo v angleščino in slovenščino. V pričujočem
+      dokumentu so to enostavno lokalne reference v taksonomijo JOS-SYN, ki se nahajaja v
+      kolofonu TEI.</p>
+  </prefixDef>
+  <prefixDef ident="ud-syn" matchPattern="(.+)" replacementPattern="#$1">
+    <p>Private URIs with this prefix point to elements giving their name in English and
+      Slovene. In this document they are simply local references into the UD-SYN taxonomy
+      categories in this TEI header.</p>
+    <p xml:lang="sl">Zasebni naslovi URI s to predpono kažejo na elemente, ki podajo
+      preslikavo v njihove slovenske in angleške termine. V pričujočem dokumentu so to
+      enostavno lokalne reference v taksonomijo UD-SYN, ki se nahajaja v kolofonu TEI.</p>
+  </prefixDef>
+  <prefixDef ident="mwe" matchPattern="(.+)" replacementPattern="#$1">
+    <p xml:lang="en">Private URIs with this prefix point to elements giving their
+      mapping to Slovene and English terms. In this document they are simply local
+      references to the verbal multiword expressions given in the "PARSEME.VMWE" taxonomy
+      in the teiHeader.</p>
+    <p xml:lang="sl">Zasebni naslovi URI s to predpono kažejo na elemente, ki podajo
+      preslikavo v njihove slovenske in angleške termine.  V pričujočem dokumentu so to
+      enostavno lokalne reference na vrste PARSEME glagolskih večbesednih izrazov, ki se
+      nahajajo v taksonomiji "PARSEME.VMWE" v kolofonu TEI.</p>
+  </prefixDef>
+  <prefixDef ident="srl" matchPattern="(.+)" replacementPattern="#$1">
+    <p xml:lang="en">Private URIs with this prefix point to elements giving their
+      explanation and mapping to English. In this document they are simply local
+      references to the semantic roles in the "SRL" taxonomy in the teiHeader.</p>
+    <p xml:lang="sl">Zasebni naslovi URI s to predpono kažejo na elemente, ki jih
+      pojasnijo in podajo njihovo preslikavo v angleščino. V pričujočem dokumentu so to
+      enostavno lokalne reference na udeleženske vloge v taksonomiji "SRL" v kolofonu
+      TEI.</p>
+  </prefixDef>
+</listPrefixDef>
+</encodingDesc>
+    <profileDesc>
+      <langUsage xml:lang="en">
+        <language xml:id="sl" ident="sl">Slovenian</language>
+        <language xml:id="en" ident="en">English</language>
+        <language xml:id="und" ident="und">Undetermined</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sl" xml:id="newsfeed.2022-01-03.1">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Novica - Slovenske novice, "Vino so pili tudi namesto vode" (2022-01-03T23:40:00)</title>
+        </titleStmt>
+        <extent/>
+        <publicationStmt>
+          <publisher xml:lang="sl">Univerza v Ljubljani, Center za jezikovne vire in tehnologije</publisher>
+          <publisher xml:lang="en">University of Ljubljana, Centre for Language Resources and Technologies</publisher>
+          <idno type="NEWSFEED">newsfeed.2022-01-03.1</idno>
+        </publicationStmt>
+        <sourceDesc>
+          <bibl>
+            <title>Vino so pili tudi namesto vode</title>
+            <date>2022-01-03</date>
+            <time>23:40:00</time>
+            <publisher>Slovenske novice</publisher>
+            <ptr target="https://www.slovenskenovice.si/novice/svet/vino-so-pili-tudi-namesto-vode/"/>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <langUsage xml:lang="en">
+          <language xml:id="sl" ident="sl">Slovenian</language>
+          <language xml:id="en" ident="en">English</language>
+          <language xml:id="und" ident="und">Undetermined</language>
+        </langUsage>
+      </profileDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <p xml:id="newsfeed.2022-01-03.1.1">
+          <s xml:id="newsfeed.2022-01-03.1.1.1">
+            <w lemma="da" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.1.1.1">Da</w>
+            <w lemma="biti" ana="mte:Va-r3s-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.1.2">je</w>
+            <w lemma="imeti" ana="mte:Vmpp-sn" msd="UPosTag=VERB|Aspect=Imp|Gender=Neut|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.1.3">imelo</w>
+            <w lemma="vino" ana="mte:Ncnsa" msd="UPosTag=NOUN|Case=Acc|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.4">vino</w>
+            <w lemma="v" ana="mte:Sl" msd="UPosTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-03.1.1.1.5">v</w>
+            <w lemma="antičen" ana="mte:Agpnsl" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.6">antičnem</w>
+            <w lemma="obdobje" ana="mte:Ncnsl" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.7">obdobju</w>
+            <w lemma="pomemben" ana="mte:Agpfsa" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.8">pomembno</w>
+            <w lemma="vloga" ana="mte:Ncfsa" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.9" join="right">vlogo</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.1.10">,</pc>
+            <w lemma="biti" ana="mte:Va-r3s-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.1.11">je</w>
+            <w lemma="že" ana="mte:Q" msd="UPosTag=PART" xml:id="newsfeed.2022-01-03.1.1.1.12">že</w>
+            <w lemma="dolgo" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.1.1.13">dolgo</w>
+            <w lemma="znan" ana="mte:Appnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.1.14" join="right">znano</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.1.15">,</pc>
+            <w lemma="v" ana="mte:Sl" msd="UPosTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-03.1.1.1.16">v</w>
+            <seg subtype="loc" type="name">
+              <w lemma="Izrael" ana="mte:Npmsl" msd="UPosTag=PROPN|Case=Loc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.17">Izraelu</w>
+            </seg>
+            <w lemma="pa" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.1.1.18">pa</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.1.19">so</w>
+            <w lemma="biti" ana="mte:Va-p-pm" msd="UPosTag=AUX|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.1.20" join="right">bili</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.1.21">,</pc>
+            <w lemma="kot" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.1.1.22">kot</w>
+            <w lemma="kazati" ana="mte:Vmpr3s" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.1.23" join="right">kaže</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.1.24">,</pc>
+            <w lemma="strokovnjak" ana="mte:Ncmpn" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.1.25">strokovnjaki</w>
+            <w lemma="pri" ana="mte:Sl" msd="UPosTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-03.1.1.1.26">pri</w>
+            <w lemma="pridelava" ana="mte:Ncfsl" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.27">pridelavi</w>
+            <w lemma="žlahten" ana="mte:Agpfsg" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.28">žlahtne</w>
+            <w lemma="kapljica" ana="mte:Ncfsg" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.1.29" join="right">kapljice</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.1.30">.</pc>
+            <linkGrp corresp="#newsfeed.2022-01-03.1.1.1" targFunc="head argument" type="UD-SYN">
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.1"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.2"/>
+              <link ana="ud-syn:csubj" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.3"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.4"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.1.1.7 #newsfeed.2022-01-03.1.1.1.5"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.1.7 #newsfeed.2022-01-03.1.1.1.6"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.7"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.1.9 #newsfeed.2022-01-03.1.1.1.8"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.9"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.1.3 #newsfeed.2022-01-03.1.1.1.10"/>
+              <link ana="ud-syn:cop" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.11"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.12"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.13"/>
+              <link ana="ud-syn:root" target="#newsfeed.2022-01-03.1.1.1 #newsfeed.2022-01-03.1.1.1.14"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.15"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.1.1.17 #newsfeed.2022-01-03.1.1.1.16"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.17"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.18"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.19"/>
+              <link ana="ud-syn:parataxis" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.20"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.1.23 #newsfeed.2022-01-03.1.1.1.21"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.1.1.23 #newsfeed.2022-01-03.1.1.1.22"/>
+              <link ana="ud-syn:advcl" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.23"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.1.23 #newsfeed.2022-01-03.1.1.1.24"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.1.1.20 #newsfeed.2022-01-03.1.1.1.25"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.1.1.27 #newsfeed.2022-01-03.1.1.1.26"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.1.1.25 #newsfeed.2022-01-03.1.1.1.27"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.1.29 #newsfeed.2022-01-03.1.1.1.28"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.1.1.27 #newsfeed.2022-01-03.1.1.1.29"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.1.14 #newsfeed.2022-01-03.1.1.1.30"/>
+            </linkGrp>
+          </s>
+          <s xml:id="newsfeed.2022-01-03.1.1.2">
+            <w lemma="arheolog" ana="mte:Ncmpn" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.1">Arheologi</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.2.2">so</w>
+            <w lemma="v" ana="mte:Sl" msd="UPosTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-03.1.1.2.3">v</w>
+            <w lemma="mesto" ana="mte:Ncnsl" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.4">mestu</w>
+            <seg subtype="loc" type="name">
+              <w lemma="javen" ana="mte:Agpfsg" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.5">Javne</w>
+            </seg>
+            <w lemma="namreč" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.1.2.6">namreč</w>
+            <w lemma="odkriti" ana="mte:Vmep-pm" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.2.7">odkrili</w>
+            <w lemma="ostanek" ana="mte:Ncmpa" msd="UPosTag=NOUN|Case=Acc|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.8">ostanke</w>
+            <w lemma="1500" ana="mte:Mdc" msd="UPosTag=NUM|NumForm=Digit|NumType=Card" xml:id="newsfeed.2022-01-03.1.1.2.9">1500</w>
+            <w lemma="leto" ana="mte:Ncnpg" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.10">let</w>
+            <w lemma="star" ana="mte:Agpfsg" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.11">stare</w>
+            <w lemma="vinarna" ana="mte:Ncfsg" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.12" join="right">vinarne</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.2.13">,</pc>
+            <w lemma="ki" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.1.2.14">ki</w>
+            <w lemma="biti" ana="mte:Va-r3s-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.2.15">je</w>
+            <w lemma="biti" ana="mte:Va-p-sf" msd="UPosTag=AUX|Gender=Fem|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.2.16">bila</w>
+            <w lemma="velik" ana="mte:Agpfsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.17">velika</w>
+            <w lemma="kot" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.1.2.18">kot</w>
+            <w lemma="nogometen" ana="mte:Agpnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.19">nogometno</w>
+            <w lemma="igrišče" ana="mte:Ncnsn" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.1.2.20" join="right">igrišče</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.2.21">,</pc>
+            <w lemma="sestavljati" ana="mte:Vmpp-pm" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.2.22">sestavljali</w>
+            <w lemma="pa" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.1.2.23">pa</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.2.24">so</w>
+            <w lemma="on" ana="mte:Pp3fsa--y" msd="UPosTag=PRON|Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short" xml:id="newsfeed.2022-01-03.1.1.2.25">jo</w>
+            <w lemma="kompleksen" ana="mte:Agpmpn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.26">kompleksni</w>
+            <w lemma="obrat" ana="mte:Ncmpn" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.27">obrati</w>
+            <w lemma="in" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.1.2.28">in</w>
+            <w lemma="kamnit" ana="mte:Agpfpn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.29">kamnite</w>
+            <w lemma="struktura" ana="mte:Ncfpn" msd="UPosTag=NOUN|Case=Nom|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-03.1.1.2.30" join="right">strukture</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.2.31">,</pc>
+            <w lemma="ki" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.1.2.32">ki</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.1.2.33">so</w>
+            <w lemma="še" ana="mte:Q" msd="UPosTag=PART" xml:id="newsfeed.2022-01-03.1.1.2.34">še</w>
+            <w lemma="danes" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.1.2.35">danes</w>
+            <w lemma="odlično" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.1.2.36">odlično</w>
+            <w lemma="ohranjen" ana="mte:Appmpn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.1.2.37" join="right">ohranjeni</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.1.2.38">.</pc>
+            <linkGrp corresp="#newsfeed.2022-01-03.1.1.2" targFunc="head argument" type="UD-SYN">
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.1"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.2"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.1.2.4 #newsfeed.2022-01-03.1.1.2.3"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.4"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.2.4 #newsfeed.2022-01-03.1.1.2.5"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.6"/>
+              <link ana="ud-syn:root" target="#newsfeed.2022-01-03.1.1.2 #newsfeed.2022-01-03.1.1.2.7"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.8"/>
+              <link ana="ud-syn:nummod" target="#newsfeed.2022-01-03.1.1.2.10 #newsfeed.2022-01-03.1.1.2.9"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.1.2.8 #newsfeed.2022-01-03.1.1.2.10"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.2.12 #newsfeed.2022-01-03.1.1.2.11"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.1.2.10 #newsfeed.2022-01-03.1.1.2.12"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.13"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.14"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.15"/>
+              <link ana="ud-syn:cop" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.16"/>
+              <link ana="ud-syn:acl" target="#newsfeed.2022-01-03.1.1.2.12 #newsfeed.2022-01-03.1.1.2.17"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.1.2.20 #newsfeed.2022-01-03.1.1.2.18"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.2.20 #newsfeed.2022-01-03.1.1.2.19"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.20"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.2.17 #newsfeed.2022-01-03.1.1.2.21"/>
+              <link ana="ud-syn:parataxis" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.22"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.2.22 #newsfeed.2022-01-03.1.1.2.23"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.1.2.22 #newsfeed.2022-01-03.1.1.2.24"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.1.2.22 #newsfeed.2022-01-03.1.1.2.25"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.2.27 #newsfeed.2022-01-03.1.1.2.26"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.1.2.22 #newsfeed.2022-01-03.1.1.2.27"/>
+              <link ana="ud-syn:cc" target="#newsfeed.2022-01-03.1.1.2.30 #newsfeed.2022-01-03.1.1.2.28"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.1.2.30 #newsfeed.2022-01-03.1.1.2.29"/>
+              <link ana="ud-syn:conj" target="#newsfeed.2022-01-03.1.1.2.27 #newsfeed.2022-01-03.1.1.2.30"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.31"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.32"/>
+              <link ana="ud-syn:cop" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.33"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.34"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.35"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.1.2.37 #newsfeed.2022-01-03.1.1.2.36"/>
+              <link ana="ud-syn:acl" target="#newsfeed.2022-01-03.1.1.2.30 #newsfeed.2022-01-03.1.1.2.37"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.1.2.7 #newsfeed.2022-01-03.1.1.2.38"/>
+            </linkGrp>
+          </s>
+        </p>
+        <p xml:id="newsfeed.2022-01-03.1.2">
+          <s xml:id="newsfeed.2022-01-03.1.2.1">
+            <w lemma="in" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.2.1.1">In</w>
+            <w lemma="ta" ana="mte:Pd-nsn" msd="UPosTag=DET|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem" xml:id="newsfeed.2022-01-03.1.2.1.2">to</w>
+            <w lemma="tako" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.1.3">tako</w>
+            <w lemma="zelo" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.1.4">zelo</w>
+            <w lemma="dober" ana="mte:Agpnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.5" join="right">dobro</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.1.6">,</pc>
+            <w lemma="da" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.2.1.7">da</w>
+            <w lemma="se" ana="mte:Px---d--y" msd="UPosTag=PRON|Case=Dat|PronType=Prs|Reflex=Yes|Variant=Short" xml:id="newsfeed.2022-01-03.1.2.1.8">si</w>
+            <w lemma="strokovnjak" ana="mte:Ncmpn" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.2.1.9">strokovnjaki</w>
+            <w lemma="zlahka" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.1.10">zlahka</w>
+            <w lemma="predstavljati" ana="mte:Vmpr3p" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.1.11">predstavljajo</w>
+            <w lemma="celoten" ana="mte:Agpmsan" msd="UPosTag=ADJ|Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.12">celoten</w>
+            <w lemma="postopek" ana="mte:Ncmsan" msd="UPosTag=NOUN|Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.13">postopek</w>
+            <w lemma="pridelava" ana="mte:Ncfsg" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.14">pridelave</w>
+            <w lemma="vino" ana="mte:Ncnsg" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.15" join="right">vina</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.1.16">,</pc>
+            <w lemma="ki" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.2.1.17">ki</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.1.18">so</w>
+            <w lemma="on" ana="mte:Pp3msa--y" msd="UPosTag=PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" xml:id="newsfeed.2022-01-03.1.2.1.19">ga</w>
+            <w lemma="včasih" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.1.20">včasih</w>
+            <w lemma="uživati" ana="mte:Vmpp-pm" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.1.21">uživali</w>
+            <w lemma="celo" ana="mte:Q" msd="UPosTag=PART" xml:id="newsfeed.2022-01-03.1.2.1.22">celo</w>
+            <w lemma="namesto" ana="mte:Sg" msd="UPosTag=ADP|Case=Gen" xml:id="newsfeed.2022-01-03.1.2.1.23">namesto</w>
+            <w lemma="voda" ana="mte:Ncfsg" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.24" join="right">vode</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.1.25">,</pc>
+            <w lemma="ko" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.2.1.26">ko</w>
+            <w lemma="ta" ana="mte:Pd-fsn" msd="UPosTag=DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem" xml:id="newsfeed.2022-01-03.1.2.1.27">ta</w>
+            <w lemma="biti" ana="mte:Va-r3s-y" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.1.28">ni</w>
+            <w lemma="biti" ana="mte:Va-p-sf" msd="UPosTag=AUX|Gender=Fem|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.1.29">bila</w>
+            <w lemma="piten" ana="mte:Agpfsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.1.30" join="right">pitna</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.1.31">.</pc>
+            <linkGrp corresp="#newsfeed.2022-01-03.1.2.1" targFunc="head argument" type="UD-SYN">
+              <link ana="ud-syn:cc" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.1"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.2"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.3"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.4"/>
+              <link ana="ud-syn:root" target="#newsfeed.2022-01-03.1.2.1 #newsfeed.2022-01-03.1.2.1.5"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.6"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.7"/>
+              <link ana="ud-syn:expl" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.8"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.9"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.10"/>
+              <link ana="ud-syn:advcl" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.11"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.1.13 #newsfeed.2022-01-03.1.2.1.12"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.2.1.11 #newsfeed.2022-01-03.1.2.1.13"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.2.1.13 #newsfeed.2022-01-03.1.2.1.14"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.2.1.14 #newsfeed.2022-01-03.1.2.1.15"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.16"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.17"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.18"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.19"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.20"/>
+              <link ana="ud-syn:acl" target="#newsfeed.2022-01-03.1.2.1.14 #newsfeed.2022-01-03.1.2.1.21"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.22"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.2.1.24 #newsfeed.2022-01-03.1.2.1.23"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.24"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.1.30 #newsfeed.2022-01-03.1.2.1.25"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.2.1.30 #newsfeed.2022-01-03.1.2.1.26"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.2.1.30 #newsfeed.2022-01-03.1.2.1.27"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.2.1.30 #newsfeed.2022-01-03.1.2.1.28"/>
+              <link ana="ud-syn:cop" target="#newsfeed.2022-01-03.1.2.1.30 #newsfeed.2022-01-03.1.2.1.29"/>
+              <link ana="ud-syn:advcl" target="#newsfeed.2022-01-03.1.2.1.21 #newsfeed.2022-01-03.1.2.1.30"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.1.5 #newsfeed.2022-01-03.1.2.1.31"/>
+            </linkGrp>
+          </s>
+          <s xml:id="newsfeed.2022-01-03.1.2.2">
+            <w lemma="v" ana="mte:Sl" msd="UPosTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-03.1.2.2.1">V</w>
+            <w lemma="vinarna" ana="mte:Ncfsl" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.2">vinarni</w>
+            <w lemma="iz" ana="mte:Sg" msd="UPosTag=ADP|Case=Gen" xml:id="newsfeed.2022-01-03.1.2.2.3">iz</w>
+            <w lemma="bizantinski" ana="mte:Agpnsg" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.4">bizantinskega</w>
+            <w lemma="obdobje" ana="mte:Ncnsg" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.5">obdobja</w>
+            <w lemma="biti" ana="mte:Va-r3s-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.2.6">je</w>
+            <w lemma="nastajati" ana="mte:Vmpp-sn" msd="UPosTag=VERB|Aspect=Imp|Gender=Neut|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.2.7">nastajalo</w>
+            <w lemma="takrat" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.2.8">takrat</w>
+            <w lemma="zelo" ana="mte:Rgp" msd="UPosTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-03.1.2.2.9">zelo</w>
+            <w lemma="cenjen" ana="mte:Appnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.2.10">cenjeno</w>
+            <w lemma="bel" ana="mte:Agpnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.11">belo</w>
+            <w lemma="vino" ana="mte:Ncnsn" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.12">vino</w>
+            <seg subtype="loc" type="name">
+              <w lemma="Gaza" ana="mte:Npfsn" msd="UPosTag=PROPN|Case=Nom|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.13" join="right">Gaza</w>
+            </seg>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.2.14">,</pc>
+            <w lemma="ki" ana="mte:Cs" msd="UPosTag=SCONJ" xml:id="newsfeed.2022-01-03.1.2.2.15">ki</w>
+            <w lemma="biti" ana="mte:Va-r3p-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.2.16">so</w>
+            <w lemma="on" ana="mte:Pp3msa--y" msd="UPosTag=PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" xml:id="newsfeed.2022-01-03.1.2.2.17">ga</w>
+            <w lemma="izvažati" ana="mte:Vmpp-pm" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.2.18">izvažali</w>
+            <w lemma="v" ana="mte:Sa" msd="UPosTag=ADP|Case=Acc" xml:id="newsfeed.2022-01-03.1.2.2.19">v</w>
+            <w lemma="ves" ana="mte:Pg-fpa" msd="UPosTag=DET|Case=Acc|Gender=Fem|Number=Plur|PronType=Tot" xml:id="newsfeed.2022-01-03.1.2.2.20">vse</w>
+            <w lemma="sredozemski" ana="mte:Agpfpa" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-03.1.2.2.21">sredozemske</w>
+            <w lemma="dežela" ana="mte:Ncfpa" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-03.1.2.2.22" join="right">dežele</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.2.23">,</pc>
+            <w lemma="predvsem" ana="mte:Q" msd="UPosTag=PART" xml:id="newsfeed.2022-01-03.1.2.2.24">predvsem</w>
+            <w lemma="v" ana="mte:Sa" msd="UPosTag=ADP|Case=Acc" xml:id="newsfeed.2022-01-03.1.2.2.25">v</w>
+            <w lemma="današnji" ana="mte:Agpmpa" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-03.1.2.2.26">današnje</w>
+            <seg subtype="loc" type="name">
+              <w lemma="Egipt" ana="mte:Npmsan" msd="UPosTag=PROPN|Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.27" join="right">Egipt</w>
+            </seg>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.2.28">,</pc>
+            <seg subtype="loc" type="name">
+              <w lemma="Turčija" ana="mte:Npfsa" msd="UPosTag=PROPN|Case=Acc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.29">Turčijo</w>
+            </seg>
+            <w lemma="in" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.2.2.30">in</w>
+            <seg subtype="loc" type="name">
+              <w lemma="Italija" ana="mte:Npfsa" msd="UPosTag=PROPN|Case=Acc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.31" join="right">Italijo</w>
+            </seg>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.2.32">,</pc>
+            <w lemma="največ" ana="mte:Rgs" msd="UPosTag=DET|PronType=Ind" xml:id="newsfeed.2022-01-03.1.2.2.33">največ</w>
+            <w lemma="pa" ana="mte:Cc" msd="UPosTag=CCONJ" xml:id="newsfeed.2022-01-03.1.2.2.34">pa</w>
+            <w lemma="on" ana="mte:Pp3msa--y" msd="UPosTag=PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" xml:id="newsfeed.2022-01-03.1.2.2.35">ga</w>
+            <w lemma="biti" ana="mte:Va-r3s-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-03.1.2.2.36">je</w>
+            <w lemma="zaužiti" ana="mte:Vmep-sn" msd="UPosTag=VERB|Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-03.1.2.2.37">zaužilo</w>
+            <w lemma="domač" ana="mte:Agpnsn" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.38">domače</w>
+            <w lemma="prebivalstvo" ana="mte:Ncnsn" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Sing" xml:id="newsfeed.2022-01-03.1.2.2.39" join="right">prebivalstvo</w>
+            <pc ana="mte:Z" msd="UPosTag=PUNCT" xml:id="newsfeed.2022-01-03.1.2.2.40">.</pc>
+            <linkGrp corresp="#newsfeed.2022-01-03.1.2.2" targFunc="head argument" type="UD-SYN">
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.2.2.2 #newsfeed.2022-01-03.1.2.2.1"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.2.2.7 #newsfeed.2022-01-03.1.2.2.2"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.2.2.5 #newsfeed.2022-01-03.1.2.2.3"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.5 #newsfeed.2022-01-03.1.2.2.4"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.2.2.2 #newsfeed.2022-01-03.1.2.2.5"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.2.2.7 #newsfeed.2022-01-03.1.2.2.6"/>
+              <link ana="ud-syn:root" target="#newsfeed.2022-01-03.1.2.2 #newsfeed.2022-01-03.1.2.2.7"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.2.10 #newsfeed.2022-01-03.1.2.2.8"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.2.10 #newsfeed.2022-01-03.1.2.2.9"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.12 #newsfeed.2022-01-03.1.2.2.10"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.12 #newsfeed.2022-01-03.1.2.2.11"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.2.2.7 #newsfeed.2022-01-03.1.2.2.12"/>
+              <link ana="ud-syn:nmod" target="#newsfeed.2022-01-03.1.2.2.12 #newsfeed.2022-01-03.1.2.2.13"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.14"/>
+              <link ana="ud-syn:mark" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.15"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.16"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.17"/>
+              <link ana="ud-syn:acl" target="#newsfeed.2022-01-03.1.2.2.12 #newsfeed.2022-01-03.1.2.2.18"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.2.2.22 #newsfeed.2022-01-03.1.2.2.19"/>
+              <link ana="ud-syn:det" target="#newsfeed.2022-01-03.1.2.2.22 #newsfeed.2022-01-03.1.2.2.20"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.22 #newsfeed.2022-01-03.1.2.2.21"/>
+              <link ana="ud-syn:obl" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.22"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.23"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.24"/>
+              <link ana="ud-syn:case" target="#newsfeed.2022-01-03.1.2.2.27 #newsfeed.2022-01-03.1.2.2.25"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.27 #newsfeed.2022-01-03.1.2.2.26"/>
+              <link ana="ud-syn:conj" target="#newsfeed.2022-01-03.1.2.2.22 #newsfeed.2022-01-03.1.2.2.27"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.2.29 #newsfeed.2022-01-03.1.2.2.28"/>
+              <link ana="ud-syn:conj" target="#newsfeed.2022-01-03.1.2.2.27 #newsfeed.2022-01-03.1.2.2.29"/>
+              <link ana="ud-syn:cc" target="#newsfeed.2022-01-03.1.2.2.31 #newsfeed.2022-01-03.1.2.2.30"/>
+              <link ana="ud-syn:conj" target="#newsfeed.2022-01-03.1.2.2.27 #newsfeed.2022-01-03.1.2.2.31"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.2.18 #newsfeed.2022-01-03.1.2.2.32"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.2.37 #newsfeed.2022-01-03.1.2.2.33"/>
+              <link ana="ud-syn:advmod" target="#newsfeed.2022-01-03.1.2.2.37 #newsfeed.2022-01-03.1.2.2.34"/>
+              <link ana="ud-syn:obj" target="#newsfeed.2022-01-03.1.2.2.37 #newsfeed.2022-01-03.1.2.2.35"/>
+              <link ana="ud-syn:aux" target="#newsfeed.2022-01-03.1.2.2.37 #newsfeed.2022-01-03.1.2.2.36"/>
+              <link ana="ud-syn:parataxis" target="#newsfeed.2022-01-03.1.2.2.7 #newsfeed.2022-01-03.1.2.2.37"/>
+              <link ana="ud-syn:amod" target="#newsfeed.2022-01-03.1.2.2.39 #newsfeed.2022-01-03.1.2.2.38"/>
+              <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-03.1.2.2.37 #newsfeed.2022-01-03.1.2.2.39"/>
+              <link ana="ud-syn:punct" target="#newsfeed.2022-01-03.1.2.2.7 #newsfeed.2022-01-03.1.2.2.40"/>
+            </linkGrp>
+          </s>
+        </p>
+      </body>
+    </text>
+  </TEI>
+</teiCorpus>

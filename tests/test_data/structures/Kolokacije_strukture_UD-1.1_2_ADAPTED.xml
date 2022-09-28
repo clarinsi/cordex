@@ -1,0 +1,93 @@
+﻿<!-- Ta verzija datoteke (v1) vsebuje opis 20 struktur, ki smo jih dorekli na sestanku 21. 10. 2019
+in so zbrane v datoteki UD-kolokacije_v3.xlsx.
+
+Kot representation form je zaenkrat povsod navedena lema.
+
+-->
+<syntactic_structures>
+  <!-- Section 01: collocations with UD relation 'advmod' -->
+  <syntactic_structure type="collocation" id="1">
+    <!--
+  tree: VERB -advmod-> anything
+  example: neznosno boleti
+  corresponds to LBS-NSS structure: 19
+     -->
+    <system type="UD">
+      <components order="fixed">
+        <component cid="1" type="core" name="verbal_head" />
+        <component cid="2" type="core" name="adverbial_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="advmod"/>
+        <dependency from="#" to="1" label="#"/> <!-- [KD] root formaliziram, ker tako predvideva sistem, še vedno pa se mi zdi odveč -->
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction_or>
+            <restriction type="morphology">
+              <feature POS="VERB"/>
+              <feature Gender="Fem"/>
+            </restriction>
+            <restriction type="lexis">
+              <feature lemma="biti"/>
+            </restriction>
+          </restriction_or>
+          <representation>
+            <feature rendition="word_form"/>
+<!--            <feature selection="msd" Person="third" VForm="present"/>-->
+<!--            <feature selection="agreement" msd="number" head_cid="2"/>-->
+
+<!--            <feature rendition="word_form"/>-->
+<!--&lt;!&ndash;            <feature selection="msd" VerbForm="Inf"/>&ndash;&gt;-->
+<!--            <feature selection="agreement" msd="number" head_cid="1"/>-->
+<!--&lt;!&ndash;            <feature rendition="lemma"/>&lt;!&ndash;           <feature rendition="word_form"/>&ndash;&gt;&ndash;&gt;-->
+          </representation>
+        </component>
+        <component cid="2">
+            <representation>
+              <feature rendition="lemma"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+  <syntactic_structure type="collocation" id="4">
+    <!--
+  tree: anything -amod-> anything
+  example: bela zastava
+  corresponds to LBS-NSS structure: 1 (bela zastava), delno tudi 4 ([biti] modre barve)
+     -->
+    <system type="UD">
+      <components order="fixed">
+        <component cid="1" type="core" name="nominal_head" />
+        <component cid="2" type="core" name="adjectival_modifier" />
+      </components>
+      <dependencies>
+        <dependency from="1" to="2" label="amod"/>
+        <dependency from="#" to="1" label="#"/>
+      </dependencies>
+      <definition>
+        <component cid="1">
+          <restriction type="morphology">
+              <feature POS="NOUN"/>
+          </restriction>
+          <representation>
+            <feature rendition="word_form"/>
+<!--            <feature selection="msd" Person="third" VForm="present"/>-->
+<!--            <feature selection="agreement" msd="number" head_cid="2"/>-->
+          </representation>
+        </component>
+        <component cid="2">
+          <restriction type="morphology">
+              <feature POS="ADJ"/>
+          </restriction>
+            <representation>
+              <feature rendition="word_form"/>
+<!--            <feature selection="msd" Person="third" VForm="present"/>-->
+              <feature selection="agreement" msd="number" head_cid="1"/>
+            </representation>
+        </component>
+			</definition>
+    </system>
+  </syntactic_structure>
+</syntactic_structures>

@@ -1,0 +1,258 @@
+# newdoc id = ssj562
+# newpar id = ssj562.2919
+# sent_id = ssj562.2919.10333
+# text = Deloma se strinjam z drugim delom članka, ko opisuje finančne učinke reforme.
+1	Deloma	deloma	ADV	Rgp	Degree=Pos	3	AdvM	_	NER=O
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	3	PPart	_	NER=O
+3	strinjam	strinjati	VERB	Vmpr1s	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+4	z	z	ADP	Si	Case=Ins	6	Atr	_	NER=O
+5	drugim	drug	ADJ	Mlpnsi	Case=Ins|Gender=Neut|Number=Sing	6	Atr	_	NER=O
+6	delom	del	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	3	Obj	_	NER=O
+7	članka	članek	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	6	Atr	_	NER=O|SpaceAfter=No
+8	,	,	PUNCT	Z	_	0	Root	_	NER=O
+9	ko	ko	SCONJ	Cs	_	10	Conj	_	NER=O
+10	opisuje	opisovati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	AdvO	_	NER=O
+11	finančne	finančen	ADJ	Agpmpa	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	12	Atr	_	NER=O
+12	učinke	učinek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	10	Obj	_	NER=O
+13	reforme	reforma	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	12	Atr	_	NER=O|SpaceAfter=No
+14	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2919.10334
+# text = Namreč po zdravi "kmečki pameti" in lastnih izkušnjah še nobena reforma ni prinesla nečesa več, kvečjemu nekaj manj, predvsem pa na drugačen način, po možnosti boljši.
+1	Namreč	namreč	CCONJ	Cc	_	0	Root	_	NER=O
+2	po	po	ADP	Sl	Case=Loc	6	Atr	_	NER=O
+3	zdravi	zdrav	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	6	Atr	_	NER=O
+4	"	"	PUNCT	Z	_	0	Root	_	NER=O|SpaceAfter=No
+5	kmečki	kmečki	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	6	Atr	_	NER=O
+6	pameti	pamet	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	15	AdvO	_	NER=O|SpaceAfter=No
+7	"	"	PUNCT	Z	_	0	Root	_	NER=O
+8	in	in	CCONJ	Cc	_	10	Conj	_	NER=O
+9	lastnih	lasten	ADJ	Agpfpl	Case=Loc|Degree=Pos|Gender=Fem|Number=Plur	10	Atr	_	NER=O
+10	izkušnjah	izkušnja	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	6	Coord	_	NER=O
+11	še	še	PART	Q	_	0	Root	_	NER=O
+12	nobena	noben	DET	Pz-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Neg	13	Atr	_	NER=O
+13	reforma	reforma	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	15	Sb	_	NER=O
+14	ni	biti	AUX	Va-r3s-y	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	15	PPart	_	NER=O
+15	prinesla	prinesti	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	0	Root	_	NER=O
+16	nečesa	nekaj	PRON	Pi-nsg	Case=Gen|Gender=Neut|Number=Sing|PronType=Ind	15	Obj	_	NER=O
+17	več	več	PART	Q	_	0	Root	_	NER=O|SpaceAfter=No
+18	,	,	PUNCT	Z	_	0	Root	_	NER=O
+19	kvečjemu	kvečjemu	PART	Q	_	0	Root	_	NER=O
+20	nekaj	nekaj	DET	Rgp	PronType=Ind	21	Atr	_	NER=O
+21	manj	manj	DET	Rgc	PronType=Ind	0	Root	_	NER=O|SpaceAfter=No
+22	,	,	PUNCT	Z	_	0	Root	_	NER=O
+23	predvsem	predvsem	PART	Q	_	0	Root	_	NER=O
+24	pa	pa	CCONJ	Cc	_	0	Root	_	NER=O
+25	na	na	ADP	Sa	Case=Acc	27	Atr	_	NER=O
+26	drugačen	drugačen	ADJ	Agpmsan	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	27	Atr	_	NER=O
+27	način	način	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	0	Root	_	NER=O|SpaceAfter=No
+28	,	,	PUNCT	Z	_	0	Root	_	NER=O
+29	po	po	ADP	Sl	Case=Loc	30	Atr	_	NER=O
+30	možnosti	možnost	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	0	Root	_	NER=O
+31	boljši	dober	ADJ	Agcmsny	Case=Nom|Definite=Def|Degree=Cmp|Gender=Masc|Number=Sing	0	Root	_	NER=O|SpaceAfter=No
+32	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2919.10335
+# text = Reforme se ne delajo, ko imamo vsega dovolj, ampak, ko imamo nečesa premalo.
+1	Reforme	reforma	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	4	Sb	_	NER=O
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	4	PPart	_	NER=O
+3	ne	ne	PART	Q	Polarity=Neg	4	PPart	_	NER=O
+4	delajo	delati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O|SpaceAfter=No
+5	,	,	PUNCT	Z	_	0	Root	_	NER=O
+6	ko	ko	SCONJ	Cs	_	7	Conj	_	NER=O
+7	imamo	imeti	VERB	Vmpr1p-n	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	AdvO	_	NER=O
+8	vsega	ves	DET	Pg-nsg	Case=Gen|Gender=Neut|Number=Sing|PronType=Tot	7	Obj	_	NER=O
+9	dovolj	dovolj	DET	Rgp	PronType=Ind	7	AdvM	_	NER=O|SpaceAfter=No
+10	,	,	PUNCT	Z	_	0	Root	_	NER=O
+11	ampak	ampak	CCONJ	Cc	_	0	Root	_	NER=O|SpaceAfter=No
+12	,	,	PUNCT	Z	_	0	Root	_	NER=O
+13	ko	ko	SCONJ	Cs	_	14	Conj	_	NER=O
+14	imamo	imeti	VERB	Vmpr1p-n	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+15	nečesa	nekaj	PRON	Pi-nsg	Case=Gen|Gender=Neut|Number=Sing|PronType=Ind	14	Obj	_	NER=O
+16	premalo	premalo	ADV	Rgp	Degree=Pos	14	AdvM	_	NER=O|SpaceAfter=No
+17	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2919.10336
+# text = Ob tem sem se namenoma izognil besedi denarja, saj lahko gre tudi za druge stvari.
+1	Ob	ob	ADP	Sl	Case=Loc	2	Atr	_	NER=O
+2	tem	ta	DET	Pd-nsl	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	6	AdvO	_	NER=O
+3	sem	biti	AUX	Va-r1s-n	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	PPart	_	NER=O
+4	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	6	PPart	_	NER=O
+5	namenoma	namenoma	ADV	Rgp	Degree=Pos	6	AdvM	_	NER=O
+6	izognil	izogniti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	Root	_	NER=O
+7	besedi	beseda	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	6	Obj	_	NER=O
+8	denarja	denar	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	Atr	_	NER=O|SpaceAfter=No
+9	,	,	PUNCT	Z	_	0	Root	_	NER=O
+10	saj	saj	CCONJ	Cc	_	12	Conj	_	NER=O
+11	lahko	lahko	ADV	Rgp	Degree=Pos	12	PPart	_	NER=O
+12	gre	iti	VERB	Vmbr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+13	tudi	tudi	PART	Q	_	0	Root	_	NER=O
+14	za	za	ADP	Sa	Case=Acc	16	Atr	_	NER=O
+15	druge	drug	ADJ	Mlpfpa	Case=Acc|Gender=Fem|Number=Plur	16	Atr	_	NER=O
+16	stvari	stvar	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	12	Obj	_	NER=O|SpaceAfter=No
+17	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# newpar id = ssj562.2920
+# sent_id = ssj562.2920.10337
+# text = Sedanje stanje bi strnil takole: Odločilen element zdravljenja bolnika je izbrani zdravnik na primarnem nivoju.
+1	Sedanje	sedanji	ADJ	Agpnsa	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	2	Atr	_	NER=O
+2	stanje	stanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	4	Obj	_	NER=O
+3	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	4	PPart	_	NER=O
+4	strnil	strniti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	Root	_	NER=O
+5	takole	takole	ADV	Rgp	Degree=Pos	4	AdvM	_	NER=O|SpaceAfter=No
+6	:	:	PUNCT	Z	_	0	Root	_	NER=O
+7	Odločilen	odločilen	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	8	Atr	_	NER=O
+8	element	element	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	11	Sb	_	NER=O
+9	zdravljenja	zdravljenje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	8	Atr	_	NER=O
+10	bolnika	bolnik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	9	Atr	_	NER=O
+11	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+12	izbrani	izbran	ADJ	Appmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part	13	Atr	_	NER=O
+13	zdravnik	zdravnik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	11	Atr	_	NER=O
+14	na	na	ADP	Sl	Case=Loc	16	Atr	_	NER=O
+15	primarnem	primaren	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	16	Atr	_	NER=O
+16	nivoju	nivo	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	13	Atr	_	NER=O|SpaceAfter=No
+17	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2920.10338
+# text = Ta v primeru potrebe po svoji presoji napoti bolnika k specialistu na sekundarnem nivoju z napotnico, kjer je izražena želja o vrsti pregleda, trajanju in vrsti pooblastil, ki jih prenese nanj.
+1	Ta	ta	DET	Pd-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	8	Sb	_	NER=O
+2	v	v	ADP	Sl	Case=Loc	3	Atr	_	NER=O
+3	primeru	primer	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	8	AdvO	_	NER=O
+4	potrebe	potreba	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	3	Atr	_	NER=O
+5	po	po	ADP	Sl	Case=Loc	7	Atr	_	NER=O
+6	svoji	svoj	DET	Px-fsl	Case=Loc|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes	7	Atr	_	NER=O
+7	presoji	presoja	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	8	AdvO	_	NER=O
+8	napoti	napotiti	VERB	Vmer3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+9	bolnika	bolnik	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	8	Obj	_	NER=O
+10	k	k	ADP	Sd	Case=Dat	11	Atr	_	NER=O
+11	specialistu	specialist	NOUN	Ncmsd	Case=Dat|Gender=Masc|Number=Sing	8	AdvO	_	NER=O
+12	na	na	ADP	Sl	Case=Loc	14	Atr	_	NER=O
+13	sekundarnem	sekundaren	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	14	Atr	_	NER=O
+14	nivoju	nivo	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	11	Atr	_	NER=O
+15	z	z	ADP	Si	Case=Ins	16	Atr	_	NER=O
+16	napotnico	napotnica	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	8	AdvM	_	NER=O|SpaceAfter=No
+17	,	,	PUNCT	Z	_	0	Root	_	NER=O
+18	kjer	kjer	SCONJ	Cs	_	19	Conj	_	NER=O
+19	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	16	Atr	_	NER=O
+20	izražena	izražen	ADJ	Appfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	19	Atr	_	NER=O
+21	želja	želja	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	19	Sb	_	NER=O
+22	o	o	ADP	Sl	Case=Loc	23	Atr	_	NER=O
+23	vrsti	vrsta	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	21	Atr	_	NER=O
+24	pregleda	pregled	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	23	Atr	_	NER=O|SpaceAfter=No
+25	,	,	PUNCT	Z	_	26	Conj	_	NER=O
+26	trajanju	trajanje	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	23	Coord	_	NER=O
+27	in	in	CCONJ	Cc	_	28	Conj	_	NER=O
+28	vrsti	vrsta	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	23	Coord	_	NER=O
+29	pooblastil	pooblastilo	NOUN	Ncnpg	Case=Gen|Gender=Neut|Number=Plur	28	Atr	_	NER=O|SpaceAfter=No
+30	,	,	PUNCT	Z	_	0	Root	_	NER=O
+31	ki	ki	SCONJ	Cs	_	33	Conj	_	NER=O
+32	jih	on	PRON	Pp3mpa--y	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Variant=Short	33	Obj	_	NER=O
+33	prenese	prenesti	VERB	Vmer3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	Atr	_	NER=O
+34	nanj	name	PRON	Pp3msa--b	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Bound	33	AdvO	_	NER=O|SpaceAfter=No
+35	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# newpar id = ssj562.2921
+# sent_id = ssj562.2921.10339
+# text = Na nedavnem mednarodnem turnirju mladih judoistov za pokal Ptuja je sodelovalo 285 tekmovalcev in tekmovalk iz 27 klubov Madžarske, Hrvaške in Slovenije.
+1	Na	na	ADP	Sl	Case=Loc	4	Atr	_	NER=O
+2	nedavnem	nedaven	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	4	Atr	_	NER=O
+3	mednarodnem	mednaroden	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	4	Atr	_	NER=O
+4	turnirju	turnir	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	11	AdvO	_	NER=O
+5	mladih	mlad	ADJ	Agpmpg	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	6	Atr	_	NER=O
+6	judoistov	judoist	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	4	Atr	_	NER=O
+7	za	za	ADP	Sa	Case=Acc	8	Atr	_	NER=O
+8	pokal	pokal	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	Atr	_	NER=O
+9	Ptuja	Ptuj	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	8	Atr	_	NER=B-LOC
+10	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	11	PPart	_	NER=O
+11	sodelovalo	sodelovati	VERB	Vmpp-sn	Aspect=Imp|Gender=Neut|Number=Sing|VerbForm=Part	0	Root	_	NER=O
+12	285	285	NUM	Mdc	NumForm=Digit|NumType=Card	13	Atr	_	NER=O
+13	tekmovalcev	tekmovalec	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	11	Sb	_	NER=O
+14	in	in	CCONJ	Cc	_	15	Conj	_	NER=O
+15	tekmovalk	tekmovalka	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	13	Coord	_	NER=O
+16	iz	iz	ADP	Sg	Case=Gen	18	Atr	_	NER=O
+17	27	27	NUM	Mdc	NumForm=Digit|NumType=Card	18	Atr	_	NER=O
+18	klubov	klub	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	15	Atr	_	NER=O
+19	Madžarske	Madžarska	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	18	Atr	_	NER=B-LOC|SpaceAfter=No
+20	,	,	PUNCT	Z	_	21	Conj	_	NER=O
+21	Hrvaške	Hrvaška	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	19	Coord	_	NER=B-LOC
+22	in	in	CCONJ	Cc	_	23	Conj	_	NER=O
+23	Slovenije	Slovenija	PROPN	Npfsg	Case=Gen|Gender=Fem|Number=Sing	19	Coord	_	NER=B-LOC|SpaceAfter=No
+24	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2921.10340
+# text = Pomurci so osvojili kopico visokih mest, a se nobenemu ni uspelo povzpeti na najvišjo stopničko.
+1	Pomurci	Pomurec	PROPN	Npmpn	Case=Nom|Gender=Masc|Number=Plur	3	Sb	_	NER=O
+2	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	3	PPart	_	NER=O
+3	osvojili	osvojiti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	Root	_	NER=O
+4	kopico	kopica	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	3	Obj	_	NER=O
+5	visokih	visok	ADJ	Agpnpg	Case=Gen|Degree=Pos|Gender=Neut|Number=Plur	6	Atr	_	NER=O
+6	mest	mesto	NOUN	Ncnpg	Case=Gen|Gender=Neut|Number=Plur	4	Atr	_	NER=O|SpaceAfter=No
+7	,	,	PUNCT	Z	_	0	Root	_	NER=O
+8	a	a	CCONJ	Cc	_	12	Conj	_	NER=O
+9	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	13	PPart	_	NER=O
+10	nobenemu	noben	DET	Pz-msd	Case=Dat|Gender=Masc|Number=Sing|PronType=Neg	13	Obj	_	NER=O
+11	ni	biti	AUX	Va-r3s-y	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	12	PPart	_	NER=O
+12	uspelo	uspeti	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	0	Root	_	NER=O
+13	povzpeti	povzpeti	VERB	Vmen	Aspect=Perf|VerbForm=Inf	12	Atr	_	NER=O
+14	na	na	ADP	Sa	Case=Acc	16	Atr	_	NER=O
+15	najvišjo	visok	ADJ	Agsfsa	Case=Acc|Degree=Sup|Gender=Fem|Number=Sing	16	Atr	_	NER=O
+16	stopničko	stopnička	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	13	AdvO	_	NER=O|SpaceAfter=No
+17	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# newpar id = ssj562.2922
+# sent_id = ssj562.2922.10341
+# text = Način uporabe gomoljev topinamburja je podoben krompirjevim.
+1	Način	način	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	Sb	_	NER=O
+2	uporabe	uporaba	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	Atr	_	NER=O
+3	gomoljev	gomolj	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	2	Atr	_	NER=O
+4	topinamburja	topinambur	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	3	Atr	_	NER=O
+5	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+6	podoben	podoben	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	5	Atr	_	NER=O
+7	krompirjevim	krompirjev	ADJ	Aspmpd	Case=Dat|Degree=Pos|Gender=Masc|Number=Plur|Poss=Yes	6	Obj	_	NER=O|SpaceAfter=No
+8	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2922.10342
+# text = V primerjavi s krompirjem pa lahko topinambur brez bojazni za zdravje uživamo surov, torej sveže ali napol kuhane gomolje.
+1	V	v	ADP	Sl	Case=Loc	2	Atr	_	NER=O
+2	primerjavi	primerjava	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	12	AdvO	_	NER=O
+3	s	z	ADP	Si	Case=Ins	4	Atr	_	NER=O
+4	krompirjem	krompir	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	2	Atr	_	NER=O
+5	pa	pa	CCONJ	Cc	_	0	Root	_	NER=O
+6	lahko	lahko	ADV	Rgp	Degree=Pos	12	PPart	_	NER=O
+7	topinambur	topinambur	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	12	Obj	_	NER=O
+8	brez	brez	ADP	Sg	Case=Gen	9	Atr	_	NER=O
+9	bojazni	bojazen	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	12	AdvM	_	NER=O
+10	za	za	ADP	Sa	Case=Acc	11	Atr	_	NER=O
+11	zdravje	zdravje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	9	Atr	_	NER=O
+12	uživamo	uživati	VERB	Vmpr1p	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+13	surov	surov	ADJ	Agpmsan	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	12	Atr	_	NER=O|SpaceAfter=No
+14	,	,	PUNCT	Z	_	0	Root	_	NER=O
+15	torej	torej	CCONJ	Cc	_	0	Root	_	NER=O
+16	sveže	svež	ADJ	Agpmpa	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	20	Atr	_	NER=O
+17	ali	ali	CCONJ	Cc	_	19	Conj	_	NER=O
+18	napol	napol	ADV	Rgp	Degree=Pos	19	Atr	_	NER=O
+19	kuhane	kuhan	ADJ	Appmpa	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	16	Coord	_	NER=O
+20	gomolje	gomolj	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	0	Root	_	NER=O|SpaceAfter=No
+21	.	.	PUNCT	Z	_	0	Root	_	NER=O
+
+# sent_id = ssj562.2922.10343
+# text = Sveži gomolji imajo svojevrsten okus; kuhani, dušeni ali pečeni so sočnejši in rahlejši od krompirjevih.
+1	Sveži	svež	ADJ	Agpmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur	2	Atr	_	NER=O
+2	gomolji	gomolj	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	3	Sb	_	NER=O
+3	imajo	imeti	VERB	Vmpr3p-n	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+4	svojevrsten	svojevrsten	ADJ	Agpmsan	Case=Acc|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	5	Atr	_	NER=O
+5	okus	okus	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	Obj	_	NER=O|SpaceAfter=No
+6	;	;	PUNCT	Z	_	0	Root	_	NER=O
+7	kuhani	kuhan	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	12	Sb	_	NER=O|SpaceAfter=No
+8	,	,	PUNCT	Z	_	9	Conj	_	NER=O
+9	dušeni	dušen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	7	Coord	_	NER=O
+10	ali	ali	CCONJ	Cc	_	11	Conj	_	NER=O
+11	pečeni	pečen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	7	Coord	_	NER=O
+12	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	Root	_	NER=O
+13	sočnejši	sočen	ADJ	Agcmpn	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	12	Atr	_	NER=O
+14	in	in	CCONJ	Cc	_	15	Conj	_	NER=O
+15	rahlejši	rahel	ADJ	Agcmpn	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	13	Coord	_	NER=O
+16	od	od	ADP	Sg	Case=Gen	17	Atr	_	NER=O
+17	krompirjevih	krompirjev	ADJ	Aspmpg	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|Poss=Yes	15	Atr	_	NER=O|SpaceAfter=No
+18	.	.	PUNCT	Z	_	0	Root	_	NER=O
+

@@ -1,0 +1,332 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC NER
+
+# newdoc id = newsfeed.2022-01-02.1
+# language = sl
+# type = novice
+# type_en = news
+# applications = newsfeed-pipeline, 0.0.4 | eventregistry, 8.9 | classla, 1.0.1
+# url = https://consent.google.com/m?continue=https:%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%2F209%252520CENTENNIAL%252520DR.%252BCHEROKEE%252BIA%252B51012&gl=SI&m=0&pc=m&hl=sl&src=1
+# sourceUri = consent.google.com
+# sourceTitle = consent.google.com
+# title = 209 CENTENNIAL DR., CHEROKEE, IA 51012
+# authors = 
+# date = 2022-01-02
+# time = 23:48:00
+# newpar id = 1
+# sent_id = 1.1
+# text = Če se strinjate, bomo piškotke in podatke uporabili tudi zaradi:Pri vsebini in oglasih, ki niso osebno prilagojeni, lahko na prikazano vplivajo stvari, kot sta vsebina, ki si jo trenutno ogledujete, in vaša lokacija (prikazovanje oglasov temelji na splošni lokaciji).
+1	Če	če	SCONJ	Cs	_	3	mark	_	_	O
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	3	expl	_	_	O
+3	strinjate	strinjati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	9	advcl	_	SpaceAfter=No	O
+4	,	,	PUNCT	Z	_	3	punct	_	_	O
+5	bomo	biti	AUX	Va-f1p-n	Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Fut|VerbForm=Fin	9	aux	_	_	O
+6	piškotke	piškotek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	9	obj	_	_	O
+7	in	in	CCONJ	Cc	_	8	cc	_	_	O
+8	podatke	podatek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	6	conj	_	_	O
+9	uporabili	uporabiti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_	O
+10	tudi	tudi	PART	Q	_	9	advmod	_	_	O
+11	zaradi	zaradi	ADP	Sg	Case=Gen	14	case	_	SpaceAfter=No	O
+12	:	:	PUNCT	Z	_	26	punct	_	SpaceAfter=No	O
+13	Pri	pri	ADP	Sl	Case=Loc	14	case	_	_	O
+14	vsebini	vsebina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	26	obl	_	_	O
+15	in	in	CCONJ	Cc	_	16	cc	_	_	O
+16	oglasih	oglas	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No	O
+17	,	,	PUNCT	Z	_	21	punct	_	_	O
+18	ki	ki	SCONJ	Cs	_	21	mark	_	_	O
+19	niso	biti	AUX	Va-r3p-y	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	21	cop	_	_	O
+20	osebno	osebno	ADV	Rgp	Degree=Pos	21	advmod	_	_	O
+21	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	SpaceAfter=No	O
+22	,	,	PUNCT	Z	_	21	punct	_	_	O
+23	lahko	lahko	ADV	Rgp	Degree=Pos	26	advmod	_	_	O
+24	na	na	ADP	Sa	Case=Acc	25	case	_	_	O
+25	prikazano	prikazan	ADJ	Appnsa	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	26	obl	_	_	O
+26	vplivajo	vplivati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_	O
+27	stvari	stvar	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	26	nsubj	_	SpaceAfter=No	O
+28	,	,	PUNCT	Z	_	31	punct	_	_	O
+29	kot	kot	SCONJ	Cs	_	31	mark	_	_	O
+30	sta	biti	AUX	Va-r3d-n	Mood=Ind|Number=Dual|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	31	cop	_	_	O
+31	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	27	acl	_	SpaceAfter=No	O
+32	,	,	PUNCT	Z	_	37	punct	_	_	O
+33	ki	ki	SCONJ	Cs	_	37	mark	_	_	O
+34	si	se	PRON	Px---d--y	Case=Dat|PronType=Prs|Reflex=Yes|Variant=Short	37	expl	_	_	O
+35	jo	on	PRON	Pp3fsa--y	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short	37	obj	_	_	O
+36	trenutno	trenutno	ADV	Rgp	Degree=Pos	37	advmod	_	_	O
+37	ogledujete	ogledovati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	31	acl	_	SpaceAfter=No	O
+38	,	,	PUNCT	Z	_	37	punct	_	_	O
+39	in	in	CCONJ	Cc	_	41	cc	_	_	O
+40	vaša	vaš	DET	Ps2fsnp	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs	41	det	_	_	O
+41	lokacija	lokacija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	45	nsubj	_	_	O
+42	(	(	PUNCT	Z	_	45	punct	_	SpaceAfter=No	O
+43	prikazovanje	prikazovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	45	nsubj	_	_	O
+44	oglasov	oglas	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	43	nmod	_	_	O
+45	temelji	temeljiti	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_	O
+46	na	na	ADP	Sl	Case=Loc	48	case	_	_	O
+47	splošni	splošen	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	48	amod	_	_	O
+48	lokaciji	lokacija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	45	obl	_	SpaceAfter=No	O
+49	)	)	PUNCT	Z	_	45	punct	_	SpaceAfter=No	O
+50	.	.	PUNCT	Z	_	9	punct	_	_	O
+
+# sent_id = 1.2
+# text = Osebno prilagojeni oglasi in vsebina lahko temeljijo na teh stvareh in dejavnosti, kot so iskanja v Googlu in videoposnetki, ki jih gledate v YouTubu.
+1	Osebno	osebno	ADV	Rgp	Degree=Pos	2	advmod	_	_	O
+2	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	3	amod	_	_	O
+3	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_	O
+4	in	in	CCONJ	Cc	_	5	cc	_	_	O
+5	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_	O
+6	lahko	lahko	ADV	Rgp	Degree=Pos	7	advmod	_	_	O
+7	temeljijo	temeljiti	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	O
+8	na	na	ADP	Sl	Case=Loc	10	case	_	_	O
+9	teh	ta	DET	Pd-fpl	Case=Loc|Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_	O
+10	stvareh	stvar	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	7	obl	_	_	O
+11	in	in	CCONJ	Cc	_	12	cc	_	_	O
+12	dejavnosti	dejavnost	NOUN	Ncfpn	Case=Loc|Gender=Fem|Number=Plur	10	conj	_	SpaceAfter=No	O
+13	,	,	PUNCT	Z	_	16	punct	_	_	O
+14	kot	kot	SCONJ	Cs	_	16	mark	_	_	O
+15	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	16	cop	_	_	O
+16	iskanja	iskanje	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	12	acl	_	_	O
+17	v	v	ADP	Sl	Case=Loc	18	case	_	_	O
+18	Googlu	Google	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	16	nmod	_	_	O
+19	in	in	CCONJ	Cc	_	20	cc	_	_	O
+20	videoposnetki	videoposnetek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	16	conj	_	SpaceAfter=No	O
+21	,	,	PUNCT	Z	_	24	punct	_	_	O
+22	ki	ki	SCONJ	Cs	_	24	mark	_	_	O
+23	jih	on	PRON	Pp3mpa--y	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Variant=Short	24	obj	_	_	O
+24	gledate	gledati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	20	acl	_	_	O
+25	v	v	ADP	Sl	Case=Loc	26	case	_	_	O
+26	YouTubu	Youtub	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	24	obl	_	SpaceAfter=No	B-ORG
+27	.	.	PUNCT	Z	_	7	punct	_	_	O
+
+# sent_id = 1.3
+# text = Osebno prilagojeni oglasi in vsebina vključujejo stvari, kot so ustreznejši rezultati in priporočila, prilagojena začetna stran YouTuba ter oglasi, ki so prilagojeni vašim zanimanjem.
+1	Osebno	osebno	ADV	Rgp	Degree=Pos	2	advmod	_	_	O
+2	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	3	amod	_	_	O
+3	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	_	O
+4	in	in	CCONJ	Cc	_	5	cc	_	_	O
+5	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_	O
+6	vključujejo	vključevati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	O
+7	stvari	stvar	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	6	obj	_	SpaceAfter=No	O
+8	,	,	PUNCT	Z	_	12	punct	_	_	O
+9	kot	kot	SCONJ	Cs	_	12	mark	_	_	O
+10	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	12	cop	_	_	O
+11	ustreznejši	ustrezen	ADJ	Agcmpn	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	12	amod	_	_	O
+12	rezultati	rezultat	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	acl	_	_	O
+13	in	in	CCONJ	Cc	_	14	cc	_	_	O
+14	priporočila	priporočilo	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	12	conj	_	SpaceAfter=No	O
+15	,	,	PUNCT	Z	_	18	punct	_	_	O
+16	prilagojena	prilagojen	ADJ	Appfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	18	amod	_	_	O
+17	začetna	začeten	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_	O
+18	stran	stran	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	12	conj	_	_	O
+19	YouTuba	Youtub	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	18	nmod	_	_	O
+20	ter	ter	CCONJ	Cc	_	21	cc	_	_	O
+21	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	12	conj	_	SpaceAfter=No	O
+22	,	,	PUNCT	Z	_	25	punct	_	_	O
+23	ki	ki	SCONJ	Cs	_	25	mark	_	_	O
+24	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	25	cop	_	_	O
+25	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_	O
+26	vašim	vaš	DET	Ps2mpdp	Case=Dat|Gender=Neut|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs	27	det	_	_	O
+27	zanimanjem	zanimanje	NOUN	Ncnpd	Case=Dat|Gender=Neut|Number=Plur	25	obj	_	SpaceAfter=No	O
+28	.	.	PUNCT	Z	_	6	punct	_	_	O
+
+# newdoc id = newsfeed.2022-01-02.2
+# language = sl
+# type = novice
+# type_en = news
+# applications = newsfeed-pipeline, 0.0.4 | eventregistry, 8.9 | classla, 1.0.1
+# url = https://consent.google.com/m?continue=https:%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%2F1705%252520W%2525204TH%252520ST%252BDavenport%252BIA%252B52802&gl=SI&m=0&pc=m&hl=sl&src=1
+# sourceUri = consent.google.com
+# sourceTitle = consent.google.com
+# title = 1705 W 4TH ST, Davenport, IA 52802
+# authors = 
+# date = 2022-01-02
+# time = 23:44:00
+# newpar id = 1
+# sent_id = 1.1
+# text = Če se strinjate, bomo piškotke in podatke uporabili tudi zaradi:Pri vsebini in oglasih, ki niso osebno prilagojeni, lahko na prikazano vplivajo stvari, kot sta vsebina, ki si jo trenutno ogledujete, in vaša lokacija (prikazovanje oglasov temelji na splošni lokaciji).
+1	Če	če	SCONJ	Cs	_	3	mark	_	_	O
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	3	expl	_	_	O
+3	strinjate	strinjati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	9	advcl	_	SpaceAfter=No	O
+4	,	,	PUNCT	Z	_	3	punct	_	_	O
+5	bomo	biti	AUX	Va-f1p-n	Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Fut|VerbForm=Fin	9	aux	_	_	O
+6	piškotke	piškotek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	9	obj	_	_	O
+7	in	in	CCONJ	Cc	_	8	cc	_	_	O
+8	podatke	podatek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	6	conj	_	_	O
+9	uporabili	uporabiti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_	O
+10	tudi	tudi	PART	Q	_	9	advmod	_	_	O
+11	zaradi	zaradi	ADP	Sg	Case=Gen	14	case	_	SpaceAfter=No	O
+12	:	:	PUNCT	Z	_	26	punct	_	SpaceAfter=No	O
+13	Pri	pri	ADP	Sl	Case=Loc	14	case	_	_	O
+14	vsebini	vsebina	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	26	obl	_	_	O
+15	in	in	CCONJ	Cc	_	16	cc	_	_	O
+16	oglasih	oglas	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No	O
+17	,	,	PUNCT	Z	_	21	punct	_	_	O
+18	ki	ki	SCONJ	Cs	_	21	mark	_	_	O
+19	niso	biti	AUX	Va-r3p-y	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin	21	cop	_	_	O
+20	osebno	osebno	ADV	Rgp	Degree=Pos	21	advmod	_	_	O
+21	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	SpaceAfter=No	O
+22	,	,	PUNCT	Z	_	21	punct	_	_	O
+23	lahko	lahko	ADV	Rgp	Degree=Pos	26	advmod	_	_	O
+24	na	na	ADP	Sa	Case=Acc	25	case	_	_	O
+25	prikazano	prikazan	ADJ	Appnsa	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	26	obl	_	_	O
+26	vplivajo	vplivati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_	O
+27	stvari	stvar	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	26	nsubj	_	SpaceAfter=No	O
+28	,	,	PUNCT	Z	_	31	punct	_	_	O
+29	kot	kot	SCONJ	Cs	_	31	mark	_	_	O
+30	sta	biti	AUX	Va-r3d-n	Mood=Ind|Number=Dual|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	31	cop	_	_	O
+31	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	27	acl	_	SpaceAfter=No	O
+32	,	,	PUNCT	Z	_	37	punct	_	_	O
+33	ki	ki	SCONJ	Cs	_	37	mark	_	_	O
+34	si	se	PRON	Px---d--y	Case=Dat|PronType=Prs|Reflex=Yes|Variant=Short	37	expl	_	_	O
+35	jo	on	PRON	Pp3fsa--y	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short	37	obj	_	_	O
+36	trenutno	trenutno	ADV	Rgp	Degree=Pos	37	advmod	_	_	O
+37	ogledujete	ogledovati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	31	acl	_	SpaceAfter=No	O
+38	,	,	PUNCT	Z	_	37	punct	_	_	O
+39	in	in	CCONJ	Cc	_	41	cc	_	_	O
+40	vaša	vaš	DET	Ps2fsnp	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs	41	det	_	_	O
+41	lokacija	lokacija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	45	nsubj	_	_	O
+42	(	(	PUNCT	Z	_	45	punct	_	SpaceAfter=No	O
+43	prikazovanje	prikazovanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	45	nsubj	_	_	O
+44	oglasov	oglas	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	43	nmod	_	_	O
+45	temelji	temeljiti	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_	O
+46	na	na	ADP	Sl	Case=Loc	48	case	_	_	O
+47	splošni	splošen	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	48	amod	_	_	O
+48	lokaciji	lokacija	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	45	obl	_	SpaceAfter=No	O
+49	)	)	PUNCT	Z	_	45	punct	_	SpaceAfter=No	O
+50	.	.	PUNCT	Z	_	9	punct	_	_	O
+
+# sent_id = 1.2
+# text = Osebno prilagojeni oglasi in vsebina lahko temeljijo na teh stvareh in dejavnosti, kot so iskanja v Googlu in videoposnetki, ki jih gledate v YouTubu.
+1	Osebno	osebno	ADV	Rgp	Degree=Pos	2	advmod	_	_	O
+2	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	3	amod	_	_	O
+3	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	_	O
+4	in	in	CCONJ	Cc	_	5	cc	_	_	O
+5	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_	O
+6	lahko	lahko	ADV	Rgp	Degree=Pos	7	advmod	_	_	O
+7	temeljijo	temeljiti	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	O
+8	na	na	ADP	Sl	Case=Loc	10	case	_	_	O
+9	teh	ta	DET	Pd-fpl	Case=Loc|Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_	O
+10	stvareh	stvar	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	7	obl	_	_	O
+11	in	in	CCONJ	Cc	_	12	cc	_	_	O
+12	dejavnosti	dejavnost	NOUN	Ncfpn	Case=Loc|Gender=Fem|Number=Plur	10	conj	_	SpaceAfter=No	O
+13	,	,	PUNCT	Z	_	16	punct	_	_	O
+14	kot	kot	SCONJ	Cs	_	16	mark	_	_	O
+15	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	16	cop	_	_	O
+16	iskanja	iskanje	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	12	acl	_	_	O
+17	v	v	ADP	Sl	Case=Loc	18	case	_	_	O
+18	Googlu	Google	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	16	nmod	_	_	O
+19	in	in	CCONJ	Cc	_	20	cc	_	_	O
+20	videoposnetki	videoposnetek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	16	conj	_	SpaceAfter=No	O
+21	,	,	PUNCT	Z	_	24	punct	_	_	O
+22	ki	ki	SCONJ	Cs	_	24	mark	_	_	O
+23	jih	on	PRON	Pp3mpa--y	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Variant=Short	24	obj	_	_	O
+24	gledate	gledati	VERB	Vmpr2p	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	20	acl	_	_	O
+25	v	v	ADP	Sl	Case=Loc	26	case	_	_	O
+26	YouTubu	Youtub	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	24	obl	_	SpaceAfter=No	B-ORG
+27	.	.	PUNCT	Z	_	7	punct	_	_	O
+
+# sent_id = 1.3
+# text = Osebno prilagojeni oglasi in vsebina vključujejo stvari, kot so ustreznejši rezultati in priporočila, prilagojena začetna stran YouTuba ter oglasi, ki so prilagojeni vašim zanimanjem.
+1	Osebno	osebno	ADV	Rgp	Degree=Pos	2	advmod	_	_	O
+2	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	3	amod	_	_	O
+3	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	_	O
+4	in	in	CCONJ	Cc	_	5	cc	_	_	O
+5	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	conj	_	_	O
+6	vključujejo	vključevati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	O
+7	stvari	stvar	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	6	obj	_	SpaceAfter=No	O
+8	,	,	PUNCT	Z	_	12	punct	_	_	O
+9	kot	kot	SCONJ	Cs	_	12	mark	_	_	O
+10	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	12	cop	_	_	O
+11	ustreznejši	ustrezen	ADJ	Agcmpn	Case=Nom|Degree=Cmp|Gender=Masc|Number=Plur	12	amod	_	_	O
+12	rezultati	rezultat	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	acl	_	_	O
+13	in	in	CCONJ	Cc	_	14	cc	_	_	O
+14	priporočila	priporočilo	NOUN	Ncnpn	Case=Nom|Gender=Neut|Number=Plur	12	conj	_	SpaceAfter=No	O
+15	,	,	PUNCT	Z	_	18	punct	_	_	O
+16	prilagojena	prilagojen	ADJ	Appfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	18	amod	_	_	O
+17	začetna	začeten	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	18	amod	_	_	O
+18	stran	stran	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	12	conj	_	_	O
+19	YouTuba	Youtub	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	18	nmod	_	_	O
+20	ter	ter	CCONJ	Cc	_	21	cc	_	_	O
+21	oglasi	oglas	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	12	conj	_	SpaceAfter=No	O
+22	,	,	PUNCT	Z	_	25	punct	_	_	O
+23	ki	ki	SCONJ	Cs	_	25	mark	_	_	O
+24	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	25	cop	_	_	O
+25	prilagojeni	prilagojen	ADJ	Appmpn	Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_	O
+26	vašim	vaš	DET	Ps2mpdp	Case=Dat|Gender=Neut|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs	27	det	_	_	O
+27	zanimanjem	zanimanje	NOUN	Ncnpd	Case=Dat|Gender=Neut|Number=Plur	25	obj	_	SpaceAfter=No	O
+28	.	.	PUNCT	Z	_	6	punct	_	_	O
+
+# newdoc id = newsfeed.2022-01-02.3
+# language = sl
+# type = novice
+# type_en = news
+# applications = newsfeed-pipeline, 0.0.4 | eventregistry, 8.9 | classla, 1.0.1
+# url = https://www.energetika.net/si/novice/trgovanje/skupina-sonce-na-energetski-trznici-lani-100-odstotno-povec
+# sourceUri = energetika.net
+# sourceTitle = energetika.net
+# title = Skupina SONCE: Na energetski tržnici lani 100-odstotno povečanje prometa; za 2022 napoved o vzpostavitvi 100 samooskrbnih skupnosti
+# authors = Časnik O Energetiki
+# date = 2022-01-02
+# time = 23:44:00
+# newpar id = 1
+# sent_id = 1.1
+# text = Da bi vam zagotovili najboljšo možno izkušnjo našega portala, uporabljamo piškotke.
+1	Da	da	SCONJ	Cs	_	4	mark	_	_	O
+2	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	4	aux	_	_	O
+3	vam	ti	PRON	Pp2-pd	Case=Dat|Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	O
+4	zagotovili	zagotoviti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	11	advcl	_	_	O
+5	najboljšo	dober	ADJ	Agsfsa	Case=Acc|Degree=Sup|Gender=Fem|Number=Sing	7	amod	_	_	O
+6	možno	možen	ADJ	Agpfsa	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_	O
+7	izkušnjo	izkušnja	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	4	obj	_	_	O
+8	našega	naš	DET	Ps1nsgp	Case=Gen|Gender=Neut|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	9	det	_	_	O
+9	portala	portal	NOUN	Ncmsg	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	SpaceAfter=No	O
+10	,	,	PUNCT	Z	_	4	punct	_	_	O
+11	uporabljamo	uporabljati	VERB	Vmpr1p	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	O
+12	piškotke	piškotek	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	11	obj	_	SpaceAfter=No	O
+13	.	.	PUNCT	Z	_	11	punct	_	_	O
+
+# sent_id = 1.2
+# text = Ti nam pomagajo, da vam prikažemo zanimive povezave do naših partnerjev ter da pridobimo povratne informacije o tem, kaj vas najbolj zanima.
+1	Ti	ta	DET	Pd-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	3	nsubj	_	_	O
+2	nam	jaz	PRON	Pp1-pd	Case=Dat|Number=Plur|Person=1|PronType=Prs	3	iobj	_	_	O
+3	pomagajo	pomagati	VERB	Vmbr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	O
+4	,	,	PUNCT	Z	_	7	punct	_	_	O
+5	da	da	SCONJ	Cs	_	7	mark	_	_	O
+6	vam	ti	PRON	Pp2-pd	Case=Dat|Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	O
+7	prikažemo	prikazati	VERB	Vmer1p	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	O
+8	zanimive	zanimiv	ADJ	Agpfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	9	amod	_	_	O
+9	povezave	povezava	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	7	obj	_	_	O
+10	do	do	ADP	Sg	Case=Gen	12	case	_	_	O
+11	naših	naš	DET	Ps1mpgp	Case=Gen|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	12	det	_	_	O
+12	partnerjev	partner	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	9	nmod	_	_	O
+13	ter	ter	CCONJ	Cc	_	15	cc	_	_	O
+14	da	da	SCONJ	Cs	_	15	mark	_	_	O
+15	pridobimo	pridobiti	VERB	Vmer1p	Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	conj	_	_	O
+16	povratne	povraten	ADJ	Agpfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	17	amod	_	_	O
+17	informacije	informacija	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	15	obj	_	_	O
+18	o	o	ADP	Sl	Case=Loc	19	case	_	_	O
+19	tem	ta	DET	Pd-nsl	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	17	nmod	_	SpaceAfter=No	O
+20	,	,	PUNCT	Z	_	24	punct	_	_	O
+21	kaj	kaj	PRON	Pq-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	24	obj	_	_	O
+22	vas	ti	PRON	Pp2-pa	Case=Acc|Number=Plur|Person=2|PronType=Prs	24	obj	_	_	O
+23	najbolj	najbolj	ADV	Rgs	Degree=Sup	24	advmod	_	_	O
+24	zanima	zanimati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl	_	SpaceAfter=No	O
+25	.	.	PUNCT	Z	_	3	punct	_	_	O
+
+# sent_id = 1.3
+# text = Tako skrbimo, da je naša vsebina še kvalitetnejša ter da živi z našimi bralci.
+1	Tako	tako	ADV	Rgp	Degree=Pos	2	advmod	_	_	O
+2	skrbimo	skrbeti	VERB	Vmpr1p	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	O
+3	,	,	PUNCT	Z	_	9	punct	_	_	O
+4	da	da	SCONJ	Cs	_	9	mark	_	_	O
+5	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	cop	_	_	O
+6	naša	naš	DET	Ps1fsnp	Case=Nom|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	7	det	_	_	O
+7	vsebina	vsebina	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_	O
+8	še	še	PART	Q	_	9	advmod	_	_	O
+9	kvalitetnejša	kvaliteten	ADJ	Agcfsn	Case=Nom|Degree=Cmp|Gender=Fem|Number=Sing	2	ccomp	_	_	O
+10	ter	ter	CCONJ	Cc	_	12	cc	_	_	O
+11	da	da	SCONJ	Cs	_	12	mark	_	_	O
+12	živi	živeti	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	O
+13	z	z	ADP	Si	Case=Ins	15	case	_	_	O
+14	našimi	naš	DET	Ps1mpip	Case=Ins|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	15	det	_	_	O
+15	bralci	bralec	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	12	obl	_	SpaceAfter=No	O
+16	.	.	PUNCT	Z	_	2	punct	_	_	O
+

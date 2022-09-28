@@ -116,7 +116,7 @@ class MatchStore:
                     INSERT INTO Representations (collocation_id, component_id, text, msd) 
                     VALUES (?,?,?,?)""", (match.match_id, component_id, text, msd))
 
-    def set_representations(self, word_renderer, structures, sloleks_db=None):
+    def set_representations(self, word_renderer, structures, lookup_lexicon=None):
         """ Adds representations to matches. """
 
         step_name = 'representation'
@@ -133,7 +133,7 @@ class MatchStore:
         for cid, sid in progress(self.db.execute("SELECT collocation_id, structure_id FROM Collocations"), "representations", total=num_representations):
             structure = structures_dict[sid]
             match = StructureMatch.from_db(self.db, cid, structure)
-            RepresentationAssigner.set_representations(match, word_renderer, sloleks_db=sloleks_db)
+            RepresentationAssigner.set_representations(match, word_renderer, lookup_lexicon=lookup_lexicon)
 
             inserts.append(match)
             if len(inserts) > num_inserts:

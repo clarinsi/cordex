@@ -125,8 +125,6 @@ class SyntacticStructure:
         forms[n].append(to_add)
 
     def match(self, word):
-        if self.id == '98':
-            print('HERE')
         matches = self.components[0].match(word)
         return [] if matches is None else matches
 
@@ -134,7 +132,7 @@ class SyntacticStructure:
 def build_structures(args):
     """ Builds structures. """
     filename = args['structures']
-    no_stats = args['out'] is None
+    no_stats = args['no_stats']
 
     max_num_components = -1
     with open(filename, 'r') as fp:

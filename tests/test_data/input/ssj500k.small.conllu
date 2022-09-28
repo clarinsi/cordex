@@ -1,0 +1,645 @@
+# sent_id = ssj3.4.16
+# text = Najprej je treba najti vzrok, zaradi katerega so se pojavili.
+1	Najprej	najprej	ADV	Rgs	Degree=Sup	4	advmod	_	Dep=4|Rel=AdvO
+2	je	biti	VERB	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+3	treba	treba	ADV	Rgp	Degree=Pos	2	advmod	_	Dep=2|Rel=AdvM
+4	najti	najti	VERB	Vmen	Aspect=Perf|VerbForm=Inf	2	csubj	_	Dep=2|Rel=Sb
+5	vzrok	vzrok	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No|Dep=4|Rel=Obj
+6	,	,	PUNCT	Z	_	11	punct	_	Dep=0|Rel=Root
+7	zaradi	zaradi	ADP	Sg	Case=Gen	8	case	_	Dep=8|Rel=Atr
+8	katerega	kateri	DET	Pq-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Int	11	obl	_	Dep=11|Rel=Conj
+9	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	11	aux	_	Dep=11|Rel=PPart
+10	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	11	expl	_	Dep=11|Rel=PPart
+11	pojavili	pojaviti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	SpaceAfter=No|Dep=5|Rel=Atr
+12	.	.	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.1
+# text = "Tistega večera sem preveč popil, zgodilo se je mesec dni po tem, ko sem izvedel, da me žena vara.
+1	"	"	PUNCT	Z	_	6	punct	_	SpaceAfter=No|Dep=0|Rel=Root
+2	Tistega	tisti	DET	Pd-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	Dep=3|Rel=Atr
+3	večera	večer	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	6	obl	_	Dep=6|Rel=AdvO
+4	sem	biti	AUX	Va-r1s-n	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	aux	_	Dep=6|Rel=PPart
+5	preveč	preveč	DET	Rgp	PronType=Ind	6	advmod	_	Dep=6|Rel=AdvM
+6	popil	popiti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	SpaceAfter=No|Dep=0|Rel=Root
+7	,	,	PUNCT	Z	_	8	punct	_	Dep=0|Rel=Root
+8	zgodilo	zgoditi	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	6	parataxis	_	Dep=0|Rel=Root
+9	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	8	expl	_	Dep=8|Rel=PPart
+10	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	8	aux	_	Dep=8|Rel=PPart
+11	mesec	mesec	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	obl	_	Dep=8|Rel=AdvO
+12	dni	dan	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	11	nmod	_	Dep=11|Rel=Atr
+13	po	po	ADP	Sl	Case=Loc	14	case	_	Dep=14|Rel=Atr
+14	tem	ta	DET	Pd-nsl	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	11	nmod	_	SpaceAfter=No|Dep=11|Rel=Atr
+15	,	,	PUNCT	Z	_	18	punct	_	Dep=0|Rel=Root
+16	ko	ko	SCONJ	Cs	_	18	mark	_	Dep=18|Rel=Conj
+17	sem	biti	AUX	Va-r1s-n	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	18	aux	_	Dep=18|Rel=PPart
+18	izvedel	izvedeti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	SpaceAfter=No|Dep=14|Rel=Atr
+19	,	,	PUNCT	Z	_	23	punct	_	Dep=0|Rel=Root
+20	da	da	SCONJ	Cs	_	23	mark	_	Dep=23|Rel=Conj
+21	me	jaz	PRON	Pp1-sa--y	Case=Acc|Number=Sing|Person=1|PronType=Prs|Variant=Short	23	obj	_	Dep=23|Rel=Obj
+22	žena	žena	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	Dep=23|Rel=Sb
+23	vara	varati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	_	SpaceAfter=No|Dep=18|Rel=Obj
+24	.	.	PUNCT	Z	_	6	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.2
+# text = Dogodek v Ankaranu je bila dramatična nesreča.
+1	Dogodek	dogodek	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	0	root	_	Dep=5|Rel=Atr
+2	v	v	ADP	Sl	Case=Loc	3	case	_	Dep=3|Rel=Atr
+3	Ankaranu	Ankaran	PROPN	Npmsl	Case=Loc|Gender=Masc|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
+4	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	1	aux	_	Dep=5|Rel=PPart
+5	bila	biti	AUX	Va-p-sf	Gender=Fem|Number=Sing|VerbForm=Part	1	cop	_	Dep=0|Rel=Root
+6	dramatična	dramatičen	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	Dep=7|Rel=Atr
+7	nesreča	nesreča	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No|Dep=5|Rel=Sb
+8	.	.	PUNCT	Z	_	1	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.3
+# text = Dekle je ob vzvratni vožnji začelo vpiti, da bi jo utišal, sem prijel nož.
+1	Dekle	dekle	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	Dep=7|Rel=Sb
+2	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	aux	_	Dep=6|Rel=PPart
+3	ob	ob	ADP	Sl	Case=Loc	5	case	_	Dep=5|Rel=Atr
+4	vzvratni	vzvraten	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	5	amod	_	Dep=5|Rel=Atr
+5	vožnji	vožnja	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	Dep=7|Rel=AdvO
+6	začelo	začeti	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+7	vpiti	vpiti	VERB	Vmbn	VerbForm=Inf	6	xcomp	_	SpaceAfter=No|Dep=6|Rel=Atr
+8	,	,	PUNCT	Z	_	12	punct	_	Dep=0|Rel=Root
+9	da	da	SCONJ	Cs	_	12	mark	_	Dep=12|Rel=Conj
+10	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	12	aux	_	Dep=12|Rel=PPart
+11	jo	on	PRON	Pp3fsa--y	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short	12	obj	_	Dep=12|Rel=Obj
+12	utišal	utišati	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	_	SpaceAfter=No|Dep=15|Rel=AdvO
+13	,	,	PUNCT	Z	_	12	punct	_	Dep=0|Rel=Root
+14	sem	biti	AUX	Va-r1s-n	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	15	aux	_	Dep=15|Rel=PPart
+15	prijel	prijeti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	6	parataxis	_	Dep=0|Rel=Root
+16	nož	nož	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	15	obj	_	SpaceAfter=No|Dep=15|Rel=Obj
+17	.	.	PUNCT	Z	_	6	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.4
+# text = Prišlo je do prerivanja in umrla je.
+1	Prišlo	priti	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+2	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	1	aux	_	Dep=1|Rel=PPart
+3	do	do	ADP	Sg	Case=Gen	4	case	_	Dep=4|Rel=Atr
+4	prerivanja	prerivanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	obl	_	Dep=1|Rel=Obj
+5	in	in	CCONJ	Cc	_	6	cc	_	Dep=6|Rel=Conj
+6	umrla	umreti	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	1	conj	_	Dep=0|Rel=Root
+7	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	aux	_	SpaceAfter=No|Dep=6|Rel=PPart
+8	.	.	PUNCT	Z	_	1	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.5
+# text = Tega se sploh nisem zavedel.
+1	Tega	ta	DET	Pd-nsg	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	5	obj	_	Dep=5|Rel=Obj
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	5	expl	_	Dep=5|Rel=PPart
+3	sploh	sploh	PART	Q	_	5	advmod	_	Dep=0|Rel=Root
+4	nisem	biti	AUX	Va-r1s-y	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres|VerbForm=Fin	5	aux	_	Dep=5|Rel=PPart
+5	zavedel	zavesti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	SpaceAfter=No|Dep=0|Rel=Root
+6	.	.	PUNCT	Z	_	5	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.6
+# text = Kaj se je zgodilo, sem izvedel šele naslednjega dne iz časopisja," je v intervju za Stampo iz Torina izjavil morilec.
+1	Kaj	kaj	PRON	Pq-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	4	nsubj	_	Dep=4|Rel=Conj
+2	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	4	expl	_	Dep=4|Rel=PPart
+3	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	aux	_	Dep=4|Rel=PPart
+4	zgodilo	zgoditi	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	7	ccomp	_	SpaceAfter=No|Dep=7|Rel=Obj
+5	,	,	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+6	sem	biti	AUX	Va-r1s-n	Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	aux	_	Dep=7|Rel=PPart
+7	izvedel	izvedeti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+8	šele	šele	PART	Q	_	10	advmod	_	Dep=10|Rel=Atr
+9	naslednjega	naslednji	ADJ	Agpmsg	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	Dep=10|Rel=Atr
+10	dne	dan	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	obl	_	Dep=7|Rel=AdvO
+11	iz	iz	ADP	Sg	Case=Gen	12	case	_	Dep=12|Rel=Atr
+12	časopisja	časopisje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	7	obl	_	SpaceAfter=No|Dep=7|Rel=AdvO
+13	,	,	PUNCT	Z	_	22	punct	_	SpaceAfter=No|Dep=0|Rel=Root
+14	"	"	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+15	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	22	aux	_	Dep=22|Rel=PPart
+16	v	v	ADP	Sa	Case=Acc	17	case	_	Dep=17|Rel=Atr
+17	intervju	intervju	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	22	obl	_	Dep=22|Rel=AdvO
+18	za	za	ADP	Sa	Case=Acc	19	case	_	Dep=19|Rel=Atr
+19	Stampo	Stampa	PROPN	Npfsa	Case=Acc|Gender=Fem|Number=Sing	17	nmod	_	Dep=17|Rel=Atr
+20	iz	iz	ADP	Sg	Case=Gen	21	case	_	Dep=21|Rel=Atr
+21	Torina	Torino	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	19	nmod	_	Dep=19|Rel=Atr
+22	izjavil	izjaviti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	7	parataxis	_	Dep=0|Rel=Root
+23	morilec	morilec	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	22	nsubj	_	SpaceAfter=No|Dep=22|Rel=Sb
+24	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.7
+# text = Preiskave med sodnim postopkom so pokazale, da so se dogodki odvijali bistveno drugače.
+1	Preiskave	preiskava	NOUN	Ncfpn	Case=Nom|Gender=Fem|Number=Plur	6	nsubj	_	Dep=6|Rel=Sb
+2	med	med	ADP	Si	Case=Ins	4	case	_	Dep=4|Rel=Atr
+3	sodnim	soden	ADJ	Agpmsi	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	Dep=4|Rel=Atr
+4	postopkom	postopek	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
+5	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	aux	_	Dep=6|Rel=PPart
+6	pokazale	pokazati	VERB	Vmep-pf	Aspect=Perf|Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	SpaceAfter=No|Dep=0|Rel=Root
+7	,	,	PUNCT	Z	_	12	punct	_	Dep=0|Rel=Root
+8	da	da	SCONJ	Cs	_	12	mark	_	Dep=12|Rel=Conj
+9	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	12	aux	_	Dep=12|Rel=PPart
+10	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	12	expl	_	Dep=12|Rel=PPart
+11	dogodki	dogodek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	12	nsubj	_	Dep=12|Rel=Sb
+12	odvijali	odvijati	VERB	Vmpp-pm	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	6	ccomp	_	Dep=6|Rel=Obj
+13	bistveno	bistveno	ADV	Rgp	Degree=Pos	14	advmod	_	Dep=14|Rel=Atr
+14	drugače	drugače	ADV	Rgp	Degree=Pos	12	advmod	_	SpaceAfter=No|Dep=12|Rel=AdvM
+15	.	.	PUNCT	Z	_	6	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj1.1.8
+# text = Dogodki v prihodnjih mesecih pa bodo pokazali, ali bo morilcu iz Ankarana tokrat uspelo prepričati italijanske pravosodne oblasti.
+1	Dogodki	dogodek	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	7	nsubj	_	Dep=7|Rel=Sb
+2	v	v	ADP	Sl	Case=Loc	4	case	_	Dep=4|Rel=Atr
+3	prihodnjih	prihodnji	ADJ	Agpmpl	Case=Loc|Degree=Pos|Gender=Masc|Number=Plur	4	amod	_	Dep=4|Rel=Atr
+4	mesecih	mesec	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	1	nmod	_	Dep=1|Rel=Atr
+5	pa	pa	CCONJ	Cc	_	7	advmod	_	Dep=0|Rel=Root
+6	bodo	biti	AUX	Va-f3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	7	aux	_	Dep=7|Rel=PPart
+7	pokazali	pokazati	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	SpaceAfter=No|Dep=0|Rel=Root
+8	,	,	PUNCT	Z	_	15	punct	_	Dep=0|Rel=Root
+9	ali	ali	ADV	Rgp	Degree=Pos	15	mark	_	Dep=15|Rel=Conj
+10	bo	biti	AUX	Va-f3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	15	aux	_	Dep=15|Rel=PPart
+11	morilcu	morilec	NOUN	Ncmsd	Case=Dat|Gender=Masc|Number=Sing	15	obj	_	Dep=15|Rel=Obj
+12	iz	iz	ADP	Sg	Case=Gen	13	case	_	Dep=13|Rel=Atr
+13	Ankarana	Ankaran	PROPN	Npmsg	Case=Gen|Gender=Masc|Number=Sing	11	nmod	_	Dep=11|Rel=Atr
+14	tokrat	tokrat	ADV	Rgp	Degree=Pos	15	advmod	_	Dep=15|Rel=AdvO
+15	uspelo	uspeti	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	7	ccomp	_	Dep=7|Rel=Obj
+16	prepričati	prepričati	VERB	Vmen	Aspect=Perf|VerbForm=Inf	15	xcomp	_	Dep=15|Rel=Atr
+17	italijanske	italijanski	ADJ	Agpfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	19	amod	_	Dep=19|Rel=Atr
+18	pravosodne	pravosoden	ADJ	Agpfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	19	amod	_	Dep=19|Rel=Atr
+19	oblasti	oblast	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	16	obj	_	SpaceAfter=No|Dep=16|Rel=Obj
+20	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj2.2.9
+# text = V bolnišnici bodo uvedli tudi s šolo za starše, ki je namenjena vzgoji in izobraževanju nosečnic in njihovih partnerjev.
+1	V	v	ADP	Sl	Case=Loc	2	case	_	Dep=2|Rel=Atr
+2	bolnišnici	bolnišnica	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	4	obl	_	Dep=4|Rel=AdvO
+3	bodo	biti	AUX	Va-f3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	4	aux	_	Dep=4|Rel=PPart
+4	uvedli	uvesti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+5	tudi	tudi	PART	Q	_	4	advmod	_	Dep=0|Rel=Root
+6	s	z	ADP	Si	Case=Ins	7	case	_	Dep=7|Rel=Atr
+7	šolo	šola	NOUN	Ncfsi	Case=Ins|Gender=Fem|Number=Sing	4	obl	_	Dep=4|Rel=AdvM
+8	za	za	ADP	Sa	Case=Acc	9	case	_	Dep=9|Rel=Atr
+9	starše	starš	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No|Dep=7|Rel=Atr
+10	,	,	PUNCT	Z	_	13	punct	_	Dep=0|Rel=Root
+11	ki	ki	SCONJ	Cs	_	13	mark	_	Dep=12|Rel=Conj
+12	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	13	cop	_	Dep=7|Rel=Atr
+13	namenjena	namenjen	ADJ	Appfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	Dep=12|Rel=Atr
+14	vzgoji	vzgoja	NOUN	Ncfsd	Case=Dat|Gender=Fem|Number=Sing	13	obj	_	Dep=13|Rel=Obj
+15	in	in	CCONJ	Cc	_	16	cc	_	Dep=16|Rel=Conj
+16	izobraževanju	izobraževanje	NOUN	Ncnsd	Case=Dat|Gender=Neut|Number=Sing	14	conj	_	Dep=14|Rel=Coord
+17	nosečnic	nosečnica	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	16	nmod	_	Dep=16|Rel=Atr
+18	in	in	CCONJ	Cc	_	20	cc	_	Dep=20|Rel=Conj
+19	njihovih	njihov	DET	Ps3mpgp	Case=Gen|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs	20	det	_	Dep=20|Rel=Atr
+20	partnerjev	partner	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	17	conj	_	SpaceAfter=No|Dep=17|Rel=Coord
+21	.	.	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj2.2.10
+# text = V bolnišnici so že pred časom pripravili vse potrebno za negovanje bolnikov, pri katerih je bilo zdravljenje končano.
+1	V	v	ADP	Sl	Case=Loc	2	case	_	Dep=2|Rel=Atr
+2	bolnišnici	bolnišnica	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	Dep=7|Rel=AdvO
+3	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	aux	_	Dep=7|Rel=PPart
+4	že	že	PART	Q	_	7	advmod	_	Dep=0|Rel=Root
+5	pred	pred	ADP	Si	Case=Ins	6	case	_	Dep=6|Rel=Atr
+6	časom	čas	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	7	obl	_	Dep=7|Rel=AdvO
+7	pripravili	pripraviti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+8	vse	ves	DET	Pg-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	9	nmod	_	Dep=9|Rel=Atr
+9	potrebno	potreben	ADJ	Agpnsa	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	7	obj	_	Dep=7|Rel=Obj
+10	za	za	ADP	Sa	Case=Acc	11	case	_	Dep=11|Rel=Atr
+11	negovanje	negovanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	9	obl	_	Dep=9|Rel=Obj
+12	bolnikov	bolnik	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No|Dep=11|Rel=Atr
+13	,	,	PUNCT	Z	_	19	punct	_	Dep=0|Rel=Root
+14	pri	pri	ADP	Sl	Case=Loc	15	case	_	Dep=15|Rel=Atr
+15	katerih	kateri	DET	Pq-mpl	Case=Loc|Gender=Masc|Number=Plur|PronType=Int	19	obl	_	Dep=17|Rel=Conj
+16	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	19	aux	_	Dep=17|Rel=PPart
+17	bilo	biti	AUX	Va-p-sn	Gender=Neut|Number=Sing|VerbForm=Part	19	cop	_	Dep=12|Rel=Atr
+18	zdravljenje	zdravljenje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	19	nsubj	_	Dep=17|Rel=Sb
+19	končano	končan	ADJ	Appnsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	12	acl	_	SpaceAfter=No|Dep=17|Rel=Atr
+20	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj2.2.11
+# text = Začetek izvajanja programa je odvisen od podpisa sporazuma z republiškim zavodom za zdravstveno zavarovanje, po napovedih pa bi se naj to zgodilo prihodnji mesec.
+1	Začetek	začetek	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Dep=4|Rel=Sb
+2	izvajanja	izvajanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
+3	programa	program	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	Dep=2|Rel=Atr
+4	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	5	cop	_	Dep=0|Rel=Root
+5	odvisen	odvisen	ADJ	Agpmsnn	Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	Dep=4|Rel=Atr
+6	od	od	ADP	Sg	Case=Gen	7	case	_	Dep=7|Rel=Atr
+7	podpisa	podpis	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	5	obl	_	Dep=5|Rel=Obj
+8	sporazuma	sporazum	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	7	nmod	_	Dep=7|Rel=Atr
+9	z	z	ADP	Si	Case=Ins	11	case	_	Dep=11|Rel=Atr
+10	republiškim	republiški	ADJ	Agpmsi	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	11	amod	_	Dep=11|Rel=Atr
+11	zavodom	zavod	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	8	nmod	_	Dep=8|Rel=Atr
+12	za	za	ADP	Sa	Case=Acc	14	case	_	Dep=14|Rel=Atr
+13	zdravstveno	zdravstven	ADJ	Agpnsa	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	14	amod	_	Dep=14|Rel=Atr
+14	zavarovanje	zavarovanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	11	nmod	_	SpaceAfter=No|Dep=11|Rel=Atr
+15	,	,	PUNCT	Z	_	23	punct	_	Dep=0|Rel=Root
+16	po	po	ADP	Sl	Case=Loc	17	case	_	Dep=17|Rel=Atr
+17	napovedih	napoved	NOUN	Ncfpl	Case=Loc|Gender=Fem|Number=Plur	23	obl	_	Dep=23|Rel=AdvO
+18	pa	pa	CCONJ	Cc	_	23	advmod	_	Dep=0|Rel=Root
+19	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	23	aux	_	Dep=23|Rel=PPart
+20	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	23	expl	_	Dep=23|Rel=PPart
+21	naj	naj	PART	Q	_	23	advmod	_	Dep=23|Rel=PPart
+22	to	ta	DET	Pd-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	23	nsubj	_	Dep=23|Rel=Sb
+23	zgodilo	zgoditi	VERB	Vmep-sn	Aspect=Perf|Gender=Neut|Number=Sing|VerbForm=Part	5	parataxis	_	Dep=0|Rel=Root
+24	prihodnji	prihodnji	ADJ	Agpmsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	25	amod	_	Dep=25|Rel=Atr
+25	mesec	mesec	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	23	obl	_	SpaceAfter=No|Dep=23|Rel=AdvO
+26	.	.	PUNCT	Z	_	5	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj2.3.13
+# text = Zato je včeraj sklicala sestanek, na katerem so ugotavljali, kako bi prišli do najprimernejše rešitve.
+1	Zato	zato	CCONJ	Cc	_	4	cc	_	Dep=4|Rel=Conj
+2	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	aux	_	Dep=4|Rel=PPart
+3	včeraj	včeraj	ADV	Rgp	Degree=Pos	4	advmod	_	Dep=4|Rel=AdvO
+4	sklicala	sklicati	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+5	sestanek	sestanek	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No|Dep=4|Rel=Obj
+6	,	,	PUNCT	Z	_	10	punct	_	Dep=0|Rel=Root
+7	na	na	ADP	Sl	Case=Loc	8	case	_	Dep=8|Rel=Atr
+8	katerem	kateri	DET	Pq-msl	Case=Loc|Gender=Masc|Number=Sing|PronType=Int	10	obl	_	Dep=10|Rel=Conj
+9	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	10	aux	_	Dep=10|Rel=PPart
+10	ugotavljali	ugotavljati	VERB	Vmpp-pm	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	SpaceAfter=No|Dep=5|Rel=Atr
+11	,	,	PUNCT	Z	_	14	punct	_	Dep=0|Rel=Root
+12	kako	kako	ADV	Rgp	Degree=Pos	14	advmod	_	Dep=14|Rel=Conj
+13	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	14	aux	_	Dep=14|Rel=PPart
+14	prišli	priti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	10	ccomp	_	Dep=10|Rel=Obj
+15	do	do	ADP	Sg	Case=Gen	17	case	_	Dep=17|Rel=Atr
+16	najprimernejše	primeren	ADJ	Agsfsg	Case=Gen|Degree=Sup|Gender=Fem|Number=Sing	17	amod	_	Dep=17|Rel=Atr
+17	rešitve	rešitev	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	14	obl	_	SpaceAfter=No|Dep=14|Rel=Obj
+18	.	.	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.4.14
+# text = Kar zadeva podočnjake, je stvar malce bolj zapletena.
+1	Kar	kar	PRON	Pr-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	2	nsubj	_	Dep=2|Rel=Conj
+2	zadeva	zadevati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+3	podočnjake	podočnjak	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No|Dep=2|Rel=Obj
+4	,	,	PUNCT	Z	_	9	punct	_	Dep=0|Rel=Root
+5	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	cop	_	Dep=0|Rel=Root
+6	stvar	stvar	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	Dep=5|Rel=Sb
+7	malce	malce	ADV	Rgp	Degree=Pos	8	advmod	_	Dep=8|Rel=Atr
+8	bolj	bolj	ADV	Rgc	Degree=Cmp	9	advmod	_	Dep=9|Rel=Atr
+9	zapletena	zapleten	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	2	parataxis	_	SpaceAfter=No|Dep=5|Rel=Atr
+10	.	.	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.4.15
+# text = Lahko so posledica vnetja vek, ki je pogosto pri ljudeh, ki trpijo za alergijami, lahko so posledica vnetja veznic, dehidracije, stresa, preutrujenosti …
+1	Lahko	lahko	ADV	Rgp	Degree=Pos	3	advmod	_	Dep=2|Rel=PPart
+2	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	3	cop	_	Dep=0|Rel=Root
+3	posledica	posledica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	Dep=2|Rel=Atr
+4	vnetja	vnetje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	Dep=3|Rel=Atr
+5	vek	veka	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	4	nmod	_	SpaceAfter=No|Dep=4|Rel=Atr
+6	,	,	PUNCT	Z	_	9	punct	_	Dep=0|Rel=Root
+7	ki	ki	SCONJ	Cs	_	9	mark	_	Dep=8|Rel=Conj
+8	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	cop	_	Dep=4|Rel=Atr
+9	pogosto	pogost	ADJ	Agpnsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	4	acl	_	Dep=8|Rel=Atr
+10	pri	pri	ADP	Sl	Case=Loc	11	case	_	Dep=11|Rel=Atr
+11	ljudeh	človek	NOUN	Ncmpl	Case=Loc|Gender=Masc|Number=Plur	9	obl	_	SpaceAfter=No|Dep=8|Rel=AdvO
+12	,	,	PUNCT	Z	_	14	punct	_	Dep=0|Rel=Root
+13	ki	ki	SCONJ	Cs	_	14	mark	_	Dep=14|Rel=Conj
+14	trpijo	trpeti	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl	_	Dep=11|Rel=Atr
+15	za	za	ADP	Si	Case=Ins	16	case	_	Dep=16|Rel=Atr
+16	alergijami	alergija	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	14	obl	_	SpaceAfter=No|Dep=14|Rel=Obj
+17	,	,	PUNCT	Z	_	14	punct	_	Dep=0|Rel=Root
+18	lahko	lahko	ADV	Rgp	Degree=Pos	20	advmod	_	Dep=19|Rel=PPart
+19	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	20	cop	_	Dep=0|Rel=Root
+20	posledica	posledica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	3	parataxis	_	Dep=19|Rel=Atr
+21	vnetja	vnetje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	20	nmod	_	Dep=20|Rel=Atr
+22	veznic	veznica	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	21	nmod	_	SpaceAfter=No|Dep=21|Rel=Atr
+23	,	,	PUNCT	Z	_	24	punct	_	Dep=24|Rel=Conj
+24	dehidracije	dehidracija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	21	conj	_	SpaceAfter=No|Dep=21|Rel=Coord
+25	,	,	PUNCT	Z	_	26	punct	_	Dep=26|Rel=Conj
+26	stresa	stres	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	21	conj	_	SpaceAfter=No|Dep=21|Rel=Coord
+27	,	,	PUNCT	Z	_	28	punct	_	Dep=28|Rel=Conj
+28	preutrujenosti	preutrujenost	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	21	conj	_	Dep=21|Rel=Coord
+29	…	…	PUNCT	Z	_	3	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.4.16
+# text = Najprej je treba najti vzrok, zaradi katerega so se pojavili.
+1	Najprej	najprej	ADV	Rgs	Degree=Sup	4	advmod	_	Dep=4|Rel=AdvO
+2	je	biti	VERB	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+3	treba	treba	ADV	Rgp	Degree=Pos	2	advmod	_	Dep=2|Rel=AdvM
+4	najti	najti	VERB	Vmen	Aspect=Perf|VerbForm=Inf	2	csubj	_	Dep=2|Rel=Sb
+5	vzrok	vzrok	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No|Dep=4|Rel=Obj
+6	,	,	PUNCT	Z	_	11	punct	_	Dep=0|Rel=Root
+7	zaradi	zaradi	ADP	Sg	Case=Gen	8	case	_	Dep=8|Rel=Atr
+8	katerega	kateri	DET	Pq-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Int	11	obl	_	Dep=11|Rel=Conj
+9	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	11	aux	_	Dep=11|Rel=PPart
+10	se	se	PRON	Px------y	PronType=Prs|Reflex=Yes|Variant=Short	11	expl	_	Dep=11|Rel=PPart
+11	pojavili	pojaviti	VERB	Vmep-pm	Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	SpaceAfter=No|Dep=5|Rel=Atr
+12	.	.	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.4.17
+# text = Včasih so podočnjaki tudi posledica tanke kože.
+1	Včasih	včasih	ADV	Rgp	Degree=Pos	5	advmod	_	Dep=2|Rel=AdvO
+2	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	5	cop	_	Dep=0|Rel=Root
+3	podočnjaki	podočnjak	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	Dep=2|Rel=Sb
+4	tudi	tudi	PART	Q	_	5	advmod	_	Dep=0|Rel=Root
+5	posledica	posledica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	Dep=2|Rel=Atr
+6	tanke	tanek	ADJ	Agpfsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	Dep=7|Rel=Atr
+7	kože	koža	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No|Dep=5|Rel=Atr
+8	.	.	PUNCT	Z	_	5	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.5.18
+# text = - Spoznajo osnovne značilnosti bolezni: kaj je astma in kako poteka.
+1	-	-	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+2	Spoznajo	spoznati	VERB	Vmbr3p	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+3	osnovne	osnoven	ADJ	Agpfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur	4	amod	_	Dep=4|Rel=Atr
+4	značilnosti	značilnost	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	2	obj	_	Dep=2|Rel=Obj
+5	bolezni	bolezen	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No|Dep=4|Rel=Atr
+6	:	:	PUNCT	Z	_	9	punct	_	Dep=0|Rel=Root
+7	kaj	kaj	PRON	Pq-nsn	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	9	nsubj	_	Dep=8|Rel=Sb
+8	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	cop	_	Dep=0|Rel=Root
+9	astma	astma	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	2	parataxis	_	Dep=8|Rel=Atr
+10	in	in	CCONJ	Cc	_	12	cc	_	Dep=12|Rel=Conj
+11	kako	kako	ADV	Rgp	Degree=Pos	12	advmod	_	Dep=12|Rel=AdvM
+12	poteka	potekati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	SpaceAfter=No|Dep=0|Rel=Root
+13	.	.	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.20
+# text = Holistični pristop k zdravljenju, ki so ga zagovarjali vsi predavatelji, pomeni predvsem ukvarjanje s sabo.
+1	Holistični	holističen	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	2	amod	_	Dep=2|Rel=Atr
+2	pristop	pristop	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	13	nsubj	_	Dep=13|Rel=Sb
+3	k	k	ADP	Sd	Case=Dat	4	case	_	Dep=4|Rel=Atr
+4	zdravljenju	zdravljenje	NOUN	Ncnsd	Case=Dat|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No|Dep=2|Rel=Atr
+5	,	,	PUNCT	Z	_	9	punct	_	Dep=0|Rel=Root
+6	ki	ki	SCONJ	Cs	_	9	mark	_	Dep=9|Rel=Conj
+7	so	biti	AUX	Va-r3p-n	Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	9	aux	_	Dep=9|Rel=PPart
+8	ga	on	PRON	Pp3msa--y	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short	9	obj	_	Dep=9|Rel=Obj
+9	zagovarjali	zagovarjati	VERB	Vmpp-pm	Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part	2	acl	_	Dep=2|Rel=Atr
+10	vsi	ves	DET	Pg-mpn	Case=Nom|Gender=Masc|Number=Plur|PronType=Tot	11	det	_	Dep=11|Rel=Atr
+11	predavatelji	predavatelj	NOUN	Ncmpn	Case=Nom|Gender=Masc|Number=Plur	9	nsubj	_	SpaceAfter=No|Dep=9|Rel=Sb
+12	,	,	PUNCT	Z	_	9	punct	_	Dep=0|Rel=Root
+13	pomeni	pomeniti	VERB	Vmbr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+14	predvsem	predvsem	PART	Q	_	13	advmod	_	Dep=0|Rel=Root
+15	ukvarjanje	ukvarjanje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	Dep=13|Rel=Obj
+16	s	z	ADP	Si	Case=Ins	17	case	_	Dep=17|Rel=Atr
+17	sabo	se	PRON	Px---i	Case=Ins|PronType=Prs|Reflex=Yes	15	nmod	_	SpaceAfter=No|Dep=15|Rel=Atr
+18	.	.	PUNCT	Z	_	13	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.21
+# text = V tem duhu je Urška Lunder razložila, da je "sporazumevanje vitalni del v procesu zdravljenja, vendar je največkrat blokirano".
+1	V	v	ADP	Sl	Case=Loc	3	case	_	Dep=3|Rel=Atr
+2	tem	ta	DET	Pd-msl	Case=Loc|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	Dep=3|Rel=Atr
+3	duhu	duh	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	7	obl	_	Dep=7|Rel=AdvM
+4	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	aux	_	Dep=7|Rel=PPart
+5	Urška	Urška	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	Dep=7|Rel=Sb
+6	Lunder	Lunder	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	5	flat:name	_	Dep=5|Rel=Atr
+7	razložila	razložiti	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	SpaceAfter=No|Dep=0|Rel=Root
+8	,	,	PUNCT	Z	_	14	punct	_	Dep=0|Rel=Root
+9	da	da	SCONJ	Cs	_	14	mark	_	Dep=10|Rel=Conj
+10	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	14	cop	_	Dep=7|Rel=Obj
+11	"	"	PUNCT	Z	_	14	punct	_	SpaceAfter=No|Dep=0|Rel=Root
+12	sporazumevanje	sporazumevanje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	14	nsubj	_	Dep=10|Rel=Sb
+13	vitalni	vitalen	ADJ	Agpmsny	Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	14	amod	_	Dep=14|Rel=Atr
+14	del	del	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	ccomp	_	Dep=10|Rel=Atr
+15	v	v	ADP	Sl	Case=Loc	16	case	_	Dep=16|Rel=Atr
+16	procesu	proces	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	14	obl	_	Dep=10|Rel=AdvO
+17	zdravljenja	zdravljenje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	16	nmod	_	SpaceAfter=No|Dep=16|Rel=Atr
+18	,	,	PUNCT	Z	_	14	punct	_	Dep=0|Rel=Root
+19	vendar	vendar	CCONJ	Cc	_	22	cc	_	Dep=20|Rel=Conj
+20	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	22	cop	_	Dep=0|Rel=Root
+21	največkrat	največkrat	ADV	Rgs	Degree=Sup	22	advmod	_	Dep=20|Rel=AdvO
+22	blokirano	blokiran	ADJ	Appnsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	14	conj	_	SpaceAfter=No|Dep=20|Rel=Atr
+23	"	"	PUNCT	Z	_	7	punct	_	SpaceAfter=No|Dep=0|Rel=Root
+24	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.22
+# text = Bolnikova zaskrbljenost je pri stroki pogosto deležna površne tolažbe ali pokroviteljske drže.
+1	Bolnikova	bolnikov	ADJ	Aspfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	2	amod	_	Dep=2|Rel=Atr
+2	zaskrbljenost	zaskrbljenost	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	Dep=3|Rel=Sb
+3	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	cop	_	Dep=0|Rel=Root
+4	pri	pri	ADP	Sl	Case=Loc	5	case	_	Dep=5|Rel=Atr
+5	stroki	stroka	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	7	obl	_	Dep=3|Rel=AdvO
+6	pogosto	pogosto	ADV	Rgp	Degree=Pos	7	advmod	_	Dep=3|Rel=AdvO
+7	deležna	deležen	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	Dep=3|Rel=Atr
+8	površne	površen	ADJ	Agpfsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	Dep=9|Rel=Atr
+9	tolažbe	tolažba	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	7	obj	_	Dep=7|Rel=Obj
+10	ali	ali	CCONJ	Cc	_	12	cc	_	Dep=12|Rel=Conj
+11	pokroviteljske	pokroviteljski	ADJ	Agpfsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	12	amod	_	Dep=12|Rel=Atr
+12	drže	drža	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No|Dep=9|Rel=Coord
+13	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.23
+# text = Za obe strani pa je najbolj zadovoljiva dvosmerna komunikacija.
+1	Za	za	ADP	Sa	Case=Acc	3	case	_	Dep=3|Rel=Atr
+2	obe	oba	DET	Pg-fda	Case=Acc|Gender=Fem|Number=Dual|PronType=Tot	3	det	_	Dep=3|Rel=Atr
+3	strani	stran	NOUN	Ncfda	Case=Acc|Gender=Fem|Number=Dual	7	obl	_	Dep=5|Rel=Obj
+4	pa	pa	CCONJ	Cc	_	7	advmod	_	Dep=0|Rel=Root
+5	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	7	cop	_	Dep=0|Rel=Root
+6	najbolj	najbolj	ADV	Rgs	Degree=Sup	7	advmod	_	Dep=7|Rel=Atr
+7	zadovoljiva	zadovoljiv	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	0	root	_	Dep=5|Rel=Atr
+8	dvosmerna	dvosmeren	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	9	amod	_	Dep=9|Rel=Atr
+9	komunikacija	komunikacija	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	SpaceAfter=No|Dep=5|Rel=Sb
+10	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.24
+# text = Opozorila je tudi na slabo komunikacijo med obema medicinskima sistemoma, ko gre za zdravljenje istega bolnika.
+1	Opozorila	opozoriti	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+2	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	1	aux	_	Dep=1|Rel=PPart
+3	tudi	tudi	PART	Q	_	1	advmod	_	Dep=0|Rel=Root
+4	na	na	ADP	Sa	Case=Acc	6	case	_	Dep=6|Rel=Atr
+5	slabo	slab	ADJ	Agpfsa	Case=Acc|Degree=Pos|Gender=Fem|Number=Sing	6	amod	_	Dep=6|Rel=Atr
+6	komunikacijo	komunikacija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	1	obl	_	Dep=1|Rel=Obj
+7	med	med	ADP	Si	Case=Ins	10	case	_	Dep=10|Rel=Atr
+8	obema	oba	DET	Pg-mdi	Case=Ins|Gender=Masc|Number=Dual|PronType=Tot	10	det	_	Dep=10|Rel=Atr
+9	medicinskima	medicinski	ADJ	Agpmdi	Case=Ins|Degree=Pos|Gender=Masc|Number=Dual	10	amod	_	Dep=10|Rel=Atr
+10	sistemoma	sistem	NOUN	Ncmdi	Case=Ins|Gender=Masc|Number=Dual	6	nmod	_	SpaceAfter=No|Dep=6|Rel=Atr
+11	,	,	PUNCT	Z	_	13	punct	_	Dep=0|Rel=Root
+12	ko	ko	SCONJ	Cs	_	13	mark	_	Dep=13|Rel=Conj
+13	gre	iti	VERB	Vmbr3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	_	Dep=1|Rel=AdvO
+14	za	za	ADP	Sa	Case=Acc	15	case	_	Dep=15|Rel=Atr
+15	zdravljenje	zdravljenje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	obl	_	Dep=13|Rel=Obj
+16	istega	isti	DET	Pi-msg	Case=Gen|Gender=Masc|Number=Sing|PronType=Ind	17	det	_	Dep=17|Rel=Atr
+17	bolnika	bolnik	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No|Dep=15|Rel=Atr
+18	.	.	PUNCT	Z	_	1	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.7.25
+# text = Nataša Pergar, bioenergetičarka, mojstrica poslovne komunikacije in svetovalka, pa je udeležencem razkrila povezave med čakrami, zdravjem in medsebojnimi odnosi.
+1	Nataša	Nataša	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	Dep=15|Rel=Sb
+2	Pergar	Pergar	PROPN	Npfsn	Case=Nom|Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No|Dep=1|Rel=Atr
+3	,	,	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+4	bioenergetičarka	bioenergetičarka	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No|Dep=0|Rel=Root
+5	,	,	PUNCT	Z	_	6	punct	_	Dep=6|Rel=Conj
+6	mojstrica	mojstrica	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	Dep=4|Rel=Coord
+7	poslovne	posloven	ADJ	Agpfsg	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	Dep=8|Rel=Atr
+8	komunikacije	komunikacija	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	6	nmod	_	Dep=6|Rel=Atr
+9	in	in	CCONJ	Cc	_	10	cc	_	Dep=10|Rel=Conj
+10	svetovalka	svetovalka	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No|Dep=4|Rel=Coord
+11	,	,	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+12	pa	pa	CCONJ	Cc	_	15	advmod	_	Dep=0|Rel=Root
+13	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	15	aux	_	Dep=15|Rel=PPart
+14	udeležencem	udeleženec	NOUN	Ncmpd	Case=Dat|Gender=Masc|Number=Plur	15	iobj	_	Dep=15|Rel=Obj
+15	razkrila	razkriti	VERB	Vmep-sf	Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+16	povezave	povezava	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	15	obj	_	Dep=15|Rel=Obj
+17	med	med	ADP	Si	Case=Ins	18	case	_	Dep=18|Rel=Atr
+18	čakrami	čakra	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No|Dep=16|Rel=Atr
+19	,	,	PUNCT	Z	_	20	punct	_	Dep=20|Rel=Conj
+20	zdravjem	zdravje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	18	conj	_	Dep=18|Rel=Coord
+21	in	in	CCONJ	Cc	_	23	cc	_	Dep=23|Rel=Conj
+22	medsebojnimi	medsebojen	ADJ	Agpmpi	Case=Ins|Degree=Pos|Gender=Masc|Number=Plur	23	amod	_	Dep=23|Rel=Atr
+23	odnosi	odnos	NOUN	Ncmpi	Case=Ins|Gender=Masc|Number=Plur	18	conj	_	SpaceAfter=No|Dep=18|Rel=Coord
+24	.	.	PUNCT	Z	_	15	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.8.26
+# text = Pri bioresonančni metodi s posebnimi elektroprevodnimi elektrodami izločijo nihanja iz obolelega telesa in to informacijo po elektrodnem kablu pripeljejo v napravo, ki poljubno spreminja nihanja.
+1	Pri	pri	ADP	Sl	Case=Loc	3	case	_	Dep=3|Rel=Atr
+2	bioresonančni	bioresonančen	ADJ	Agpfsl	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	3	amod	_	Dep=3|Rel=Atr
+3	metodi	metoda	NOUN	Ncfsl	Case=Loc|Gender=Fem|Number=Sing	8	obl	_	Dep=8|Rel=AdvO
+4	s	z	ADP	Si	Case=Ins	7	case	_	Dep=7|Rel=Atr
+5	posebnimi	poseben	ADJ	Agpfpi	Case=Ins|Degree=Pos|Gender=Fem|Number=Plur	7	amod	_	Dep=7|Rel=Atr
+6	elektroprevodnimi	elektroprevoden	ADJ	Agpfpi	Case=Ins|Degree=Pos|Gender=Fem|Number=Plur	7	amod	_	Dep=7|Rel=Atr
+7	elektrodami	elektroda	NOUN	Ncfpi	Case=Ins|Gender=Fem|Number=Plur	8	obl	_	Dep=8|Rel=AdvM
+8	izločijo	izločiti	VERB	Vmer3p	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+9	nihanja	nihanje	NOUN	Ncnpa	Case=Acc|Gender=Neut|Number=Plur	8	obj	_	Dep=8|Rel=Obj
+10	iz	iz	ADP	Sg	Case=Gen	12	case	_	Dep=12|Rel=Atr
+11	obolelega	obolel	ADJ	Appnsg	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	12	amod	_	Dep=12|Rel=Atr
+12	telesa	telo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	8	obl	_	Dep=8|Rel=AdvO
+13	in	in	CCONJ	Cc	_	19	cc	_	Dep=19|Rel=Conj
+14	to	ta	DET	Pd-fsa	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	15	det	_	Dep=15|Rel=Atr
+15	informacijo	informacija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	19	obj	_	Dep=19|Rel=Obj
+16	po	po	ADP	Sl	Case=Loc	18	case	_	Dep=18|Rel=Atr
+17	elektrodnem	elektroden	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	Dep=18|Rel=Atr
+18	kablu	kabel	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	19	obl	_	Dep=19|Rel=AdvM
+19	pripeljejo	pripeljati	VERB	Vmer3p	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	Dep=0|Rel=Root
+20	v	v	ADP	Sa	Case=Acc	21	case	_	Dep=21|Rel=Atr
+21	napravo	naprava	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	19	obl	_	SpaceAfter=No|Dep=19|Rel=AdvO
+22	,	,	PUNCT	Z	_	25	punct	_	Dep=0|Rel=Root
+23	ki	ki	SCONJ	Cs	_	25	mark	_	Dep=25|Rel=Conj
+24	poljubno	poljubno	ADV	Rgp	Degree=Pos	25	advmod	_	Dep=25|Rel=AdvM
+25	spreminja	spreminjati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl	_	Dep=21|Rel=Atr
+26	nihanja	nihanje	NOUN	Ncnpa	Case=Acc|Gender=Neut|Number=Plur	25	obj	_	SpaceAfter=No|Dep=25|Rel=Obj
+27	.	.	PUNCT	Z	_	8	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.8.28
+# text = Tako spremenjene informacije nihanja po dovodnem kablu pripeljejo v elektrodo, ki je navadno nameščena na bolnikovem hrbtu tako, da na njej leži.
+1	Tako	tako	ADV	Rgp	Degree=Pos	2	advmod	_	Dep=2|Rel=Atr
+2	spremenjene	spremenjen	ADJ	Appfpa	Case=Acc|Degree=Pos|Gender=Fem|Number=Plur|VerbForm=Part	3	amod	_	Dep=3|Rel=Atr
+3	informacije	informacija	NOUN	Ncfpa	Case=Acc|Gender=Fem|Number=Plur	8	obj	_	Dep=8|Rel=Obj
+4	nihanja	nihanje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	Dep=3|Rel=Atr
+5	po	po	ADP	Sl	Case=Loc	7	case	_	Dep=7|Rel=Atr
+6	dovodnem	dovoden	ADJ	Agpmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	7	amod	_	Dep=7|Rel=Atr
+7	kablu	kabel	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	8	obl	_	Dep=8|Rel=AdvO
+8	pripeljejo	pripeljati	VERB	Vmer3p	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+9	v	v	ADP	Sa	Case=Acc	10	case	_	Dep=10|Rel=Atr
+10	elektrodo	elektroda	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	8	obl	_	SpaceAfter=No|Dep=8|Rel=AdvO
+11	,	,	PUNCT	Z	_	15	punct	_	Dep=0|Rel=Root
+12	ki	ki	SCONJ	Cs	_	15	mark	_	Dep=13|Rel=Conj
+13	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	15	cop	_	Dep=10|Rel=Atr
+14	navadno	navadno	ADV	Rgp	Degree=Pos	15	advmod	_	Dep=13|Rel=AdvO
+15	nameščena	nameščen	ADJ	Appfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	Dep=13|Rel=Atr
+16	na	na	ADP	Sl	Case=Loc	18	case	_	Dep=18|Rel=Atr
+17	bolnikovem	bolnikov	ADJ	Aspmsl	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|Poss=Yes	18	amod	_	Dep=18|Rel=Atr
+18	hrbtu	hrbet	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	15	obl	_	Dep=13|Rel=AdvO
+19	tako	tako	ADV	Rgp	Degree=Pos	24	mark	_	SpaceAfter=No|Dep=24|Rel=Conj
+20	,	,	PUNCT	Z	_	19	punct	_	Dep=0|Rel=Root
+21	da	da	SCONJ	Cs	_	19	fixed	_	Dep=19|Rel=MWU
+22	na	na	ADP	Sl	Case=Loc	23	case	_	Dep=23|Rel=Atr
+23	njej	on	PRON	Pp3fsl	Case=Loc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	24	obl	_	Dep=24|Rel=AdvO
+24	leži	ležati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	_	SpaceAfter=No|Dep=15|Rel=AdvM
+25	.	.	PUNCT	Z	_	8	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.8.29
+# text = Telo sprejme "dražljaj" in pride v resonanco s terapevtskim nihanjem.
+1	Telo	telo	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	Dep=2|Rel=Sb
+2	sprejme	sprejeti	VERB	Vmer3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Dep=0|Rel=Root
+3	"	"	PUNCT	Z	_	4	punct	_	SpaceAfter=No|Dep=0|Rel=Root
+4	dražljaj	dražljaj	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|Dep=2|Rel=Obj
+5	"	"	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+6	in	in	CCONJ	Cc	_	7	cc	_	Dep=7|Rel=Conj
+7	pride	priti	VERB	Vmer3s	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	Dep=0|Rel=Root
+8	v	v	ADP	Sa	Case=Acc	9	case	_	Dep=9|Rel=Atr
+9	resonanco	resonanca	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	7	obl	_	Dep=7|Rel=AdvO
+10	s	z	ADP	Si	Case=Ins	12	case	_	Dep=12|Rel=Atr
+11	terapevtskim	terapevtski	ADJ	Agpnsi	Case=Ins|Degree=Pos|Gender=Neut|Number=Sing	12	amod	_	Dep=12|Rel=Atr
+12	nihanjem	nihanje	NOUN	Ncnsi	Case=Ins|Gender=Neut|Number=Sing	7	obl	_	SpaceAfter=No|Dep=7|Rel=AdvM
+13	.	.	PUNCT	Z	_	2	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.8.30
+# text = Naprava BICOM je torej nekakšna zbirka impulzov, oblikovanih v zdravilne programe, ki pospešujejo zdravljenje in normalizacijo presnovnih procesov v telesu, toda na koncu je vseeno od človeka, ki upravlja z aparatom, in od njegovih izkušenj odvisno, ali bo pravilno postavil diagnozo in izbral pravi program za bolnika.
+1	Naprava	naprava	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	Dep=3|Rel=Sb
+2	BICOM	BICOM	PROPN	Npmsn	Case=Nom|Gender=Masc|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
+3	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	6	cop	_	Dep=0|Rel=Root
+4	torej	torej	ADV	Rgp	Degree=Pos	6	advmod	_	Dep=0|Rel=Root
+5	nekakšna	nekakšen	DET	Pi-fsn	Case=Nom|Gender=Fem|Number=Sing|PronType=Ind	6	det	_	Dep=6|Rel=Atr
+6	zbirka	zbirka	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	0	root	_	Dep=3|Rel=Atr
+7	impulzov	impulz	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No|Dep=6|Rel=Atr
+8	,	,	PUNCT	Z	_	9	punct	_	Dep=9|Rel=Conj
+9	oblikovanih	oblikovan	ADJ	Appmpg	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part	7	amod	_	Dep=7|Rel=Atr
+10	v	v	ADP	Sa	Case=Acc	12	case	_	Dep=12|Rel=Atr
+11	zdravilne	zdravilen	ADJ	Agpmpa	Case=Acc|Degree=Pos|Gender=Masc|Number=Plur	12	amod	_	Dep=12|Rel=Atr
+12	programe	program	NOUN	Ncmpa	Case=Acc|Gender=Masc|Number=Plur	9	obl	_	SpaceAfter=No|Dep=9|Rel=Obj
+13	,	,	PUNCT	Z	_	15	punct	_	Dep=0|Rel=Root
+14	ki	ki	SCONJ	Cs	_	15	mark	_	Dep=15|Rel=Conj
+15	pospešujejo	pospeševati	VERB	Vmpr3p	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	Dep=12|Rel=Atr
+16	zdravljenje	zdravljenje	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	15	obj	_	Dep=15|Rel=Obj
+17	in	in	CCONJ	Cc	_	18	cc	_	Dep=18|Rel=Conj
+18	normalizacijo	normalizacija	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	16	conj	_	Dep=16|Rel=Coord
+19	presnovnih	presnoven	ADJ	Agpmpg	Case=Gen|Degree=Pos|Gender=Masc|Number=Plur	20	amod	_	Dep=20|Rel=Atr
+20	procesov	proces	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	18	nmod	_	Dep=18|Rel=Atr
+21	v	v	ADP	Sl	Case=Loc	22	case	_	Dep=22|Rel=Atr
+22	telesu	telo	NOUN	Ncnsl	Case=Loc|Gender=Neut|Number=Sing	20	nmod	_	SpaceAfter=No|Dep=20|Rel=Atr
+23	,	,	PUNCT	Z	_	15	punct	_	Dep=0|Rel=Root
+24	toda	toda	CCONJ	Cc	_	41	cc	_	Dep=27|Rel=Conj
+25	na	na	ADP	Sl	Case=Loc	26	case	_	Dep=26|Rel=Atr
+26	koncu	konec	NOUN	Ncmsl	Case=Loc|Gender=Masc|Number=Sing	41	obl	_	Dep=27|Rel=AdvO
+27	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	41	cop	_	Dep=0|Rel=Root
+28	vseeno	vseeno	ADV	Rgp	Degree=Pos	41	advmod	_	Dep=27|Rel=AdvM
+29	od	od	ADP	Sg	Case=Gen	30	case	_	Dep=30|Rel=Atr
+30	človeka	človek	NOUN	Ncmsg	Case=Gen|Gender=Masc|Number=Sing	41	obl	_	SpaceAfter=No|Dep=41|Rel=Obj
+31	,	,	PUNCT	Z	_	33	punct	_	Dep=0|Rel=Root
+32	ki	ki	SCONJ	Cs	_	33	mark	_	Dep=33|Rel=Conj
+33	upravlja	upravljati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl	_	Dep=30|Rel=Atr
+34	z	z	ADP	Si	Case=Ins	35	case	_	Dep=35|Rel=Atr
+35	aparatom	aparat	NOUN	Ncmsi	Case=Ins|Gender=Masc|Number=Sing	33	obl	_	SpaceAfter=No|Dep=33|Rel=Obj
+36	,	,	PUNCT	Z	_	33	punct	_	Dep=0|Rel=Root
+37	in	in	CCONJ	Cc	_	40	cc	_	Dep=40|Rel=Conj
+38	od	od	ADP	Sg	Case=Gen	40	case	_	Dep=40|Rel=Atr
+39	njegovih	njegov	DET	Ps3fpgsm	Case=Gen|Gender=Fem|Gender[psor]=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	40	det	_	Dep=40|Rel=Atr
+40	izkušenj	izkušnja	NOUN	Ncfpg	Case=Gen|Gender=Fem|Number=Plur	30	conj	_	Dep=30|Rel=Coord
+41	odvisno	odvisen	ADJ	Agpnsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	6	parataxis	_	SpaceAfter=No|Dep=27|Rel=Atr
+42	,	,	PUNCT	Z	_	46	punct	_	Dep=0|Rel=Root
+43	ali	ali	ADV	Rgp	Degree=Pos	46	mark	_	Dep=46|Rel=Conj
+44	bo	biti	AUX	Va-f3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	46	aux	_	Dep=46|Rel=PPart
+45	pravilno	pravilno	ADV	Rgp	Degree=Pos	46	advmod	_	Dep=46|Rel=AdvM
+46	postavil	postaviti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	41	csubj	_	Dep=27|Rel=Sb
+47	diagnozo	diagnoza	NOUN	Ncfsa	Case=Acc|Gender=Fem|Number=Sing	46	obj	_	Dep=46|Rel=Obj
+48	in	in	CCONJ	Cc	_	49	cc	_	Dep=49|Rel=Conj
+49	izbral	izbrati	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	46	conj	_	Dep=0|Rel=Root
+50	pravi	pravi	ADJ	Agpmsay	Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing	51	amod	_	Dep=51|Rel=Atr
+51	program	program	NOUN	Ncmsan	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	49	obj	_	Dep=49|Rel=Obj
+52	za	za	ADP	Sa	Case=Acc	53	case	_	Dep=53|Rel=Atr
+53	bolnika	bolnik	NOUN	Ncmsay	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	51	nmod	_	SpaceAfter=No|Dep=51|Rel=Atr
+54	.	.	PUNCT	Z	_	6	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.9.31
+# text = Območje medenice je središče telesa, glavna peč, ki greje in uravnava vse telo, zato bi moralo biti vedno toplo.
+1	Območje	območje	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	Dep=3|Rel=Sb
+2	medenice	medenica	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	1	nmod	_	Dep=1|Rel=Atr
+3	je	biti	AUX	Va-r3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin	4	cop	_	Dep=0|Rel=Root
+4	središče	središče	NOUN	Ncnsn	Case=Nom|Gender=Neut|Number=Sing	0	root	_	Dep=3|Rel=Atr
+5	telesa	telo	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	SpaceAfter=No|Dep=4|Rel=Atr
+6	,	,	PUNCT	Z	_	8	punct	_	Dep=0|Rel=Root
+7	glavna	glaven	ADJ	Agpfsn	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	8	amod	_	Dep=8|Rel=Atr
+8	peč	peč	NOUN	Ncfsn	Case=Nom|Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No|Dep=0|Rel=Root
+9	,	,	PUNCT	Z	_	11	punct	_	Dep=0|Rel=Root
+10	ki	ki	SCONJ	Cs	_	11	mark	_	Dep=11|Rel=Conj
+11	greje	greti	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	Dep=8|Rel=Atr
+12	in	in	CCONJ	Cc	_	13	cc	_	Dep=13|Rel=Conj
+13	uravnava	uravnavati	VERB	Vmpr3s	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	Dep=0|Rel=Root
+14	vse	ves	DET	Pg-nsa	Case=Acc|Gender=Neut|Number=Sing|PronType=Tot	15	det	_	Dep=15|Rel=Atr
+15	telo	telo	NOUN	Ncnsa	Case=Acc|Gender=Neut|Number=Sing	13	obj	_	SpaceAfter=No|Dep=13|Rel=Obj
+16	,	,	PUNCT	Z	_	11	punct	_	Dep=0|Rel=Root
+17	zato	zato	CCONJ	Cc	_	19	cc	_	Dep=19|Rel=Conj
+18	bi	biti	AUX	Va-c	Mood=Cnd|VerbForm=Fin	19	aux	_	Dep=19|Rel=PPart
+19	moralo	morati	VERB	Vmpp-sn	Aspect=Imp|Gender=Neut|Number=Sing|VerbForm=Part	4	parataxis	_	Dep=0|Rel=Root
+20	biti	biti	AUX	Va-n	VerbForm=Inf	22	cop	_	Dep=19|Rel=Atr
+21	vedno	vedno	ADV	Rgp	Degree=Pos	22	advmod	_	Dep=20|Rel=AdvO
+22	toplo	topel	ADJ	Agpnsn	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	19	xcomp	_	SpaceAfter=No|Dep=20|Rel=Atr
+23	.	.	PUNCT	Z	_	4	punct	_	Dep=0|Rel=Root
+
+# sent_id = ssj3.9.33
+# text = Dolgoročno gledano ne bo noben analgetik odpravil vozličkov, zaprtja in blokade tega območja.
+1	Dolgoročno	dolgoročno	ADV	Rgp	Degree=Pos	2	advmod	_	Dep=2|Rel=Atr
+2	gledano	gledano	ADV	Rgp	Degree=Pos	7	advmod	_	Dep=7|Rel=AdvM
+3	ne	ne	PART	Q	Polarity=Neg	7	advmod	_	Dep=7|Rel=PPart
+4	bo	biti	AUX	Va-f3s-n	Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Fut|VerbForm=Fin	7	aux	_	Dep=7|Rel=PPart
+5	noben	noben	DET	Pz-msn	Case=Nom|Gender=Masc|Number=Sing|PronType=Neg	6	det	_	Dep=6|Rel=Atr
+6	analgetik	analgetik	NOUN	Ncmsn	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	Dep=7|Rel=Sb
+7	odpravil	odpraviti	VERB	Vmep-sm	Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	Dep=0|Rel=Root
+8	vozličkov	vozliček	NOUN	Ncmpg	Case=Gen|Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No|Dep=7|Rel=Obj
+9	,	,	PUNCT	Z	_	10	punct	_	Dep=10|Rel=Conj
+10	zaprtja	zaprtje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	8	conj	_	Dep=8|Rel=Coord
+11	in	in	CCONJ	Cc	_	12	cc	_	Dep=12|Rel=Conj
+12	blokade	blokada	NOUN	Ncfsg	Case=Gen|Gender=Fem|Number=Sing	8	conj	_	Dep=8|Rel=Coord
+13	tega	ta	DET	Pd-nsg	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	14	det	_	Dep=14|Rel=Atr
+14	območja	območje	NOUN	Ncnsg	Case=Gen|Gender=Neut|Number=Sing	12	nmod	_	SpaceAfter=No|Dep=12|Rel=Atr
+15	.	.	PUNCT	Z	_	7	punct	_	Dep=0|Rel=Root
+

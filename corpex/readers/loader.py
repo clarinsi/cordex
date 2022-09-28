@@ -25,7 +25,7 @@ def load_files(args, database):
 
     if len(filenames) > 1:
         filenames = [filename for filename in filenames if filename[-5:] != '.zstd']
-        filenames = sorted(filenames, key=lambda x: int(x.split('.')[-1]))
+        filenames = sorted(filenames)
 
     database.init("CREATE TABLE Files ( filename varchar(2048) )")
 
@@ -42,10 +42,10 @@ def load_files(args, database):
         if extension == ".xml":
             et = load_tei(fname)
             yield tei_sentence_generator(et, args)
-        elif extension == ".conllu":
+        elif extension == ".conllu" or extension == ".conllup":
             yield load_conllu(fname, args)
         else:
-            raise Exception(f'File {fname} is in incorrect format (it should be .xml or .conllu).')
+            raise Exception(f'File {fname} is in incorrect format (it should be .xml, .conllu or .conllup).')
 
         database.execute("INSERT INTO Files (filename) VALUES (?)", (fname,))
         database.commit()
@@ -78,6 +78,9 @@ def load_conllu(filename, args):
         # build dep parse
         for sent in conlls:
             try:
+                if len(sent) == 0:
+                    continue
+
                 # adding fake word
                 words['0'] = Word.fake_root_word('0')
                 for word in sent:
@@ -115,70 +118,78 @@ def tei_sentence_generator(et, args):
     previous_pc = False
 
     words = {}
-    paragraphs = list(et.iter('p'))
-    for paragraph in progress(paragraphs, "load-text"):
-        previous_glue = False
-        sentences = list(paragraph.iter('s'))
-        for sentence in sentences:
-            # create fake root word
-            words[sentence.get('id')] = Word.fake_root_word(sentence.get('id'))
-            last_word_id = None
+    teis = list(et.iter('{http://www.tei-c.org/ns/1.0}TEI'))
 
-            if args['new_tei']:
-                for w in sentence.iter():
-                    if w.tag == 'w':
-                        words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
-                        if use_punctuations:
-                            previous_glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
-                    elif w.tag == 'pc':
-                        words[w.get('id')] = Word.pc_word(w, do_msd_translate)
-                        if use_punctuations:
-                            words[w.get('id')].previous_glue = previous_glue
-                            words[w.get('id')].glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
-                            previous_glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
-            else:
-                for w in sentence.iter():
-                    if w.tag == 'w':
-                        words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
-                        if use_punctuations:
-                            previous_glue = False
-                            last_word_id = None
-                    elif w.tag == 'pc':
-                        words[w.get('id')] = Word.pc_word(w, do_msd_translate)
-                        if use_punctuations:
-                            last_word_id = w.get('id')
-                            words[w.get('id')].previous_glue = previous_glue
-                            previous_glue = False
-                    elif use_punctuations and w.tag == 'c':
-                        # always save previous glue
-                        # previous_glue = w.text
-                        previous_glue = True
-                        if last_word_id:
-                            # words[last_word_id].glue += w.text
-                            words[last_word_id].glue = True
+    ns = '{http://www.tei-c.org/ns/1.0}' if len(teis) != 0 else ''
 
-            for l in sentence.iter("link"):
-                if 'dep' in l.keys():
-                    ana = l.get('afun')
-                    lfrom = l.get('from')
-                    dest = l.get('dep')
+    # if not TEI element search for paragraphs only
+    teis = [et] if len(teis) == 0 else teis
+
+    for tei in teis:
+        paragraphs = list(tei.iter(ns + 'p'))
+        for paragraph in progress(paragraphs, "load-text"):
+            previous_glue = False
+            sentences = list(paragraph.iter(ns + 's'))
+            for sentence in sentences:
+                # create fake root word
+                words[sentence.get('id')] = Word.fake_root_word(sentence.get('id'))
+                last_word_id = None
+
+                if args['new_tei']:
+                    for w in sentence.iter():
+                        if w.tag == 'w':
+                            words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
+                            if use_punctuations:
+                                previous_glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
+                        elif w.tag == 'pc':
+                            words[w.get('id')] = Word.pc_word(w, args['lang'])
+                            if use_punctuations:
+                                words[w.get('id')].previous_glue = previous_glue
+                                words[w.get('id')].glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
+                                previous_glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
                 else:
-                    ana = l.get('ana')
-                    if ana[:8] != 'jos-syn:': # dont bother...
-                        continue
-                    ana = ana[8:]
-                    lfrom, dest = l.get('target').replace('#', '').split()
+                    for w in sentence.iter():
+                        if w.tag == ns + 'w':
+                            words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
+                            if use_punctuations:
+                                previous_glue = False
+                                last_word_id = None
+                        elif w.tag == ns + 'pc':
+                            words[w.get('id')] = Word.pc_word(w, do_msd_translate)
+                            if use_punctuations:
+                                last_word_id = w.get('id')
+                                words[w.get('id')].previous_glue = previous_glue
+                                previous_glue = False
+                        elif use_punctuations and w.tag == ns + 'c':
+                            # always save previous glue
+                            # previous_glue = w.text
+                            previous_glue = True
+                            if last_word_id:
+                                # words[last_word_id].glue += w.text
+                                words[last_word_id].glue = True
 
-                if lfrom in words:
-                    if dest in words:
-                        next_word = words[dest]
-                        words[lfrom].add_link(ana, next_word)
+                for l in sentence.iter("link"):
+                    if 'dep' in l.keys():
+                        ana = l.get('afun')
+                        lfrom = l.get('from')
+                        dest = l.get('dep')
                     else:
-                        logging.error("Unknown id: {}".format(dest))
-                        sys.exit(1)
+                        ana = l.get('ana')
+                        if ana[:8] != 'jos-syn:': # dont bother...
+                            continue
+                        ana = ana[8:]
+                        lfrom, dest = l.get('target').replace('#', '').split()
 
-                else:
-                    # strange errors, just skip...
-                    pass
+                    if lfrom in words:
+                        if dest in words:
+                            next_word = words[dest]
+                            words[lfrom].add_link(ana, next_word)
+                        else:
+                            logging.error("Unknown id: {}".format(dest))
+                            sys.exit(1)
+
+                    else:
+                        # strange errors, just skip...
+                        pass
 
     return list(words.values())

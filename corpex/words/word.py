@@ -6,6 +6,8 @@ from collections import defaultdict
 import logging
 from conversion_utils.jos_msds_and_properties import Msd
 
+from corpex.utils.converter import translate_msd
+
 
 class WordDummy:
     """
@@ -14,6 +16,7 @@ class WordDummy:
     """
     def __init__(self, pos, lemma=None, text=None):
         self.xpos = pos
+        self.udpos = pos
         self.lemma = lemma
         self.text = text
 
@@ -25,7 +28,7 @@ class Word:
     def __init__(self, lemma, upos, xpos, wid, text, do_msd_translate, fake_word=False, previous_punctuation=None, feats=None):
         self.lemma = lemma
 
-        self.xpos = do_msd_translate.properties_to_msd(do_msd_translate.msd_to_properties(Msd(xpos, 'sl'), 'en', lemma), 'en').code if do_msd_translate else xpos
+        self.xpos = translate_msd(xpos, 'sl', lemma=lemma) if do_msd_translate else xpos
         # udpos contains both upos and feats
         if feats:
             if upos:
@@ -84,8 +87,12 @@ class Word:
 
         assert 'msd' in d, 'Tag "msd" is not in element.'
         feats_expanded = {attrib.split('=')[0]: attrib.split('=')[1] for attrib in d['msd'].split('|')}
-        upos = feats_expanded['UPosTag']
-        del feats_expanded['UPosTag']
+        if 'UPosTag' in feats_expanded:
+            upos = feats_expanded['UPosTag']
+            del feats_expanded['UPosTag']
+        else:
+            upos = feats_expanded['UposTag']
+            del feats_expanded['UposTag']
         feats = feats_expanded
         return xpos, upos, feats
 

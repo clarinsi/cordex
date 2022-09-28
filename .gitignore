@@ -1,9 +1,11 @@
-*.xml
 !collocation-structures.xml
 *.tbl
-*.csv
+
 *.pdf
 *.sage.py
+
+tests/test_data/output/izhod.csv
+tests/test_data/output/tmp_collocation_sentence_mapper
 
 .idea
 .vscode
