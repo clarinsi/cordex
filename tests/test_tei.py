@@ -3,7 +3,7 @@ import os
 import shutil
 
 import pytest
-import corpex
+import cordex
 from tests import *
 
 @pytest.fixture(scope="module")
@@ -30,7 +30,7 @@ def test_tei_multiple_documents(clear_output):
     """ Test for tei multiple documents. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = corpex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, separator=',', ignore_punctuations=True,
                            lang='en', no_msd_translate=True)
     extr(os.path.join(INPUT_DIR, "gigafida_example_tei_small"), output_dir)
@@ -42,7 +42,7 @@ def test_tei_single_document(clear_output):
     """ Test for tei single document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = corpex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, separator=',', ignore_punctuations=True)
     extr(os.path.join(INPUT_DIR, "ssj500k.small.xml"), output_dir)
 
@@ -53,7 +53,7 @@ def test_conllu_single_jos_document(clear_output):
     """ Test for conllu single jos document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = corpex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, separator=',',
                            ignore_punctuations=True)
     extr(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"), output_dir)
@@ -65,7 +65,7 @@ def test_conllu_multiple_ud_documents(clear_output):
     """ Test for conllu multiple ud documents. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = corpex.Pipeline(os.path.join(STRUCTURES_DIR, "Kolokacije_strukture_UD-1.1_2.xml"),
+    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "Kolokacije_strukture_UD-1.1_2.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, separator=',',
                            ignore_punctuations=True)
     extr(os.path.join(INPUT_DIR, "gigafida_example_conllu_small"), output_dir)
@@ -77,7 +77,7 @@ def test_conllu_single_ud_document(clear_output):
     """ Test for conllu single ud document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = corpex.Pipeline(os.path.join(STRUCTURES_DIR, "Kolokacije_strukture_UD-1.1_2.xml"),
+    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "Kolokacije_strukture_UD-1.1_2.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, separator=',',
                            ignore_punctuations=True)
     extr(os.path.join(INPUT_DIR, "ssj500k.small.conllu"), output_dir)
@@ -90,9 +90,9 @@ def test_conllu_single_ud_document(clear_output):
 
 
 # # TEI
-# # extr = corpex.Pipeline("data/structures/structures_ADAPTED2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
+# # extr = cordex.Pipeline("data/structures/structures_ADAPTED2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
 #
-# extr = corpex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1', lang='en', no_msd_translate=True)
+# extr = cordex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1', lang='en', no_msd_translate=True)
 # # extr("data/input/ssj500k-sl.body.small.xml", "data/izhod.csv")
 # extr("data/input/gigafida_example_tei_small", "data/izhod.csv")
 # # extr("data/input/ssj500k.minimal.bug.xml", "data/izhod.csv")
@@ -102,13 +102,13 @@ def test_conllu_single_ud_document(clear_output):
 #
 # # CONLLU
 # # JOS
-# extr = corpex.Pipeline("data/structures/structures.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
+# extr = cordex.Pipeline("data/structures/structures.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
 # extr("data/input/test_conllu_jos_small.conllu", "data/izhod.csv")
 
 
 # UD
-# extr = corpex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
-# # extr = corpex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2_ADAPTED.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
+# extr = cordex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
+# # extr = cordex.Pipeline("data/structures/Kolokacije_strukture_UD-1.1_2_ADAPTED.xml", out="data/izhod.csv", collocation_sentence_map_dest="data/collocation_sentence_mapper", separator=',', ignore_punctuations=True, sloleks_db='luka:akul:superdb_small:127.0.0.1')
 # # extr("data/input/ssj500k.small.conllu", "data/izhod.csv")
 # # extr("data/input/ssj500k.conllu", "data/izhod.csv")
 # extr("data/input/gigafida_example_conllu_small", "data/izhod.csv")

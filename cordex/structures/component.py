@@ -5,9 +5,9 @@ from enum import Enum
 import logging
 
 # from luscenje_struktur.restriction import Restriction
-from corpex.structures.order import Order
-from corpex.representations.representation_assigner import RepresentationAssigner
-from corpex.restrictions.restriction_group import RestrictionGroup
+from cordex.structures.order import Order
+from cordex.representations.representation_assigner import RepresentationAssigner
+from cordex.restrictions.restriction_group import RestrictionGroup
 
 
 class ComponentStatus(Enum):
@@ -23,7 +23,7 @@ class ComponentType(Enum):
 
 
 class Component:
-    def __init__(self, info, system_type):
+    def __init__(self, info, is_ud):
         idx = info['cid']
         name = info['label'] if 'label' in info else None
         typ = ComponentType.Core if info['type'] == "core" else ComponentType.Other
@@ -39,10 +39,11 @@ class Component:
         else:
             raise NotImplementedError("strange status: {}".format(info['status']))
 
+        self.is_ud = is_ud
         self.status = status
         self.name = name
         self.idx = idx
-        self.restrictions = RestrictionGroup([None], system_type) if 'restriction' in info else []
+        self.restrictions = RestrictionGroup([None], self.is_ud) if 'restriction' in info else []
         self.children = []
         self.representation = []
         self.selection = {}
@@ -54,18 +55,18 @@ class Component:
         """ Adds next component"""
         self.children.append((child_component, link_label, Order.new(order)))
 
-    def set_restriction(self, restrictions_tags, system_type):
+    def set_restriction(self, restrictions_tags):
         """ Set regex restrictions to component. """
         if not restrictions_tags:
-            self.restrictions = RestrictionGroup([None], system_type)
+            self.restrictions = RestrictionGroup([None], self.is_ud)
 
         # if first element is of type restriction all following are as well
         elif restrictions_tags[0].tag == "restriction":
-            self.restrictions = RestrictionGroup(restrictions_tags, system_type)
+            self.restrictions = RestrictionGroup(restrictions_tags, self.is_ud)
 
         # combinations of 'and' and 'or' restrictions are currently not implemented
         elif restrictions_tags[0].tag == "restriction_or":
-            self.restrictions = RestrictionGroup(restrictions_tags[0], system_type, group_type='or')
+            self.restrictions = RestrictionGroup(restrictions_tags[0], self.is_ud, group_type='or')
 
         else:
             raise RuntimeError("Unreachable")
@@ -78,20 +79,20 @@ class Component:
                 crend.add_feature(feature.attrib)
             self.representation.append(crend)
 
-    def create_children(self, deps, comps, restrs, reprs, system_type):
+    def create_children(self, deps, comps, restrs, reprs):
         """ Create component children. """
         to_ret = []
         for d in deps:
             if d[0] == self.idx:
                 _, idx, dep_label, order = d
 
-                child = Component(comps[idx], system_type)
-                child.set_restriction(restrs[idx], system_type)
+                child = Component(comps[idx], self.is_ud)
+                child.set_restriction(restrs[idx])
                 child.set_representation(reprs[idx])
                 to_ret.append(child)
 
                 self.add_child(child, dep_label, order)
-                others = child.create_children(deps, comps, restrs, reprs, system_type)
+                others = child.create_children(deps, comps, restrs, reprs)
                 to_ret.extend(others)
 
         return to_ret

@@ -1,0 +1,200 @@
+"""
+Word objects.
+"""
+
+from collections import defaultdict
+import logging
+from conversion_utils.jos_msds_and_properties import Msd
+
+from cordex.utils.converter import translate_msd
+
+
+def prepare_ids(wid, fake_word):
+    """ Gets sentence_id, word_id and int_word_id from a string id. """
+    split_id = wid.split('.')
+    word_id = split_id[-1]
+    sentence_id = '.'.join(split_id[:-1]) if not fake_word else wid
+    last_num = split_id[-1]
+    if last_num[0] not in '0123456789':
+        last_num = last_num[1:]
+    int_word_id = int(last_num)
+    return sentence_id, word_id, int_word_id
+
+
+class WordDummy:
+    """
+    Fake word used in representation. These are used when none of the words in input satisfy checks (ie. no word with
+    such msd). In these cases try to form word from inflectional lexicon.
+    """
+    def __init__(self, pos, lemma=None, text=None):
+        self.xpos = pos
+        self.udpos = pos
+        self.lemma = lemma
+        self.text = text
+
+
+class Word:
+    """
+    Base word model.
+    """
+    def __init__(self, lemma, sentence_id, word_id, int_word_id, text, fake_word=False, previous_punctuation=None):
+        self.lemma = lemma
+
+        self.idi = None
+        self.text = text
+        self.glue = False
+        self.previous_glue = False if previous_punctuation is None else previous_punctuation
+        self.fake_word = fake_word
+
+        self.links = defaultdict(list)
+
+        self.id = word_id
+        self.sentence_id = sentence_id
+        self.int_id = int_word_id
+
+    @staticmethod
+    def from_tei_element(xml, do_msd_translate):
+        """ Creates word from TEI word element. """
+        raise NotImplementedError
+
+    @staticmethod
+    def from_conllu_element(token, sentence):
+        """ Creates word from TEI word element. """
+        raise NotImplementedError
+
+    @staticmethod
+    def get_msd(comp):
+        """ Returns word msd. """
+        raise NotImplementedError
+
+    @staticmethod
+    def pc_word(pc, do_msd_translate):
+        """ Creates punctuation from TEI punctuation element. """
+        raise NotImplementedError
+
+    @staticmethod
+    def fake_root_word(sentence_id):
+        """ Creates a fake word. """
+        raise NotImplementedError
+
+    def add_link(self, link, to):
+        """ Adds dependency parsing link to word. """
+        self.links[link].append(to)
+
+    def get_links(self, link):
+        """ Returns links of specific type. """
+        if link not in self.links and "|" in link:
+            for l in link.split('|'):
+                self.links[link].extend(self.links[l])
+
+        return self.links[link]
+
+
+class WordJOS(Word):
+    def __init__(self, lemma, xpos, sentence_id, word_id, int_word_id, text, do_msd_translate, fake_word=False, previous_punctuation=None):
+        self.xpos = translate_msd(xpos, 'sl', lemma=lemma) if do_msd_translate else xpos
+
+        super().__init__(lemma, sentence_id, word_id, int_word_id, text, fake_word, previous_punctuation)
+
+    @staticmethod
+    def from_tei_element(xml, do_msd_translate):
+        """ Creates word from TEI word element. """
+        lemma = xml.get('lemma')
+        xpos = WordJOS.get_msd(xml)
+        wid = xml.get('id')
+        text = xml.text
+        sentence_id, word_id, int_word_id = prepare_ids(wid, False)
+        return WordJOS(lemma, xpos, sentence_id, word_id, int_word_id, text, do_msd_translate)
+
+    @staticmethod
+    def from_conllu_element(token, sentence):
+        """ Creates word from TEI word element. """
+        return WordJOS(token['lemma'], token['xpos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], False)
+
+    @staticmethod
+    def get_msd(comp):
+        """ Returns word msd. """
+        d = dict(comp.items())
+        assert 'ana' in d, 'Tag "ana" is not in element.'
+        xpos = d['ana'][4:]
+
+        return xpos
+
+    @staticmethod
+    def pc_word(pc, do_msd_translate):
+        """ Creates punctuation from TEI punctuation element. """
+        pc.set('lemma', pc.text)
+        # TODO LOOK INTO POSSIBLE ERRORS DUE TO THIS
+        # pc.set('msd', "N" if do_msd_translate else "U")
+        return WordJOS.from_tei_element(pc, do_msd_translate)
+
+    @staticmethod
+    def fake_root_word(sentence_id):
+        """ Creates a fake word. """
+        sentence_id, word_id, int_word_id = prepare_ids(sentence_id, True)
+        return WordJOS('', '', sentence_id, word_id, int_word_id, '', False, True)
+
+
+class WordUD(Word):
+    def __init__(self, lemma, upos, sentence_id, word_id, int_word_id, text, fake_word=False, previous_punctuation=None, feats=None):
+        # udpos contains both upos and feats
+        if feats:
+            if upos:
+                feats['POS'] = upos
+                udpos = feats
+            else:
+                # goes here when POS already in feats
+                udpos = feats
+
+        else:
+            if upos:
+                udpos = {'POS': upos}
+            else:
+                udpos = ''
+
+        self.udpos = udpos
+
+        super().__init__(lemma, sentence_id, word_id, int_word_id, text, fake_word, previous_punctuation)
+
+
+    @staticmethod
+    def from_tei_element(xml, do_msd_translate):
+        """ Creates word from TEI word element. """
+        lemma = xml.get('lemma')
+        upos, feats = WordUD.get_msd(xml)
+        wid = xml.get('id')
+        text = xml.text
+        sentence_id, word_id, int_word_id = prepare_ids(wid, False)
+        return WordUD(lemma, upos, sentence_id, word_id, int_word_id, text, feats=feats)
+
+    @staticmethod
+    def from_conllu_element(token, sentence):
+        """ Creates word from TEI word element. """
+        return WordUD(token['lemma'], token['upos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], feats=token['feats'])
+
+    @staticmethod
+    def get_msd(comp):
+        """ Returns word msd. """
+        d = dict(comp.items())
+        assert 'msd' in d, 'Tag "msd" is not in element.'
+        feats_expanded = {attrib.split('=')[0]: attrib.split('=')[1] for attrib in d['msd'].split('|')}
+        if 'UPosTag' in feats_expanded:
+            upos = feats_expanded['UPosTag']
+            del feats_expanded['UPosTag']
+        else:
+            upos = feats_expanded['UposTag']
+            del feats_expanded['UposTag']
+        feats = feats_expanded
+        return upos, feats
+
+    @staticmethod
+    def pc_word(pc, do_msd_translate):
+        """ Creates punctuation from TEI punctuation element. """
+        pc.set('lemma', pc.text)
+        return WordUD.from_tei_element(pc, do_msd_translate)
+
+    @staticmethod
+    def fake_root_word(sentence_id):
+        """ Creates a fake word. """
+        sentence_id, word_id, int_word_id = prepare_ids(sentence_id, True)
+        return WordUD('', '', sentence_id, word_id, int_word_id, '', True)

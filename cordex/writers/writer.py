@@ -5,9 +5,9 @@ import io
 import logging
 import os
 
-from corpex.utils.progress_bar import progress
-from corpex.writers.formatter import OutFormatter, OutNoStatFormatter
-from corpex.writers.collocation_sentence_mapper import CollocationSentenceMapper
+from cordex.utils.progress_bar import progress
+from cordex.writers.formatter import OutFormatter, OutNoStatFormatter
+from cordex.writers.collocation_sentence_mapper import CollocationSentenceMapper
 
 
 class Writer:
@@ -17,16 +17,16 @@ class Writer:
         return (args['multiple_output'], int(args['sort_by']), args['sort_reversed'], args['min_freq'])
 
     @staticmethod
-    def make_output_writer(args, num_components, collocation_ids, word_renderer):
+    def make_output_writer(args, num_components, collocation_ids, word_renderer, is_ud):
         """ Returns an instance of Writer class with classical settings. """
         params = Writer.other_params(args)
-        return Writer(args['out'], num_components, OutFormatter(collocation_ids, word_renderer), args['collocation_sentence_map_dest'], params, args['separator'])
+        return Writer(args['out'], num_components, OutFormatter(collocation_ids, word_renderer, is_ud), args['collocation_sentence_map_dest'], params, args['separator'])
 
     @staticmethod
-    def make_output_no_stat_writer(args, num_components, collocation_ids, word_renderer):
+    def make_output_no_stat_writer(args, num_components, collocation_ids, word_renderer, is_ud):
         """ Returns an instance of Writer class with settings for no statistics output. """
         params = Writer.other_params(args)
-        return Writer(args['out'], num_components, OutNoStatFormatter(collocation_ids, word_renderer), args['collocation_sentence_map_dest'], params, args['separator'])
+        return Writer(args['out'], num_components, OutNoStatFormatter(collocation_ids, word_renderer, is_ud), args['collocation_sentence_map_dest'], params, args['separator'])
 
     def __init__(self, file_out, num_components, formatter, collocation_sentence_map_dest, params, separator):
         # TODO FIX THIS

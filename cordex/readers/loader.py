@@ -12,8 +12,8 @@ from io import StringIO
 import conllu
 from conversion_utils.jos_msds_and_properties import Converter
 
-from corpex.utils.progress_bar import progress
-from corpex.words.word import Word
+from cordex.utils.progress_bar import progress
+from cordex.words.word import WordUD, WordJOS
 
 
 def load_files(args, database):
@@ -82,12 +82,19 @@ def load_conllu(filename, args):
                     continue
 
                 # adding fake word
-                words['0'] = Word.fake_root_word('0')
+                if args['is_ud']:
+                    words['0'] = WordUD.fake_root_word('0')
+                else:
+                    words['0'] = WordJOS.fake_root_word('0')
+
                 for word in sent:
                     if type(word['id']) == tuple:
                         continue
 
-                    words[str(word['id'])] = Word.from_conllu_element(word, sent)
+                    if args['is_ud']:
+                        words[str(word['id'])] = WordUD.from_conllu_element(word, sent)
+                    else:
+                        words[str(word['id'])] = WordJOS.from_conllu_element(word, sent)
                     links.append((str(word['head']), str(word['id']), word['deprel']))
                 sentence_end(False, sent.metadata['sent_id'])
                 links = []
@@ -132,17 +139,26 @@ def tei_sentence_generator(et, args):
             sentences = list(paragraph.iter(ns + 's'))
             for sentence in sentences:
                 # create fake root word
-                words[sentence.get('id')] = Word.fake_root_word(sentence.get('id'))
+                if args['is_ud']:
+                    words[sentence.get('id')] = WordUD.fake_root_word(sentence.get('id'))
+                else:
+                    words[sentence.get('id')] = WordJOS.fake_root_word(sentence.get('id'))
                 last_word_id = None
 
                 if args['new_tei']:
                     for w in sentence.iter():
                         if w.tag == 'w':
-                            words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
+                            if args['is_ud']:
+                                words[w.get('id')] = WordUD.from_tei_element(w, do_msd_translate)
+                            else:
+                                words[w.get('id')] = WordJOS.from_tei_element(w, do_msd_translate)
                             if use_punctuations:
                                 previous_glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
                         elif w.tag == 'pc':
-                            words[w.get('id')] = Word.pc_word(w, args['lang'])
+                            if args['is_ud']:
+                                words[w.get('id')] = WordUD.pc_word(w, args['lang'])
+                            else:
+                                words[w.get('id')] = WordJOS.pc_word(w, args['lang'])
                             if use_punctuations:
                                 words[w.get('id')].previous_glue = previous_glue
                                 words[w.get('id')].glue = False if 'join' in w.attrib and w.get('join') == 'right' else True
@@ -150,12 +166,18 @@ def tei_sentence_generator(et, args):
                 else:
                     for w in sentence.iter():
                         if w.tag == ns + 'w':
-                            words[w.get('id')] = Word.from_tei_element(w, do_msd_translate)
+                            if args['is_ud']:
+                                words[w.get('id')] = WordUD.from_tei_element(w, do_msd_translate)
+                            else:
+                                words[w.get('id')] = WordJOS.from_tei_element(w, do_msd_translate)
                             if use_punctuations:
                                 previous_glue = False
                                 last_word_id = None
                         elif w.tag == ns + 'pc':
-                            words[w.get('id')] = Word.pc_word(w, do_msd_translate)
+                            if args['is_ud']:
+                                words[w.get('id')] = WordUD.pc_word(w, do_msd_translate)
+                            else:
+                                words[w.get('id')] = WordJOS.pc_word(w, do_msd_translate)
                             if use_punctuations:
                                 last_word_id = w.get('id')
                                 words[w.get('id')].previous_glue = previous_glue

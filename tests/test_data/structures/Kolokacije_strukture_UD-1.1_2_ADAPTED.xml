@@ -4,7 +4,7 @@ in so zbrane v datoteki UD-kolokacije_v3.xlsx.
 Kot representation form je zaenkrat povsod navedena lema.
 
 -->
-<syntactic_structures>
+<syntactic_structures system_type="UD">
   <!-- Section 01: collocations with UD relation 'advmod' -->
   <syntactic_structure type="collocation" id="1">
     <!--
@@ -12,7 +12,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: neznosno boleti
   corresponds to LBS-NSS structure: 19
      -->
-    <system type="UD">
       <components order="fixed">
         <component cid="1" type="core" name="verbal_head" />
         <component cid="2" type="core" name="adverbial_modifier" />
@@ -49,7 +48,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure type="collocation" id="4">
     <!--
@@ -57,7 +55,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: bela zastava
   corresponds to LBS-NSS structure: 1 (bela zastava), delno tudi 4 ([biti] modre barve)
      -->
-    <system type="UD">
       <components order="fixed">
         <component cid="1" type="core" name="nominal_head" />
         <component cid="2" type="core" name="adjectival_modifier" />
@@ -88,6 +85,5 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
 </syntactic_structures>

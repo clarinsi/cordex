@@ -4,7 +4,7 @@ in so zbrane v datoteki UD-kolokacije_v3.xlsx.
 Kot representation form je zaenkrat povsod navedena lema.
 
 -->
-<syntactic_structures>
+<syntactic_structures system_type="UD">
   <!-- Section 01: collocations with UD relation 'advmod' -->
   <syntactic_structure type="collocation" id="1">
     <!-- 
@@ -12,7 +12,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: neznosno boleti
   corresponds to LBS-NSS structure: 19
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="verbal_head" />
         <component cid="2" type="core" name="adverbial_modifier" />
@@ -36,7 +35,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure type="collocation" id="2">
     <!-- 
@@ -44,7 +42,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: resnično izjemen
   corresponds to LBS-NSS structure: 24 (resnično izjemen), delno tudi 26 ([biti] dovolj zrel)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="adjectival_head" />
         <component cid="2" type="core" name="adverbial_modifier" />
@@ -68,7 +65,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure type="collocation" id="3">
     <!-- 
@@ -76,7 +72,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: izjemno besno
   corresponds to LBS-NSS structure: 25 (izjemno besno)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="adverbial_head" />
         <component cid="2" type="core" name="adverbial_modifier" />
@@ -100,7 +95,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 02: collocations with UD relation 'amod' -->
   <syntactic_structure type="collocation" id="4">
@@ -109,7 +103,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: bela zastava
   corresponds to LBS-NSS structure: 1 (bela zastava), delno tudi 4 ([biti] modre barve)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_head" />
         <component cid="2" type="core" name="adjectival_modifier" />
@@ -130,7 +123,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 03: collocations with UD relation 'compound' -->
   <syntactic_structure type="collocation" id="5">
@@ -139,7 +131,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: information retrieval
   corresponds to LBS-NSS structure: 
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="compounding_word_1" />
         <component cid="2" type="core" name="compounding_word_2" />
@@ -160,7 +151,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 04: collocations with UD relation 'conj' -->
   <syntactic_structure type="collocation" id="6">
@@ -169,7 +159,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: dober ali slab
   corresponds to LBS-NSS structure: 64 (dober ali slab), 65 (vino ali pivo), 66 (govoriti ali šepetati), 67 (včeraj ali danes)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="first_element_in_coordination" />
         <component cid="2" type="core" name="coordinating_conjunction" />
@@ -197,7 +186,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 05: collocations with UD relation 'fixed' -->
   <syntactic_structure type="collocation" id="7">
@@ -206,7 +194,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: kakor koli
   corresponds to LBS-NSS structure: MWE-SkZ
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="first_element_in_fixed_phrase" />
         <component cid="2" type="core" name="second_element_in_fixed_phrase" />
@@ -227,7 +214,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 06: collocations with UD relation 'flat' -->
   <syntactic_structure type="collocation" id="8">
@@ -236,7 +222,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: kakor koli
   corresponds to LBS-NSS structure: mostly named entities
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="first_element_in_flat_phrase" />
         <component cid="2" type="core" name="second_element_in_flat_phrase" />
@@ -257,7 +242,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>
   <!-- Section 07: collocations with UD relation 'iobj' -->
   <syntactic_structure type="collocation" id="9">
@@ -266,7 +250,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: spregovoriti ljudstvu
   corresponds to LBS-NSS structure: 7 (spregovoriti ljudstvu)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="verbal_head" />
         <component cid="2" type="core" name="indirect_object" />
@@ -287,7 +270,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <!-- Section 07: collocations with UD relation 'nmod' -->
   <syntactic_structure type="collocation" id="10">
@@ -296,7 +278,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: pranje denarja
   corresponds to LBS-NSS structure: 12 (človek pajek), 13 (pranje denarja), 14 (pismo predsedniku)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_head" />
         <component cid="2" type="other" status="forbidden" name="case_marker" />
@@ -320,7 +301,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <syntactic_structure type="collocation" id="11">
     <!-- 
@@ -328,7 +308,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: listina iz spisa
   corresponds to LBS-NSS structure: 29-33 (listina iz spisa, poziv k odstopu …), 49 (prijatelj za vedno)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_head" />
         <component cid="2" type="core" name="case_marker" />
@@ -356,7 +335,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <!-- Section 08: collocations with UD relation 'nsubj' -->
   <syntactic_structure type="collocation" id="12">
@@ -365,7 +343,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: panika zavlada
   corresponds to LBS-NSS structure: 9 (panika zavlada), 10-2 (človek nima), tudi 10-1 (človek ne vidi)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_subject" />
         <component cid="2" type="core" name="verbal_predicate" />
@@ -389,7 +366,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <syntactic_structure type="collocation" id="13">
     <!-- 
@@ -397,7 +373,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: rezultati so dobri
   corresponds to LBS-NSS structure: 5 (rezultati so dobri)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_subject" />
         <component cid="2" type="core" name="nonverbal_predicate" />
@@ -425,7 +400,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure> 
   <!-- Section 09: collocations with UD relation 'nummod' -->
   <syntactic_structure type="collocation" id="14">
@@ -434,7 +408,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: pet števil
   corresponds to LBS-NSS structure: 
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="nominal_head" />
         <component cid="2" type="core" name="numeral_modifier" />
@@ -455,7 +428,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <!-- Section 10: collocations with UD relation 'obj' -->
   <syntactic_structure type="collocation" id="15">
@@ -464,7 +436,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: pogrniti mizo
   corresponds to LBS-NSS structure: 8 (pogrniti mizo), 6 (želeti si zdravja), tudi 11-1 (ne prepuščati zraka), tudi 11-2 (ne hoteti odgovora), tudi 18-1 (ne razumeti prebranega), tudi 18-2 (ne imeti zaposlenih)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="verbal_predicate" />
         <component cid="2" type="core" name="nominal_object" />
@@ -488,7 +459,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <syntactic_structure type="collocation" id="16">
     <!-- 
@@ -496,7 +466,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: biti obtožen utaje
   corresponds to LBS-NSS structure: 2 (biti obtožen utaje), 3 (biti zvest gospodarju)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="copula_verb" />
         <component cid="2" type="core" name="nonverbal_predicate" />
@@ -524,7 +493,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>     
   <!-- Section 11: collocations with UD relation 'obl' -->
   <syntactic_structure type="collocation" id="17">
@@ -533,7 +501,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: odgovoriti brez razmisleka
   corresponds to LBS-NSS structure: 34-38 (odgovoriti brez razmisleka, steči k vratom …), tudi 59-63 (biti brez volje, biti na voljo)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="verbal_predicate" />
         <component cid="2" type="core" name="case_marker" />
@@ -565,7 +532,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure> 
   <syntactic_structure type="collocation" id="18">
     <!-- 
@@ -573,7 +539,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: odgovoriti brez razmisleka
   corresponds to LBS-NSS structure: 34-38 (odgovoriti brez razmisleka, steči k vratom …), tudi 59-63 (biti brez volje, biti na voljo)
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="copula_verb" />
         <component cid="2" type="core" name="nonverbal_predicate" />
@@ -608,7 +573,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
   <syntactic_structure type="collocation" id="19">
     <!-- 
@@ -616,7 +580,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: oblique arguments of verbal predicates in languages without PPs
   corresponds to LBS-NSS structure: 
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="verbal_predicate" />
         <component cid="2" type="other" status="forbidden" name="case_marker" />
@@ -643,7 +606,6 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure> 
   <syntactic_structure type="collocation" id="20">
     <!-- 
@@ -651,7 +613,6 @@ Kot representation form je zaenkrat povsod navedena lema.
   example: oblique arguments of nonverbal predicates in languages without PPs
   corresponds to LBS-NSS structure: 
      -->
-    <system type="UD">
       <components order="fixed"> 
         <component cid="1" type="core" name="copula_verb" />
         <component cid="2" type="core" name="nonverbal_predicate" />
@@ -682,6 +643,5 @@ Kot representation form je zaenkrat povsod navedena lema.
             </representation>
         </component>
 			</definition>
-    </system>
   </syntactic_structure>  
 </syntactic_structures>

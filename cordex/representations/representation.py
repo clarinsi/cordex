@@ -4,9 +4,9 @@ import logging
 from ast import literal_eval
 
 from collections import Counter
-from corpex.utils.codes_tagset import TAGSET, CODES
-from corpex.utils.converter import msd_to_properties
-from corpex.words.word import WordDummy
+from cordex.utils.codes_tagset import TAGSET, CODES
+from cordex.utils.converter import msd_to_properties
+from cordex.words.word import WordDummy
 
 
 class ComponentRepresentation:
@@ -23,14 +23,14 @@ class ComponentRepresentation:
         """ By default, there are no agreements. """
         return []
 
-    def add_word(self, word, system_type):
+    def add_word(self, word, is_ud):
         """ Adds word to representation. """
         self.words.append(word)
 
-    def render(self, system_type, lookup_lexicon=None):
+    def render(self, is_ud, lookup_lexicon=None):
         """ Render when text is not already rendered. """
         if self.rendition_text is None:
-            self.rendition_text, self.rendition_msd = self._render(system_type, lookup_lexicon=lookup_lexicon)
+            self.rendition_text, self.rendition_msd = self._render(is_ud, lookup_lexicon=lookup_lexicon)
 
     # Convert output to same format as in conllu
     @staticmethod
@@ -43,15 +43,15 @@ class ComponentRepresentation:
 
         return '|'.join(result)
 
-    def _render(self, system_type, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None):
         raise NotImplementedError("Not implemented for class: {}".format(type(self)))
 
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
-    def _render(self, system_type, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None):
         # TODO FIX THIS TO LEMMA MSD
         if len(self.words) > 0:
-            if system_type == 'UD':
+            if is_ud:
                 pos = self.convert_dict_to_string(self.words[0].udpos)
             else:
                 pos = self.words[0].xpos
@@ -61,8 +61,8 @@ class LemmaCR(ComponentRepresentation):
 
 class LexisCR(ComponentRepresentation):
     """ Handles fixed word as component representation. """
-    def _render(self, system_type, lookup_lexicon=None):
-        if system_type == 'UD':
+    def _render(self, is_ud, lookup_lexicon=None):
+        if is_ud:
             pos = 'POS=PART'
         else:
             pos = 'Q'
@@ -70,12 +70,12 @@ class LexisCR(ComponentRepresentation):
 
 class WordFormAllCR(ComponentRepresentation):
     """ Returns all possible word forms separated with '/' as component representation. """
-    def _render(self, system_type, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None):
         if len(self.words) == 0:
             return None, None
         else:
             forms = [w.text.lower() for w in self.words]
-            if system_type == 'UD':
+            if is_ud:
                 msds = [self.convert_dict_to_string(w.udpos) for w in self.words]
             else:
                 msds = [w.xpos for w in self.words]
@@ -84,9 +84,9 @@ class WordFormAllCR(ComponentRepresentation):
 
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
-    def _render(self, system_type, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None):
         text_forms = {}
-        if system_type == 'UD':
+        if is_ud:
             msd_lemma_txt_triplets = Counter([(str(w.udpos), w.lemma, w.text) for w in self.words])
         else:
             msd_lemma_txt_triplets = Counter([(w.xpos, w.lemma, w.text) for w in self.words])
@@ -96,7 +96,7 @@ class WordFormAnyCR(ComponentRepresentation):
 
         words_counter = []
         for word in self.words:
-            if system_type == 'UD':
+            if is_ud:
                 words_counter.append((str(word.udpos), word.lemma))
             else:
                 words_counter.append((word.xpos, word.lemma))
@@ -106,12 +106,12 @@ class WordFormAnyCR(ComponentRepresentation):
         # so lets got through all words, sorted by frequency
         for word_msd, word_lemma in sorted_words:
             # check if agreements match
-            agreements_matched = [agr.match(word_msd, system_type) for agr in self.agreement]
+            agreements_matched = [agr.match(word_msd, is_ud) for agr in self.agreement]
 
             # in case all agreements do not match try to get data from sloleks and change properly
             if lookup_lexicon is not None and not all(agreements_matched):
                 for i, agr in enumerate(self.agreement):
-                    if not agr.match(word_msd, system_type):
+                    if not agr.match(word_msd, is_ud):
                         msd, lemma, text = lookup_lexicon.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd)
                         if msd is not None:
                             agr.msds[0] = msd
@@ -138,7 +138,7 @@ class WordFormAnyCR(ComponentRepresentation):
                 for agr in self.agreement:
                     agr.confirm_match()
 
-                if system_type == 'UD':
+                if is_ud:
                     word_msd_eval = self.convert_dict_to_string(literal_eval(word_msd))
                 else:
                     word_msd_eval = word_msd
@@ -187,30 +187,30 @@ class WordFormMsdCR(WordFormAnyCR):
 
         return True
 
-    def add_word(self, word, system_type):
+    def add_word(self, word, is_ud):
         """ Adds lemma and msd. Also adds word if word matches msd check. """
         if self.lemma is None:
             self.lemma = word.lemma
 
-        if system_type == 'UD':
+        if is_ud:
             self.msds.append(word.udpos)
             if self.check_udpos(word.udpos):
-                super().add_word(word, system_type)
+                super().add_word(word, is_ud)
         else:
             self.msds.append(word.xpos)
             if self.check_xpos(word.xpos, word.lemma):
-                super().add_word(word, system_type)
+                super().add_word(word, is_ud)
 
-    def _render(self, system_type, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None):
         if len(self.words) == 0 and lookup_lexicon is not None:
             msd, lemma, text = lookup_lexicon.get_word_form(self.lemma, self.msd(), self.data)
             if msd is not None:
                 self.words.append(WordDummy(msd, lemma, text))
-        if system_type == 'UD':
+        if is_ud:
             self.words.append(WordDummy(self._common_udpos()))
         else:
             self.words.append(WordDummy(self._common_xpos()))
-        return super()._render(system_type, lookup_lexicon)
+        return super()._render(is_ud, lookup_lexicon)
     
     def _common_xpos(self):
         """ Tries to form xpos that is present in all examples. """
@@ -244,17 +244,17 @@ class WordFormAgreementCR(WordFormMsdCR):
         """ Returns agreement head component id. """
         return self.data['other']
 
-    def match(self, word_msd, system_type):
+    def match(self, word_msd, is_ud):
         """ Checks if word_msd matches any of possible words in agreements. """
-        if system_type == 'UD':
+        if is_ud:
             existing = [(str(w.udpos), w.text) for w in self.words]
         else:
             existing = [(w.xpos, w.text) for w in self.words]
         #existing = [(w.xpos, str(w.udpos), w.text) for w in self.words]
 
-        lemma_available_words = self.word_renderer.available_words(self.lemma, existing, system_type)
+        lemma_available_words = self.word_renderer.available_words(self.lemma, existing)
         for candidate_pos, candidate_text, candidate_lemma in lemma_available_words:
-            if system_type == 'UD':
+            if is_ud:
                 if self.msd()['POS'] != candidate_pos['POS']:
                     continue
 
@@ -326,5 +326,5 @@ class WordFormAgreementCR(WordFormMsdCR):
 
         return True
 
-    def render(self, system_type, lookup_lexicon=None):
+    def render(self, is_ud, lookup_lexicon=None):
         pass

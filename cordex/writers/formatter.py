@@ -5,13 +5,14 @@ from math import log2
 import re
 import logging
 
-from corpex.structures.component import ComponentType
+from cordex.structures.component import ComponentType
 
 
 class Formatter:
-    def __init__(self, collocation_ids, word_renderer):
+    def __init__(self, collocation_ids, word_renderer, is_ud):
         self.collocation_ids = collocation_ids
         self.word_renderer = word_renderer
+        self.is_ud = is_ud
         self.additional_init()
     
     def header_repeat(self):
@@ -120,12 +121,12 @@ class StatsFormatter(Formatter):
                 freq = 0
             else:
                 word = match.matches[0][cid]
-                if match.structure.system_type == 'UD':
+                if self.is_ud:
                     word_msd0 = word.udpos['POS']
                 else:
                     word_msd0 = word.xpos[0]
 
-                freq = self.word_renderer.num_words(word.lemma, word_msd0, match.structure.system_type)
+                freq = self.word_renderer.num_words(word.lemma, word_msd0)
 
             self.stats["freq"][cid] = freq
 
@@ -202,8 +203,8 @@ class OutFormatter(Formatter):
     Formats regular output text.
     """
     def additional_init(self):
-        self.f1 = OutNoStatFormatter(self.collocation_ids, self.word_renderer)
-        self.f2 = StatsFormatter(self.collocation_ids, self.word_renderer)
+        self.f1 = OutNoStatFormatter(self.collocation_ids, self.word_renderer, self.is_ud)
+        self.f2 = StatsFormatter(self.collocation_ids, self.word_renderer, self.is_ud)
 
     def header_repeat(self):
         """ Combines and returns no stats header with stats header on columns that might appear multiple times. """

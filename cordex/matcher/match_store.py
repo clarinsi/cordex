@@ -7,9 +7,9 @@ from ast import literal_eval
 from time import time
 import logging
 
-from corpex.matcher.match import StructureMatch
-from corpex.representations.representation_assigner import RepresentationAssigner
-from corpex.utils.progress_bar import progress
+from cordex.matcher.match import StructureMatch
+from cordex.representations.representation_assigner import RepresentationAssigner
+from cordex.utils.progress_bar import progress
 
 
 class MatchStore:
@@ -17,6 +17,7 @@ class MatchStore:
         self.db = db
         self.dispersions = {}
         self.min_freq = args['min_freq']
+        self.is_ud = args['is_ud']
 
         # create necessary tables
         self.db.init("""CREATE TABLE Collocations (
@@ -24,16 +25,26 @@ class MatchStore:
             structure_id varchar(8),
             key varchar(256))
             """)
-        self.db.init("""CREATE TABLE Matches (
-            match_id INTEGER,
-            component_id INTEGER NOT NULL,
-            word_lemma varchar(32) NOT NULL,
-            word_id varchar(32) NOT NULL,
-            sentence_id varchar(32) NOT NULL,
-            word_xpos varchar(16) NOT NULL,
-            word_udpos varchar(32) NOT NULL,
-            word_text varchar(32) NOT NULL)
-            """)
+        if self.is_ud:
+            self.db.init("""CREATE TABLE Matches (
+                match_id INTEGER,
+                component_id INTEGER NOT NULL,
+                word_lemma varchar(32) NOT NULL,
+                word_id varchar(32) NOT NULL,
+                sentence_id varchar(32) NOT NULL,
+                word_udpos varchar(32) NOT NULL,
+                word_text varchar(32) NOT NULL)
+                """)
+        else:
+            self.db.init("""CREATE TABLE Matches (
+                            match_id INTEGER,
+                            component_id INTEGER NOT NULL,
+                            word_lemma varchar(32) NOT NULL,
+                            word_id varchar(32) NOT NULL,
+                            sentence_id varchar(32) NOT NULL,
+                            word_xpos varchar(16) NOT NULL,
+                            word_text varchar(32) NOT NULL)
+                            """)
         self.db.init("""CREATE TABLE CollocationMatches (
             mid_match_id INTEGER,
             mid_collocation_id INTEGER,
@@ -77,18 +88,30 @@ class MatchStore:
                                 (key_str, structure_id)).fetchone()
         
         for component_id, word in match.items():
-            self.db.execute("""
-            INSERT INTO Matches (match_id, component_id, word_lemma, word_text, word_xpos, word_udpos, word_id, sentence_id) 
-            VALUES (:match_id, :component_id, :word_lemma, :word_text, :word_xpos, :word_udpos, :word_id, :sentence_id)""", {
-                "component_id": component_id,
-                "match_id": self.match_num,
-                "word_lemma": word.lemma,
-                "word_xpos": word.xpos,
-                "word_udpos": str(word.udpos),
-                "word_text": word.text,
-                "word_id": word.id,
-                "sentence_id": word.sentence_id,
-            })
+            if self.is_ud:
+                self.db.execute("""
+                INSERT INTO Matches (match_id, component_id, word_lemma, word_text, word_udpos, word_id, sentence_id) 
+                VALUES (:match_id, :component_id, :word_lemma, :word_text, :word_udpos, :word_id, :sentence_id)""", {
+                    "component_id": component_id,
+                    "match_id": self.match_num,
+                    "word_lemma": word.lemma,
+                    "word_udpos": str(word.udpos),
+                    "word_text": word.text,
+                    "word_id": word.id,
+                    "sentence_id": word.sentence_id,
+                })
+            else:
+                self.db.execute("""
+                INSERT INTO Matches (match_id, component_id, word_lemma, word_text, word_xpos, word_id, sentence_id) 
+                VALUES (:match_id, :component_id, :word_lemma, :word_text, :word_xpos, :word_id, :sentence_id)""", {
+                    "component_id": component_id,
+                    "match_id": self.match_num,
+                    "word_lemma": word.lemma,
+                    "word_xpos": word.xpos,
+                    "word_text": word.text,
+                    "word_id": word.id,
+                    "sentence_id": word.sentence_id,
+                })
 
         self.db.execute("INSERT INTO CollocationMatches (mid_collocation_id, mid_match_id) VALUES (?,?)",
             (cid[0], self.match_num))
@@ -105,7 +128,7 @@ class MatchStore:
         """ Get all matches for given structure. """
         for cid in self.db.execute("SELECT collocation_id FROM Collocations WHERE structure_id=?",
                                    (structure.id,)):
-            yield StructureMatch.from_db(self.db, cid[0], structure)
+            yield StructureMatch.from_db(self.db, cid[0], structure, self.is_ud)
 
     def add_inserts(self, inserts):
         """ Adds representations to database. """
@@ -116,7 +139,7 @@ class MatchStore:
                     INSERT INTO Representations (collocation_id, component_id, text, msd) 
                     VALUES (?,?,?,?)""", (match.match_id, component_id, text, msd))
 
-    def set_representations(self, word_renderer, structures, lookup_lexicon=None):
+    def set_representations(self, word_renderer, structures, is_ud, lookup_lexicon=None):
         """ Adds representations to matches. """
 
         step_name = 'representation'
@@ -132,8 +155,8 @@ class MatchStore:
         start_time = time()
         for cid, sid in progress(self.db.execute("SELECT collocation_id, structure_id FROM Collocations"), "representations", total=num_representations):
             structure = structures_dict[sid]
-            match = StructureMatch.from_db(self.db, cid, structure)
-            RepresentationAssigner.set_representations(match, word_renderer, lookup_lexicon=lookup_lexicon)
+            match = StructureMatch.from_db(self.db, cid, structure, is_ud)
+            RepresentationAssigner.set_representations(match, word_renderer, is_ud, lookup_lexicon=lookup_lexicon)
 
             inserts.append(match)
             if len(inserts) > num_inserts:

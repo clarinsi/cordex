@@ -1,21 +1,21 @@
 import time
 import gc
 
-from corpex.representations.lookup_lexicon import LookupLexicon
-from corpex.utils.progress_bar import progress
-from corpex.structures.syntactic_structure import build_structures
-from corpex.matcher.match_store import MatchStore
-from corpex.statistics.word_stats import WordStats
-from corpex.writers.writer import Writer
-from corpex.readers.loader import load_files
-from corpex.database.database import Database
-from corpex.utils.time_info import TimeInfo
+from cordex.representations.lookup_lexicon import LookupLexicon
+from cordex.utils.progress_bar import progress
+from cordex.structures.syntactic_structure import build_structures
+from cordex.matcher.match_store import MatchStore
+from cordex.statistics.word_stats import WordStats
+from cordex.writers.writer import Writer
+from cordex.readers.loader import load_files
+from cordex.database.database import Database
+from cordex.utils.time_info import TimeInfo
 from conversion_utils.jos_msds_and_properties import Converter
 
-from corpex.postprocessors.postprocessor import Postprocessor
+from cordex.postprocessors.postprocessor import Postprocessor
 import logging
 
-logger = logging.getLogger('corpex')
+logger = logging.getLogger('cordex')
 
 
 class Pipeline:
@@ -28,7 +28,9 @@ class Pipeline:
         else:
             self.lookup_lexicon = None
 
-        self.structures, self.max_num_components = build_structures(self.args)
+        self.structures, self.max_num_components, is_ud = build_structures(self.args)
+        # TODO FIX THIS
+        self.args['is_ud'] = is_ud
 
     def __call__(self, corpus, output):
         if type(corpus) == str:
@@ -39,7 +41,7 @@ class Pipeline:
 
         database = Database(self.args)
         match_store = MatchStore(self.args, database)
-        word_stats = WordStats(database)
+        word_stats = WordStats(self.args, database)
         postprocessor = Postprocessor(fixed_restriction_order=self.args['fixed_restriction_order'], lang=self.args['lang'])
 
         for words in load_files(self.args, database):
@@ -71,13 +73,13 @@ class Pipeline:
         match_store.determine_collocation_dispersions()
 
         # figure out representations!
-        match_store.set_representations(word_stats, self.structures, lookup_lexicon=self.lookup_lexicon)
+        match_store.set_representations(word_stats, self.structures, self.args['is_ud'], lookup_lexicon=self.lookup_lexicon)
 
         if self.args['statistics']:
-            Writer.make_output_writer(self.args, self.max_num_components, match_store, word_stats).write_out(
+            Writer.make_output_writer(self.args, self.max_num_components, match_store, word_stats, self.args['is_ud']).write_out(
                 self.structures, match_store)
         else:
-            Writer.make_output_no_stat_writer(self.args, self.max_num_components, match_store, word_stats).write_out(
+            Writer.make_output_no_stat_writer(self.args, self.max_num_components, match_store, word_stats, self.args['is_ud']).write_out(
                 self.structures, match_store)
 
     @staticmethod

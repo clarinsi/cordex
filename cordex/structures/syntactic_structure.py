@@ -6,8 +6,8 @@ from xml.etree import ElementTree
 import logging
 import pickle
 
-from corpex.utils.codes_tagset import PPB_DEPRELS
-from corpex.structures.component import Component, ComponentType
+from cordex.utils.codes_tagset import PPB_DEPRELS
+from cordex.structures.component import Component, ComponentType
 
 class SyntacticStructure:
     def __init__(self):
@@ -15,10 +15,9 @@ class SyntacticStructure:
         # self.lbs = None
         self.components = []
         self.fake_root_included = False
-        self.system_type = None
 
     @staticmethod
-    def from_xml(xml, no_stats):
+    def from_xml(xml, no_stats, is_ud):
         """ Reads a syntactic structure from xml. """
         st = SyntacticStructure()
         st.id = xml.get('id')
@@ -26,14 +25,15 @@ class SyntacticStructure:
             st.id = xml.get('tempId')
         # st.lbs = xml.get('LBS')
 
-        assert len(list(xml)) == 1
-        system = next(iter(xml))
-
-        assert system.get('type') == 'JOS' or system.get('type') == 'UD'
-        system_type = system.get('type')
-        st.system_type = system_type
-
-        components, dependencies, definitions = list(system)
+        # assert len(list(xml)) == 1
+        # system = next(iter(xml))
+        #
+        # assert system.get('type') == 'JOS' or system.get('type') == 'UD'
+        # system_type = system.get('type')
+        # st.system_type = system_type
+        #
+        # components, dependencies, definitions = list(system)
+        components, dependencies, definitions = list(xml)
 
         deps = [(dep.get('from'), dep.get('to'), dep.get('label'), dep.get('order'))
                 for dep in dependencies]
@@ -56,8 +56,8 @@ class SyntacticStructure:
                                               .format(el.tag, st.id))
 
         # creates fake root component onto which other components are appended.
-        fake_root_component = Component({'cid': '#', 'type': 'other', 'restriction': None}, system_type)
-        fake_root_component_children = fake_root_component.create_children(deps, comps, restrs, forms, system_type)
+        fake_root_component = Component({'cid': '#', 'type': 'other', 'restriction': None}, is_ud)
+        fake_root_component_children = fake_root_component.create_children(deps, comps, restrs, forms)
 
         # all dep with value modra point to artificial root - fake_root_component
         if any([dep[2] == 'modra' for dep in deps]):
@@ -67,10 +67,11 @@ class SyntacticStructure:
             st.components = fake_root_component_children
 
         if not no_stats:
-            if system_type == 'JOS':
-                st.determine_core2w()
-            elif system_type == 'UD':
+            if is_ud:
                 st.determine_core2w_ud()
+            else:
+                st.determine_core2w()
+
         return st
 
     def determine_core2w_ud(self):
@@ -138,11 +139,13 @@ def build_structures(args):
     with open(filename, 'r') as fp:
         et = ElementTree.XML(fp.read())
 
+    assert 'system_type' in et.attrib, ValueError('Please update file containing structure descriptions.')
+    is_ud = et.attrib['system_type'] == 'UD'
     structures = []
     for structure in et.iter('syntactic_structure'):
         if structure.attrib['type'] == 'single':
             continue
-        to_append = SyntacticStructure.from_xml(structure, no_stats)
+        to_append = SyntacticStructure.from_xml(structure, no_stats, is_ud)
         if to_append is None:
             continue
 
@@ -150,4 +153,4 @@ def build_structures(args):
         to_append_len = len(to_append.components) if not to_append.fake_root_included else len(to_append.components) - 1
         max_num_components = max(max_num_components, to_append_len)
 
-    return structures, max_num_components
+    return structures, max_num_components, is_ud

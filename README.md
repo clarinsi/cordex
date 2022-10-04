@@ -8,7 +8,7 @@ Potrebne datoteke:
 
 Priporocam: pypy3 paket za hitrejse poganjanje.
 
-Primer uporabe: `python3 corpex.py ssj500k.xml Kolokacije_strukture.xml  izhod.csv`
+Primer uporabe: `python3 cordex.py ssj500k.xml Kolokacije_strukture.xml  izhod.csv`
 
 # About
 
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 # Running
 
 ```bash
-python3 corpex.py <LOCATION TO STRUCTURES> <EXTRACTION TEXT> --out <RESULTS FILE>
+python3 cordex.py <LOCATION TO STRUCTURES> <EXTRACTION TEXT> --out <RESULTS FILE>
 ```
 
 ## Most important optional parameters
@@ -60,9 +60,9 @@ sudo mount -t tmpfs tmpfs /mnt/tmp
 sudo mount -o remount,size=110G,noexec,nosuid,nodev,noatime /mnt/tmp
 ```
 
-Pass path to specific file when running `corpex.py`. For example:
+Pass path to specific file when running `cordex.py`. For example:
 ```bash
-python3 corpex.py ... --db /mnt/tmp/mysql-corpex-ssj500k ...
+python3 cordex.py ... --db /mnt/tmp/mysql-cordex-ssj500k ...
 ```
 
 ### --multiple-output

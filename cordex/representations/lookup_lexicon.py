@@ -3,10 +3,10 @@ Connections to lexicon via API or file reading
 """
 import lzma
 import pickle
-from corpex.utils.codes_tagset import TAGSET, CODES
+from cordex.utils.codes_tagset import TAGSET, CODES
 from conversion_utils.jos_msds_and_properties import Msd
 
-from corpex.utils.converter import msd_to_properties
+from cordex.utils.converter import msd_to_properties
 
 
 class LookupLexicon:

@@ -1,11 +1,11 @@
 """
 Class for grouping restrictions.
 """
-from corpex.restrictions.restriction import Restriction
+from cordex.restrictions.restriction import Restriction
 
 class RestrictionGroup:
-    def __init__(self, restrictions_tag, system_type, group_type='and'):
-        self.restrictions = [Restriction(el, system_type) for el in restrictions_tag]
+    def __init__(self, restrictions_tag, is_ud, group_type='and'):
+        self.restrictions = [Restriction(el, is_ud) for el in restrictions_tag]
         self.group_type = group_type
 
     def __iter__(self):

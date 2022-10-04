@@ -4,8 +4,8 @@ Classes for handling restrictions.
 import re
 from enum import Enum
 
-from corpex.utils.codes_tagset import CODES, TAGSET, CODES_UD
-from corpex.utils.converter import msd_to_properties
+from cordex.utils.codes_tagset import CODES, TAGSET, CODES_UD
+from cordex.utils.converter import msd_to_properties
 
 
 class RestrictionType(Enum):
@@ -234,7 +234,7 @@ class SpaceRegex:
 
 class Restriction:
     """ A class containing restriction. """
-    def __init__(self, restriction_tag, system_type='JOS'):
+    def __init__(self, restriction_tag, is_ud):
         self.ppb = 4 # polnopomenska beseda (0-4)
 
         if restriction_tag is None:
@@ -245,15 +245,16 @@ class Restriction:
 
         restriction_type = restriction_tag.get('type')
         if restriction_type == "morphology":
-            if system_type == 'JOS':
-                self.type = RestrictionType.Morphology
-                self.matcher = MorphologyRegex(list(restriction_tag))
-                self.ppb = determine_ppb(self.matcher.restrictions)
             # UD system is handled based on deprel
-            elif system_type == 'UD':
+            if is_ud:
                 self.type = RestrictionType.MorphologyUD
                 self.matcher = MorphologyUDRegex(list(restriction_tag))
             #     self.ppb = determine_ppb_ud(self.matcher.rgxs)
+            else:
+                self.type = RestrictionType.Morphology
+                self.matcher = MorphologyRegex(list(restriction_tag))
+                self.ppb = determine_ppb(self.matcher.restrictions)
+
 
         elif restriction_type == "lexis":
             self.type = RestrictionType.Lexis

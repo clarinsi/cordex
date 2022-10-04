@@ -1,7 +1,6 @@
-<syntactic_structures>
+<syntactic_structures system_type="JOS">
   <syntactic_structure id="34" label="p0-s0" type="collocation">
     <!-- example: bela ZASTAVA / RDEČA jagoda -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="s0"/>
@@ -33,11 +32,9 @@
         </component>
         <component cid="3"/>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="35" label="p0-s2" type="collocation">
     <!-- example: [biti] obtožen UTAJE / [biti] VESEL uspeha -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="s2"/>
@@ -80,11 +77,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="36" label="p0-s3" type="collocation">
     <!-- example: [biti] zvest GOSPODARJU / [biti] NAMENJEN vzgoji -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="s3"/>
@@ -127,11 +122,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="37" label="p2-s2" type="collocation">
     <!-- example: biti dobrega SRCA / biti DOBRE volje -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p2"/>
         <component cid="2" type="core" label="s2"/>
@@ -170,11 +163,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="57" label="s1-gp-p1" type="collocation">
     <!-- example: REZULTATI so dobri / hruška je ZRELA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="gp"/>
@@ -217,11 +208,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="108" label="gg-zp-s2" type="collocation">
     <!-- example: BATI se maščevanja / želeti si ZDRAVJA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -269,11 +258,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="22" label="gg-s3" type="collocation">
     <!-- example: SPREGOVORITI ljudstvu / zaupati VODSTVU -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="s3"/>
@@ -317,11 +304,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="68" label="gg-zp-s3" type="collocation">
     <!-- example: izneveriti se tradiciji -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -369,11 +354,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="23" label="gg-s4" type="collocation">
     <!-- example: pogrniti MIZO / STISNITI sok -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="s4"/>
@@ -417,11 +400,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="69" label="gg-zp-s4" type="collocation">
     <!-- example: ogledati si posnetek -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -469,11 +450,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="70" label="s1-gg" type="collocation">
     <!-- example: PANIKA zavlada / večina RAZUME -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="gg"/>
@@ -512,11 +491,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="71" label="s1-zp-gg" type="collocation">
     <!-- example: človek se USTRAŠI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="zp"/>
@@ -559,11 +536,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="72" label="s1-l-gg" type="collocation">
     <!-- example: ČLOVEK ne vidi / voda ne TEČE -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="l"/>
@@ -619,11 +594,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="73" label="s1-zp-l-gg" type="collocation">
     <!-- example: vernik se ne BRIJE -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="zp"/>
@@ -683,11 +656,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="74" label="l-gg-s2" type="collocation">
     <!-- example: ne prepuščati ZRAKA / ne STISNITI zavore -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -748,11 +719,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="75" label="l-gg-zp-s2" type="collocation">
     <!-- example: ne ZVITI si noge -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -817,11 +786,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="24" label="ggz-s2" type="collocation">
     <!-- example: ne hoteti ODGOVORA / ne IMETI znanja -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="ggz"/>
         <component cid="2" type="core" label="s2"/>
@@ -861,11 +828,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="76" label="s0-s0" type="collocation">
     <!-- example: ČLOVEK pajek / angina PECTORIS -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="s0"/>
@@ -896,11 +861,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="53" label="s0-s2" type="collocation">
     <!-- example: PRANJE denarja / utaja DAVKOV -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="s2"/>
@@ -936,11 +899,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="54" label="s0-s3" type="collocation">
     <!-- example: PISMO predsedniku /zahvala SPONZORJU -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="s3"/>
@@ -976,11 +937,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="77" label="s1-gp-s1" type="collocation">
     <!-- example: STRIC je partizan -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s1"/>
         <component cid="2" type="core" label="gp"/>
@@ -1022,11 +981,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="18" label="gg-p1" type="collocation">
     <!-- example: TEČI bos / pozirati GOL -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="p1"/>
@@ -1063,11 +1020,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="78" label="gg-zp-p1" type="collocation">
     <!-- example: zdeti se premagan -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -1108,11 +1063,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="19" label="gg-p4" type="collocation">
     <!-- example: VIDETI nasmejanega / pustiti SAMEGA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="p4"/>
@@ -1149,11 +1102,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="80" label="gg-zp-p4" type="collocation">
     <!-- example: počutiti se osamljenega -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -1194,11 +1145,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="43" label="r-gg" type="collocation">
     <!-- example: čvrsto STISNITI / DEBELO gledati -->
-    <system type="JOS">
       <components order="variable">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="gg"/>
@@ -1234,11 +1183,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="81" label="r-zp-gg" type="collocation">
     <!-- example: močno se prestrašiti -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="zp"/>
@@ -1278,11 +1225,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="82" label="gg-vd-s0" type="collocation">
     <!-- example: BRUHATI kot vidra / garati kot KONJ -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="vd"/>
@@ -1327,11 +1272,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="83" label="gg-zp-vd-s0" type="collocation">
     <!-- example: pojavljati se kot mora -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -1380,11 +1323,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="32" label="p0-vd-s0" type="collocation">
     <!-- example: LAČEN kot volk / utrujen kot PES -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="vd"/>
@@ -1422,11 +1363,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="45" label="r-vd-s0" type="collocation">
     <!-- example: TIHO kot miš / mrzlo kot VRAG -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="vd"/>
@@ -1464,11 +1403,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="84" label="s0-vd-s0" type="collocation">
     <!-- example: ZDRAVJE kot vrednota / vrednost kot OSNOVA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="vd"/>
@@ -1507,11 +1444,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="46" label="r-p0" type="collocation">
     <!-- example: dovolj ZREL / RESNIČNO izjemen -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="p0"/>
@@ -1538,11 +1473,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="55" label="r-r" type="collocation">
     <!-- example: zares IZJEMNO / ENAKO besno -->
-    <system type="JOS">
       <components order="variable">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="r"/>
@@ -1569,11 +1502,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="85" label="p0-r" type="collocation">
     <!-- example: [biti] objavljen včeraj -->
-    <system type="JOS">
       <components order="variable">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="r"/>
@@ -1608,11 +1539,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="47" label="r-s2" type="collocation">
     <!-- example: VELIKO ljudi / malo MOŽNOSTI -->
-    <system type="JOS">
       <components order="variable">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="s2"/>
@@ -1647,11 +1576,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="48" label="s0-d-s2" type="collocation">
     <!-- example: dan brez AVTOMOBILA / LISTINA iz spisa -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -1691,11 +1618,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="49" label="s0-d-s3" type="collocation">
     <!-- example: poziv k ODSTOPU / DOPOLNILO k zahvali -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -1735,11 +1660,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="51" label="s0-d-s4" type="collocation">
     <!-- example: OBESEK za ključ / predavanje na TEMO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -1779,11 +1702,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="52" label="s0-d-s5" type="collocation">
     <!-- example: OTOK ob obali / pesmica o SREČI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -1823,11 +1744,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="50" label="s0-d-s6" type="collocation">
     <!-- example: IZBOR med kandidati / odnos s PARTNERJEM -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -1867,11 +1786,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="13" label="gg-d-s2" type="collocation">
     <!-- example: SKOČITI s stola / odgovoriti brez RAZMISLEKA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="d"/>
@@ -1918,11 +1835,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="86" label="gg-zp-d-s2" type="collocation">
     <!-- example: pripeljati se do banke -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -1973,11 +1888,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="17" label="gg-d-s3" type="collocation">
     <!-- example: RAVNATI proti vesti / steči proti VRATOM -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="d"/>
@@ -2024,11 +1937,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="87" label="gg-zp-d-s3" type="collocation">
     <!-- example: odločiti se kljub nasprotovanju -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -2079,11 +1990,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="14" label="gg-d-s4" type="collocation">
     <!-- example: voziti v ŠOLO / vnašati v TELO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="d"/>
@@ -2130,11 +2039,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="88" label="gg-zp-d-s4" type="collocation">
     <!-- example: voziti se v službo -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -2185,11 +2092,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="15" label="gg-d-s5" type="collocation">
     <!-- example: OČISTITI po uporabi / uživati v VOŽNJI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="d"/>
@@ -2236,11 +2141,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="89" label="gg-zp-d-s5" type="collocation">
     <!-- example: kopati se v morju -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -2291,11 +2194,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="16" label="gg-d-s6" type="collocation">
     <!-- example: HODITI z berglami / vzgajati z LJUBEZNIJO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="d"/>
@@ -2342,11 +2243,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="90" label="gg-zp-d-s6" type="collocation">
     <!-- example: pripeljati se z mopedom -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -2397,11 +2296,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="26" label="p0-d-s2" type="collocation">
     <!-- example:  VELJAVEN do decembra / izdelan iz BOMBAŽA -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="d"/>
@@ -2440,11 +2337,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="31" label="p0-d-s3" type="collocation">
     <!-- example: NAMENJEN proti domu / nagnjen k ZLORABI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="d"/>
@@ -2483,11 +2378,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="27" label="p0-d-s4" type="collocation">
     <!-- example: VAREN za uživanje / alergičen na SONCE -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="d"/>
@@ -2526,11 +2419,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="28" label="p0-d-s5" type="collocation">
     <!-- example: UTRUJEN po tekmi / prepričan o USPEHU -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="d"/>
@@ -2569,11 +2460,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="29" label="p0-d-s6" type="collocation">
     <!-- example: IZVOLJEN z večino / razočaran nad ODLOČITVIJO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="d"/>
@@ -2612,11 +2501,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="38" label="r-d-s2" type="collocation">
     <!-- example: DANES do polnoči -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="d"/>
@@ -2655,11 +2542,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="39" label="r-d-s3" type="collocation">
     <!-- example: VČERAJ proti večeru -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="d"/>
@@ -2698,11 +2583,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="41" label="r-d-s4" type="collocation">
     <!-- example: MALO za šalo -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="d"/>
@@ -2741,11 +2624,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="40" label="r-d-s5" type="collocation">
     <!-- example: VIDNO v zadregi -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="d"/>
@@ -2784,11 +2665,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="42" label="r-d-s6" type="collocation">
     <!-- example: JUTRI pred odhodom -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="d"/>
@@ -2827,11 +2706,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="91" label="s0-d-r" type="collocation">
     <!-- example: prijatelj za VEDNO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="d"/>
@@ -2869,11 +2746,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="12" label="gg-ggn" type="collocation">
     <!-- example: USPETI videti -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="ggn"/>
@@ -2933,11 +2808,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="92" label="gg-zp-ggn" type="collocation">
     <!-- example: prizadevati si poiskati -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -3001,11 +2874,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="93" label="gg-ggn-zp" type="collocation">
     <!-- example: utegniti zaplesti se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3069,11 +2940,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="94" label="gg-zp-ggn-zp" type="collocation">
     <!-- example: odločiti se prodati se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="zp"/>
@@ -3141,11 +3010,9 @@
           </restriction_or>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="25" label="l-gg-ggn" type="collocation">
     <!-- example: ne ZAČETI teči -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -3208,11 +3075,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="95" label="l-gg-zp-ggn" type="collocation">
     <!-- example: ne dati se predvideti -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -3279,11 +3144,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="96" label="l-gg-ggn-zp" type="collocation">
     <!-- example: ne uspeti udeležiti se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -3350,11 +3213,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="97" label="l-gg-zp-ggn-zp" type="collocation">
     <!-- example: ne bati se pokazati se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="l"/>
         <component cid="2" type="core" label="gg"/>
@@ -3425,11 +3286,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="98" label="gp-r-ggn" type="collocation">
     <!-- example: [biti] bolje PRESEKATI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="pbz"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3474,11 +3333,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="99" label="gp-r-ggn-zp" type="collocation">
     <!-- example: [biti] bolje smejati se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="pbz"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3527,11 +3384,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="100" label="p1-ggn" type="collocation">
     <!-- example: [biti] prisiljen ZAPRETI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p1"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3576,11 +3431,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="101" label="p1-ggn-zp" type="collocation">
     <!-- example: [biti] pripravljen zadolžiti se -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p1"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3629,11 +3482,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="102" label="s1-ggn" type="collocation">
     <!-- example: pravica POČETI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s2"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3672,11 +3523,9 @@
         </component>
         <component cid="4"/>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="103" label="s1-ggn-zp" type="collocation">
     <!-- example: pravica POČETI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s2"/>
         <component cid="2" type="core" label="ggn"/>
@@ -3716,11 +3565,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="104" label="gg-ggm" type="collocation">
     <!-- example: iti PLAVAT -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="ggm"/>
@@ -3757,11 +3604,9 @@
           </restriction>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="105" label="gg-ggm-zp" type="collocation">
     <!-- example: iti ogledat si -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="ggm"/>
@@ -3802,11 +3647,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="30" label="p0-vp-p0" type="collocation">
     <!-- example: DOBER in/ali SLAB -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="p0"/>
         <component cid="2" type="core" label="vp"/>
@@ -3844,11 +3687,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="106" label="s0-vp-s0" type="collocation">
     <!-- example: VINO in/ali PIVO -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="s0"/>
         <component cid="2" type="core" label="vp"/>
@@ -3888,11 +3729,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="107" label="gg-vp-gg" type="collocation">
     <!-- example: GOVORITI in/ali ŠEPETATI -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="gg"/>
         <component cid="2" type="core" label="vp"/>
@@ -3930,11 +3769,9 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
   <syntactic_structure id="44" label="r-vp-r" type="collocation">
     <!-- example: VČERAJ in/ali DANES -->
-    <system type="JOS">
       <components order="fixed">
         <component cid="1" type="core" label="r"/>
         <component cid="2" type="core" label="vp"/>
@@ -3972,6 +3809,5 @@
           </representation>
         </component>
       </definition>
-    </system>
   </syntactic_structure>
 </syntactic_structures>

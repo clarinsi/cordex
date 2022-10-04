@@ -2,7 +2,7 @@
 Class for assigning representations.
 """
 
-from corpex.representations.representation import ComponentRepresentation, LemmaCR, LexisCR, WordFormAgreementCR, WordFormAnyCR, WordFormMsdCR, WordFormAllCR
+from cordex.representations.representation import ComponentRepresentation, LemmaCR, LexisCR, WordFormAgreementCR, WordFormAnyCR, WordFormMsdCR, WordFormAllCR
 
 class RepresentationAssigner:
     def __init__(self):
@@ -44,7 +44,7 @@ class RepresentationAssigner:
         return self.representation_factory(self.more, word_renderer)
 
     @staticmethod
-    def set_representations(match, word_renderer, lookup_lexicon=None):
+    def set_representations(match, word_renderer, is_ud, lookup_lexicon=None):
         """ Assigns representations to words. """
         representations = {}
         for c in match.structure.components:
@@ -71,11 +71,11 @@ class RepresentationAssigner:
             for w_id, w in words.items():
                 component_representations = representations[w_id]
                 for representation in component_representations:
-                    representation.add_word(w, match.structure.system_type)
+                    representation.add_word(w, is_ud)
 
         for cid, reps in representations.items():
             for rep in reps:
-                rep.render(match.structure.system_type, lookup_lexicon=lookup_lexicon)
+                rep.render(is_ud, lookup_lexicon=lookup_lexicon)
 
 
         for cid, reps in representations.items():
