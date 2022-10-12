@@ -577,7 +577,7 @@
             <w lemma="minul" ana="mte:Appmsl" msd="UposTag=ADJ|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part" xml:id="newsfeed.2022-01-01.1.1.1.30">minulem</w>
             <w lemma="teden" ana="mte:Ncmsl" msd="UposTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-01.1.1.1.31" join="right">tednu</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-01.1.1.1.32">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-01.1.1.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-01.1.1.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-01.1.1.1.4 #newsfeed.2022-01-01.1.1.1.1"/>
               <link ana="ud-syn:cop" target="#newsfeed.2022-01-01.1.1.1.4 #newsfeed.2022-01-01.1.1.1.2"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-01.1.1.1.4 #newsfeed.2022-01-01.1.1.1.3"/>
@@ -660,7 +660,7 @@
             <w lemma="deloven" ana="mte:Agpmsay" msd="UposTag=ADJ|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-01.1.2.1.43">delovni</w>
             <w lemma="teden" ana="mte:Ncmsan" msd="UposTag=NOUN|Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-01.1.2.1.44" join="right">teden</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-01.1.2.1.45">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-01.1.2.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-01.1.2.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:det" target="#newsfeed.2022-01-01.1.2.1.2 #newsfeed.2022-01-01.1.2.1.1"/>
               <link ana="ud-syn:obl" target="#newsfeed.2022-01-01.1.2.1.11 #newsfeed.2022-01-01.1.2.1.2"/>
               <link ana="ud-syn:obj" target="#newsfeed.2022-01-01.1.2.1.11 #newsfeed.2022-01-01.1.2.1.3"/>
@@ -739,7 +739,7 @@
             <w lemma="šola" ana="mte:Ncfpd" msd="UposTag=NOUN|Case=Dat|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-01.1.3.1.24">šolam</w>
             <w lemma="smuč" ana="mte:Ncfpg" msd="UposTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-01.1.3.1.25" join="right">smuči</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-01.1.3.1.26">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-01.1.3.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-01.1.3.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-01.1.3.1.21 #newsfeed.2022-01-01.1.3.1.1"/>
               <link ana="ud-syn:case" target="#newsfeed.2022-01-01.1.3.1.5 #newsfeed.2022-01-01.1.3.1.2"/>
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-01.1.3.1.4 #newsfeed.2022-01-01.1.3.1.3"/>
@@ -780,7 +780,7 @@
             <w lemma="na" ana="mte:Sl" msd="UposTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-01.1.3.2.9">na</w>
             <w lemma="sneg" ana="mte:Ncmsl" msd="UposTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-01.1.3.2.10" join="right">snegu</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-01.1.3.2.11">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-01.1.3.2" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-01.1.3.2" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:punct" target="#newsfeed.2022-01-01.1.3.2.4 #newsfeed.2022-01-01.1.3.2.1"/>
               <link ana="ud-syn:obj" target="#newsfeed.2022-01-01.1.3.2.4 #newsfeed.2022-01-01.1.3.2.2"/>
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-01.1.3.2.4 #newsfeed.2022-01-01.1.3.2.3"/>
@@ -851,7 +851,7 @@
             <w lemma="osnoven" ana="mte:Agpfpg" msd="UposTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-01.1.3.3.48">osnovnih</w>
             <w lemma="šola" ana="mte:Ncfpg" msd="UposTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" xml:id="newsfeed.2022-01-01.1.3.3.49" join="right">šol</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-01.1.3.3.50">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-01.1.3.3" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-01.1.3.3" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-01.1.3.3.7 #newsfeed.2022-01-01.1.3.3.1"/>
               <link ana="ud-syn:cop" target="#newsfeed.2022-01-01.1.3.3.7 #newsfeed.2022-01-01.1.3.3.2"/>
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-01.1.3.3.7 #newsfeed.2022-01-01.1.3.3.3"/>

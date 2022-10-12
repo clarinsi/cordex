@@ -77,11 +77,14 @@ class Writer:
 
         return sorted(rows, key=key, reverse=self.sort_order)
 
-    def write_header(self, file_handler):
+    def write_header(self, file_handler, return_list):
         """ Writes header to output. """
-        file_handler.write(self.separator.join(self.header()) + "\n")
+        if return_list:
+            return self.header()
+        else:
+            file_handler.write(self.separator.join(self.header()) + "\n")
 
-    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map):
+    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map, return_list):
         rows = []
         components = structure.components
         for match in collocation_ids.get_matches_for(structure):
@@ -122,12 +125,21 @@ class Writer:
 
         if rows != []:
             rows = self.sorted_rows(rows)
-            file_handler.write("\n".join([self.separator.join(row) for row in rows]) + "\n")
-            file_handler.flush()
+            if return_list:
+                return [row for row in rows]
+            else:
+                file_handler.write("\n".join([self.separator.join(row) for row in rows]) + "\n")
+                file_handler.flush()
 
-    def write_out(self, structures, collocation_ids, string_output=False):
+        else:
+            if return_list:
+                return []
+
+    def write_out(self, structures, collocation_ids, string_output=False, return_list=False):
         """ Writes processing results to file. """
-        if self.output_file is None:
+        write_results = []
+
+        if self.output_file is None and not return_list:
             return
 
         def fp_close(fp_):
@@ -140,34 +152,49 @@ class Writer:
                 return open("{}.{}".format(self.output_file, snum), "w")
 
         if not self.multiple_output:
-            if string_output:
-                fp = io.StringIO()
+
+            if return_list:
+                write_results.append(self.header())
             else:
-                fp = fp_open()
-            self.write_header(fp)
+                if string_output:
+                    fp = io.StringIO()
+                else:
+                    fp = fp_open()
+                self.write_header(fp, return_list)
             col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, 'mapper.txt')) \
                 if self.collocation_sentence_map_dest is not None else None
 
         for s in progress(structures, "writing:{}".format(self.formatter)):
             if self.multiple_output:
-                if string_output:
-                    fp = io.StringIO()
+
+                if return_list:
+                    write_results.append(self.header())
                 else:
-                    fp = fp_open()
-                self.write_header(fp)
+                    if string_output:
+                        fp = io.StringIO()
+                    else:
+                        fp = fp_open()
+                    self.write_header(fp, return_list)
                 col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}_mapper.txt')) \
                     if self.collocation_sentence_map_dest is not None else None
 
             self.formatter.set_structure(s)
-            self.write_out_worker(fp, s, collocation_ids, col_sent_map)
+            if return_list:
+                content = self.write_out_worker(None, s, collocation_ids, col_sent_map, return_list)
+                write_results.extend(content)
+            else:
+                self.write_out_worker(fp, s, collocation_ids, col_sent_map, return_list)
 
-            if self.multiple_output:
+                if self.multiple_output:
+                    fp_close(fp)
+
+        if not return_list:
+            if not self.multiple_output:
                 fp_close(fp)
+            if col_sent_map:
+                col_sent_map.close()
 
-        if not self.multiple_output:
-            fp_close(fp)
-        if col_sent_map:
-            col_sent_map.close()
+        return write_results
 
     @staticmethod
     def find_variable_word_order(matches):

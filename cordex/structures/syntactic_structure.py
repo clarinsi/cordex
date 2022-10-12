@@ -21,6 +21,8 @@ class SyntacticStructure:
         """ Reads a syntactic structure from xml. """
         st = SyntacticStructure()
         st.id = xml.get('id')
+        if st.id == '2086' or st.id == '1':
+            print('HERE!')
         if st.id is None:
             st.id = xml.get('tempId')
         # st.lbs = xml.get('LBS')
@@ -126,6 +128,8 @@ class SyntacticStructure:
         forms[n].append(to_add)
 
     def match(self, word):
+        if len(self.components) == 0:
+            print('WHAAT')
         matches = self.components[0].match(word)
         return [] if matches is None else matches
 
@@ -133,7 +137,7 @@ class SyntacticStructure:
 def build_structures(args):
     """ Builds structures. """
     filename = args['structures']
-    no_stats = args['no_stats']
+    no_stats = not args['statistics']
 
     max_num_components = -1
     with open(filename, 'r') as fp:

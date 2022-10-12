@@ -633,7 +633,7 @@
             <w lemma="lokacija" ana="mte:Ncfsl" msd="UposTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-02.1.1.1.48" join="right">lokaciji</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.1.1.1.49" join="right">)</pc>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.1.1.1.50">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.1.1.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.1.1.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:mark" target="#newsfeed.2022-01-02.1.1.1.3 #newsfeed.2022-01-02.1.1.1.1"/>
               <link ana="ud-syn:expl" target="#newsfeed.2022-01-02.1.1.1.3 #newsfeed.2022-01-02.1.1.1.2"/>
               <link ana="ud-syn:advcl" target="#newsfeed.2022-01-02.1.1.1.9 #newsfeed.2022-01-02.1.1.1.3"/>
@@ -716,7 +716,7 @@
               <w lemma="Youtub" ana="mte:Npmsl" msd="UposTag=PROPN|Case=Loc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-02.1.1.2.26" join="right">YouTubu</w>
             </seg>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.1.1.2.27">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.1.1.2" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.1.1.2" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.1.1.2.2 #newsfeed.2022-01-02.1.1.2.1"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-02.1.1.2.3 #newsfeed.2022-01-02.1.1.2.2"/>
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-02.1.1.2.7 #newsfeed.2022-01-02.1.1.2.3"/>
@@ -775,7 +775,7 @@
             <w lemma="vaš" ana="mte:Ps2mpdp" msd="UposTag=DET|Case=Dat|Gender=Neut|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs" xml:id="newsfeed.2022-01-02.1.1.3.26">vašim</w>
             <w lemma="zanimanje" ana="mte:Ncnpd" msd="UposTag=NOUN|Case=Dat|Gender=Neut|Number=Plur" xml:id="newsfeed.2022-01-02.1.1.3.27" join="right">zanimanjem</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.1.1.3.28">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.1.1.3" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.1.1.3" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.1.1.3.2 #newsfeed.2022-01-02.1.1.3.1"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-02.1.1.3.3 #newsfeed.2022-01-02.1.1.3.2"/>
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-02.1.1.3.6 #newsfeed.2022-01-02.1.1.3.3"/>
@@ -899,7 +899,7 @@
             <w lemma="lokacija" ana="mte:Ncfsl" msd="UposTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" xml:id="newsfeed.2022-01-02.2.1.1.48" join="right">lokaciji</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.2.1.1.49" join="right">)</pc>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.2.1.1.50">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.2.1.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.2.1.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:mark" target="#newsfeed.2022-01-02.2.1.1.3 #newsfeed.2022-01-02.2.1.1.1"/>
               <link ana="ud-syn:expl" target="#newsfeed.2022-01-02.2.1.1.3 #newsfeed.2022-01-02.2.1.1.2"/>
               <link ana="ud-syn:advcl" target="#newsfeed.2022-01-02.2.1.1.9 #newsfeed.2022-01-02.2.1.1.3"/>
@@ -982,7 +982,7 @@
               <w lemma="Youtub" ana="mte:Npmsl" msd="UposTag=PROPN|Case=Loc|Gender=Masc|Number=Sing" xml:id="newsfeed.2022-01-02.2.1.2.26" join="right">YouTubu</w>
             </seg>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.2.1.2.27">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.2.1.2" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.2.1.2" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.2.1.2.2 #newsfeed.2022-01-02.2.1.2.1"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-02.2.1.2.3 #newsfeed.2022-01-02.2.1.2.2"/>
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-02.2.1.2.7 #newsfeed.2022-01-02.2.1.2.3"/>
@@ -1041,7 +1041,7 @@
             <w lemma="vaš" ana="mte:Ps2mpdp" msd="UposTag=DET|Case=Dat|Gender=Neut|Number=Plur|Number[psor]=Plur|Person=2|Poss=Yes|PronType=Prs" xml:id="newsfeed.2022-01-02.2.1.3.26">vašim</w>
             <w lemma="zanimanje" ana="mte:Ncnpd" msd="UposTag=NOUN|Case=Dat|Gender=Neut|Number=Plur" xml:id="newsfeed.2022-01-02.2.1.3.27" join="right">zanimanjem</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.2.1.3.28">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.2.1.3" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.2.1.3" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.2.1.3.2 #newsfeed.2022-01-02.2.1.3.1"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-02.2.1.3.3 #newsfeed.2022-01-02.2.1.3.2"/>
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-02.2.1.3.6 #newsfeed.2022-01-02.2.1.3.3"/>
@@ -1129,7 +1129,7 @@
             <w lemma="uporabljati" ana="mte:Vmpr1p" msd="UposTag=VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-02.3.1.1.11">uporabljamo</w>
             <w lemma="piškotek" ana="mte:Ncmpa" msd="UposTag=NOUN|Case=Acc|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-02.3.1.1.12" join="right">piškotke</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.3.1.1.13">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.3.1.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.3.1.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:mark" target="#newsfeed.2022-01-02.3.1.1.4 #newsfeed.2022-01-02.3.1.1.1"/>
               <link ana="ud-syn:aux" target="#newsfeed.2022-01-02.3.1.1.4 #newsfeed.2022-01-02.3.1.1.2"/>
               <link ana="ud-syn:iobj" target="#newsfeed.2022-01-02.3.1.1.4 #newsfeed.2022-01-02.3.1.1.3"/>
@@ -1171,7 +1171,7 @@
             <w lemma="najbolj" ana="mte:Rgs" msd="UposTag=ADV|Degree=Sup" xml:id="newsfeed.2022-01-02.3.1.2.23">najbolj</w>
             <w lemma="zanimati" ana="mte:Vmpr3s" msd="UposTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" xml:id="newsfeed.2022-01-02.3.1.2.24" join="right">zanima</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.3.1.2.25">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.3.1.2" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.3.1.2" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:nsubj" target="#newsfeed.2022-01-02.3.1.2.3 #newsfeed.2022-01-02.3.1.2.1"/>
               <link ana="ud-syn:iobj" target="#newsfeed.2022-01-02.3.1.2.3 #newsfeed.2022-01-02.3.1.2.2"/>
               <link ana="ud-syn:root" target="#newsfeed.2022-01-02.3.1.2 #newsfeed.2022-01-02.3.1.2.3"/>
@@ -1216,7 +1216,7 @@
             <w lemma="naš" ana="mte:Ps1mpip" msd="UposTag=DET|Case=Ins|Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs" xml:id="newsfeed.2022-01-02.3.1.3.14">našimi</w>
             <w lemma="bralec" ana="mte:Ncmpi" msd="UposTag=NOUN|Case=Ins|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-02.3.1.3.15" join="right">bralci</w>
             <pc ana="mte:Z" msd="UposTag=PUNCT" xml:id="newsfeed.2022-01-02.3.1.3.16">.</pc>
-            <linkGrp corresp="#newsfeed.2022-01-02.3.1.3" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.3.1.3" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.3.1.3.2 #newsfeed.2022-01-02.3.1.3.1"/>
               <link ana="ud-syn:root" target="#newsfeed.2022-01-02.3.1.3 #newsfeed.2022-01-02.3.1.3.2"/>
               <link ana="ud-syn:punct" target="#newsfeed.2022-01-02.3.1.3.9 #newsfeed.2022-01-02.3.1.3.3"/>
@@ -1249,7 +1249,7 @@
             <w lemma="več" ana="mte:Rgc" msd="UposTag=DET|PronType=Ind" xml:id="newsfeed.2022-01-02.3.1.4.11">Več</w>
             <w lemma="o" ana="mte:Sl" msd="UposTag=ADP|Case=Loc" xml:id="newsfeed.2022-01-02.3.1.4.12">o</w>
             <w lemma="ta" ana="mte:Pd-nsl" msd="UposTag=DET|Case=Loc|Gender=Neut|Number=Sing|PronType=Dem" xml:id="newsfeed.2022-01-02.3.1.4.13">tem</w>
-            <linkGrp corresp="#newsfeed.2022-01-02.3.1.4" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.3.1.4" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:root" target="#newsfeed.2022-01-02.3.1.4 #newsfeed.2022-01-02.3.1.4.1"/>
               <link ana="ud-syn:obj" target="#newsfeed.2022-01-02.3.1.4.1 #newsfeed.2022-01-02.3.1.4.2"/>
               <link ana="ud-syn:punct" target="#newsfeed.2022-01-02.3.1.4.5 #newsfeed.2022-01-02.3.1.4.3"/>
@@ -1271,7 +1271,7 @@
             <w lemma="nujno" ana="mte:Rgp" msd="UposTag=ADV|Degree=Pos" xml:id="newsfeed.2022-01-02.3.2.1.1">Nujno</w>
             <w lemma="potreben" ana="mte:Agpmpn" msd="UposTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-02.3.2.1.2">potrebni</w>
             <w lemma="piškotek" ana="mte:Ncmpn" msd="UposTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" xml:id="newsfeed.2022-01-02.3.2.1.3">piškotki</w>
-            <linkGrp corresp="#newsfeed.2022-01-02.3.2.1" targFunc="head argument" type="JOS-SYN">
+            <linkGrp corresp="#newsfeed.2022-01-02.3.2.1" targFunc="head argument" type="UD-SYN">
               <link ana="ud-syn:advmod" target="#newsfeed.2022-01-02.3.2.1.2 #newsfeed.2022-01-02.3.2.1.1"/>
               <link ana="ud-syn:amod" target="#newsfeed.2022-01-02.3.2.1.3 #newsfeed.2022-01-02.3.2.1.2"/>
               <link ana="ud-syn:root" target="#newsfeed.2022-01-02.3.2.1 #newsfeed.2022-01-02.3.2.1.3"/>

@@ -35,7 +35,8 @@ class StructureMatch:
                     prev_match_id = match_id
 
                 word_udpos = literal_eval(word_udpos)
-                result.matches[-1][str(component_id)] = WordUD(word_lemma, '', sentence_id, word_id, int(word_id), word_text, False, feats=word_udpos)
+                int_word_id = int(word_id) if word_id[0] in '0123456789' else int(word_id[1:])
+                result.matches[-1][str(component_id)] = WordUD(word_lemma, '', sentence_id, word_id, int_word_id, word_text, False, feats=word_udpos)
 
         else:
             stmt = """SELECT match_id, component_id, word_lemma, word_text, word_xpos, word_id, sentence_id
@@ -51,7 +52,7 @@ class StructureMatch:
                     result.matches.append({})
                     prev_match_id = match_id
 
-                int_word_id = int(word_id) if word_id in ['0123456789'] else int(word_id[1:])
+                int_word_id = int(word_id) if word_id[0] in '0123456789' else int(word_id[1:])
                 result.matches[-1][str(component_id)] = WordJOS(word_lemma, word_xpos, sentence_id, word_id, int_word_id, word_text, False)
         
         for component_id, text, msd in db.execute("SELECT component_id, text, msd FROM Representations WHERE collocation_id=?", (collocation_id,)):

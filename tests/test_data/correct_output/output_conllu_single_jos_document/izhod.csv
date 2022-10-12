@@ -1,2 +1,84 @@
 Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distribution,C2_Lemma,C2_Representative_form,C2_RF_msd,C2_RF_scenario,C2_Distribution,C3_Lemma,C3_Representative_form,C3_RF_msd,C3_RF_scenario,C3_Distribution,C4_Lemma,C4_Representative_form,C4_RF_msd,C4_RF_scenario,C4_Distribution,C5_Lemma,C5_Representative_form,C5_RF_msd,C5_RF_scenario,C5_Distribution,Collocation_ID,Joint_representative_form_fixed,Joint_representative_form_variable,Frequency,Delta_p12,Delta_p21,LogDice_core,LogDice_all,Distinct_forms
-NOT WORKING YET
+34,finančen,finančne,Agpmpa,ok,1,učinek,učinek,,lemma_fallback,1,,,,,,,,,,,,,,,,1,finančne učinek,finančne učinek,1,1.00000,1.00000,14.00000,14.00000,1
+34,zdrav,zdravi,Agpfsl,ok,1,pamet,pamet,,lemma_fallback,2,,,,,,,,,,,,,,,,2,zdravi pamet,zdravi pamet,1,1.00000,1.00000,14.00000,14.00000,1
+34,kmečki,kmečki,Agpfsl,ok,1,pamet,pamet,,lemma_fallback,2,,,,,,,,,,,,,,,,3,kmečki pamet,kmečki pamet,1,1.00000,1.00000,14.00000,14.00000,1
+34,lasten,lastnih,Agpfpl,ok,1,izkušnja,izkušnja,,lemma_fallback,1,,,,,,,,,,,,,,,,4,lastnih izkušnja,lastnih izkušnja,1,1.00000,1.00000,14.00000,14.00000,1
+34,drugačen,drugačen,Agpmsan,ok,1,način,način,,lemma_fallback,1,,,,,,,,,,,,,,,,5,drugačen način,drugačen način,1,0.50000,0.99565,13.41504,13.41504,1
+34,sedanji,Sedanje,Agpnsa,ok,1,stanje,stanje,,lemma_fallback,1,,,,,,,,,,,,,,,,6,Sedanje stanje,Sedanje stanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,odločilen,Odločilen,Agpmsnn,ok,1,element,element,Ncmsn,ok,1,,,,,,,,,,,,,,,,7,Odločilen element,Odločilen element,1,1.00000,1.00000,14.00000,14.00000,1
+34,izbran,izbrani,Appmsny,ok,1,zdravnik,zdravnik,Ncmsn,ok,1,,,,,,,,,,,,,,,,8,izbrani zdravnik,izbrani zdravnik,1,1.00000,1.00000,14.00000,14.00000,1
+34,primaren,primarnem,Agpmsl,ok,1,nivo,nivo,,lemma_fallback,2,,,,,,,,,,,,,,,,9,primarnem nivo,primarnem nivo,1,0.50000,0.99565,13.41504,13.41504,1
+34,sekundaren,sekundarnem,Agpmsl,ok,1,nivo,nivo,,lemma_fallback,2,,,,,,,,,,,,,,,,10,sekundarnem nivo,sekundarnem nivo,1,0.50000,0.99565,13.41504,13.41504,1
+34,nedaven,nedavnem,Agpmsl,ok,1,turnir,turnir,,lemma_fallback,2,,,,,,,,,,,,,,,,11,nedavnem turnir,nedavnem turnir,1,1.00000,1.00000,14.00000,14.00000,1
+34,mednaroden,mednarodnem,Agpmsl,ok,1,turnir,turnir,,lemma_fallback,2,,,,,,,,,,,,,,,,12,mednarodnem turnir,mednarodnem turnir,1,1.00000,1.00000,14.00000,14.00000,1
+34,mlad,mladih,Agpmpg,ok,1,judoist,judoist,,lemma_fallback,1,,,,,,,,,,,,,,,,13,mladih judoist,mladih judoist,1,1.00000,1.00000,14.00000,14.00000,1
+34,visok,visokih,Agpnpg,ok,2,mesto,mesto,,lemma_fallback,1,,,,,,,,,,,,,,,,14,visokih mesto,visokih mesto,1,0.99565,0.50000,13.41504,13.41504,1
+34,visok,najvišjo,Agsfsa,ok,2,stopnička,stopnička,,lemma_fallback,1,,,,,,,,,,,,,,,,15,najvišjo stopnička,najvišjo stopnička,1,0.99565,0.50000,13.41504,13.41504,1
+34,svež,Sveži,Agpmpn,ok,1,gomolj,gomolji,Ncmpn,ok,1,,,,,,,,,,,,,,,,16,Sveži gomolji,Sveži gomolji,2,0.66667,0.99563,13.67807,13.67807,2
+34,svojevrsten,svojevrsten,Agpmsan,ok,1,okus,okus,,lemma_fallback,1,,,,,,,,,,,,,,,,17,svojevrsten okus,svojevrsten okus,1,1.00000,1.00000,14.00000,14.00000,1
+57,želja,želja,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,2,izražen,izražena,Appfsn,ok,1,,,,,,,,,,,18,želja je izražena,je izražena želja,1,1.00000,1.00000,14.00000,12.00000,1
+57,način,Način,Ncmsn,ok,1,biti,je,Va-r3s-n,ok,2,podoben,podoben,Agpmsnn,ok,1,,,,,,,,,,,19,Način je podoben,Način je podoben,1,0.50000,0.99565,13.41504,11.88452,1
+68,izogniti,izogniti,Vmep-sm,ok,1,se,se,Px------y,ok,1,beseda,besedi,Ncfsd,ok,1,,,,,,,,,,,20,izogniti se besedi,se izogniti besedi,1,1.00000,1.00000,14.00000,13.00000,1
+23,opisovati,opisovati,Vmpr3s,ok,1,učinek,učinke,Ncmpa,ok,1,,,,,,,,,,,,,,,,21,opisovati učinke,opisovati učinke,1,1.00000,1.00000,14.00000,14.00000,1
+23,strniti,strniti,Vmep-sm,ok,1,stanje,stanje,Ncnsa,ok,1,,,,,,,,,,,,,,,,22,strniti stanje,stanje strniti,1,1.00000,1.00000,14.00000,14.00000,1
+23,napotiti,napotiti,Vmer3s,ok,1,bolnik,bolnika,Ncmsay,ok,1,,,,,,,,,,,,,,,,23,napotiti bolnika,napotiti bolnika,1,0.99565,0.50000,13.41504,13.41504,1
+23,osvojiti,osvojiti,Vmep-pm,ok,1,kopica,kopico,Ncfsa,ok,1,,,,,,,,,,,,,,,,24,osvojiti kopico,osvojiti kopico,1,1.00000,1.00000,14.00000,14.00000,1
+23,uživati,uživati,Vmpr1p,ok,1,topinambur,topinambur,Ncmsan,ok,1,,,,,,,,,,,,,,,,25,uživati topinambur,topinambur uživati,1,0.99565,0.50000,13.41504,13.41504,1
+23,imeti,imeti,Vmpr3p-n,ok,1,okus,okus,Ncmsan,ok,1,,,,,,,,,,,,,,,,26,imeti okus,imeti okus,1,0.33333,0.99130,13.00000,13.00000,1
+70,reforma,reforma,,lemma_fallback,1,prinesti,prinesti,,lemma_fallback,1,,,,,,,,,,,,,,,,27,reforma prinesti,reforma prinesti,1,0.99130,0.33333,13.00000,13.00000,1
+70,tekmovalec,tekmovalec,,lemma_fallback,1,sodelovati,sodelovati,,lemma_fallback,1,,,,,,,,,,,,,,,,28,tekmovalec sodelovati,sodelovati tekmovalec,1,1.00000,1.00000,14.00000,14.00000,1
+70,Pomurec,Pomurec,,lemma_fallback,1,osvojiti,osvojiti,,lemma_fallback,1,,,,,,,,,,,,,,,,29,Pomurec osvojiti,Pomurec osvojiti,1,1.00000,1.00000,14.00000,14.00000,1
+70,gomolj,gomolji,Ncmpn,ok,1,imeti,imajo,Vmpr3p-n,ok,1,,,,,,,,,,,,,,,,30,gomolji imajo,gomolji imajo,1,0.32456,0.32456,12.41504,12.41504,1
+71,reforma,Reforme,Ncfpn,ok,1,se,se,Px------y,ok,1,delati,delajo,Vmpr3p,ok,1,,,,,,,,,,,31,Reforme se delajo,Reforme se delajo,1,0.99130,0.33333,13.00000,12.58496,1
+72,reforma,reforma,,lemma_fallback,1,biti,ne,Q,ok,1,prinesti,prinesti,,lemma_fallback,1,,,,,,,,,,,32,reforma ne prinesti,reforma ne prinesti,1,0.99130,0.33333,13.00000,11.77761,1
+73,reforma,Reforme,Ncfpn,ok,1,se,se,Px------y,ok,1,ne,ne,Q,ok,1,delati,delajo,Vmpr3p,ok,1,,,,,,33,Reforme se ne delajo,Reforme se ne delajo,1,0.99130,0.33333,13.00000,12.83007,1
+53,del,del,,lemma_fallback,1,članek,članka,Ncmsg,ok,1,,,,,,,,,,,,,,,,34,del članka,del članka,1,1.00000,1.00000,14.00000,14.00000,1
+53,učinek,učinek,,lemma_fallback,1,reforma,reforme,Ncfsg,ok,1,,,,,,,,,,,,,,,,35,učinek reforme,učinek reforme,1,0.99130,0.33333,13.00000,13.00000,1
+53,beseda,beseda,,lemma_fallback,1,denar,denarja,Ncmsg,ok,1,,,,,,,,,,,,,,,,36,beseda denarja,beseda denarja,1,1.00000,1.00000,14.00000,14.00000,1
+53,element,element,Ncmsn,ok,1,zdravljenje,zdravljenja,Ncnsg,ok,1,,,,,,,,,,,,,,,,37,element zdravljenja,element zdravljenja,1,1.00000,1.00000,14.00000,14.00000,1
+53,zdravljenje,zdravljenje,,lemma_fallback,1,bolnik,bolnika,Ncmsg,ok,1,,,,,,,,,,,,,,,,38,zdravljenje bolnika,zdravljenje bolnika,1,0.99565,0.50000,13.41504,13.41504,1
+53,primer,primer,,lemma_fallback,1,potreba,potrebe,Ncfsg,ok,1,,,,,,,,,,,,,,,,39,primer potrebe,primer potrebe,1,1.00000,1.00000,14.00000,14.00000,1
+53,vrsta,vrsta,,lemma_fallback,2,pregled,pregleda,Ncmsg,ok,1,,,,,,,,,,,,,,,,40,vrsta pregleda,vrsta pregleda,1,0.50000,0.99565,13.41504,13.41504,1
+53,vrsta,vrsta,,lemma_fallback,2,pooblastilo,pooblastil,Ncnpg,ok,1,,,,,,,,,,,,,,,,41,vrsta pooblastil,vrsta pooblastil,1,0.50000,0.99565,13.41504,13.41504,1
+53,turnir,turnir,,lemma_fallback,1,judoist,judoistov,Ncmpg,ok,1,,,,,,,,,,,,,,,,42,turnir judoistov,turnir judoistov,1,1.00000,1.00000,14.00000,14.00000,1
+53,pokal,pokal,,lemma_fallback,1,Ptuj,Ptuja,Npmsg,ok,1,,,,,,,,,,,,,,,,43,pokal Ptuja,pokal Ptuja,1,1.00000,1.00000,14.00000,14.00000,1
+53,klub,klub,,lemma_fallback,1,Madžarska,Madžarske,Npfsg,ok,1,,,,,,,,,,,,,,,,44,klub Madžarske,klub Madžarske,1,1.00000,1.00000,14.00000,14.00000,1
+53,kopica,kopica,,lemma_fallback,1,mesto,mest,Ncnpg,ok,1,,,,,,,,,,,,,,,,45,kopica mest,kopica mest,1,1.00000,1.00000,14.00000,14.00000,1
+53,način,Način,Ncmsn,ok,1,uporaba,uporabe,Ncfsg,ok,1,,,,,,,,,,,,,,,,46,Način uporabe,Način uporabe,1,0.50000,0.99565,13.41504,13.41504,1
+53,uporaba,uporaba,,lemma_fallback,1,gomolj,gomoljev,Ncmpg,ok,1,,,,,,,,,,,,,,,,47,uporaba gomoljev,uporaba gomoljev,1,0.99130,0.33333,13.00000,13.00000,1
+53,gomolj,gomolj,,lemma_fallback,1,topinambur,topinamburja,Ncmsg,ok,1,,,,,,,,,,,,,,,,48,gomolj topinamburja,gomolj topinamburja,1,0.32895,0.49127,12.67807,12.67807,1
+77,element,element,Ncmsn,ok,1,biti,je,Va-r3s-n,ok,1,zdravnik,zdravnik,Ncmsn,ok,1,,,,,,,,,,,49,element je zdravnik,element je zdravnik,1,1.00000,1.00000,14.00000,12.00000,1
+19,uživati,uživati,Vmpr1p,ok,1,surov,surov,Agpmsan,ok,1,,,,,,,,,,,,,,,,50,uživati surov,uživati surov,1,1.00000,1.00000,14.00000,14.00000,1
+43,dovolj,dovolj,Rgp,ok,1,imeti,imeti,Vmpr1p-n,ok,2,,,,,,,,,,,,,,,,51,dovolj imeti,imeti dovolj,1,0.33333,0.99130,13.00000,13.00000,1
+43,premalo,premalo,Rgp,ok,1,imeti,imeti,Vmpr1p-n,ok,2,,,,,,,,,,,,,,,,52,premalo imeti,imeti premalo,1,0.33333,0.99130,13.00000,13.00000,1
+43,takole,takole,Rgp,ok,1,strniti,strniti,Vmep-sm,ok,1,,,,,,,,,,,,,,,,53,takole strniti,strniti takole,1,1.00000,1.00000,14.00000,14.00000,1
+81,deloma,deloma,Rgp,ok,1,se,se,Px------y,ok,2,strinjati,strinjati,Vmpr1s,ok,1,,,,,,,,,,,54,deloma se strinjati,deloma se strinjati,1,1.00000,1.00000,14.00000,13.00000,1
+81,namenoma,namenoma,Rgp,ok,1,se,se,Px------y,ok,2,izogniti,izogniti,Vmep-sm,ok,1,,,,,,,,,,,55,namenoma se izogniti,se namenoma izogniti,1,1.00000,1.00000,14.00000,13.00000,1
+46,napol,napol,Rgp,ok,1,kuhan,kuhan,Appmpa,ok,1,,,,,,,,,,,,,,,,56,napol kuhan,napol kuhan,1,0.50000,0.99565,13.41504,13.41504,1
+55,nekaj,nekaj,Rgp,ok,1,manj,manj,Rgc,ok,1,,,,,,,,,,,,,,,,57,nekaj manj,nekaj manj,1,1.00000,1.00000,14.00000,14.00000,1
+48,tekmovalka,tekmovalka,,lemma_fallback,1,iz,iz,Sg,ok,1,klub,klubov,Ncmpg,ok,1,,,,,,,,,,,58,tekmovalka iz klubov,tekmovalka iz klubov,1,1.00000,1.00000,14.00000,14.00000,1
+51,turnir,turnir,,lemma_fallback,1,za,za,Sa,ok,2,pokal,pokal,Ncmsan,ok,1,,,,,,,,,,,59,turnir za pokal,turnir za pokal,1,1.00000,1.00000,14.00000,13.26303,1
+51,bojazen,bojazen,,lemma_fallback,1,za,za,Sa,ok,2,zdravje,zdravje,Ncnsa,ok,1,,,,,,,,,,,60,bojazen za zdravje,bojazen za zdravje,1,1.00000,1.00000,14.00000,13.26303,1
+52,zdravnik,zdravnik,Ncmsn,ok,1,na,na,Sl,ok,2,nivo,nivoju,Ncmsl,ok,2,,,,,,,,,,,61,zdravnik na nivoju,zdravnik na nivoju,1,0.99565,0.50000,13.41504,12.58496,1
+52,specialist,specialist,,lemma_fallback,1,na,na,Sl,ok,2,nivo,nivoju,Ncmsl,ok,2,,,,,,,,,,,62,specialist na nivoju,specialist na nivoju,1,0.99565,0.50000,13.41504,12.58496,1
+52,želja,želja,Ncfsn,ok,1,o,o,Sl,ok,1,vrsta,vrsti,Ncfsl,ok,1,,,,,,,,,,,63,želja o vrsti,želja o vrsti,1,0.99565,0.50000,13.41504,13.58496,1
+50,primerjava,primerjava,,lemma_fallback,1,z,s,Si,ok,1,krompir,krompirjem,Ncmsi,ok,1,,,,,,,,,,,64,primerjava s krompirjem,primerjava s krompirjem,1,1.00000,1.00000,14.00000,13.26303,1
+13,uživati,uživati,Vmpr1p,ok,1,brez,brez,Sg,ok,1,bojazen,bojazni,Ncfsg,ok,1,,,,,,,,,,,65,uživati brez bojazni,brez bojazni uživati,1,1.00000,1.00000,14.00000,14.00000,1
+17,napotiti,napotiti,Vmer3s,ok,1,k,k,Sd,ok,1,specialist,specialistu,Ncmsd,ok,1,,,,,,,,,,,66,napotiti k specialistu,napotiti k specialistu,1,1.00000,1.00000,14.00000,14.00000,1
+14,iti,iti,Vmbr3s,ok,1,za,za,Sa,ok,1,stvar,stvari,Ncfpa,ok,1,,,,,,,,,,,67,iti za stvari,iti za stvari,1,1.00000,1.00000,14.00000,13.26303,1
+88,povzpeti,povzpeti,Vmen,ok,1,se,se,Px------y,ok,1,na,na,Sa,ok,1,stopnička,stopničko,Ncfsa,ok,1,,,,,,68,povzpeti se na stopničko,se povzpeti na stopničko,1,1.00000,1.00000,14.00000,12.54057,1
+15,prinesti,prinesti,Vmep-sf,ok,1,po,po,Sl,ok,2,pamet,pameti,Ncfsl,ok,1,,,,,,,,,,,69,prinesti po pameti,po pameti prinesti,1,1.00000,1.00000,14.00000,13.26303,1
+15,napotiti,napotiti,Vmer3s,ok,2,v,v,Sl,ok,2,primer,primeru,Ncmsl,ok,1,,,,,,,,,,,70,napotiti v primeru,v primeru napotiti,1,1.00000,1.00000,14.00000,13.58496,1
+15,napotiti,napotiti,Vmer3s,ok,2,po,po,Sl,ok,2,presoja,presoji,Ncfsl,ok,1,,,,,,,,,,,71,napotiti po presoji,po presoji napotiti,1,1.00000,1.00000,14.00000,13.26303,1
+15,sodelovati,sodelovati,Vmpp-sn,ok,1,na,Na,Sl,ok,1,turnir,turnirju,Ncmsl,ok,1,,,,,,,,,,,72,sodelovati Na turnirju,Na turnirju sodelovati,1,1.00000,1.00000,14.00000,12.77761,1
+15,uživati,uživati,Vmpr1p,ok,1,v,V,Sl,ok,2,primerjava,primerjavi,Ncfsl,ok,1,,,,,,,,,,,73,uživati V primerjavi,V primerjavi uživati,1,1.00000,1.00000,14.00000,13.58496,1
+16,napotiti,napotiti,Vmer3s,ok,1,z,z,Si,ok,1,napotnica,napotnico,Ncfsi,ok,1,,,,,,,,,,,74,napotiti z napotnico,napotiti z napotnico,1,1.00000,1.00000,14.00000,13.26303,1
+90,strinjati,strinjati,Vmpr1s,ok,1,se,se,Px------y,ok,1,z,z,Si,ok,1,del,delom,Ncmsi,ok,1,,,,,,75,strinjati se z delom,se strinjati z delom,1,1.00000,1.00000,14.00000,12.83007,1
+96,biti,ne,Q,ok,1,uspeti,uspeti,Vmep-sn,ok,1,povzpeti,povzpeti,Vmen,ok,1,se,se,Px------y,ok,1,,,,,,76,ne uspeti povzpeti se,se ne uspeti povzpeti,1,1.00000,1.00000,14.00000,12.00000,1
+30,svež,svež,Agpmpa,ok,1,ali,ali,Cc,ok,2,kuhan,kuhan,Appmpa,ok,1,,,,,,,,,,,77,svež ali kuhan,svež ali kuhan,1,0.49563,0.49563,13.00000,13.00000,1
+30,kuhan,kuhan,Appmpn,ok,1,ali,ali,Cc,ok,2,pečen,pečen,Appmpn,ok,1,,,,,,,,,,,78,kuhan ali pečen,kuhan ali pečen,1,0.50000,0.99565,13.41504,13.26303,1
+30,sočen,sočen,Agcmpn,ok,1,in,in,Cc,ok,1,rahel,rahel,Agcmpn,ok,1,,,,,,,,,,,79,sočen in rahel,sočen in rahel,1,1.00000,1.00000,14.00000,12.77761,1
+106,pamet,pamet,,lemma_fallback,1,in,in,Cc,ok,4,izkušnja,izkušnja,,lemma_fallback,1,,,,,,,,,,,80,pamet in izkušnja,pamet in izkušnja,1,1.00000,1.00000,14.00000,12.77761,1
+106,vrsta,vrsta,,lemma_fallback,1,in,in,Cc,ok,4,vrsta,vrsta,,lemma_fallback,1,,,,,,,,,,,81,vrsta in vrsta,vrsta in vrsta,1,0.49563,0.49563,13.00000,12.41504,1
+106,tekmovalec,tekmovalec,,lemma_fallback,1,in,in,Cc,ok,4,tekmovalka,tekmovalka,,lemma_fallback,1,,,,,,,,,,,82,tekmovalec in tekmovalka,tekmovalec in tekmovalka,1,1.00000,1.00000,14.00000,12.77761,1
+106,Madžarska,Madžarska,,lemma_fallback,1,in,in,Cc,ok,4,Slovenija,Slovenija,,lemma_fallback,1,,,,,,,,,,,83,Madžarska in Slovenija,Madžarska in Slovenija,1,1.00000,1.00000,14.00000,12.77761,1
