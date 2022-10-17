@@ -234,3 +234,31 @@ class OutFormatter(Formatter):
     
     def __str__(self):
         return "out"
+
+
+class TokenFormatter(Formatter):
+    def header_repeat(self):
+        return ["Token_ID", "Word_form", "Lemma", "Msd"]
+
+    def header_right(self):
+        return []
+
+    def content_repeat(self, words, representations, idx, _sidx):
+        word = words[idx]
+        word_id = word.sentence_id + '.' + word.id
+        if idx in representations:
+            rep_text, rep_msd = representations[idx]
+        else:
+            rep_text = word.text
+            rep_msd = word.udpos if self.is_ud else word.xpos
+
+        return [word_id, rep_text, word.lemma, rep_msd]
+
+    def content_right(self, _freq, variable_word_order=None):
+        return []
+
+    def group(self):
+        return False
+
+    def __str__(self):
+        return "token"

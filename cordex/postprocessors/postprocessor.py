@@ -2,6 +2,7 @@
 Custom processing after matching.
 """
 
+
 class Postprocessor:
     def __init__(self, fixed_restriction_order=False, lang='sl'):
         self.fixed_restriction_order = fixed_restriction_order

@@ -12,6 +12,7 @@ except ImportError:
 
 REPORT_ON = 0.3
 
+
 class Progress:
     def __call__(self, iterable, description, total=None):
         if tqdm is None:
@@ -34,4 +35,3 @@ class Progress:
 
 
 progress = Progress()
-

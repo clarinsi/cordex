@@ -2,9 +2,7 @@
 Classes related to syntactic structure components.
 """
 from enum import Enum
-import logging
 
-# from luscenje_struktur.restriction import Restriction
 from cordex.structures.order import Order
 from cordex.representations.representation_assigner import RepresentationAssigner
 from cordex.restrictions.restriction_group import RestrictionGroup
@@ -134,7 +132,6 @@ class Component:
     def _match_next(self, word):
         """ Matches for every component in links from this component """
         to_ret = []
-
 
         # need to get all links that match
         for next, link, order in self.children:

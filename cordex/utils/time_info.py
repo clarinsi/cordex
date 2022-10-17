@@ -4,6 +4,7 @@ Class for estimating remaining calculation time. Works only for multiple files i
 from datetime import timedelta, datetime
 import logging
 
+
 class TimeInfo:
     def __init__(self, to_go):
         self.times = []
@@ -18,7 +19,6 @@ class TimeInfo:
     def info(self):
         """ Logs remaining time estimation. """
         seconds = sum(self.times) / len(self.times)
-        td = timedelta(seconds = int(seconds * self.to_go))
+        td = timedelta(seconds=int(seconds * self.to_go))
         ft = datetime.now() + td
         logging.info("Going to finish in {}".format(ft.strftime("%d/%m @ %H:%M")))
-

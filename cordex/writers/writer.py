@@ -6,7 +6,7 @@ import logging
 import os
 
 from cordex.utils.progress_bar import progress
-from cordex.writers.formatter import OutFormatter, OutNoStatFormatter
+from cordex.writers.formatter import OutFormatter, OutNoStatFormatter, TokenFormatter
 from cordex.writers.collocation_sentence_mapper import CollocationSentenceMapper
 
 
@@ -27,6 +27,11 @@ class Writer:
         """ Returns an instance of Writer class with settings for no statistics output. """
         params = Writer.other_params(args)
         return Writer(args['out'], num_components, OutNoStatFormatter(collocation_ids, word_renderer, is_ud), args['collocation_sentence_map_dest'], params, args['separator'])
+
+    @staticmethod
+    def make_token_writer(args, num_components, colocation_ids, word_renderer, is_ud):
+        return Writer(args['out'], num_components, TokenFormatter(colocation_ids, word_renderer, is_ud),
+                      args['collocation_sentence_map_dest'], None, args['separator'])
 
     def __init__(self, file_out, num_components, formatter, collocation_sentence_map_dest, params, separator):
         # TODO FIX THIS
@@ -84,7 +89,7 @@ class Writer:
         else:
             file_handler.write(self.separator.join(self.header()) + "\n")
 
-    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map, return_list):
+    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map, return_list, token_output):
         rows = []
         components = structure.components
         for match in collocation_ids.get_matches_for(structure):
@@ -99,29 +104,32 @@ class Writer:
                 for words in match.matches:
                     col_sent_map.add_map(match.match_id, words['1'].sentence_id)
 
-            words = match.matches[0]
-            to_write = []
+            for words in match.matches:
+                to_write = []
 
-            idx = 1
-            for _comp in components:
-                if _comp.idx == '#':
-                    continue
-                idx_s = str(idx)
-                idx += 1
-                if idx_s not in words:
-                    to_write.extend([""] * self.formatter.length())
-                else:
-                    to_write.extend(self.formatter.content_repeat(words, match.representations, idx_s, structure.id))
+                idx = 1
+                for _comp in components:
+                    if _comp.idx == '#':
+                        continue
+                    idx_s = str(idx)
+                    idx += 1
+                    if idx_s not in words:
+                        to_write.extend([""] * self.formatter.length())
+                    else:
+                        to_write.extend(self.formatter.content_repeat(words, match.representations, idx_s, structure.id))
 
-            # make them equal size
-            to_write.extend([""] * (self.num_components * self.formatter.length() - len(to_write)))
+                # make them equal size
+                to_write.extend([""] * (self.num_components * self.formatter.length() - len(to_write)))
 
-            # structure_id and collocation_id
-            to_write = [structure.id] + to_write + [match.match_id]
+                # structure_id and collocation_id
+                to_write = [structure.id] + to_write + [match.match_id]
 
-            # header_right
-            to_write.extend(self.formatter.content_right(len(match), variable_word_order))
-            rows.append(to_write)
+                # header_right
+                to_write.extend(self.formatter.content_right(len(match), variable_word_order))
+                rows.append(to_write)
+
+                if not token_output:
+                    break
 
         if rows != []:
             rows = self.sorted_rows(rows)
@@ -135,7 +143,7 @@ class Writer:
             if return_list:
                 return []
 
-    def write_out(self, structures, collocation_ids, string_output=False, return_list=False):
+    def write_out(self, structures, collocation_ids, token_output, string_output=False, return_list=False, ):
         """ Writes processing results to file. """
         write_results = []
 
@@ -180,10 +188,10 @@ class Writer:
 
             self.formatter.set_structure(s)
             if return_list:
-                content = self.write_out_worker(None, s, collocation_ids, col_sent_map, return_list)
+                content = self.write_out_worker(None, s, collocation_ids, col_sent_map, return_list, token_output)
                 write_results.extend(content)
             else:
-                self.write_out_worker(fp, s, collocation_ids, col_sent_map, return_list)
+                self.write_out_worker(fp, s, collocation_ids, col_sent_map, return_list, token_output)
 
                 if self.multiple_output:
                     fp_close(fp)

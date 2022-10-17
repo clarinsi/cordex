@@ -4,7 +4,6 @@ Connections to lexicon via API or file reading
 import lzma
 import pickle
 from cordex.utils.codes_tagset import TAGSET, CODES
-from conversion_utils.jos_msds_and_properties import Msd
 
 from cordex.utils.converter import msd_to_properties
 
@@ -23,13 +22,13 @@ class LookupLexicon:
         with lzma.open(file_path, "rb") as f:
             self.file_data = pickle.load(f)
 
-    def decypher_msd(self, msd):
+    @staticmethod
+    def decypher_msd(msd):
         """ Function that takes xpos tag and returns a dictionary that might be of interest in structures.
 
         :param msd: Slovenian xpos tag
         :return: Dictionary with attribute names as keys and attribute values as values. (i.e. {'case': 'nominative'})
         """
-        t = msd[0]
         decypher = {}
         # msd_model = Msd(''.join(msd), 'en')
         properties = msd_to_properties(''.join(msd), 'en')
@@ -93,4 +92,3 @@ class LookupLexicon:
                     break
             return ''.join(msd), lemma, form_representations
         return None, None, None
-

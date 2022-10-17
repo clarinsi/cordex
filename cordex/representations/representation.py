@@ -4,7 +4,6 @@ import logging
 from ast import literal_eval
 
 from collections import Counter
-from cordex.utils.codes_tagset import TAGSET, CODES
 from cordex.utils.converter import msd_to_properties
 from cordex.words.word import WordDummy
 
@@ -46,6 +45,7 @@ class ComponentRepresentation:
     def _render(self, is_ud, lookup_lexicon=None):
         raise NotImplementedError("Not implemented for class: {}".format(type(self)))
 
+
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
     def _render(self, is_ud, lookup_lexicon=None):
@@ -59,6 +59,7 @@ class LemmaCR(ComponentRepresentation):
         else:
             return None, None
 
+
 class LexisCR(ComponentRepresentation):
     """ Handles fixed word as component representation. """
     def _render(self, is_ud, lookup_lexicon=None):
@@ -67,6 +68,7 @@ class LexisCR(ComponentRepresentation):
         else:
             pos = 'Q'
         return self.data['lexis'], pos
+
 
 class WordFormAllCR(ComponentRepresentation):
     """ Returns all possible word forms separated with '/' as component representation. """
@@ -81,6 +83,7 @@ class WordFormAllCR(ComponentRepresentation):
                 msds = [w.xpos for w in self.words]
 
             return "/".join(set(forms)), "/".join(set(msds))
+
 
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
@@ -123,7 +126,6 @@ class WordFormAnyCR(ComponentRepresentation):
                             agreements_matched[i] = True
                         else:
                             break
-
 
             # if we are at the last "backup word", then confirm matches 
             # that worked for this one and return
@@ -250,7 +252,6 @@ class WordFormAgreementCR(WordFormMsdCR):
             existing = [(str(w.udpos), w.text) for w in self.words]
         else:
             existing = [(w.xpos, w.text) for w in self.words]
-        #existing = [(w.xpos, str(w.udpos), w.text) for w in self.words]
 
         lemma_available_words = self.word_renderer.available_words(self.lemma, existing)
         for candidate_pos, candidate_text, candidate_lemma in lemma_available_words:

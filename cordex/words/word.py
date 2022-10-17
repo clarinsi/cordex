@@ -3,8 +3,6 @@ Word objects.
 """
 
 from collections import defaultdict
-import logging
-from conversion_utils.jos_msds_and_properties import Msd
 
 from cordex.utils.converter import translate_msd
 
@@ -37,13 +35,13 @@ class Word:
     """
     Base word model.
     """
-    def __init__(self, lemma, sentence_id, word_id, int_word_id, text, fake_word=False, previous_punctuation=None):
+    def __init__(self, lemma, sentence_id, word_id, int_word_id, text, glue, fake_word=False):
         self.lemma = lemma
 
         self.idi = None
         self.text = text
-        self.glue = False
-        self.previous_glue = False if previous_punctuation is None else previous_punctuation
+        self.glue = glue
+        self.previous_glue = False
         self.fake_word = fake_word
 
         self.links = defaultdict(list)
@@ -91,10 +89,10 @@ class Word:
 
 
 class WordJOS(Word):
-    def __init__(self, lemma, xpos, sentence_id, word_id, int_word_id, text, do_msd_translate, fake_word=False, previous_punctuation=None):
+    def __init__(self, lemma, xpos, sentence_id, word_id, int_word_id, text, glue, do_msd_translate, fake_word=False):
         self.xpos = translate_msd(xpos, 'sl', lemma=lemma) if do_msd_translate else xpos
 
-        super().__init__(lemma, sentence_id, word_id, int_word_id, text, fake_word, previous_punctuation)
+        super().__init__(lemma, sentence_id, word_id, int_word_id, text, glue, fake_word)
 
     @staticmethod
     def from_tei_element(xml, do_msd_translate):
@@ -103,13 +101,15 @@ class WordJOS(Word):
         xpos = WordJOS.get_msd(xml)
         wid = xml.get('id')
         text = xml.text
+        glue = 'join' in xml.attrib and xml.get('join') == 'right'
         sentence_id, word_id, int_word_id = prepare_ids(wid, False)
-        return WordJOS(lemma, xpos, sentence_id, word_id, int_word_id, text, do_msd_translate)
+        return WordJOS(lemma, xpos, sentence_id, word_id, int_word_id, text, glue, do_msd_translate)
 
     @staticmethod
     def from_conllu_element(token, sentence):
         """ Creates word from TEI word element. """
-        return WordJOS(token['lemma'], token['xpos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], False)
+        glue = 'SpaceAfter' in token['misc'] and token['misc']['SpaceAfter'] == 'No'
+        return WordJOS(token['lemma'], token['xpos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], glue, False)
 
     @staticmethod
     def get_msd(comp):
@@ -132,11 +132,11 @@ class WordJOS(Word):
     def fake_root_word(sentence_id):
         """ Creates a fake word. """
         sentence_id, word_id, int_word_id = prepare_ids(sentence_id, True)
-        return WordJOS('', '', sentence_id, word_id, int_word_id, '', False, True)
+        return WordJOS('', '', sentence_id, word_id, int_word_id, '', False, False, True)
 
 
 class WordUD(Word):
-    def __init__(self, lemma, upos, sentence_id, word_id, int_word_id, text, fake_word=False, previous_punctuation=None, feats=None):
+    def __init__(self, lemma, upos, sentence_id, word_id, int_word_id, text, glue, fake_word=False, feats=None):
         # udpos contains both upos and feats
         if feats:
             if upos:
@@ -154,8 +154,7 @@ class WordUD(Word):
 
         self.udpos = udpos
 
-        super().__init__(lemma, sentence_id, word_id, int_word_id, text, fake_word, previous_punctuation)
-
+        super().__init__(lemma, sentence_id, word_id, int_word_id, text, glue, fake_word)
 
     @staticmethod
     def from_tei_element(xml, do_msd_translate):
@@ -164,13 +163,15 @@ class WordUD(Word):
         upos, feats = WordUD.get_msd(xml)
         wid = xml.get('id')
         text = xml.text
+        glue = 'join' in xml.attrib and xml.get('join') == 'right'
         sentence_id, word_id, int_word_id = prepare_ids(wid, False)
-        return WordUD(lemma, upos, sentence_id, word_id, int_word_id, text, feats=feats)
+        return WordUD(lemma, upos, sentence_id, word_id, int_word_id, text, glue, feats=feats)
 
     @staticmethod
     def from_conllu_element(token, sentence):
+        glue = token['misc'] is not None and 'SpaceAfter' in token['misc'] and token['misc']['SpaceAfter'] == 'No'
         """ Creates word from TEI word element. """
-        return WordUD(token['lemma'], token['upos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], feats=token['feats'])
+        return WordUD(token['lemma'], token['upos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], glue, feats=token['feats'])
 
     @staticmethod
     def get_msd(comp):
@@ -197,4 +198,4 @@ class WordUD(Word):
     def fake_root_word(sentence_id):
         """ Creates a fake word. """
         sentence_id, word_id, int_word_id = prepare_ids(sentence_id, True)
-        return WordUD('', '', sentence_id, word_id, int_word_id, '', True)
+        return WordUD('', '', sentence_id, word_id, int_word_id, '', False, True)

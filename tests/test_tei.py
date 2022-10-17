@@ -5,6 +5,8 @@ import shutil
 import pytest
 import cordex
 from tests import *
+from tests.correct_output import OUTPUT_TOKEN_OUTPUT, OUTPUT_GET_LIST
+
 
 @pytest.fixture(scope="module")
 def clear_output():
@@ -30,10 +32,11 @@ def test_tei_multiple_ud_documents(clear_output):
     """ Test for tei multiple documents. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',', ignore_punctuations=True,
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir,
                            lang='en', no_msd_translate=True)
-    extr(os.path.join(INPUT_DIR, "gigafida_example_tei_small"), output_dir)
+    extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_tei_small"))
+    extraction.write(output_dir)
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_tei_multiple_ud_documents'), os.path.join(OUTPUT_DIR))
 
 
@@ -41,9 +44,10 @@ def test_tei_single_jos_document(clear_output):
     """ Test for tei single document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',', ignore_punctuations=True)
-    extr(os.path.join(INPUT_DIR, "ssj500k.small.xml"), output_dir)
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir)
+    extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.xml"))
+    extraction.write(output_dir)
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_tei_single_jos_document'), os.path.join(OUTPUT_DIR))
 
 
@@ -51,9 +55,10 @@ def test_tei_single_ud_document(clear_output):
     """ Test for tei single document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',', ignore_punctuations=True)
-    extr(os.path.join(INPUT_DIR, "ssj500k.small.xml"), output_dir)
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir)
+    extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.xml"))
+    extraction.write(output_dir)
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_tei_single_ud_document'), os.path.join(OUTPUT_DIR))
 
 
@@ -61,10 +66,10 @@ def test_conllu_single_jos_document(clear_output):
     """ Test for conllu single jos document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',',
-                           ignore_punctuations=True, translate_jos_depparse_to_sl=True)
-    extr(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"), output_dir)
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir, translate_jos_depparse_to_sl=True)
+    extraction = extractor(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"))
+    extraction.write(output_dir)
 
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_conllu_single_jos_document'), os.path.join(OUTPUT_DIR))
 
@@ -73,10 +78,10 @@ def test_conllu_multiple_ud_documents(clear_output):
     """ Test for conllu multiple ud documents. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',',
-                           ignore_punctuations=True)
-    extr(os.path.join(INPUT_DIR, "gigafida_example_conllu_small"), output_dir)
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir)
+    extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_conllu_small"))
+    extraction.write(output_dir)
 
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_conllu_multiple_ud_documents'), os.path.join(OUTPUT_DIR))
 
@@ -85,9 +90,27 @@ def test_conllu_single_ud_document(clear_output):
     """ Test for conllu single ud document. """
     output_mapper_dir, output_dir = clear_output
 
-    extr = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, separator=',',
-                           ignore_punctuations=True)
-    extr(os.path.join(INPUT_DIR, "ssj500k.small.conllu"), output_dir)
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"),
+                           collocation_sentence_map_dest=output_mapper_dir)
+    extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.conllu"))
+    extraction.write(output_dir)
 
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_conllu_single_ud_document'), os.path.join(OUTPUT_DIR))
+
+
+def test_get_list():
+    """ Test for conllu single ud document. """
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"))
+    extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.conllu"))
+    output = extraction.get_list()
+
+    assert OUTPUT_GET_LIST == str(output)
+
+
+def test_token_output():
+    """ Test for conllu single ud document. """
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_UD.xml"))
+    extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.conllu"))
+    output = extraction.get_list(token_output=True)
+
+    assert OUTPUT_TOKEN_OUTPUT == str(output)

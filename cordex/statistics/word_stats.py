@@ -8,6 +8,7 @@ from ast import literal_eval
 from cordex.utils.progress_bar import progress
 import logging
 
+
 class WordStats:
     def __init__(self, args, db):
         self.db = db
@@ -36,10 +37,7 @@ class WordStats:
             self.db.init("CREATE INDEX lemma_msd_text_on_uw ON UniqWords (lemma, xpos, text)")
         self.db.init("CREATE TABLE NumWords (id INTEGER PRIMARY KEY, n INTEGER)")
 
-
         self.db.init("CREATE INDEX lemma_on_uw ON UniqWords (lemma)")
-        # self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCount (lemma, msd0)")
-        # self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCount (lemma, msd0)")
 
     def add_words(self, words):
         """ Adds words to database. """
@@ -90,7 +88,7 @@ class WordStats:
 
                 for upos, freq in num_words_upos.items():
                     self.db.execute("INSERT INTO WordCountUPOS (lemma, upos, frequency) VALUES (?,?,?)",
-                        (lemma, upos, freq))
+                                    (lemma, upos, freq))
 
             else:
                 num_words_xpos = defaultdict(int)
@@ -100,7 +98,7 @@ class WordStats:
 
                 for xpos0, freq in num_words_xpos.items():
                     self.db.execute("INSERT INTO WordCountXPOS (lemma, xpos0, frequency) VALUES (?,?,?)",
-                        (lemma, xpos0, freq))
+                                    (lemma, xpos0, freq))
 
         self.db.step_is_done(step_name)
 
@@ -120,20 +118,20 @@ class WordStats:
         for (pos, text), _n in counted_texts.most_common():
             if self.is_ud:
                 pos = literal_eval(pos)
-            yield (pos, text, lemma)
+            yield pos, text, lemma
 
         if self.is_ud:
             statement = """SELECT udpos, text, frequency FROM UniqWords WHERE 
                         lemma=:lemma ORDER BY frequency DESC"""
             for udpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
                 if (udpos, text) not in counted_texts:
-                    yield (literal_eval(udpos), text, lemma)
+                    yield literal_eval(udpos), text, lemma
         else:
             statement = """SELECT xpos, text, frequency FROM UniqWords WHERE 
                         lemma=:lemma ORDER BY frequency DESC"""
             for xpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
                 if (xpos, text) not in counted_texts:
-                    yield (xpos, text, lemma)
+                    yield xpos, text, lemma
 
     def num_words(self, lemma, msd0):
         """ Returns first word frequency when lemma and msd match. """

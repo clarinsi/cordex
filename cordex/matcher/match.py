@@ -53,7 +53,7 @@ class StructureMatch:
                     prev_match_id = match_id
 
                 int_word_id = int(word_id) if word_id[0] in '0123456789' else int(word_id[1:])
-                result.matches[-1][str(component_id)] = WordJOS(word_lemma, word_xpos, sentence_id, word_id, int_word_id, word_text, False)
+                result.matches[-1][str(component_id)] = WordJOS(word_lemma, word_xpos, sentence_id, word_id, int_word_id, word_text, False, False)
         
         for component_id, text, msd in db.execute("SELECT component_id, text, msd FROM Representations WHERE collocation_id=?", (collocation_id,)):
             result.representations[str(component_id)] = (text, msd)

@@ -6,7 +6,6 @@ from xml.etree import ElementTree
 import logging
 import re
 import sys
-import gzip
 import pathlib
 from io import StringIO
 import conllu
@@ -122,8 +121,6 @@ def tei_sentence_generator(et, args):
     """ Generates sentences from TEI format. """
     do_msd_translate = not args['no_msd_translate']
     do_msd_translate = Converter() if do_msd_translate else False
-    use_punctuations = not args['ignore_punctuations']
-    previous_pc = False
 
     words = {}
     teis = list(et.iter('{http://www.tei-c.org/ns/1.0}TEI'))
@@ -136,41 +133,36 @@ def tei_sentence_generator(et, args):
     for tei in teis:
         paragraphs = list(tei.iter(ns + 'p'))
         for paragraph in progress(paragraphs, "load-text"):
-            previous_glue = False
             sentences = list(paragraph.iter(ns + 's'))
             for sentence in sentences:
                 # create fake root word
                 if args['is_ud']:
-                    words[sentence.get('id')] = WordUD.fake_root_word(sentence.get('id'))
+                    word = WordUD.fake_root_word(sentence.get('id'))
                 else:
-                    words[sentence.get('id')] = WordJOS.fake_root_word(sentence.get('id'))
-                last_word_id = None
+                    word = WordJOS.fake_root_word(sentence.get('id'))
+                words[sentence.get('id')] = word
+                previous_word = word
 
                 for w in sentence.iter():
                     if w.tag == ns + 'w':
                         if args['is_ud']:
-                            words[w.get('id')] = WordUD.from_tei_element(w, do_msd_translate)
+                            word = WordUD.from_tei_element(w, do_msd_translate)
                         else:
-                            words[w.get('id')] = WordJOS.from_tei_element(w, do_msd_translate)
-                        if use_punctuations:
-                            previous_glue = False
-                            last_word_id = None
+                            word = WordJOS.from_tei_element(w, do_msd_translate)
+
+                        word.previous_glue = previous_word.glue
+                        words[w.get('id')] = word
+                        previous_word = word
+
                     elif w.tag == ns + 'pc':
                         if args['is_ud']:
-                            words[w.get('id')] = WordUD.pc_word(w, do_msd_translate)
+                            word = WordUD.pc_word(w, do_msd_translate)
                         else:
-                            words[w.get('id')] = WordJOS.pc_word(w, do_msd_translate)
-                        if use_punctuations:
-                            last_word_id = w.get('id')
-                            words[w.get('id')].previous_glue = previous_glue
-                            previous_glue = False
-                    elif use_punctuations and w.tag == ns + 'c':
-                        # always save previous glue
-                        # previous_glue = w.text
-                        previous_glue = True
-                        if last_word_id:
-                            # words[last_word_id].glue += w.text
-                            words[last_word_id].glue = True
+                            word = WordJOS.pc_word(w, do_msd_translate)
+
+                        word.previous_glue = previous_word.glue
+                        words[w.get('id')] = word
+                        previous_word = word
 
                 for l in sentence.iter(ns + "link"):
                     if 'dep' in l.keys():
@@ -180,12 +172,12 @@ def tei_sentence_generator(et, args):
                     else:
                         ana = l.get('ana')
                         if args['is_ud']:
-                            if ana[:7] != 'ud-syn:': # dont bother...
+                            if ana[:7] != 'ud-syn:':  # dont bother...
                                 continue
                             ana = ana[7:]
                             lfrom, dest = l.get('target').replace('#', '').split()
                         else:
-                            if ana[:8] != 'jos-syn:': # dont bother...
+                            if ana[:8] != 'jos-syn:':  # dont bother...
                                 continue
                             ana = ana[8:]
                             lfrom, dest = l.get('target').replace('#', '').split()

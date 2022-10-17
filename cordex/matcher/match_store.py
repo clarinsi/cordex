@@ -85,7 +85,7 @@ class MatchStore:
             self.db.execute("INSERT INTO Collocations (structure_id, key) VALUES (?,?)",
                             (structure_id, key_str))
             cid = self.db.execute("SELECT collocation_id FROM Collocations WHERE key=? AND structure_id=?",
-                                (key_str, structure_id)).fetchone()
+                                  (key_str, structure_id)).fetchone()
         
         for component_id, word in match.items():
             if self.is_ud:
@@ -114,7 +114,7 @@ class MatchStore:
                 })
 
         self.db.execute("INSERT INTO CollocationMatches (mid_collocation_id, mid_match_id) VALUES (?,?)",
-            (cid[0], self.match_num))
+                        (cid[0], self.match_num))
         
         self.match_num += 1
 
@@ -200,7 +200,7 @@ class MatchStore:
         """ Stores dispersions in sql database. """
         for (structure_id, component_id, lemma), disp in self.dispersions.items():
             self.db.execute("INSERT INTO Dispersions (structure_id, component_id, lemma, dispersion) VALUES (?, ?, ?, ?)",
-                (structure_id, component_id, lemma, disp))
+                            (structure_id, component_id, lemma, disp))
 
     def load_dispersions(self):
         """ Load dispersions when they are in database. """

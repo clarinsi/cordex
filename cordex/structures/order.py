@@ -35,4 +35,3 @@ class Order(Enum):
             return ti < fi
         else:
             raise NotImplementedError("Should not be here: Order match")
-

@@ -4,6 +4,7 @@ Class for assigning representations.
 
 from cordex.representations.representation import ComponentRepresentation, LemmaCR, LexisCR, WordFormAgreementCR, WordFormAnyCR, WordFormMsdCR, WordFormAllCR
 
+
 class RepresentationAssigner:
     def __init__(self):
         self.more = {}
@@ -76,7 +77,6 @@ class RepresentationAssigner:
         for cid, reps in representations.items():
             for rep in reps:
                 rep.render(is_ud, lookup_lexicon=lookup_lexicon)
-
 
         for cid, reps in representations.items():
             reps_text = [rep.rendition_text for rep in reps]

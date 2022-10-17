@@ -1,10 +1,7 @@
 """
 Classes for handling restrictions.
 """
-import re
 from enum import Enum
-
-from cordex.utils.codes_tagset import CODES, TAGSET, CODES_UD
 from cordex.utils.converter import msd_to_properties
 
 
@@ -52,6 +49,7 @@ def determine_ppb(restrictions):
     else:
         return 4
 
+
 class MorphologyRegex:
     """
     Class in charge of morphology JOS restriction regexes.
@@ -85,7 +83,7 @@ class MorphologyRegex:
 
             # handles category
             if res_name == 'pos':
-                if not properties.category in res_val[0]:
+                if properties.category not in res_val[0]:
                     return False
 
             # handles form other restrictions
@@ -110,6 +108,7 @@ class MorphologyRegex:
 
         return True
 
+
 class MorphologyUDRegex:
     """
     Class in charge of morphology UD restriction regexes.
@@ -132,42 +131,12 @@ class MorphologyUDRegex:
 
         self.restrictions = restr_dict
 
-        # # handle multiple word types
-        # if '|' in restr_dict['POS'][0]:
-        #     categories = restr_dict['POS'][0].split('|')
-        # else:
-        #     categories = [restr_dict['POS'][0]]
-
-
-
-        # self.rgxs = []
-        # self.re_objects = []
-        # self.min_msd_lengths = []
-        #
-        # del restr_dict['POS']
-        #
-        # for category in categories:
-        #     min_msd_length = 1
-        #     category = category.upper()
-        #     assert category in CODES_UD
-        #     rgx = category
-        #
-        #     self.rgxs.append(rgx)
-        #     self.min_msd_lengths.append(min_msd_length)
-
     def __call__(self, msd, lemma):
         udpos = msd.udpos
         if not udpos:
             return False
 
         for res_name, res_val in self.restrictions.items():
-            # res_name = res_name.lower()
-
-            # # handles category
-            # if res_name == 'POS':
-            #     if not udpos['POS'] in res_val[0]:
-            #         return False
-
             # handles form other restrictions
             # handles restrictions where we negate filter is off
             if res_val[1] == False:
@@ -183,9 +152,6 @@ class MorphologyUDRegex:
                         return False
 
         return True
-
-        assert len(self.rgxs) == 1
-        return self.rgxs[0] == text
 
 
 class LexisRegex:
@@ -230,12 +196,10 @@ class SpaceRegex:
         return match
 
 
-
-
 class Restriction:
     """ A class containing restriction. """
     def __init__(self, restriction_tag, is_ud):
-        self.ppb = 4 # polnopomenska beseda (0-4)
+        self.ppb = 4  # polnopomenska beseda (0-4)
 
         if restriction_tag is None:
             self.type = RestrictionType.MatchAll
@@ -254,7 +218,6 @@ class Restriction:
                 self.type = RestrictionType.Morphology
                 self.matcher = MorphologyRegex(list(restriction_tag))
                 self.ppb = determine_ppb(self.matcher.restrictions)
-
 
         elif restriction_type == "lexis":
             self.type = RestrictionType.Lexis
@@ -282,4 +245,3 @@ class Restriction:
             raise RuntimeError("Unreachable!")
 
         return self.matcher(match_to, word.lemma)
-

@@ -3,6 +3,7 @@ Class for grouping restrictions.
 """
 from cordex.restrictions.restriction import Restriction
 
+
 class RestrictionGroup:
     def __init__(self, restrictions_tag, is_ud, group_type='and'):
         self.restrictions = [Restriction(el, is_ud) for el in restrictions_tag]
@@ -16,12 +17,12 @@ class RestrictionGroup:
         """ Checks whether sufficient restrictions are met. """
         if self.group_type == 'or':
             for restr in self.restrictions:
-                if restr.match(word): # match either
+                if restr.match(word):  # match either
                     return True
             return False
         elif self.group_type == 'and':
             for restr in self.restrictions:
-                if not restr.match(word): # match and
+                if not restr.match(word):  # match and
                     return False
             return True
         else:

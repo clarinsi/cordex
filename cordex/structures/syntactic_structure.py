@@ -4,10 +4,10 @@ Default syntactic structure class.
 
 from xml.etree import ElementTree
 import logging
-import pickle
 
 from cordex.utils.codes_tagset import PPB_DEPRELS
 from cordex.structures.component import Component, ComponentType
+
 
 class SyntacticStructure:
     def __init__(self):
@@ -21,20 +21,9 @@ class SyntacticStructure:
         """ Reads a syntactic structure from xml. """
         st = SyntacticStructure()
         st.id = xml.get('id')
-        if st.id == '2086' or st.id == '1':
-            print('HERE!')
         if st.id is None:
             st.id = xml.get('tempId')
-        # st.lbs = xml.get('LBS')
 
-        # assert len(list(xml)) == 1
-        # system = next(iter(xml))
-        #
-        # assert system.get('type') == 'JOS' or system.get('type') == 'UD'
-        # system_type = system.get('type')
-        # st.system_type = system_type
-        #
-        # components, dependencies, definitions = list(system)
         components, dependencies, definitions = list(xml)
 
         deps = [(dep.get('from'), dep.get('to'), dep.get('label'), dep.get('order'))
@@ -106,7 +95,7 @@ class SyntacticStructure:
 
             ppb_components.append((c, ppb))
 
-        ppb_components = sorted(ppb_components, key=lambda c: c[1])
+        ppb_components = sorted(ppb_components, key=lambda ch: ch[1])
         if len(ppb_components) > 2 and ppb_components[1][1] == ppb_components[2][1]:
             raise RuntimeError("Cannot determine 2 'jedrna polnopomenska beseda' for", self.id)
 
@@ -147,7 +136,8 @@ def build_structures(args):
     is_ud = et.attrib['system_type'] == 'UD'
     structures = []
     for structure in et.iter('syntactic_structure'):
-        if structure.attrib['type'] == 'single':
+        # TODO UNCOMMENT THIS!
+        if structure.attrib['type'] != 'collocation':
             continue
         to_append = SyntacticStructure.from_xml(structure, no_stats, is_ud)
         if to_append is None:

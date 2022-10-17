@@ -2,8 +2,10 @@
 Translation related functions.
 """
 
+
 def translate_sl_en(xpos):
     return xpos
+
 
 MSD_TRANSLATE = {
     "Somei": "Ncmsn",
