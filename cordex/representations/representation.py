@@ -182,9 +182,7 @@ class WordFormMsdCR(WordFormAnyCR):
             key_lower = key.lower()
             # if key_lower not in properties.form_feature_map and key_lower not in properties.lexeme_feature_map:
             #     return False
-            if key_lower in properties.form_feature_map and properties.form_feature_map[key_lower] != value:
-                return False
-            if key_lower in properties.lexeme_feature_map and properties.lexeme_feature_map[key_lower] != value:
+            if key_lower in properties and properties[key_lower] != value:
                 return False
 
         return True
@@ -312,14 +310,14 @@ class WordFormAgreementCR(WordFormMsdCR):
         properties2 = msd_to_properties(msd2, 'en')
         for agr_case in agreements:
             # if not in msd, some strange msd was tries, skipping...
-            if agr_case not in properties1.form_feature_map and agr_case not in properties1.lexeme_feature_map:
+            if agr_case not in properties1:
                 return False
 
-            if agr_case not in properties2.form_feature_map and agr_case not in properties2.lexeme_feature_map:
+            if agr_case not in properties2:
                 return False
 
-            p1 = properties1.form_feature_map[agr_case] if agr_case in properties1.form_feature_map else properties1.lexeme_feature_map[agr_case]
-            p2 = properties2.form_feature_map[agr_case] if agr_case in properties2.form_feature_map else properties2.lexeme_feature_map[agr_case]
+            p1 = properties1[agr_case]
+            p2 = properties2[agr_case]
 
             # match!
             if p1 != p2:

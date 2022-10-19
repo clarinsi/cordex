@@ -83,27 +83,21 @@ class MorphologyRegex:
 
             # handles category
             if res_name == 'pos':
-                if properties.category not in res_val[0]:
+                if properties['pos'] not in res_val[0]:
                     return False
 
             # handles form other restrictions
             # handles restrictions where we negate filter is off
             elif res_val[1] == False:
-                if res_name in properties.form_feature_map:
-                    if not properties.form_feature_map[res_name] in res_val[0]:
-                        return False
-                elif res_name in properties.lexeme_feature_map:
-                    if not properties.lexeme_feature_map[res_name] in res_val[0]:
+                if res_name in properties:
+                    if not properties[res_name] in res_val[0]:
                         return False
                 else:
                     return False
             # handle restrictions with negate filter on
             elif res_val[1] == True:
-                if res_name in properties.form_feature_map:
-                    if properties.form_feature_map[res_name] in res_val[0]:
-                        return False
-                elif res_name in properties.lexeme_feature_map:
-                    if properties.lexeme_feature_map[res_name] in res_val[0]:
+                if res_name in properties:
+                    if properties[res_name] in res_val[0]:
                         return False
 
         return True
