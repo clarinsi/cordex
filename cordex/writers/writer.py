@@ -1,7 +1,6 @@
 """
 A file for forming and saving outputs.
 """
-import io
 import logging
 import os
 
@@ -143,7 +142,7 @@ class Writer:
             if return_list:
                 return []
 
-    def write_out(self, structures, collocation_ids, token_output, string_output=False, return_list=False, ):
+    def write_out(self, structures, collocation_ids, token_output, return_list=False):
         """ Writes processing results to file. """
         write_results = []
 
@@ -164,10 +163,7 @@ class Writer:
             if return_list:
                 write_results.append(self.header())
             else:
-                if string_output:
-                    fp = io.StringIO()
-                else:
-                    fp = fp_open()
+                fp = fp_open()
                 self.write_header(fp, return_list)
             col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, 'mapper.txt')) \
                 if self.collocation_sentence_map_dest is not None else None
@@ -178,10 +174,7 @@ class Writer:
                 if return_list:
                     write_results.append(self.header())
                 else:
-                    if string_output:
-                        fp = io.StringIO()
-                    else:
-                        fp = fp_open()
+                    fp = fp_open()
                     self.write_header(fp, return_list)
                 col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}_mapper.txt')) \
                     if self.collocation_sentence_map_dest is not None else None

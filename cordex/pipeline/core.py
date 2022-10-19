@@ -72,9 +72,8 @@ class Pipeline:
 
         return self
 
-    def write(self, path, collocation_sentence_map_dest=None, separator=',', sort_by=-1, sort_reversed=False, multiple_output=False, token_output=False):
+    def write(self, path, separator=',', sort_by=-1, sort_reversed=False, multiple_output=False, token_output=False):
         self.args['out'] = path
-        self.args['collocation_sentence_map_dest'] = collocation_sentence_map_dest
         self.args['separator'] = separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed

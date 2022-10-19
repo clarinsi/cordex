@@ -25,6 +25,7 @@ class WordStats:
                 )""")
             self.db.init("CREATE TABLE WordCountUPOS (lemma varchar(64), upos varchar(32), frequency int)")
             self.db.init("CREATE INDEX lemma_msd_text_on_uw ON UniqWords (lemma, udpos, text)")
+            self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCountUPOS (lemma, upos)")
         else:
             self.db.init("""CREATE TABLE UniqWords (
                             uw_id INTEGER PRIMARY KEY, 
@@ -35,6 +36,7 @@ class WordStats:
                             )""")
             self.db.init("CREATE TABLE WordCountXPOS (lemma varchar(64), xpos0 char, frequency int)")
             self.db.init("CREATE INDEX lemma_msd_text_on_uw ON UniqWords (lemma, xpos, text)")
+            self.db.init("CREATE INDEX lemma_msd0_on_wc ON WordCountXPOS (lemma, xpos0)")
         self.db.init("CREATE TABLE NumWords (id INTEGER PRIMARY KEY, n INTEGER)")
 
         self.db.init("CREATE INDEX lemma_on_uw ON UniqWords (lemma)")
