@@ -33,7 +33,6 @@ class Writer:
                       args['collocation_sentence_map_dest'], None, args['separator'])
 
     def __init__(self, file_out, num_components, formatter, collocation_sentence_map_dest, params, separator):
-        # TODO FIX THIS
         self.collocation_sentence_map_dest = collocation_sentence_map_dest
         if params is None:
             self.multiple_output = False

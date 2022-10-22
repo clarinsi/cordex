@@ -1,32 +1,32 @@
 Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distribution,C2_Lemma,C2_Representative_form,C2_RF_msd,C2_RF_scenario,C2_Distribution,C3_Lemma,C3_Representative_form,C3_RF_msd,C3_RF_scenario,C3_Distribution,C4_Lemma,C4_Representative_form,C4_RF_msd,C4_RF_scenario,C4_Distribution,C5_Lemma,C5_Representative_form,C5_RF_msd,C5_RF_scenario,C5_Distribution,Collocation_ID,Joint_representative_form_fixed,Joint_representative_form_variable,Frequency,Delta_p12,Delta_p21,LogDice_core,LogDice_all,Distinct_forms
-34,poluren,polurnimi,Agpmpi,ok,1,zamik,zamik,,lemma_fallback,1,,,,,,,,,,,,,,,,1,polurnimi zamik,polurnimi zamik,1,1.00000,1.00000,14.00000,14.00000,1
-34,vinski,Vinske,Agpfsg,ok,1,Gora,Gora,,lemma_fallback,1,,,,,,,,,,,,,,,,2,Vinske Gora,Vinske Gora,1,1.00000,1.00000,14.00000,14.00000,1
-34,praktičen,praktičnih,Agpnpg,ok,1,spoznanje,spoznanje,,lemma_fallback,1,,,,,,,,,,,,,,,,3,praktičnih spoznanje,praktičnih spoznanje,1,1.00000,1.00000,14.00000,14.00000,1
-34,lahek,lažjega,Agcnsg,ok,1,razumevanje,razumevanje,,lemma_fallback,1,,,,,,,,,,,,,,,,4,lažjega razumevanje,lažjega razumevanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,poluren,polurni,Agpmpn,ok,1,zamik,zamiki,Ncmpn,ok,1,,,,,,,,,,,,,,,,1,polurni zamiki,polurni zamiki,1,1.00000,1.00000,14.00000,14.00000,1
+34,vinski,vinska,Agpfsn,ok,1,Gora,Gora,Npfsn,ok,1,,,,,,,,,,,,,,,,2,vinska Gora,vinska Gora,1,1.00000,1.00000,14.00000,14.00000,1
+34,praktičen,praktična,Agpnpn,ok,1,spoznanje,spoznanja,Ncnpn,ok,1,,,,,,,,,,,,,,,,3,praktična spoznanja,praktična spoznanja,1,1.00000,1.00000,14.00000,14.00000,1
+34,lahek,lahko,Agcnsn,ok,1,razumevanje,razumevanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,4,lahko razumevanje,lahko razumevanje,1,1.00000,1.00000,14.00000,14.00000,1
 34,dramatičen,dramatična,Agpfsn,ok,1,nesreča,nesreča,Ncfsn,ok,1,,,,,,,,,,,,,,,,5,dramatična nesreča,dramatična nesreča,1,1.00000,1.00000,14.00000,14.00000,1
-34,vzvraten,vzvratni,Agpfsl,ok,1,vožnja,vožnja,,lemma_fallback,1,,,,,,,,,,,,,,,,6,vzvratni vožnja,vzvratni vožnja,1,1.00000,1.00000,14.00000,14.00000,1
-34,latinski,Latinski,Agpfsl,ok,1,Amerika,Amerika,,lemma_fallback,1,,,,,,,,,,,,,,,,7,Latinski Amerika,Latinski Amerika,1,1.00000,1.00000,14.00000,14.00000,1
-34,zel,zlih,Agpmpg,ok,1,duh,duh,,lemma_fallback,1,,,,,,,,,,,,,,,,8,zlih duh,zlih duh,1,1.00000,1.00000,14.00000,14.00000,1
-34,eksotičen,eksotičnih,Agpfpg,ok,1,dežela,dežela,,lemma_fallback,1,,,,,,,,,,,,,,,,9,eksotičnih dežela,eksotičnih dežela,1,1.00000,1.00000,14.00000,14.00000,1
+34,vzvraten,vzvratna,Agpfsn,ok,1,vožnja,vožnja,Ncfsn,ok,1,,,,,,,,,,,,,,,,6,vzvratna vožnja,vzvratna vožnja,1,1.00000,1.00000,14.00000,14.00000,1
+34,latinski,latinska,Agpfsn,ok,1,Amerika,Amerika,Npfsn,ok,1,,,,,,,,,,,,,,,,7,latinska Amerika,latinska Amerika,1,1.00000,1.00000,14.00000,14.00000,1
+34,zel,zli,Agpmpn,ok,1,duh,duhovi,Ncmpn,ok,1,,,,,,,,,,,,,,,,8,zli duhovi,zli duhovi,1,1.00000,1.00000,14.00000,14.00000,1
+34,eksotičen,eksotične,Agpfpn,ok,1,dežela,dežele,Ncfpn,ok,1,,,,,,,,,,,,,,,,9,eksotične dežele,eksotične dežele,1,1.00000,1.00000,14.00000,14.00000,1
 36,odprt,odprt,Appfsn,ok,1,raziskovalec,raziskovalcem,Ncmpd,ok,1,,,,,,biti,,,,,,,,,,10,odprt raziskovalcem,raziskovalcem odprt,1,1.00000,1.00000,14.00000,14.00000,1
 57,pot,pot,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,1,odprt,odprta,Appfsn,ok,1,,,,,,,,,,,11,pot je odprta,je odprta pot,1,1.00000,1.00000,14.00000,11.49750,1
 23,najti,najti,Vmen,ok,1,vzrok,vzrok,Ncmsan,ok,1,,,,,,,,,,,,,,,,12,najti vzrok,najti vzrok,1,1.00000,1.00000,14.00000,14.00000,1
 23,prijeti,prijeti,Vmep-sm,ok,1,nož,nož,Ncmsan,ok,1,,,,,,,,,,,,,,,,13,prijeti nož,prijeti nož,1,1.00000,1.00000,14.00000,14.00000,1
 70,žena,žena,Ncfsn,ok,1,varati,vara,Vmpr3s,ok,1,,,,,,,,,,,,,,,,14,žena vara,žena vara,1,1.00000,1.00000,14.00000,14.00000,1
-70,dekle,dekle,,lemma_fallback,1,vpiti,vpiti,,lemma_fallback,1,,,,,,,,,,,,,,,,15,dekle vpiti,dekle vpiti,1,1.00000,1.00000,14.00000,14.00000,1
-71,dirka,dirka,,lemma_fallback,1,se,se,Px------y,ok,1,začeti,začeti,,lemma_fallback,1,,,,,,,,,,,16,dirka se začeti,se začeti dirka,1,0.50000,0.99528,13.41504,12.77761,1
-53,razumevanje,razumevanje,,lemma_fallback,1,družba,družbe,Ncfsg,ok,1,,,,,,,,,,,,,,,,17,razumevanje družbe,razumevanje družbe,1,0.99528,0.50000,13.41504,13.41504,1
-53,mesec,mesec,,lemma_fallback,1,dan,dni,Ncmpg,ok,1,,,,,,,,,,,,,,,,18,mesec dni,mesec dni,1,1.00000,1.00000,14.00000,14.00000,1
-53,stališče,stališče,,lemma_fallback,1,izvirnost,izvirnosti,Ncfsg,ok,1,,,,,,,,,,,,,,,,19,stališče izvirnosti,stališče izvirnosti,1,1.00000,1.00000,14.00000,14.00000,1
-53,preganjanje,preganjanje,,lemma_fallback,1,duh,duhov,Ncmpg,ok,1,,,,,,,,,,,,,,,,20,preganjanje duhov,preganjanje duhov,1,1.00000,1.00000,14.00000,14.00000,1
+70,dekle,Dekle,Ncnsn,ok,1,vpiti,vpije,Vmbr3s,ok,1,,,,,,,,,,,,,,,,15,Dekle vpije,Dekle vpije,1,1.00000,1.00000,14.00000,14.00000,1
+71,dirka,dirke,Ncfpn,ok,1,se,se,Px------y,ok,1,začeti,začnejo,Vmer3p,ok,1,,,,,,,,,,,16,dirke se začnejo,se začnejo dirke,1,0.50000,0.99528,13.41504,12.77761,1
+53,razumevanje,razumevanje,Ncnsn,ok,1,družba,družbe,Ncfsg,ok,1,,,,,,,,,,,,,,,,17,razumevanje družbe,razumevanje družbe,1,0.99528,0.50000,13.41504,13.41504,1
+53,mesec,mesec,Ncmsnn,ok,1,dan,dni,Ncmpg,ok,1,,,,,,,,,,,,,,,,18,mesec dni,mesec dni,1,1.00000,1.00000,14.00000,14.00000,1
+53,stališče,stališče,Ncnsn,ok,1,izvirnost,izvirnosti,Ncfsg,ok,1,,,,,,,,,,,,,,,,19,stališče izvirnosti,stališče izvirnosti,1,1.00000,1.00000,14.00000,14.00000,1
+53,preganjanje,preganjanje,Ncnsn,ok,1,duh,duhov,Ncmpg,ok,1,,,,,,,,,,,,,,,,20,preganjanje duhov,preganjanje duhov,1,1.00000,1.00000,14.00000,14.00000,1
 77,nesreča,nesreča,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,1,dogodek,Dogodek,Ncmsn,ok,1,,,,,,,,,,,21,nesreča je Dogodek,Dogodek je nesreča,1,1.00000,1.00000,14.00000,11.49750,1
 18,izpasti,izpasti,Vmer3p,ok,1,naiven,naivne,Agpfpn,ok,1,,,,,,,,,,,,,,,,22,izpasti naivne,izpasti naivne,1,1.00000,1.00000,14.00000,14.00000,1
 43,najprej,najprej,Rgs,ok,1,najti,najti,Vmen,ok,1,,,,,,,,,,,,,,,,23,najprej najti,najprej najti,1,1.00000,1.00000,14.00000,14.00000,1
 43,preveč,preveč,Rgp,ok,1,popiti,popiti,Vmep-sm,ok,1,,,,,,,,,,,,,,,,24,preveč popiti,preveč popiti,1,1.00000,1.00000,14.00000,14.00000,1
 46,nekoliko,nekoliko,Rgp,ok,1,resen,resen,Agcmsny,ok,1,,,,,,,,,,,,,,,,25,nekoliko resen,nekoliko resen,1,1.00000,1.00000,14.00000,14.00000,1
-48,raziskovalec,raziskovalec,,lemma_fallback,1,z,z,Sg,ok,1,Gora,Gore,Npfsg,ok,1,,,,,,,,,,,26,raziskovalec z Gore,raziskovalec z Gore,1,1.00000,1.00000,14.00000,12.41504,1
+48,raziskovalec,raziskovalci,Ncmpn,ok,1,z,z,Sg,ok,1,Gora,Gore,Npfsg,ok,1,,,,,,,,,,,26,raziskovalci z Gore,raziskovalci z Gore,1,1.00000,1.00000,14.00000,12.41504,1
 48,pot,pot,Ncfsn,ok,1,do,do,Sg,ok,1,spoznanje,spoznanj,Ncnpg,ok,1,,,,,,,,,,,27,pot do spoznanj,pot do spoznanj,1,1.00000,1.00000,14.00000,13.58496,1
-51,vključevanje,vključevanje,,lemma_fallback,1,v,v,Sa,ok,1,družba,družbo,Ncfsa,ok,1,,,,,,,,,,,28,vključevanje v družbo,vključevanje v družbo,1,0.99528,0.50000,13.41504,12.12553,1
+51,vključevanje,vključevanje,Ncnsn,ok,1,v,v,Sa,ok,1,družba,družbo,Ncfsa,ok,1,,,,,,,,,,,28,vključevanje v družbo,vključevanje v družbo,1,0.99528,0.50000,13.41504,12.12553,1
 51,možnost,možnosti,Ncfpn,ok,1,za,za,Sa,ok,1,transgresija,transgresijo,Ncfsa,ok,1,,,,,,,,,,,29,možnosti za transgresijo,možnosti za transgresijo,1,1.00000,1.00000,14.00000,14.00000,1
 52,dogodek,Dogodek,Ncmsn,ok,1,v,v,Sl,ok,1,Ankaran,Ankaranu,Npmsl,ok,1,,,,,,,,,,,30,Dogodek v Ankaranu,Dogodek v Ankaranu,1,1.00000,1.00000,14.00000,12.26303,1
 13,priti,priti,Vmep-sn,ok,1,do,do,Sg,ok,1,prerivanje,prerivanja,Ncnsg,ok,1,,,,,,,,,,,31,priti do prerivanja,priti do prerivanja,1,1.00000,1.00000,14.00000,13.58496,1
@@ -40,5 +40,5 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 28,resen,resen,Agcmsny,ok,1,v,v,Sl,ok,1,Amerika,Ameriki,Npfsl,ok,1,,,,,,,,,,,39,resen v Ameriki,resen v Ameriki,1,1.00000,1.00000,14.00000,12.26303,1
 12,začeti,začeti,Vmep-sn,ok,1,vpiti,vpiti,Vmbn,ok,1,,,,,,,,,,,,,,,,40,začeti vpiti,začeti vpiti,1,0.50000,0.99528,13.41504,13.41504,1
 98,treba,treba,Rgp,ok,1,najti,najti,Vmen,ok,1,,,,,,biti,,,,,,,,,,41,treba najti,treba najti,1,1.00000,1.00000,14.00000,14.00000,1
-106,razumevanje,razumevanje,,lemma_fallback,1,in,in,Cc,ok,2,vključevanje,vključevanje,,lemma_fallback,1,,,,,,,,,,,42,razumevanje in vključevanje,razumevanje in vključevanje,1,1.00000,1.00000,14.00000,12.77761,1
-106,Amerika,Amerika,,lemma_fallback,1,in,in,Cc,ok,2,Karibi,Karibi,,lemma_fallback,1,,,,,,,,,,,43,Amerika in Karibi,Amerika in Karibi,1,1.00000,1.00000,14.00000,12.77761,1
+106,razumevanje,razumevanje,Ncnsn,ok,1,in,in,Cc,ok,2,vključevanje,vključevanje,Ncnsn,ok,1,,,,,,,,,,,42,razumevanje in vključevanje,razumevanje in vključevanje,1,1.00000,1.00000,14.00000,12.77761,1
+106,Amerika,Amerika,Npfsn,ok,1,in,in,Cc,ok,2,Karibi,Karibi,Npmpn,ok,1,,,,,,,,,,,43,Amerika in Karibi,Amerika in Karibi,1,1.00000,1.00000,14.00000,12.77761,1

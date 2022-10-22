@@ -124,8 +124,6 @@ class WordJOS(Word):
     def pc_word(pc, do_msd_translate):
         """ Creates punctuation from TEI punctuation element. """
         pc.set('lemma', pc.text)
-        # TODO LOOK INTO POSSIBLE ERRORS DUE TO THIS
-        # pc.set('msd', "N" if do_msd_translate else "U")
         return WordJOS.from_tei_element(pc, do_msd_translate)
 
     @staticmethod

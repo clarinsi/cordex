@@ -1,7 +1,9 @@
+import os
 import time
 import gc
+from pathlib import Path
 
-from cordex.representations.lookup_lexicon import LookupLexicon
+from cordex.representations.lookup_lexicon import LookupLexicon, SUPPORTED_LOOKUP_LANGUAGES
 from cordex.utils.progress_bar import progress
 from cordex.structures.syntactic_structure import build_structures
 from cordex.matcher.match_store import MatchStore
@@ -17,20 +19,26 @@ import logging
 
 logger = logging.getLogger('cordex')
 
+HOME_DIR = str(Path.home())
 
 class Pipeline:
     def __init__(self, structures, **kwargs):
         kwargs['structures'] = structures
         self.args = self.set_default_args(kwargs)
 
-        if self.args['lookup_lexicon'] is not None:
+        self.structures, self.max_num_components, is_ud = build_structures(self.args)
+        self.args['is_ud'] = is_ud
+
+        if os.path.exists(self.args['lookup_lexicon']) and not is_ud:
             self.lookup_lexicon = LookupLexicon(False, self.args['lookup_lexicon'])
         else:
             self.lookup_lexicon = None
 
-        self.structures, self.max_num_components, is_ud = build_structures(self.args)
-        # TODO FIX THIS
-        self.args['is_ud'] = is_ud
+        if not self.lookup_lexicon and self.args['lang'] in SUPPORTED_LOOKUP_LANGUAGES and not is_ud:
+            logger.warning(f'WARNING: Results could be improved if you include lookup lexicon (or provide correct path '
+                           f'to it using `lookup_lexicon` argument). '
+                           f'You may download it using `cordex.download()`. If it is stored in different location than '
+                           f'`{HOME_DIR}/cordex_resources` you should add path to `lookup_lexicon` argument.')
 
     def __call__(self, corpus):
         if type(corpus) == str:
@@ -140,6 +148,7 @@ class Pipeline:
     @staticmethod
     def set_default_args(kwargs):
         """ Sets default arguments. """
+        lang = 'sl'
         default_args = {
             'min_freq': 0,
             'db': None,
@@ -147,7 +156,7 @@ class Pipeline:
             'no_msd_translate': False,
             'ignore_punctuations': False,
             'fixed_restriction_order': False,
-            'lookup_lexicon': None,
+            'lookup_lexicon': f'{HOME_DIR}/cordex_resources/{lang}.xz',
             'statistics': True,
             'lang': 'sl',
             'translate_jos_depparse_to_sl': False

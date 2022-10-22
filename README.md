@@ -53,6 +53,9 @@ extractor = cordex.Pipeline("tests/test_data/structures/structures_UD.xml", sepa
 #### structures
 Required. Path to file with structures definitions. Examples of such file are available in `tests/test_data/structures`.
 
+#### collocation_sentence_map_dest
+Default value `None`. Optional parameter, that should contain path to folder, where mappings between collocations and sentences will be saved. If this is set to `None` mappings will not be stored.
+
 #### min_freq
 Default value `0`. Number that indicate how many occurrences in corpus a collocation needs to be present in results.
 
@@ -116,9 +119,6 @@ results = extraction.get_list(sort_by=1, sort_reversed=True)
 #### path
 Required in `write` function. Destination where results are going to be written.
 
-#### collocation_sentence_map_dest
-Default value `None`. Optional parameter in `write` function, that should contain path to folder, where mappings between collocations and sentences will be saved. If this is set to `None` mappings will not be stored.
-
 #### multiple_output
 Default value `None`. Parameter in `write` function, that enables users to store results in multiple files, one file per one syntactic structure. In this case path should point to folder. If this is `None`, results are stored in single file.
 
@@ -137,47 +137,9 @@ Default value `False`. This parameter is related to `sort_by`. When set to `True
 python3 cordex.py <LOCATION TO STRUCTURES> <EXTRACTION TEXT> --out <RESULTS FILE>
 ```
 
-## Most important optional parameters
-
-### --sloleks_db
-This parameter is may be used, if you have access to sloleks_db. Parameter is useful when lemma_fallback would be shown in results file, because if you have sloleks_db script looks into this database to find correct replacement. 
-
-To use this sqlalchemy has to be installed as well.
-
-This parameter has to include information about database in following order:
-
-<DB_USERNAME>:<DB_PASSWORD>:<DB_NAME>:<DB_URL>
-
-### --collocation_sentence_map_dest
-If value for this parameter exists (it should be string path to directory), files will be generated that include links between collocation ids and sentence ids.
-
-### --db
-This is path to file which will contain sqlite database with internal states. Used to save internal states in case code gets modified.
-
-We suggest to put this sqlite file in RAM for faster execution. To do this follow these instructions:
-
-```bash
-sudo mkdir /mnt/tmp
-sudo mount -t tmpfs tmpfs /mnt/tmp
-```
-
-If running on big corpuses (ie. Gigafida have database in RAM):
-```bash
-sudo mkdir /mnt/tmp
-sudo mount -t tmpfs tmpfs /mnt/tmp
-sudo mount -o remount,size=110G,noexec,nosuid,nodev,noatime /mnt/tmp
-```
-
-Pass path to specific file when running `cordex.py`. For example:
-```bash
-python3 cordex.py ... --db /mnt/tmp/mysql-cordex-ssj500k ...
-```
-
-### --multiple-output
-Used when we want multiple output files (one file per structure_id).
-
-
 ## Instructions for running on big files (ie. Gigafida)
+
+You should run script using pypy3.
 
 Suggested running with saved mysql file in tmpfs. Instructions:
 

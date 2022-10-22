@@ -49,7 +49,6 @@ class ComponentRepresentation:
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
     def _render(self, is_ud, lookup_lexicon=None):
-        # TODO FIX THIS TO LEMMA MSD
         if len(self.words) > 0:
             if is_ud:
                 pos = self.convert_dict_to_string(self.words[0].udpos)

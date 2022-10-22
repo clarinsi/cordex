@@ -7,6 +7,8 @@ from cordex.utils.codes_tagset import TAGSET, CODES
 
 from cordex.utils.converter import msd_to_properties
 
+SUPPORTED_LOOKUP_LANGUAGES = ['sl']
+
 
 class LookupLexicon:
     """ Object that access external data. """
@@ -33,19 +35,25 @@ class LookupLexicon:
         # msd_model = Msd(''.join(msd), 'en')
         properties = msd_to_properties(''.join(msd), 'en')
         # IF ADDING OR CHANGING ATTRIBUTES HERE ALSO FIX POSSIBLE_WORD_FORM_FEATURE_VALUES
-        if properties.category == 'noun':
-            number = properties.form_feature_map['number']
-            case = properties.form_feature_map['case']
+        if properties['pos'] == 'noun':
+            if not ('number' in properties and 'case' in properties):
+                return decypher
+            number = properties['number']
+            case = properties['case']
             decypher = {'number': number, 'case': case}
-        elif properties.category == 'verb':
-            vform = properties.form_feature_map['vform']
-            number = properties.form_feature_map['number']
+        elif properties['pos'] == 'verb':
+            if not ('vform' in properties and 'number' in properties):
+                return decypher
+            vform = properties['vform']
+            number = properties['number']
             person = 'third'
             decypher = {'vform': vform, 'number': number, 'person': person}
-        elif properties.category == 'adjective':
-            gender = properties.form_feature_map['gender']
-            number = properties.form_feature_map['number']
-            case = properties.form_feature_map['case']
+        elif properties['pos'] == 'adjective':
+            if not ('gender' in properties and 'number' in properties and 'case' in properties):
+                return decypher
+            gender = properties['gender']
+            number = properties['number']
+            case = properties['case']
             decypher = {'gender': gender, 'number': number, 'case': case}
 
         return decypher
