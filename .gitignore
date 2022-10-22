@@ -3,6 +3,7 @@
 
 *.pdf
 *.sage.py
+*.egg-info
 
 tests/test_data/output/izhod.csv
 tests/test_data/output/tmp_collocation_sentence_mapper
@@ -15,3 +16,4 @@ run.sh
 old
 data
 venv
+build
