@@ -45,7 +45,7 @@ During this step you should provide processing settings. There is only one requi
 ### Example
 
 ```python
-extractor = cordex.Pipeline("tests/test_data/structures/structures_UD.xml", separator=',', statistics=False)
+extractor = cordex.Pipeline("tests/test_data/structures/structures_UD.xml", statistics=False)
 ```
 
 ### Parameters
@@ -105,11 +105,12 @@ We support two ways of obtaining results. You may use function `write`, to write
 
 ### Examples
 
+Write example:
 ```python
 extraction.write("data/izhod.csv")
 ```
 
-
+Get list example:
 ```python
 results = extraction.get_list(sort_by=1, sort_reversed=True)
 ```
