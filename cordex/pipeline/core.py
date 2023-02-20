@@ -159,6 +159,7 @@ class Pipeline:
             'lookup_lexicon': f'{HOME_DIR}/cordex_resources/{lang}.xz',
             'statistics': True,
             'lang': 'sl',
+            'collocation_sentence_map_dest': None,
             'translate_jos_depparse_to_sl': False
         }
 

@@ -108,8 +108,9 @@ class WordJOS(Word):
     @staticmethod
     def from_conllu_element(token, sentence):
         """ Creates word from TEI word element. """
-        glue = 'SpaceAfter' in token['misc'] and token['misc']['SpaceAfter'] == 'No'
-        return WordJOS(token['lemma'], token['xpos'], sentence.metadata['sent_id'], str(token['id']), int(token['id']), token['form'], glue, False)
+        glue = token['misc'] is not None and 'SpaceAfter' in token['misc'] and token['misc']['SpaceAfter'] == 'No'
+        metadata = sentence.metadata['sent_id'] if 'sent_id' in sentence.metadata else ''
+        return WordJOS(token['lemma'], token['xpos'], metadata, str(token['id']), int(token['id']), token['form'], glue, False)
 
     @staticmethod
     def get_msd(comp):

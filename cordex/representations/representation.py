@@ -49,11 +49,18 @@ class ComponentRepresentation:
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
     def _render(self, is_ud, lookup_lexicon=None):
+
         if len(self.words) > 0:
+            lemma = self.words[0].lemma
             if is_ud:
                 pos = self.convert_dict_to_string(self.words[0].udpos)
             else:
                 pos = self.words[0].xpos
+
+                if lookup_lexicon is not None:
+                    msd, lemma, text = lookup_lexicon.get_word_form(lemma, pos, self.data, find_lemma_msd=True)
+                    if msd is not None:
+                        pos = msd
             return self.words[0].lemma, pos
         else:
             return None, None
@@ -201,6 +208,7 @@ class WordFormMsdCR(WordFormAnyCR):
                 super().add_word(word, is_ud)
 
     def _render(self, is_ud, lookup_lexicon=None):
+        # TODO CHECK THIS (is word dummy created twice when it should be only once?)
         if len(self.words) == 0 and lookup_lexicon is not None:
             msd, lemma, text = lookup_lexicon.get_word_form(self.lemma, self.msd(), self.data)
             if msd is not None:

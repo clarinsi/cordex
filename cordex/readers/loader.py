@@ -21,7 +21,12 @@ def load_files(args, database):
     filenames = args['corpus']
 
     if len(filenames) == 1 and os.path.isdir(filenames[0]):
-        filenames = [os.path.join(filenames[0], file) for file in os.listdir(filenames[0]) if file[-5:] != '.zstd']
+        all_filenames = []
+        for path, subdirs, files in os.walk(filenames[0]):
+            for name in files:
+                if name[-5:] != '.zstd':
+                    all_filenames.append(os.path.join(path, name))
+        filenames = all_filenames
 
     if len(filenames) > 1:
         filenames = [filename for filename in filenames if filename[-5:] != '.zstd']
@@ -96,7 +101,8 @@ def load_conllu(filename, args):
                     else:
                         words[str(word['id'])] = WordJOS.from_conllu_element(word, sent)
                     links.append((str(word['head']), str(word['id']), translate_jos_depparse(word['deprel'], args['translate_jos_depparse_to_sl'])))
-                sentence_end(False, sent.metadata['sent_id'])
+                metadata = sent.metadata['sent_id'] if 'sent_id' in sent.metadata else ''
+                sentence_end(False, metadata)
                 links = []
                 words = {}
             except:

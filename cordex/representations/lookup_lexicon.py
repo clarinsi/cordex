@@ -58,7 +58,7 @@ class LookupLexicon:
 
         return decypher
 
-    def get_word_form(self, lemma, msd, data, align_msd=False):
+    def get_word_form(self, lemma, msd, data, align_msd=False, find_lemma_msd=False):
         """ Returns word form from lemma and msd that were stored in lookup lexicon. """
         # modify msd as required
         msd = list(msd)
@@ -76,13 +76,22 @@ class LookupLexicon:
             t = msd[0]
 
             for att in data['agreement']:
-                v_align_msd = TAGSET[t_align_msd].index(att.lower())
-                v = TAGSET[t].index(att.lower())
-                # fix for verbs with short msds
-                if v + 1 >= len(msd):
-                    msd = msd + ['-' for _ in range(v - len(msd) + 2)]
+                att_lower = att.lower()
+                # some attributes might not have desired properties with which we want alignment
+                if att_lower in TAGSET[t_align_msd]:
+                    v_align_msd = TAGSET[t_align_msd].index(att_lower)
+                    v = TAGSET[t].index(att_lower)
+                    # fix for verbs with short msds
+                    if v + 1 >= len(msd):
+                        msd = msd + ['-' for _ in range(v - len(msd) + 2)]
 
-                msd[v + 1] = align_msd[v_align_msd + 1]
+                    msd[v + 1] = align_msd[v_align_msd + 1]
+
+        # handles cases when we are searching msds of lemmas
+        if lemma in self.file_data and find_lemma_msd:
+            for (word_form_features, form_representations, xpos, form_frequency) in self.file_data[lemma]:
+                if lemma == form_representations:
+                    return xpos, lemma, form_representations
 
         decypher_msd = self.decypher_msd(msd)
 
@@ -90,7 +99,7 @@ class LookupLexicon:
             return None, None, None
 
         if lemma in self.file_data:
-            for (word_form_features, form_representations, form_frequency) in self.file_data[lemma]:
+            for (word_form_features, form_representations, xpos, form_frequency) in self.file_data[lemma]:
                 fits = True
                 for d_m_attribute, d_m_value in decypher_msd.items():
                     if d_m_attribute not in word_form_features or d_m_value != word_form_features[d_m_attribute]:
@@ -98,5 +107,5 @@ class LookupLexicon:
                         break
                 if fits:
                     break
-            return ''.join(msd), lemma, form_representations
+            return xpos, lemma, form_representations
         return None, None, None
