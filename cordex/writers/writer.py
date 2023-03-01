@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 from cordex.utils.progress_bar import progress
-from cordex.writers.formatter import OutFormatter, OutNoStatFormatter, TokenFormatter
+from cordex.writers.formatter import OutFormatter, OutNoStatFormatter
 from cordex.writers.collocation_sentence_mapper import CollocationSentenceMapper
 
 
@@ -27,11 +27,6 @@ class Writer:
         """ Returns an instance of Writer class with settings for no statistics output. """
         params = Writer.other_params(args)
         return Writer(args['out'], num_components, OutNoStatFormatter(collocation_ids, word_renderer, is_ud), args['collocation_sentence_map_dest'], params, args['separator'])
-
-    @staticmethod
-    def make_token_writer(args, num_components, colocation_ids, word_renderer, is_ud):
-        return Writer(args['out'], num_components, TokenFormatter(colocation_ids, word_renderer, is_ud),
-                      args['collocation_sentence_map_dest'], None, args['separator'])
 
     def __init__(self, file_out, num_components, formatter, collocation_sentence_map_dest, params, separator):
         self.collocation_sentence_map_dest = collocation_sentence_map_dest
@@ -88,7 +83,7 @@ class Writer:
         else:
             file_handler.write(self.separator.join(self.header()) + "\n")
 
-    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map, return_list, token_output):
+    def write_out_worker(self, file_handler, structure, collocation_ids, col_sent_map, return_list):
         rows = []
         components = structure.components
         for match in collocation_ids.get_matches_for(structure):
@@ -131,9 +126,7 @@ class Writer:
                 # header_right
                 to_write.extend(self.formatter.content_right(len(match), variable_word_order))
                 rows.append(to_write)
-
-                if not token_output:
-                    break
+                break
 
         if rows != []:
             rows = self.sorted_rows(rows)
@@ -147,7 +140,7 @@ class Writer:
             if return_list:
                 return []
 
-    def write_out(self, structures, collocation_ids, token_output, return_list=False):
+    def write_out(self, structures, collocation_ids, return_list=False):
         """ Writes processing results to file. """
         write_results = []
 
@@ -171,7 +164,7 @@ class Writer:
                 fp = fp_open()
                 self.write_header(fp, return_list)
             col_sent_map = CollocationSentenceMapper(self.collocation_sentence_map_dest) \
-                if self.collocation_sentence_map_dest is not None else None
+                if self.collocation_sentence_map_dest else None
 
         for s in progress(structures, "writing:{}".format(self.formatter)):
             if self.multiple_output:
@@ -183,14 +176,14 @@ class Writer:
                     self.write_header(fp, return_list)
                 Path(self.collocation_sentence_map_dest).mkdir(parents=True, exist_ok=True)
                 col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}.tsv')) \
-                    if self.collocation_sentence_map_dest is not None else None
+                    if self.collocation_sentence_map_dest else None
 
             self.formatter.set_structure(s)
             if return_list:
-                content = self.write_out_worker(None, s, collocation_ids, col_sent_map, return_list, token_output)
+                content = self.write_out_worker(None, s, collocation_ids, col_sent_map, return_list)
                 write_results.extend(content)
             else:
-                self.write_out_worker(fp, s, collocation_ids, col_sent_map, return_list, token_output)
+                self.write_out_worker(fp, s, collocation_ids, col_sent_map, return_list)
 
                 if self.multiple_output:
                     fp_close(fp)
@@ -201,6 +194,14 @@ class Writer:
             if col_sent_map:
                 col_sent_map.close()
 
+        if return_list and self.collocation_sentence_map_dest:
+            if col_sent_map.get_mapper() is None:
+                logging.warning("If you want to get collocation sentence map, you should set `collocation_sentence_map_dest` to True")
+            return write_results, col_sent_map.get_mapper()
+
+        if type(self.collocation_sentence_map_dest) == bool and self.collocation_sentence_map_dest:
+            logging.error(
+                "You should put path into `collocation_sentence_map_dest`. It can only be set to `True` if you are using `get_list()` function.")
         return write_results
 
     @staticmethod

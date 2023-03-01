@@ -8,7 +8,7 @@ from cordex.utils.progress_bar import progress
 from cordex.structures.syntactic_structure import build_structures
 from cordex.matcher.match_store import MatchStore
 from cordex.statistics.word_stats import WordStats
-from cordex.writers.formatter import OutFormatter, OutNoStatFormatter, TokenFormatter
+from cordex.writers.formatter import OutFormatter, OutNoStatFormatter
 from cordex.writers.writer import Writer
 from cordex.readers.loader import load_files
 from cordex.database.database import Database
@@ -80,50 +80,41 @@ class Pipeline:
 
         return self
 
-    def write(self, path, separator=',', sort_by=-1, sort_reversed=False, token_output=False):
+    def write(self, path, separator=',', sort_by=-1, sort_reversed=False):
         self.args['out'] = path
         self.args['separator'] = separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed
         self.args['multiple_output'] = '.' not in Path(path).name
-        self.args['token_output'] = token_output
 
         # if no output files, just exit
         if all([x is None for x in [self.args['out']]]):
             return
 
-        if self.args['token_output']:
-            Writer.make_token_writer(self.args, self.max_num_components, self.match_store, self.word_stats,
-                                     self.args['is_ud']).write_out(
-                self.structures, self.match_store, self.args['token_output'])
-        elif self.args['statistics']:
+        if self.args['statistics']:
             Writer.make_output_writer(self.args, self.max_num_components, self.match_store, self.word_stats,
                                       self.args['is_ud']).write_out(
-                self.structures, self.match_store, self.args['token_output'])
+                self.structures, self.match_store)
         else:
             Writer.make_output_no_stat_writer(self.args, self.max_num_components, self.match_store, self.word_stats,
                                               self.args['is_ud']).write_out(
-                self.structures, self.match_store, self.args['token_output'])
+                self.structures, self.match_store)
 
-    def get_list(self, separator=',', sort_by=-1, sort_reversed=False, token_output=False):
+    def get_list(self, separator=',', sort_by=-1, sort_reversed=False):
         self.args['separator'] = separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed
-        self.args['token_output'] = token_output
         self.args['multiple_output'] = False
 
         params = Writer.other_params(self.args)
-        if self.args['token_output']:
-            writer = Writer(None, self.max_num_components, TokenFormatter(self.match_store, self.word_stats, self.args['is_ud']),
-                            None, None, self.args['separator'])
-        elif self.args['statistics']:
+        if self.args['statistics']:
             writer = Writer(None, self.max_num_components, OutFormatter(self.match_store, self.word_stats, self.args['is_ud']),
-                            None, params, self.args['separator'])
+                            self.args['collocation_sentence_map_dest'], params, self.args['separator'])
         else:
             writer = Writer(None, self.max_num_components,
                             OutNoStatFormatter(self.match_store, self.word_stats, self.args['is_ud']),
-                            None, params, self.args['separator'])
-        return writer.write_out(self.structures, self.match_store, self.args['token_output'], return_list=True)
+                            self.args['collocation_sentence_map_dest'], params, self.args['separator'])
+        return writer.write_out(self.structures, self.match_store, return_list=True)
 
     @staticmethod
     def match_file(words, structures, postprocessor):
@@ -160,8 +151,7 @@ class Pipeline:
             'statistics': True,
             'lang': 'sl',
             'collocation_sentence_map_dest': None,
-            'jos_depparse_lang': 'en',
-            'token_output': False
+            'jos_depparse_lang': 'en'
         }
 
         return {**default_args, **kwargs}

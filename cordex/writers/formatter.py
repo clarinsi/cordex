@@ -234,39 +234,3 @@ class OutFormatter(Formatter):
     
     def __str__(self):
         return "out"
-
-
-class TokenFormatter(Formatter):
-    def additional_init(self):
-        self.representation = {}
-
-    def header_repeat(self):
-        return ["Token_ID", "Word_form", "Lemma", "Msd"]
-
-    def header_right(self):
-        return []
-
-    def content_repeat(self, words, representations, idx, _sidx):
-        """ Returns no stats content for columns that might appear multiple times. """
-        word = words[idx]
-        word_id = word.sentence_id + '.' + word.id
-        if idx not in representations:
-            return [word_id, word.lemma, "", ""]
-
-        rep_text, rep_msd = representations[idx]
-        if rep_text is None:
-            self.representation[idx] = word.lemma
-            return [word_id, word.lemma, word.lemma, "", "lemma_fallback"]
-        else:
-            self.representation[idx] = rep_text
-            return [word_id, word.lemma, rep_text, rep_msd, "ok"]
-
-
-    def content_right(self, _freq, variable_word_order=None):
-        return []
-
-    def group(self):
-        return False
-
-    def __str__(self):
-        return "token"
