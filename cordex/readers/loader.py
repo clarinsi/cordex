@@ -58,7 +58,7 @@ def load_files(args, database):
 
 def load_conllu(filename, args):
     """ Loads corpus file in conllu format. """
-    if args['no_msd_translate']:
+    if args['jos_msd_lang'] == 'sl':
         raise NotImplementedError('no_msd_translate = True is not implemented for conllu data!')
     result = []
 
@@ -100,8 +100,12 @@ def load_conllu(filename, args):
                         words[str(word['id'])] = WordUD.from_conllu_element(word, sent)
                     else:
                         words[str(word['id'])] = WordJOS.from_conllu_element(word, sent)
-                    links.append((str(word['head']), str(word['id']), translate_jos_depparse(word['deprel'], args['translate_jos_depparse_to_sl'])))
-                metadata = sent.metadata['sent_id'] if 'sent_id' in sent.metadata else ''
+                    links.append((str(word['head']), str(word['id']), translate_jos_depparse(word['deprel'], args['jos_depparse_lang'] != 'sl')))
+                if 'sent_id' in sent.metadata:
+                    metadata = sent.metadata['sent_id']
+                else:
+                    logging.warning(f'At least one sentence is missing `sent_id`. This may lead to incomplete output in collocation_sentence_mapper.')
+                    metadata = ''
                 sentence_end(False, metadata)
                 links = []
                 words = {}
@@ -125,7 +129,7 @@ def load_tei(filename):
 
 def tei_sentence_generator(et, args):
     """ Generates sentences from TEI format. """
-    do_msd_translate = not args['no_msd_translate']
+    do_msd_translate = not args['jos_msd_lang'] == 'sl'
     do_msd_translate = Converter() if do_msd_translate else False
 
     words = {}

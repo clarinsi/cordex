@@ -136,7 +136,7 @@ def build_structures(args):
     is_ud = et.attrib['system_type'] == 'UD'
     structures = []
     for structure in et.iter('syntactic_structure'):
-        if structure.attrib['type'] != 'collocation':
+        if not (structure.attrib['type'] == 'collocation' or structure.attrib['type'] == 'formal'):
             continue
         to_append = SyntacticStructure.from_xml(structure, no_stats, is_ud)
         if to_append is None:

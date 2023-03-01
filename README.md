@@ -60,13 +60,13 @@ Default value `None`. Optional parameter, that should contain path to folder, wh
 Default value `0`. Number that indicate how many occurrences in corpus a collocation needs to be present in results.
 
 #### db
-Default value `None`. Path to database file. This should be used for bigger corpora. It enables us to process corpus in steps, and stores half processed data. Value `None` indicates that data will be stored only in memory.
+Default value `None`. Path to interprocessing sqlite database file (if there is no file in that location it will create a new file). It enables us to process corpus in steps, and stores half processed data. This parameter is useful for processing bigger corpora, as a failsafe system. Value `None` indicates that data will be stored only in memory.
 
-#### new_db
-Default value `False`. This parameter should be used together with parameter `db`. When `True` it will overwrite database file. 
+#### overwrite_db
+Default value `False`. This parameter should be used together with parameter `db`. When `True` it will overwrite old database file and start processing from the beginning. 
 
-#### no_msd_translate
-Default value `False`. Set this to `True` when xpos tags are in Slovenian.
+#### jos_msd_lang
+Default value `en`. Set this to `sl` when xpos tags are in Slovenian.
 
 #### ignore_punctuations
 Default value `False`. When this is `True`, results containing punctuations will not be shown.
@@ -83,8 +83,8 @@ Default value `True`. Parameter that indicates whether we want statistics in out
 #### lang
 Default value `sl`. Parameter that enables postprocessing for specific languages. Should contain lowercased 2-letter country abbreviation. 
 
-#### translate_jos_depparse_to_sl
-Default value `False`. When using JOS system extraction will work with Slovenian dependency parsing tags. If they are in English you should set this to `True`. This is not connected to UD dependency parsing in any way. 
+#### jos_depparse_lang
+Default value `en`. When using JOS system, extraction will work with Slovenian (`sl`) or English (`en`) dependency parsing tags. This is not connected to UD dependency parsing in any way. 
 
 ## Execution
 During this step extraction executes.
@@ -118,10 +118,7 @@ results = extraction.get_list(sort_by=1, sort_reversed=True)
 ### Parameters
 
 #### path
-Required in `write` function. Destination where results are going to be written.
-
-#### multiple_output
-Default value `None`. Parameter in `write` function, that enables users to store results in multiple files, one file per one syntactic structure. In this case path should point to folder. If this is `None`, results are stored in single file.
+Required in `write` function. Destination where results are going to be written. If this is a path to a folder, results are going to be stored in multiple files, otherwise in a single file.
 
 #### separator
 Default value `,`. Optional parameter in `write` and `get_list` functions, that tells us what output files should be separated by. For `.tbl` files shis should be `\t`.

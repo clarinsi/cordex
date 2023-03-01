@@ -9,7 +9,7 @@ class Database:
     def __init__(self, args):
         filename = ":memory:" if args['db'] is None else args['db']
 
-        if args['new_db'] and os.path.exists(filename):
+        if args['overwrite_db'] and os.path.exists(filename):
             os.remove(filename)
 
         self.new = not os.path.exists(filename)

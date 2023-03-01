@@ -80,12 +80,12 @@ class Pipeline:
 
         return self
 
-    def write(self, path, separator=',', sort_by=-1, sort_reversed=False, multiple_output=False, token_output=False):
+    def write(self, path, separator=',', sort_by=-1, sort_reversed=False, token_output=False):
         self.args['out'] = path
         self.args['separator'] = separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed
-        self.args['multiple_output'] = multiple_output
+        self.args['multiple_output'] = '.' not in Path(path).name
         self.args['token_output'] = token_output
 
         # if no output files, just exit
@@ -152,15 +152,16 @@ class Pipeline:
         default_args = {
             'min_freq': 0,
             'db': None,
-            'new_db': False,
-            'no_msd_translate': False,
+            'overwrite_db': False,
+            'jos_msd_lang': 'en',
             'ignore_punctuations': False,
             'fixed_restriction_order': False,
             'lookup_lexicon': f'{HOME_DIR}/cordex_resources/{lang}.xz',
             'statistics': True,
             'lang': 'sl',
             'collocation_sentence_map_dest': None,
-            'translate_jos_depparse_to_sl': False
+            'jos_depparse_lang': 'en',
+            'token_output': False
         }
 
         return {**default_args, **kwargs}

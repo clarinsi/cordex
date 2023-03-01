@@ -100,7 +100,12 @@ class Writer:
 
             if col_sent_map is not None:
                 for words in match.matches:
-                    col_sent_map.add_map(match.match_id, words['1'].sentence_id)
+                    token_ids = []
+                    for int_i in range(1, len(words) + 1):
+                        str_i = str(int_i)
+                        if str_i in words:
+                            token_ids.append(f'{words[str_i].sentence_id}.{words[str_i].id}')
+                    col_sent_map.add_map(match.match_id, words['1'].sentence_id, '|'.join(token_ids))
 
             for words in match.matches:
                 to_write = []
@@ -155,7 +160,7 @@ class Writer:
             if snum is None:
                 return open(self.output_file, "w")
             else:
-                return open("{}.{}".format(self.output_file, snum), "w")
+                return open("{}.csv".format(os.path.join(self.output_file, snum)), "w")
 
         if not self.multiple_output:
 
@@ -173,7 +178,7 @@ class Writer:
                 if return_list:
                     write_results.append(self.header())
                 else:
-                    fp = fp_open()
+                    fp = fp_open(s.id)
                     self.write_header(fp, return_list)
                 col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}_mapper.txt')) \
                     if self.collocation_sentence_map_dest is not None else None
