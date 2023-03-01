@@ -3,6 +3,7 @@ A file for forming and saving outputs.
 """
 import logging
 import os
+from pathlib import Path
 
 from cordex.utils.progress_bar import progress
 from cordex.writers.formatter import OutFormatter, OutNoStatFormatter, TokenFormatter
@@ -169,7 +170,7 @@ class Writer:
             else:
                 fp = fp_open()
                 self.write_header(fp, return_list)
-            col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, 'mapper.txt')) \
+            col_sent_map = CollocationSentenceMapper(self.collocation_sentence_map_dest) \
                 if self.collocation_sentence_map_dest is not None else None
 
         for s in progress(structures, "writing:{}".format(self.formatter)):
@@ -180,7 +181,8 @@ class Writer:
                 else:
                     fp = fp_open(s.id)
                     self.write_header(fp, return_list)
-                col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}_mapper.txt')) \
+                Path(self.collocation_sentence_map_dest).mkdir(parents=True, exist_ok=True)
+                col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}.tsv')) \
                     if self.collocation_sentence_map_dest is not None else None
 
             self.formatter.set_structure(s)

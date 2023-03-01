@@ -54,7 +54,7 @@ extractor = cordex.Pipeline("tests/test_data/structures/structures_UD.xml", stat
 Required. Path to file with structures definitions. Examples of such file are available in `tests/test_data/structures`.
 
 #### collocation_sentence_map_dest
-Default value `None`. Optional parameter, that should contain path to folder, where mappings between collocations and sentences will be saved. If this is set to `None` mappings will not be stored.
+Default value `None`. Optional parameter, that should contain path to file or folder, where mappings between collocations and sentences will be saved. If this is set to `None` mappings will not be stored. When the `path` in write function leads to a file all mappings will also be stored in a file. Otherwise, program will create a directory at this destination and store mappings in multiple files inside this directory, one file per one syntactic structure.
 
 #### min_freq
 Default value `0`. Number that indicate how many occurrences in corpus a collocation needs to be present in results.
