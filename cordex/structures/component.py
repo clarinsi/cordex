@@ -97,10 +97,12 @@ class Component:
 
     def match(self, word):
         """ Returns list of words that match restrictions. When no words are found return None. """
+        # check self restrictions
         m1 = self._match_self(word)
         if m1 is None:
             return None
 
+        # check next node
         mn = self._match_next(word)
         if mn is None:
             return None
@@ -147,7 +149,7 @@ class Component:
                 match = next.match(next_word)
 
                 if match is not None:
-                    # special treatement for forbidden
+                    # special treatment for forbidden
                     if next.status == ComponentStatus.Forbidden:
                         good = False
                         break

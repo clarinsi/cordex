@@ -4,7 +4,10 @@ import logging
 from ast import literal_eval
 
 from collections import Counter
-from cordex.utils.converter import msd_to_properties
+
+from conversion_utils import jos_msds_and_properties
+
+from cordex.utils.converter import msd_to_properties, default_msd_to_properties
 from cordex.words.word import WordDummy
 
 
@@ -16,6 +19,9 @@ class ComponentRepresentation:
         self.words = []
         self.rendition_text = None
         self.rendition_msd = None
+
+        self.processed_api = False
+        self.api_request = []
         self.agreement = []
 
     def get_agreement_head_component_id(self):
@@ -26,10 +32,10 @@ class ComponentRepresentation:
         """ Adds word to representation. """
         self.words.append(word)
 
-    def render(self, is_ud, lookup_lexicon=None):
+    def render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         """ Render when text is not already rendered. """
         if self.rendition_text is None:
-            self.rendition_text, self.rendition_msd = self._render(is_ud, lookup_lexicon=lookup_lexicon)
+            self.rendition_text, self.rendition_msd = self._render(is_ud, lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
 
     # Convert output to same format as in conllu
     @staticmethod
@@ -42,13 +48,13 @@ class ComponentRepresentation:
 
         return '|'.join(result)
 
-    def _render(self, is_ud, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         raise NotImplementedError("Not implemented for class: {}".format(type(self)))
 
 
 class LemmaCR(ComponentRepresentation):
     """ Handles lemma as component representation. """
-    def _render(self, is_ud, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
 
         if len(self.words) > 0:
             lemma = self.words[0].lemma
@@ -57,7 +63,23 @@ class LemmaCR(ComponentRepresentation):
             else:
                 pos = self.words[0].xpos
 
-                if lookup_lexicon is not None:
+                if lookup_api is not None:
+                    properties = default_msd_to_properties(pos, 'en', lemma=lemma)
+                    if not lookup_api.executed:
+                        self.processed_api = True
+                        self.api_request.append({
+                            'type': 'lemma',
+                            'lemma': lemma,
+                            'lemma_features': properties.lexeme_feature_map,
+                            "category": properties.category
+                        })
+                    else:
+                        lemma_key = f"{lemma}_{properties.category}_{'_'.join([f'{k},{v}' for k, v in properties.lexeme_feature_map.items()])}"
+                        form = lookup_api.find_lemma(lemma_key)
+                        if form is not None:
+                            pos = form[3]
+
+                elif lookup_lexicon is not None:
                     msd, lemma, text = lookup_lexicon.get_word_form(lemma, pos, self.data, find_lemma_msd=True)
                     if msd is not None:
                         pos = msd
@@ -68,7 +90,7 @@ class LemmaCR(ComponentRepresentation):
 
 class LexisCR(ComponentRepresentation):
     """ Handles fixed word as component representation. """
-    def _render(self, is_ud, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         if is_ud:
             pos = 'POS=PART'
         else:
@@ -78,7 +100,7 @@ class LexisCR(ComponentRepresentation):
 
 class WordFormAllCR(ComponentRepresentation):
     """ Returns all possible word forms separated with '/' as component representation. """
-    def _render(self, is_ud, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         if len(self.words) == 0:
             return None, None
         else:
@@ -93,7 +115,7 @@ class WordFormAllCR(ComponentRepresentation):
 
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
-    def _render(self, is_ud, lookup_lexicon=None):
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         text_forms = {}
         if is_ud:
             msd_lemma_txt_triplets = Counter([(str(w.udpos), w.lemma, w.text) for w in self.words])
@@ -117,8 +139,63 @@ class WordFormAnyCR(ComponentRepresentation):
             # check if agreements match
             agreements_matched = [agr.match(word_msd, is_ud) for agr in self.agreement]
 
+            # if lookup_api exists create queries for it
+            if lookup_api is not None:
+                self.processed_api = True
+
+                for i, agr in enumerate(self.agreement):
+                    if not agr.match(word_msd, is_ud) or not lookup_api.executed:
+                        properties = default_msd_to_properties(agr.msd(), 'en', agr.lemma)
+
+                        # get agreement feature properties
+                        agreement_properties = default_msd_to_properties(word_msd, 'en', word_lemma)
+                        if 'msd' in agr.data:
+                            form_features = agr.data['msd']
+                        else:
+                            form_features = {}
+
+                        missing_form_features = False
+                        for agreement_name in agr.data['agreement']:
+                            if agreement_name in agreement_properties.form_feature_map:
+                                form_features[agreement_name] = agreement_properties.form_feature_map[agreement_name]
+                            elif agreement_name in agreement_properties.lexeme_feature_map:
+                                form_features[agreement_name] = agreement_properties.lexeme_feature_map[agreement_name]
+
+                            if agreement_name not in agreement_properties.form_feature_map and agreement_name not in agreement_properties.lexeme_feature_map:
+                                missing_form_features = True
+                                break
+
+                        if missing_form_features:
+                            continue
+
+                        if not lookup_api.executed:
+                            self.api_request.append({
+                                'type': 'agreement',
+                                'lemma': agr.lemma,
+                                'lemma_features': properties.lexeme_feature_map,
+                                'form_features': form_features,
+                                "category": properties.category
+                            })
+                        else:
+                            lemma_key = f"{agr.lemma}_{properties.category}_{'_'.join([f'{k},{v}' for k, v in properties.lexeme_feature_map.items()])}"
+
+                            form = lookup_api.find_form(lemma_key, form_features)
+
+                            if form is not None:
+                                text = form[0]
+                                msd = form[3]
+                                agr.msds[0] = msd
+                                agr.words.append(WordDummy(msd, agr.lemma, text))
+                                # when we find element in sloleks automatically add it (no need for second checks, since msd
+                                # is tailored to pass tests by default)
+                                agr.rendition_candidate = text
+                                agr.rendition_msd_candidate = msd
+                                agreements_matched[i] = True
+                            else:
+                                break
+
             # in case all agreements do not match try to get data from sloleks and change properly
-            if lookup_lexicon is not None and not all(agreements_matched):
+            elif lookup_lexicon is not None and not all(agreements_matched):
                 for i, agr in enumerate(self.agreement):
                     if not agr.match(word_msd, is_ud):
                         msd, lemma, text = lookup_lexicon.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd)
@@ -186,8 +263,6 @@ class WordFormMsdCR(WordFormAnyCR):
         properties = msd_to_properties(word_msd, 'en', lemma=word_lemma)
         for key, value in selectors.items():
             key_lower = key.lower()
-            # if key_lower not in properties.form_feature_map and key_lower not in properties.lexeme_feature_map:
-            #     return False
             if key_lower in properties and properties[key_lower] != value:
                 return False
 
@@ -207,17 +282,43 @@ class WordFormMsdCR(WordFormAnyCR):
             if self.check_xpos(word.xpos, word.lemma):
                 super().add_word(word, is_ud)
 
-    def _render(self, is_ud, lookup_lexicon=None):
-        # TODO CHECK THIS (is word dummy created twice when it should be only once?)
-        if len(self.words) == 0 and lookup_lexicon is not None:
-            msd, lemma, text = lookup_lexicon.get_word_form(self.lemma, self.msd(), self.data)
-            if msd is not None:
-                self.words.append(WordDummy(msd, lemma, text))
+    def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         if is_ud:
             self.words.append(WordDummy(self._common_udpos()))
         else:
-            self.words.append(WordDummy(self._common_xpos()))
-        return super()._render(is_ud, lookup_lexicon)
+            word_appended = False
+            if len(self.words) == 0 and lookup_api is not None:
+                properties = default_msd_to_properties(self.msd(), 'en', self.lemma)
+                if not lookup_api.executed:
+                    self.api_request.append({
+                        'type': 'msd',
+                        'lemma': self.lemma,
+                        'lemma_features': properties.lexeme_feature_map,
+                        'form_features': self.data['msd'],
+                        "category": properties.category
+                    })
+                    self.processed_api = True
+                    self.words.append(WordDummy(self.msd(), self.lemma, ''))
+                    word_appended = True
+                else:
+                    lemma_key = f"{self.lemma}_{properties.category}_{'_'.join([f'{k},{v}' for k, v in properties.lexeme_feature_map.items()])}"
+                    lemma = self.lemma
+                    form = lookup_api.find_form(lemma_key, self.data['msd'])
+                    if form is not None:
+                        text = form[0]
+                        msd = form[3]
+                        self.words.append(WordDummy(msd, lemma, text))
+                        word_appended = True
+
+            elif len(self.words) == 0 and lookup_lexicon is not None:
+                msd, lemma, text = lookup_lexicon.get_word_form(self.lemma, self.msd(), self.data)
+                if msd is not None:
+                    self.words.append(WordDummy(msd, lemma, text))
+                    word_appended = True
+            if not word_appended:
+                self.words.append(WordDummy(self._common_xpos()))
+
+        return super()._render(is_ud, lookup_lexicon, lookup_api)
     
     def _common_xpos(self):
         """ Tries to form xpos that is present in all examples. """
@@ -332,5 +433,5 @@ class WordFormAgreementCR(WordFormMsdCR):
 
         return True
 
-    def render(self, is_ud, lookup_lexicon=None):
+    def render(self, is_ud, lookup_lexicon=None, lookup_api=None):
         pass

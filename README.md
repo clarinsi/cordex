@@ -75,7 +75,10 @@ Default value `False`. When this is `True`, results containing punctuations will
 Default value `False`. When this is `True`, results, where structure components are not in the same order as in structure definition files, will be ignored.
 
 #### lookup_lexicon
-Default value `None`. Path to lookup lexicon. Lexicon is used to improve representations when JOS system is used. Value `None` indicates that we are not using lookup lexicon.
+Default value `None`. Path to lookup lexicon. Lexicon is used to improved representations when JOS system is used. Value `None` indicates that we are not using lookup lexicon.
+
+#### lookup_api
+Default value `False`. When this is `True`, program will use api to improve representations when JOS system is used. Lookup lexicon will be ignored in this case.
 
 #### statistics
 Default value `True`. Parameter that indicates whether we want statistics in output file or not.

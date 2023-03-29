@@ -139,7 +139,7 @@ class MatchStore:
                     INSERT INTO Representations (collocation_id, component_id, text, msd) 
                     VALUES (?,?,?,?)""", (match.match_id, component_id, text, msd))
 
-    def set_representations(self, word_renderer, structures, is_ud, lookup_lexicon=None):
+    def set_representations(self, word_renderer, structures, is_ud, lookup_lexicon=None, lookup_api=False):
         """ Adds representations to matches. """
 
         step_name = 'representation'
@@ -152,11 +152,31 @@ class MatchStore:
 
         structures_dict = {s.id: s for s in structures}
         num_representations = int(self.db.execute("SELECT Count(*) FROM Collocations").fetchone()[0])
+
+        # preprocess when api is used
+        all_representations = []
+        if lookup_api:
+            # create api queries
+            for cid, sid in progress(self.db.execute("SELECT collocation_id, structure_id FROM Collocations"),
+                                     "representations", total=num_representations):
+                structure = structures_dict[sid]
+                match = StructureMatch.from_db(self.db, cid, structure, is_ud)
+                representations = {}
+                RepresentationAssigner.set_representations(match, word_renderer, is_ud, representations,
+                                                           lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
+
+                all_representations.append(representations)
+
+            # get data results
+            lookup_api.execute_requests(num_representations, self.db, all_representations)
+
         start_time = time()
+        i = 0
         for cid, sid in progress(self.db.execute("SELECT collocation_id, structure_id FROM Collocations"), "representations", total=num_representations):
             structure = structures_dict[sid]
             match = StructureMatch.from_db(self.db, cid, structure, is_ud)
-            RepresentationAssigner.set_representations(match, word_renderer, is_ud, lookup_lexicon=lookup_lexicon)
+            representations = {}
+            RepresentationAssigner.set_representations(match, word_renderer, is_ud, representations, lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
 
             inserts.append(match)
             if len(inserts) > num_inserts:
@@ -165,7 +185,11 @@ class MatchStore:
             if time() - start_time > 5:
                 start_time = time()
                 gc.collect()
+            if lookup_api:
+                all_representations.append(representations)
+            i += 1
         self.add_inserts(inserts)
+
         self.db.step_is_done(step_name)
 
     def frequency_filter(self, collocation_id):

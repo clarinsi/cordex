@@ -3,7 +3,7 @@ import time
 import gc
 from pathlib import Path
 
-from cordex.representations.lookup_lexicon import LookupLexicon, SUPPORTED_LOOKUP_LANGUAGES
+from cordex.representations.lookup import LookupLexicon, SUPPORTED_LOOKUP_LANGUAGES, LookupApi
 from cordex.utils.progress_bar import progress
 from cordex.structures.syntactic_structure import build_structures
 from cordex.matcher.match_store import MatchStore
@@ -29,10 +29,15 @@ class Pipeline:
         self.structures, self.max_num_components, is_ud = build_structures(self.args)
         self.args['is_ud'] = is_ud
 
-        if os.path.exists(self.args['lookup_lexicon']) and not is_ud:
-            self.lookup_lexicon = LookupLexicon(False, self.args['lookup_lexicon'])
+        if self.args['lookup_api'] and not is_ud:
+            self.lookup_api = LookupApi('https://blisk.ijs.si/api')
+            self.lookup_lexicon = None
+        elif self.args['lookup_lexicon'] is not None and os.path.exists(self.args['lookup_lexicon']) and not is_ud:
+            self.lookup_lexicon = LookupLexicon(self.args['lookup_lexicon'])
+            self.lookup_api = None
         else:
             self.lookup_lexicon = None
+            self.lookup_api = None
 
         if not self.lookup_lexicon and self.args['lang'] in SUPPORTED_LOOKUP_LANGUAGES and not is_ud:
             logger.warning(f'WARNING: Results could be improved if you include lookup lexicon (or provide correct path '
@@ -59,6 +64,7 @@ class Pipeline:
             start_time = time.time()
             matches = self.match_file(words, self.structures, postprocessor)
 
+            # adds results to database
             self.match_store.add_matches(matches)
             self.word_stats.add_words(words)
             database.commit()
@@ -76,7 +82,7 @@ class Pipeline:
         self.match_store.determine_collocation_dispersions()
 
         # figure out representations!
-        self.match_store.set_representations(self.word_stats, self.structures, self.args['is_ud'], lookup_lexicon=self.lookup_lexicon)
+        self.match_store.set_representations(self.word_stats, self.structures, self.args['is_ud'], lookup_lexicon=self.lookup_lexicon, lookup_api=self.lookup_api)
 
         return self
 
@@ -148,6 +154,7 @@ class Pipeline:
             'ignore_punctuations': False,
             'fixed_restriction_order': False,
             'lookup_lexicon': f'{HOME_DIR}/cordex_resources/{lang}.xz',
+            'lookup_api': False,
             'statistics': True,
             'lang': 'sl',
             'collocation_sentence_map_dest': None,

@@ -45,14 +45,14 @@ class RepresentationAssigner:
         return self.representation_factory(self.more, word_renderer)
 
     @staticmethod
-    def set_representations(match, word_renderer, is_ud, lookup_lexicon=None):
+    def set_representations(match, word_renderer, is_ud, representations, lookup_lexicon=None, lookup_api=False):
         """ Assigns representations to words. """
-        representations = {}
         for c in match.structure.components:
             representations[c.idx] = []
             for rep in c.representation:
                 representations[c.idx].append(rep.create_component_representation(word_renderer))
 
+        # links agreement representations with representations
         for cid, reps in representations.items():
             for rep in reps:
                 for agr in rep.get_agreement_head_component_id():
@@ -67,6 +67,7 @@ class RepresentationAssigner:
 
                     representations[agr][0].agreement.append(rep)
 
+        # links matches with representations
         for words in match.matches:
             # first pass, check everything but agreements
             for w_id, w in words.items():
@@ -76,7 +77,7 @@ class RepresentationAssigner:
 
         for cid, reps in representations.items():
             for rep in reps:
-                rep.render(is_ud, lookup_lexicon=lookup_lexicon)
+                rep.render(is_ud, lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
 
         for cid, reps in representations.items():
             reps_text = [rep.rendition_text for rep in reps]
