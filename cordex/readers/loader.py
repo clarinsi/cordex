@@ -98,9 +98,10 @@ def load_conllu(filename, args):
 
                     if args['is_ud']:
                         words[str(word['id'])] = WordUD.from_conllu_element(word, sent)
+                        links.append((str(word['head']), str(word['id']), word['deprel']))
                     else:
                         words[str(word['id'])] = WordJOS.from_conllu_element(word, sent)
-                    links.append((str(word['head']), str(word['id']), translate_jos_depparse(word['deprel'], args['jos_depparse_lang'] != 'sl')))
+                        links.append((str(word['head']), str(word['id']), translate_jos_depparse(word['deprel'], args['jos_depparse_lang'] != 'sl')))
                 if 'sent_id' in sent.metadata:
                     metadata = sent.metadata['sent_id']
                 else:

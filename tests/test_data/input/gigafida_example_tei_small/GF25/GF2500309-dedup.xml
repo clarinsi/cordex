@@ -1,0 +1,2190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="GF2500309-dedup" xml:lang="sl">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Novi tednik NT&amp;RC (1998-01-09) [Gigafida-dedup]</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>2.1</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="sl">Univerza v Ljubljani, Center za jezikovne vire in tehnologije</publisher>
+            <publisher xml:lang="en">University of Ljubljana, Centre for Language Resources and Technologies</publisher>
+            <idno type="GIGAFIDA">GF2500309-dedup</idno>
+            <idno type="FIDA">F0017723</idno>
+            <idno type="COBISS">https://plus.cobiss.si/opac7/bib/19594498</idno>
+            <availability status="restricted">
+               <p xml:lang="sl">Avtorske pravice za to izdajo urejata Pogodba o zbiranju in uporabi besedilnega korpusa v okviru projekta Sporazumevanje v slovenskem jeziku in Pogodba o zbiranju in uporabi besedilnega korpusa v okviru projekta Nadgradnja korpusov Gigafida, Kres, ccGigafida in ccKres. Za dostop do korpusnih podatkov je treba poslati prošnjo na naslov: info@cjvt.si.</p>
+               <p xml:lang="en">The copyright for this edition is governed by the Agreement on Collection and Use of the Text Corpus under the framework of the Communication in Slovene project and by the Agreement on Collection and Use of the Text Corpus under the framework of the Upgrading of the Gigafida, Kres, ccGigafida and ccKres Corpora project. Request to access corpus data can be sent to: info@cjvt.si.</p>
+            </availability>
+            <date>2019-01-13</date>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Novi tednik NT&amp;RC</title>
+               <author n="???">neznani novinar</author>
+               <date>1998-01-09</date>
+               <publisher n="drugo">Novi tednik</publisher>
+               <note type="sourceLang">sl</note>
+               <note n="COBISS COMARC">
+                  <p>1. ID=19594498 LN=0000155000 S   V4  14.02.1991 JBI::BOJANA</p>
+                  <p>   Updated: 07.04.1997 NUK::VIRNA   Copied: 09.06.1993</p>
+                  <p>001  ac - popravljeni zapis  ba - tekstovno gradivo - tiskano  cs -</p>
+                  <p>     tekoča publikacija  d0 - ni hierarhičnega odnosa</p>
+                  <p>011  e0353-734X</p>
+                  <p>100  ba - tekoča publikacija, ki še izhaja  c1989  d9999  lba - latinica</p>
+                  <p>     hslv - slovenski</p>
+                  <p>1010 aslv - slovenski</p>
+                  <p>102  asvn - Slovenija</p>
+                  <p>110  ac - časnik  bc - tedensko  ca - redno</p>
+                  <p>2001 aNovi tednik NT&amp;RC</p>
+                  <p>207 0aLet. 43, št. 52 (28. december 1989)-</p>
+                  <p>210  aCelje  bTrg V. kongresa 3  cNovi tednik  d1989-</p>
+                  <p>215  d43 cm</p>
+                  <p>326  aTednik</p>
+                  <p>421 0x1318-0568</p>
+                  <p>421 0aTV vodič</p>
+                  <p>421 0aRifniška petica</p>
+                  <p>430 1x0351-6474</p>
+                  <p>5300 aNovi tednik NT&amp;RC</p>
+                  <p>531  aNovi tedn. NT&amp;RC</p>
+                  <p>675  a070(497.12)  vdo 4. izd.  c070 - Časniki. Novinarstvo</p>
+               </note>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <textClass>
+            <catRef target="ssj:SSJ.T.P.C"/>
+            <catRef target="dedup:nodup"/>
+            <classCode scheme="https://github.com/clarinsi/janes-standardictor">1.73 1.4</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text xml:id="GF2500309-dedup.">
+      <fs>
+         <f name="neardup">nodup</f>
+         <f name="std_tech_n">1.73</f>
+         <f name="std_ling_n">1.4</f>
+      </fs>
+      <body>
+         <gap quantity="1" unit="paragraphs" reason="near-duplicates"/>
+         <p xml:id="GF2500309.2">
+            <fs>
+               <f name="neardup">nodup</f>
+               <f name="std_tech_n">1.1</f>
+               <f name="std_ling_n">1.2</f>
+            </fs>
+            <s xml:id="GF2500309.2.1">
+<w ana="mte:Sozei" msd="UPosTag=NOUN|Case=Nom|Gender=Fem|Number=Sing" lemma="legenda" xml:id="GF2500309.2.1.t1">Legenda</w>
+<w ana="mte:Ggvste" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="praviti" xml:id="GF2500309.2.1.t2" join="right">pravi</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.2.1.t3">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.2.1.t4">da</w>
+<w ana="mte:Gp-std-n" msd="UPosTag=AUX|Mood=Ind|Number=Dual|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.2.1.t5">sta</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="nekoč" xml:id="GF2500309.2.1.t6">nekoč</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="na" xml:id="GF2500309.2.1.t7">na</w>
+<w ana="mte:Zn-sem" msd="UPosTag=DET|Case=Loc|Gender=Neut|Number=Sing|PronType=Ind" lemma="nek" xml:id="GF2500309.2.1.t8">nekem</w>
+<w ana="mte:Ppnsem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Neut|Number=Sing" lemma="pesniški" xml:id="GF2500309.2.1.t9">pesniškem</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="tekmovanje" xml:id="GF2500309.2.1.t10">tekmovanju</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="skupaj" xml:id="GF2500309.2.1.t11">skupaj</w>
+<w ana="mte:Ggdd-dm" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Dual|VerbForm=Part" lemma="nastopiti" xml:id="GF2500309.2.1.t12">nastopila</w>
+<w ana="mte:Sometd" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Dual" lemma="začetnik" xml:id="GF2500309.2.1.t13">začetnika</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="pisan" xml:id="GF2500309.2.1.t14">pisane</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="starogrški" xml:id="GF2500309.2.1.t15">starogrške</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="literatura" xml:id="GF2500309.2.1.t16" join="right">literature</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.2.1.t17">,</pc>
+<w ana="mte:Ppnmeid" msd="UPosTag=ADJ|Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing" lemma="slep" xml:id="GF2500309.2.1.t18">slepi</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="rapsod" xml:id="GF2500309.2.1.t19">rapsod</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Homer" xml:id="GF2500309.2.1.t20">Homer</w>
+               </seg>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.2.1.t21">in</w>
+<w ana="mte:Zstmeiem" msd="UPosTag=DET|Case=Nom|Gender=Masc|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs" lemma="njegov" xml:id="GF2500309.2.1.t22">njegov</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="sodobnik" xml:id="GF2500309.2.1.t23" join="right">sodobnik</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.2.1.t24">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.2.1.t25">po</w>
+<w ana="mte:Zn-zem" msd="UPosTag=DET|Case=Loc|Gender=Fem|Number=Sing|PronType=Ind" lemma="nek" xml:id="GF2500309.2.1.t26">neki</w>
+<w ana="mte:Kbzmmi" msd="UPosTag=ADJ|Case=Loc|Gender=Fem|Number=Sing" lemma="drug" xml:id="GF2500309.2.1.t27">drugi</w>
+<w ana="mte:Sozem" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" lemma="legenda" xml:id="GF2500309.2.1.t28">legendi</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="celo" xml:id="GF2500309.2.1.t29">celo</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="sorodnik" xml:id="GF2500309.2.1.t30" join="right">sorodnik</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.2.1.t31">,</pc>
+<seg type="name" subtype="loc">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.2.1.t32" join="right">Heziod</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.2.1.t33">.</pc>
+<linkGrp corresp="#GF2500309.2.1" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:nsubj" target="#GF2500309.2.1.t2 #GF2500309.2.1.t1"/>
+<link ana="ud-syn:root" target="#GF2500309.2.1 #GF2500309.2.1.t2"/>
+<link ana="ud-syn:punct" target="#GF2500309.2.1.t12 #GF2500309.2.1.t3"/>
+<link ana="ud-syn:mark" target="#GF2500309.2.1.t12 #GF2500309.2.1.t4"/>
+<link ana="ud-syn:aux" target="#GF2500309.2.1.t12 #GF2500309.2.1.t5"/>
+<link ana="ud-syn:advmod" target="#GF2500309.2.1.t12 #GF2500309.2.1.t6"/>
+<link ana="ud-syn:case" target="#GF2500309.2.1.t10 #GF2500309.2.1.t7"/>
+<link ana="ud-syn:det" target="#GF2500309.2.1.t10 #GF2500309.2.1.t8"/>
+<link ana="ud-syn:amod" target="#GF2500309.2.1.t10 #GF2500309.2.1.t9"/>
+<link ana="ud-syn:obl" target="#GF2500309.2.1.t12 #GF2500309.2.1.t10"/>
+<link ana="ud-syn:advmod" target="#GF2500309.2.1.t12 #GF2500309.2.1.t11"/>
+<link ana="ud-syn:ccomp" target="#GF2500309.2.1.t2 #GF2500309.2.1.t12"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.2.1.t12 #GF2500309.2.1.t13"/>
+<link ana="ud-syn:amod" target="#GF2500309.2.1.t16 #GF2500309.2.1.t14"/>
+<link ana="ud-syn:amod" target="#GF2500309.2.1.t16 #GF2500309.2.1.t15"/>
+<link ana="ud-syn:nmod" target="#GF2500309.2.1.t13 #GF2500309.2.1.t16"/>
+<link ana="ud-syn:punct" target="#GF2500309.2.1.t19 #GF2500309.2.1.t17"/>
+<link ana="ud-syn:amod" target="#GF2500309.2.1.t19 #GF2500309.2.1.t18"/>
+<link ana="ud-syn:conj" target="#GF2500309.2.1.t13 #GF2500309.2.1.t19"/>
+<link ana="ud-syn:nmod" target="#GF2500309.2.1.t19 #GF2500309.2.1.t20"/>
+<link ana="ud-syn:cc" target="#GF2500309.2.1.t23 #GF2500309.2.1.t21"/>
+<link ana="ud-syn:det" target="#GF2500309.2.1.t23 #GF2500309.2.1.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.2.1.t13 #GF2500309.2.1.t23"/>
+<link ana="ud-syn:punct" target="#GF2500309.2.1.t30 #GF2500309.2.1.t24"/>
+<link ana="ud-syn:case" target="#GF2500309.2.1.t28 #GF2500309.2.1.t25"/>
+<link ana="ud-syn:det" target="#GF2500309.2.1.t28 #GF2500309.2.1.t26"/>
+<link ana="ud-syn:amod" target="#GF2500309.2.1.t28 #GF2500309.2.1.t27"/>
+<link ana="ud-syn:obl" target="#GF2500309.2.1.t30 #GF2500309.2.1.t28"/>
+<link ana="ud-syn:advmod" target="#GF2500309.2.1.t30 #GF2500309.2.1.t29"/>
+<link ana="ud-syn:conj" target="#GF2500309.2.1.t13 #GF2500309.2.1.t30"/>
+<link ana="ud-syn:punct" target="#GF2500309.2.1.t32 #GF2500309.2.1.t31"/>
+<link ana="ud-syn:conj" target="#GF2500309.2.1.t30 #GF2500309.2.1.t32"/>
+<link ana="ud-syn:punct" target="#GF2500309.2.1.t2 #GF2500309.2.1.t33"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.2.1" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:ena" target="#GF2500309.2.1.t2 #GF2500309.2.1.t1"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t3"/>
+<link ana="jos-syn:vez" target="#GF2500309.2.1.t12 #GF2500309.2.1.t4"/>
+<link ana="jos-syn:del" target="#GF2500309.2.1.t12 #GF2500309.2.1.t5"/>
+<link ana="jos-syn:štiri" target="#GF2500309.2.1.t12 #GF2500309.2.1.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t10 #GF2500309.2.1.t7"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t10 #GF2500309.2.1.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t10 #GF2500309.2.1.t9"/>
+<link ana="jos-syn:štiri" target="#GF2500309.2.1.t12 #GF2500309.2.1.t10"/>
+<link ana="jos-syn:tri" target="#GF2500309.2.1.t12 #GF2500309.2.1.t11"/>
+<link ana="jos-syn:dve" target="#GF2500309.2.1.t2 #GF2500309.2.1.t12"/>
+<link ana="jos-syn:ena" target="#GF2500309.2.1.t12 #GF2500309.2.1.t13"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t16 #GF2500309.2.1.t14"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t16 #GF2500309.2.1.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t13 #GF2500309.2.1.t16"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t17"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t19 #GF2500309.2.1.t18"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t19"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t19 #GF2500309.2.1.t20"/>
+<link ana="jos-syn:vez" target="#GF2500309.2.1.t23 #GF2500309.2.1.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t23 #GF2500309.2.1.t22"/>
+<link ana="jos-syn:prir" target="#GF2500309.2.1.t19 #GF2500309.2.1.t23"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t24"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t28 #GF2500309.2.1.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t28 #GF2500309.2.1.t26"/>
+<link ana="jos-syn:dol" target="#GF2500309.2.1.t28 #GF2500309.2.1.t27"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t28"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t29"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t30"/>
+<link ana="jos-syn:vez" target="#GF2500309.2.1.t32 #GF2500309.2.1.t31"/>
+<link ana="jos-syn:prir" target="#GF2500309.2.1.t30 #GF2500309.2.1.t32"/>
+<link ana="jos-syn:modra" target="#GF2500309.2.1 #GF2500309.2.1.t33"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.2.1" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.2.1.t2 #GF2500309.2.1.t1"/>
+<link ana="srl:TIME" target="#GF2500309.2.1.t12 #GF2500309.2.1.t6"/>
+<link ana="srl:EVENT" target="#GF2500309.2.1.t12 #GF2500309.2.1.t10"/>
+<link ana="srl:MANN" target="#GF2500309.2.1.t12 #GF2500309.2.1.t11"/>
+<link ana="srl:RESLT" target="#GF2500309.2.1.t2 #GF2500309.2.1.t12"/>
+<link ana="srl:ACT" target="#GF2500309.2.1.t12 #GF2500309.2.1.t13"/>
+</linkGrp>
+            </s>
+         </p>
+         <p xml:id="GF2500309.3">
+            <fs>
+               <f name="neardup">nodup</f>
+               <f name="std_tech_n">1.2</f>
+               <f name="std_ling_n">1.3</f>
+            </fs>
+            <s xml:id="GF2500309.3.1">
+<w ana="mte:Rss" msd="UPosTag=ADV|Degree=Sup" lemma="najprej" xml:id="GF2500309.3.1.t1">Najprej</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="naj" xml:id="GF2500309.3.1.t2">naj</w>
+<w ana="mte:Gp-g" msd="UPosTag=AUX|Mood=Cnd|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.1.t3">bi</w>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.1.t4">se</w>
+<w ana="mte:Ggdd-ez" msd="UPosTag=VERB|Aspect=Perf|Gender=Fem|Number=Sing|VerbForm=Part" lemma="pomeriti" xml:id="GF2500309.3.1.t5">pomerila</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.1.t6">v</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slzmm" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Plur" lemma="stihomitija" xml:id="GF2500309.3.1.t7" join="right">stihomitijah</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.1.t8">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.1.t9">v</w>
+<w ana="mte:Ppnmem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing" lemma="križen" xml:id="GF2500309.3.1.t10">križnem</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="ogenj" xml:id="GF2500309.3.1.t11">ognju</w>
+<w ana="mte:Sosmr" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Plur" lemma="vprašanje" xml:id="GF2500309.3.1.t12">vprašanj</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.1.t13">in</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="odgovor" xml:id="GF2500309.3.1.t14" join="right">odgovorov</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.1.t15">,</pc>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="zagonetka" xml:id="GF2500309.3.1.t16">zagonetk</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.1.t17">in</w>
+<w ana="mte:Zstzmrm" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs" lemma="njihov" xml:id="GF2500309.3.1.t18">njihovih</w>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="rešitev" xml:id="GF2500309.3.1.t19" join="right">rešitev</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.1.t20">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.1.t21">v</w>
+<w ana="mte:Ppnsem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Neut|Number=Sing" lemma="duhovit" xml:id="GF2500309.3.1.t22">duhovitem</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="citiranje" xml:id="GF2500309.3.1.t23">citiranju</w>
+<w ana="mte:Ppnmmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur" lemma="posamezen" xml:id="GF2500309.3.1.t24">posameznih</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="verz" xml:id="GF2500309.3.1.t25">verzov</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="iz" xml:id="GF2500309.3.1.t26">iz</w>
+<w ana="mte:Zp-zmr" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes" lemma="svoj" xml:id="GF2500309.3.1.t27">svojih</w>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="pesnitev" xml:id="GF2500309.3.1.t28" join="right">pesnitev</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.1.t29">,</pc>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="nazadnje" xml:id="GF2500309.3.1.t30">nazadnje</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.1.t31">pa</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="še" xml:id="GF2500309.3.1.t32">še</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.1.t33">v</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="citranje" xml:id="GF2500309.3.1.t34">citranju</w>
+<w ana="mte:Zp-zer" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes" lemma="svoj" xml:id="GF2500309.3.1.t35">svoje</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="poezija" xml:id="GF2500309.3.1.t36" join="right">poezije</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.1.t37">.</pc>
+<linkGrp corresp="#GF2500309.3.1" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:advmod" target="#GF2500309.3.1.t5 #GF2500309.3.1.t1"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.1.t5 #GF2500309.3.1.t2"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.1.t5 #GF2500309.3.1.t3"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.1.t5 #GF2500309.3.1.t4"/>
+<link ana="ud-syn:root" target="#GF2500309.3.1 #GF2500309.3.1.t5"/>
+<link ana="ud-syn:case" target="#GF2500309.3.1.t7 #GF2500309.3.1.t6"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.1.t5 #GF2500309.3.1.t7"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.1.t11 #GF2500309.3.1.t8"/>
+<link ana="ud-syn:case" target="#GF2500309.3.1.t11 #GF2500309.3.1.t9"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.1.t11 #GF2500309.3.1.t10"/>
+<link ana="ud-syn:appos" target="#GF2500309.3.1.t7 #GF2500309.3.1.t11"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.1.t11 #GF2500309.3.1.t12"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.1.t14 #GF2500309.3.1.t13"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.1.t12 #GF2500309.3.1.t14"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.1.t16 #GF2500309.3.1.t15"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.1.t11 #GF2500309.3.1.t16"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.1.t19 #GF2500309.3.1.t17"/>
+<link ana="ud-syn:det" target="#GF2500309.3.1.t19 #GF2500309.3.1.t18"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.1.t14 #GF2500309.3.1.t19"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.1.t23 #GF2500309.3.1.t20"/>
+<link ana="ud-syn:case" target="#GF2500309.3.1.t23 #GF2500309.3.1.t21"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.1.t23 #GF2500309.3.1.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.1.t7 #GF2500309.3.1.t23"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.1.t25 #GF2500309.3.1.t24"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.1.t23 #GF2500309.3.1.t25"/>
+<link ana="ud-syn:case" target="#GF2500309.3.1.t28 #GF2500309.3.1.t26"/>
+<link ana="ud-syn:det" target="#GF2500309.3.1.t28 #GF2500309.3.1.t27"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.1.t25 #GF2500309.3.1.t28"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.1.t23 #GF2500309.3.1.t29"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.1.t5 #GF2500309.3.1.t30"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.1.t34 #GF2500309.3.1.t31"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.1.t5 #GF2500309.3.1.t32"/>
+<link ana="ud-syn:case" target="#GF2500309.3.1.t34 #GF2500309.3.1.t33"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.1.t7 #GF2500309.3.1.t34"/>
+<link ana="ud-syn:det" target="#GF2500309.3.1.t36 #GF2500309.3.1.t35"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.1.t34 #GF2500309.3.1.t36"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.1.t5 #GF2500309.3.1.t37"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.1" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:štiri" target="#GF2500309.3.1.t5 #GF2500309.3.1.t1"/>
+<link ana="jos-syn:del" target="#GF2500309.3.1.t5 #GF2500309.3.1.t2"/>
+<link ana="jos-syn:del" target="#GF2500309.3.1.t5 #GF2500309.3.1.t3"/>
+<link ana="jos-syn:del" target="#GF2500309.3.1.t5 #GF2500309.3.1.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t5"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t7 #GF2500309.3.1.t6"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.1.t5 #GF2500309.3.1.t7"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t11 #GF2500309.3.1.t9"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t11 #GF2500309.3.1.t10"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t11 #GF2500309.3.1.t12"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.1.t14 #GF2500309.3.1.t13"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.1.t12 #GF2500309.3.1.t14"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.1.t16 #GF2500309.3.1.t15"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.1.t12 #GF2500309.3.1.t16"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.1.t19 #GF2500309.3.1.t17"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t19 #GF2500309.3.1.t18"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.1.t12 #GF2500309.3.1.t19"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.1.t23 #GF2500309.3.1.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t23 #GF2500309.3.1.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t23 #GF2500309.3.1.t22"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.1.t11 #GF2500309.3.1.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t25 #GF2500309.3.1.t24"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t23 #GF2500309.3.1.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t28 #GF2500309.3.1.t26"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t28 #GF2500309.3.1.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t25 #GF2500309.3.1.t28"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t29"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t30"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t31"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t32"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t34 #GF2500309.3.1.t33"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t34"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t36 #GF2500309.3.1.t35"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.1.t34 #GF2500309.3.1.t36"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.1 #GF2500309.3.1.t37"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.1" targFunc="head argument" type="SRL">
+<link ana="srl:TIME" target="#GF2500309.3.1.t5 #GF2500309.3.1.t1"/>
+<link ana="srl:LOC" target="#GF2500309.3.1.t5 #GF2500309.3.1.t7"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.2">
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Homer" xml:id="GF2500309.3.2.t1">Homer</w>
+               </seg>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.2.t2">je</w>
+<w ana="mte:L" msd="UPosTag=ADV|Degree=Pos" lemma="baje" xml:id="GF2500309.3.2.t3">baje</w>
+<w ana="mte:Ggnd-em" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part" lemma="brati" xml:id="GF2500309.3.2.t4">bral</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="ali" xml:id="GF2500309.3.2.t5">ali</w>
+<w ana="mte:Ggnd-em" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Sing|VerbForm=Part" lemma="pripovedovati" xml:id="GF2500309.3.2.t6">pripovedoval</w>
+<w ana="mte:Sommt" msd="UPosTag=NOUN|Case=Acc|Gender=Masc|Number=Plur" lemma="opis" xml:id="GF2500309.3.2.t7">opise</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="boj" xml:id="GF2500309.3.2.t8">bojev</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="iz" xml:id="GF2500309.3.2.t9">iz</w>
+<w ana="mte:Zp-zer" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes" lemma="svoj" xml:id="GF2500309.3.2.t10">svoje</w>
+<seg type="name" subtype="org">
+<w ana="mte:Slzer" msd="UPosTag=PROPN|Case=Gen|Gender=Fem|Number=Sing" lemma="Iliada" xml:id="GF2500309.3.2.t11" join="right">Iliade</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.2.t12">,</pc>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.2.t13">Heziod</w>
+               </seg>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.2.t14">pa</w>
+<w ana="mte:Sommt" msd="UPosTag=NOUN|Case=Acc|Gender=Masc|Number=Plur" lemma="opis" xml:id="GF2500309.3.2.t15">opise</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="oranje" xml:id="GF2500309.3.2.t16">oranja</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.2.t17">in</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="žetev" xml:id="GF2500309.3.2.t18">žetve</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="iz" xml:id="GF2500309.3.2.t19">iz</w>
+<w ana="mte:Zp-zer" msd="UPosTag=DET|Case=Gen|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes" lemma="svoj" xml:id="GF2500309.3.2.t20">svoje</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="Delo" xml:id="GF2500309.3.2.t21">Dela</w>
+               </seg>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.2.t22">in</w>
+<w ana="mte:Sommo" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" lemma="dan" xml:id="GF2500309.3.2.t23" join="right">dnevi</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.2.t24">.</pc>
+<linkGrp corresp="#GF2500309.3.2" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:nsubj" target="#GF2500309.3.2.t4 #GF2500309.3.2.t1"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.2.t4 #GF2500309.3.2.t2"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.2.t4 #GF2500309.3.2.t3"/>
+<link ana="ud-syn:root" target="#GF2500309.3.2 #GF2500309.3.2.t4"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.2.t6 #GF2500309.3.2.t5"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.2.t4 #GF2500309.3.2.t6"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.2.t6 #GF2500309.3.2.t7"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.2.t7 #GF2500309.3.2.t8"/>
+<link ana="ud-syn:case" target="#GF2500309.3.2.t11 #GF2500309.3.2.t9"/>
+<link ana="ud-syn:det" target="#GF2500309.3.2.t11 #GF2500309.3.2.t10"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.2.t8 #GF2500309.3.2.t11"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.2.t13 #GF2500309.3.2.t12"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.2.t11 #GF2500309.3.2.t13"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.2.t15 #GF2500309.3.2.t14"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.2.t7 #GF2500309.3.2.t15"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.2.t15 #GF2500309.3.2.t16"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.2.t18 #GF2500309.3.2.t17"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.2.t16 #GF2500309.3.2.t18"/>
+<link ana="ud-syn:case" target="#GF2500309.3.2.t21 #GF2500309.3.2.t19"/>
+<link ana="ud-syn:det" target="#GF2500309.3.2.t21 #GF2500309.3.2.t20"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.2.t18 #GF2500309.3.2.t21"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.2.t23 #GF2500309.3.2.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.2.t21 #GF2500309.3.2.t23"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.2.t4 #GF2500309.3.2.t24"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.2" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:ena" target="#GF2500309.3.2.t4 #GF2500309.3.2.t1"/>
+<link ana="jos-syn:del" target="#GF2500309.3.2.t4 #GF2500309.3.2.t2"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.2.t4 #GF2500309.3.2.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t4"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.2.t6 #GF2500309.3.2.t5"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t6"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.2.t6 #GF2500309.3.2.t7"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t7 #GF2500309.3.2.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t11 #GF2500309.3.2.t9"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t11 #GF2500309.3.2.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t8 #GF2500309.3.2.t11"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t12"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t13"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t14"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t15 #GF2500309.3.2.t16"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.2.t18 #GF2500309.3.2.t17"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.2.t16 #GF2500309.3.2.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t21 #GF2500309.3.2.t19"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t21 #GF2500309.3.2.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.2.t18 #GF2500309.3.2.t21"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.2.t23 #GF2500309.3.2.t22"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.2.t15 #GF2500309.3.2.t23"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.2 #GF2500309.3.2.t24"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.2" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.2.t4 #GF2500309.3.2.t1"/>
+<link ana="srl:MANN" target="#GF2500309.3.2.t4 #GF2500309.3.2.t3"/>
+<link ana="srl:PAT" target="#GF2500309.3.2.t6 #GF2500309.3.2.t7"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.3">
+<w ana="mte:Sosei" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Sing" lemma="občinstvo" xml:id="GF2500309.3.3.t1">Občinstvo</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.3.t2">je</w>
+<w ana="mte:Ggnd-es" msd="UPosTag=VERB|Aspect=Imp|Gender=Neut|Number=Sing|VerbForm=Part" lemma="ploskati" xml:id="GF2500309.3.3.t3">ploskalo</w>
+<seg type="name" subtype="org">
+<w ana="mte:Slmed" msd="UPosTag=PROPN|Case=Dat|Gender=Masc|Number=Sing" lemma="Homer" xml:id="GF2500309.3.3.t4" join="right">Homerju</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t5">,</pc>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="kralj" xml:id="GF2500309.3.3.t6">kralj</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.3.t7">pa</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.3.t8">je</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="zmaga" xml:id="GF2500309.3.3.t9">zmago</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.3.t10">in</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="nagrada" xml:id="GF2500309.3.3.t11">nagrado</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t12" join="right">(</pc>
+<w ana="mte:Ppnmeid" msd="UPosTag=ADJ|Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing" lemma="bronast" xml:id="GF2500309.3.3.t13">bronasti</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="trinožnik" xml:id="GF2500309.3.3.t14" join="right">trinožnik</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t15">)</pc>
+<w ana="mte:Ggdd-em" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part" lemma="prisoditi" xml:id="GF2500309.3.3.t16">prisodil</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Dat|Gender=Masc|Number=Sing" lemma="Heziodu" xml:id="GF2500309.3.3.t17" join="right">Heziodu</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t18">,</pc>
+<w ana="mte:L" msd="UPosTag=PART" lemma="češ" xml:id="GF2500309.3.3.t19" join="right">češ</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t20">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.3.t21">da</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.3.t22">je</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="pravično" xml:id="GF2500309.3.3.t23">pravično</w>
+<w ana="mte:Ggdn" msd="UPosTag=VERB|Aspect=Perf|VerbForm=Inf" lemma="prisoditi" xml:id="GF2500309.3.3.t24">prisoditi</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="zmaga" xml:id="GF2500309.3.3.t25">zmago</w>
+<w ana="mte:Somed" msd="UPosTag=NOUN|Case=Dat|Gender=Masc|Number=Sing" lemma="pesnik" xml:id="GF2500309.3.3.t26" join="right">pesniku</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t27">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.3.t28">ki</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="nagovarjati" xml:id="GF2500309.3.3.t29">nagovarja</w>
+<w ana="mte:Sommt" msd="UPosTag=NOUN|Case=Acc|Gender=Masc|Number=Plur" lemma="človek" xml:id="GF2500309.3.3.t30">ljudi</w>
+<w ana="mte:Dd" msd="UPosTag=ADP|Case=Dat" lemma="k" xml:id="GF2500309.3.3.t31">k</w>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="poljedelstvo" xml:id="GF2500309.3.3.t32">poljedelstvu</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.3.t33">in</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Dat|Gender=Masc|Number=Sing" lemma="mir" xml:id="GF2500309.3.3.t34" join="right">miru</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t35">,</pc>
+<w ana="mte:L" msd="UPosTag=PART|Polarity=Neg" lemma="ne" xml:id="GF2500309.3.3.t36">ne</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.3.t37">pa</w>
+<w ana="mte:Zk-med" msd="UPosTag=DET|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem" lemma="tisti" xml:id="GF2500309.3.3.t38" join="right">tistemu</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t39">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.3.t40">ki</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="opevati" xml:id="GF2500309.3.3.t41">opeva</w>
+<w ana="mte:Sometn" msd="UPosTag=NOUN|Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing" lemma="boj" xml:id="GF2500309.3.3.t42">boj</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.3.t43">in</w>
+<w ana="mte:Ppnset" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Neut|Number=Sing" lemma="mesarski" xml:id="GF2500309.3.3.t44">mesarsko</w>
+<w ana="mte:Soset" msd="UPosTag=NOUN|Case=Acc|Gender=Neut|Number=Sing" lemma="klanje" xml:id="GF2500309.3.3.t45">klanje</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="pred" xml:id="GF2500309.3.3.t46">pred</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slzeo" msd="UPosTag=PROPN|Case=Ins|Gender=Fem|Number=Sing" lemma="Troja" xml:id="GF2500309.3.3.t47" join="right">Trojo</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.3.t48">.</pc>
+<linkGrp corresp="#GF2500309.3.3" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:nsubj" target="#GF2500309.3.3.t3 #GF2500309.3.3.t1"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.3.t3 #GF2500309.3.3.t2"/>
+<link ana="ud-syn:root" target="#GF2500309.3.3 #GF2500309.3.3.t3"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.3.t3 #GF2500309.3.3.t4"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t16 #GF2500309.3.3.t5"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.3.t16 #GF2500309.3.3.t6"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.3.t16 #GF2500309.3.3.t7"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.3.t16 #GF2500309.3.3.t8"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.3.t16 #GF2500309.3.3.t9"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.3.t11 #GF2500309.3.3.t10"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.3.t9 #GF2500309.3.3.t11"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t14 #GF2500309.3.3.t12"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.3.t14 #GF2500309.3.3.t13"/>
+<link ana="ud-syn:appos" target="#GF2500309.3.3.t11 #GF2500309.3.3.t14"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t14 #GF2500309.3.3.t15"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.3.t3 #GF2500309.3.3.t16"/>
+<link ana="ud-syn:iobj" target="#GF2500309.3.3.t16 #GF2500309.3.3.t17"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t19 #GF2500309.3.3.t18"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.3.t22 #GF2500309.3.3.t19"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t19 #GF2500309.3.3.t20"/>
+<link ana="ud-syn:fixed" target="#GF2500309.3.3.t19 #GF2500309.3.3.t21"/>
+<link ana="ud-syn:advcl" target="#GF2500309.3.3.t16 #GF2500309.3.3.t22"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.3.t22 #GF2500309.3.3.t23"/>
+<link ana="ud-syn:csubj" target="#GF2500309.3.3.t22 #GF2500309.3.3.t24"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.3.t24 #GF2500309.3.3.t25"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.3.t25 #GF2500309.3.3.t26"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t29 #GF2500309.3.3.t27"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.3.t29 #GF2500309.3.3.t28"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.3.t26 #GF2500309.3.3.t29"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.3.t29 #GF2500309.3.3.t30"/>
+<link ana="ud-syn:case" target="#GF2500309.3.3.t32 #GF2500309.3.3.t31"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.3.t29 #GF2500309.3.3.t32"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.3.t34 #GF2500309.3.3.t33"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.3.t32 #GF2500309.3.3.t34"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t29 #GF2500309.3.3.t35"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.3.t38 #GF2500309.3.3.t36"/>
+<link ana="ud-syn:fixed" target="#GF2500309.3.3.t36 #GF2500309.3.3.t37"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.3.t32 #GF2500309.3.3.t38"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t41 #GF2500309.3.3.t39"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.3.t41 #GF2500309.3.3.t40"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.3.t38 #GF2500309.3.3.t41"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.3.t41 #GF2500309.3.3.t42"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.3.t45 #GF2500309.3.3.t43"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.3.t45 #GF2500309.3.3.t44"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.3.t42 #GF2500309.3.3.t45"/>
+<link ana="ud-syn:case" target="#GF2500309.3.3.t47 #GF2500309.3.3.t46"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.3.t45 #GF2500309.3.3.t47"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.3.t3 #GF2500309.3.3.t48"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.3" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:ena" target="#GF2500309.3.3.t3 #GF2500309.3.3.t1"/>
+<link ana="jos-syn:del" target="#GF2500309.3.3.t3 #GF2500309.3.3.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t3"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t3 #GF2500309.3.3.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t5"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.3.t16 #GF2500309.3.3.t6"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t7"/>
+<link ana="jos-syn:del" target="#GF2500309.3.3.t16 #GF2500309.3.3.t8"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t16 #GF2500309.3.3.t9"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t11 #GF2500309.3.3.t10"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.3.t9 #GF2500309.3.3.t11"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t12"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t14 #GF2500309.3.3.t13"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t14"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t15"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t16"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t16 #GF2500309.3.3.t17"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t18"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t22 #GF2500309.3.3.t19"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t20"/>
+<link ana="jos-syn:skup" target="#GF2500309.3.3.t19 #GF2500309.3.3.t21"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t22"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t22 #GF2500309.3.3.t23"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.3.t22 #GF2500309.3.3.t24"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t24 #GF2500309.3.3.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t25 #GF2500309.3.3.t26"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t27"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t29 #GF2500309.3.3.t28"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t26 #GF2500309.3.3.t29"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t29 #GF2500309.3.3.t30"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t32 #GF2500309.3.3.t31"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t30 #GF2500309.3.3.t32"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t34 #GF2500309.3.3.t33"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.3.t32 #GF2500309.3.3.t34"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t35"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t38 #GF2500309.3.3.t36"/>
+<link ana="jos-syn:skup" target="#GF2500309.3.3.t36 #GF2500309.3.3.t37"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t38"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t39"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t41 #GF2500309.3.3.t40"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t38 #GF2500309.3.3.t41"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.3.t41 #GF2500309.3.3.t42"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.3.t45 #GF2500309.3.3.t43"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t45 #GF2500309.3.3.t44"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.3.t42 #GF2500309.3.3.t45"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t47 #GF2500309.3.3.t46"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.3.t45 #GF2500309.3.3.t47"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.3 #GF2500309.3.3.t48"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.3" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.3.t3 #GF2500309.3.3.t1"/>
+<link ana="srl:REC" target="#GF2500309.3.3.t3 #GF2500309.3.3.t4"/>
+<link ana="srl:ACT" target="#GF2500309.3.3.t16 #GF2500309.3.3.t6"/>
+<link ana="srl:PAT" target="#GF2500309.3.3.t16 #GF2500309.3.3.t9"/>
+<link ana="srl:PAT" target="#GF2500309.3.3.t16 #GF2500309.3.3.t17"/>
+<link ana="srl:PAT" target="#GF2500309.3.3.t24 #GF2500309.3.3.t25"/>
+<link ana="srl:PAT" target="#GF2500309.3.3.t29 #GF2500309.3.3.t30"/>
+<link ana="srl:PAT" target="#GF2500309.3.3.t41 #GF2500309.3.3.t42"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.4">
+<w ana="mte:Ppnsei" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" lemma="simptomatičen" xml:id="GF2500309.3.4.t1" join="right">Simptomatično</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.4.t2">,</pc>
+<w ana="mte:L" msd="UPosTag=VERB|Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin" lemma="kajne" xml:id="GF2500309.3.4.t3" join="right">kajne</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.4.t4">.</pc>
+<linkGrp corresp="#GF2500309.3.4" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:root" target="#GF2500309.3.4 #GF2500309.3.4.t1"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.4.t3 #GF2500309.3.4.t2"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.4.t1 #GF2500309.3.4.t3"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.4.t3 #GF2500309.3.4.t4"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.4" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:modra" target="#GF2500309.3.4 #GF2500309.3.4.t1"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.4 #GF2500309.3.4.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.4 #GF2500309.3.4.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.4 #GF2500309.3.4.t4"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.5">
+<w ana="mte:Zz-sei" msd="UPosTag=PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Rel" lemma="kar" xml:id="GF2500309.3.5.t1">Kar</w>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.5.t2">se</w>
+<w ana="mte:Zop-er" msd="UPosTag=PRON|Case=Gen|Number=Sing|Person=1|PronType=Prs" lemma="jaz" xml:id="GF2500309.3.5.t3">mene</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="tikati" xml:id="GF2500309.3.5.t4" join="right">tiče</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.5.t5">,</pc>
+<w ana="mte:L" msd="UPosTag=PART" lemma="še" xml:id="GF2500309.3.5.t6">še</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="zmeraj" xml:id="GF2500309.3.5.t7">zmeraj</w>
+<w ana="mte:Ggvspe" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin" lemma="slišati" xml:id="GF2500309.3.5.t8">slišim</w>
+<w ana="mte:Ppnsmt" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Neut|Number=Plur" lemma="huronski" xml:id="GF2500309.3.5.t9">huronska</w>
+<w ana="mte:Sosmt" msd="UPosTag=NOUN|Case=Acc|Gender=Neut|Number=Plur" lemma="vpitje" xml:id="GF2500309.3.5.t10">vpitja</w>
+<w ana="mte:Ppnmmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur" lemma="različen" xml:id="GF2500309.3.5.t11">različnih</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="narod" xml:id="GF2500309.3.5.t12">narodov</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="v" xml:id="GF2500309.3.5.t13">v</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="podpora" xml:id="GF2500309.3.5.t14">podporo</w>
+<w ana="mte:Ppnzmd" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Masc|Number=Plur" lemma="raznorazen" xml:id="GF2500309.3.5.t15">raznoraznim</w>
+<w ana="mte:Ppnmeo" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Masc|Number=Plur" lemma="nacionalen" xml:id="GF2500309.3.5.t16" join="right">nacionalnim</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.5.t17">,</pc>
+<w ana="mte:Ppnmmd" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Masc|Number=Plur" lemma="vojen" xml:id="GF2500309.3.5.t18">vojnim</w>
+<w ana="mte:Sommd" msd="UPosTag=NOUN|Case=Dat|Gender=Masc|Number=Plur" lemma="huskač" xml:id="GF2500309.3.5.t19" join="right">huskačem</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.5.t20">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.5.t21">ki</w>
+<w ana="mte:Gp-stm-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.5.t22">so</w>
+<w ana="mte:Ggnd-mm" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part" lemma="živeti" xml:id="GF2500309.3.5.t23">živeli</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="med" xml:id="GF2500309.3.5.t24">med</w>
+<w ana="mte:Zop-mo" msd="UPosTag=PRON|Case=Ins|Number=Plur|Person=1|PronType=Prs" lemma="jaz" xml:id="GF2500309.3.5.t25">nami</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.5.t26">in</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="nenazadnje" xml:id="GF2500309.3.5.t27">nenazadnje</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="še" xml:id="GF2500309.3.5.t28">še</w>
+<w ana="mte:Ggnstm" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Fem|Number=Plur" lemma="živeti" xml:id="GF2500309.3.5.t29" join="right">žive</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.5.t30">,</pc>
+<w ana="mte:L" msd="UPosTag=PART" lemma="le" xml:id="GF2500309.3.5.t31">le</w>
+<w ana="mte:Ppnmer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing" lemma="pameten" xml:id="GF2500309.3.5.t32">pametnega</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="kralj" xml:id="GF2500309.3.5.t33">kralja</w>
+<w ana="mte:Gp-ste-d" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.5.t34">ni</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="dandanes" xml:id="GF2500309.3.5.t35">dandanes</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="od" xml:id="GF2500309.3.5.t36">od</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="nikoder" xml:id="GF2500309.3.5.t37" join="right">nikoder</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.5.t38">.</pc>
+<linkGrp corresp="#GF2500309.3.5" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:nsubj" target="#GF2500309.3.5.t4 #GF2500309.3.5.t1"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.5.t4 #GF2500309.3.5.t2"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.5.t4 #GF2500309.3.5.t3"/>
+<link ana="ud-syn:root" target="#GF2500309.3.5 #GF2500309.3.5.t4"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.5.t8 #GF2500309.3.5.t5"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t8 #GF2500309.3.5.t6"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t8 #GF2500309.3.5.t7"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.5.t4 #GF2500309.3.5.t8"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.5.t10 #GF2500309.3.5.t9"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.5.t8 #GF2500309.3.5.t10"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.5.t12 #GF2500309.3.5.t11"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.5.t10 #GF2500309.3.5.t12"/>
+<link ana="ud-syn:case" target="#GF2500309.3.5.t14 #GF2500309.3.5.t13"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.5.t8 #GF2500309.3.5.t14"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.5.t19 #GF2500309.3.5.t15"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.5.t19 #GF2500309.3.5.t16"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.5.t18 #GF2500309.3.5.t17"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.5.t16 #GF2500309.3.5.t18"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.5.t14 #GF2500309.3.5.t19"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.5.t23 #GF2500309.3.5.t20"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.5.t23 #GF2500309.3.5.t21"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.5.t23 #GF2500309.3.5.t22"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.5.t19 #GF2500309.3.5.t23"/>
+<link ana="ud-syn:case" target="#GF2500309.3.5.t25 #GF2500309.3.5.t24"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.5.t23 #GF2500309.3.5.t25"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.5.t29 #GF2500309.3.5.t26"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t29 #GF2500309.3.5.t27"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t23 #GF2500309.3.5.t28"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.5.t25 #GF2500309.3.5.t29"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.5.t23 #GF2500309.3.5.t30"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t34 #GF2500309.3.5.t31"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.5.t33 #GF2500309.3.5.t32"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.5.t34 #GF2500309.3.5.t33"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.5.t8 #GF2500309.3.5.t34"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t37 #GF2500309.3.5.t35"/>
+<link ana="ud-syn:case" target="#GF2500309.3.5.t37 #GF2500309.3.5.t36"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.5.t34 #GF2500309.3.5.t37"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.5.t4 #GF2500309.3.5.t38"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.5" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:vez" target="#GF2500309.3.5.t4 #GF2500309.3.5.t1"/>
+<link ana="jos-syn:del" target="#GF2500309.3.5.t4 #GF2500309.3.5.t2"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.5.t4 #GF2500309.3.5.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t5"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t6"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.5.t8 #GF2500309.3.5.t7"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t10 #GF2500309.3.5.t9"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.5.t8 #GF2500309.3.5.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t12 #GF2500309.3.5.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t10 #GF2500309.3.5.t12"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t14 #GF2500309.3.5.t13"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.5.t8 #GF2500309.3.5.t14"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t19 #GF2500309.3.5.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t19 #GF2500309.3.5.t16"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.5.t18 #GF2500309.3.5.t17"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.5.t16 #GF2500309.3.5.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t14 #GF2500309.3.5.t19"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t20"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.5.t23 #GF2500309.3.5.t21"/>
+<link ana="jos-syn:del" target="#GF2500309.3.5.t23 #GF2500309.3.5.t22"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t19 #GF2500309.3.5.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t25 #GF2500309.3.5.t24"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.5.t23 #GF2500309.3.5.t25"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.5.t29 #GF2500309.3.5.t26"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t27"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t28"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t29"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t30"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t31"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t33 #GF2500309.3.5.t32"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.5.t34 #GF2500309.3.5.t33"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t34"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.5.t34 #GF2500309.3.5.t35"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.5.t37 #GF2500309.3.5.t36"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.5.t34 #GF2500309.3.5.t37"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.5 #GF2500309.3.5.t38"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.5" targFunc="head argument" type="SRL">
+<link ana="srl:PAT" target="#GF2500309.3.5.t4 #GF2500309.3.5.t3"/>
+<link ana="srl:TIME" target="#GF2500309.3.5.t8 #GF2500309.3.5.t7"/>
+<link ana="srl:PAT" target="#GF2500309.3.5.t8 #GF2500309.3.5.t10"/>
+<link ana="srl:RESLT" target="#GF2500309.3.5.t8 #GF2500309.3.5.t14"/>
+<link ana="srl:LOC" target="#GF2500309.3.5.t23 #GF2500309.3.5.t25"/>
+<link ana="srl:ACT" target="#GF2500309.3.5.t34 #GF2500309.3.5.t33"/>
+<link ana="srl:TIME" target="#GF2500309.3.5.t34 #GF2500309.3.5.t35"/>
+<link ana="srl:RESLT" target="#GF2500309.3.5.t34 #GF2500309.3.5.t37"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.6">
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.6.t1">V</w>
+<w ana="mte:Zn-sem" msd="UPosTag=PRON|Case=Loc|Gender=Masc|Number=Sing|PronType=Ind" lemma="marsikaj" xml:id="GF2500309.3.6.t2">marsičem</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.6.t3">je</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="danes" xml:id="GF2500309.3.6.t4">danes</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Homer" xml:id="GF2500309.3.6.t5" join="right">Homer</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.6.t6">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="če" xml:id="GF2500309.3.6.t7">če</w>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.6.t8">se</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="tako" xml:id="GF2500309.3.6.t9">tako</w>
+<w ana="mte:Ggdspe" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin" lemma="izraziti" xml:id="GF2500309.3.6.t10" join="right">izrazim</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.6.t11">,</pc>
+<w ana="mte:Pppmeid" msd="UPosTag=ADJ|Case=Nom|Definite=Def|Degree=Cmp|Gender=Masc|Number=Sing" lemma="sodoben" xml:id="GF2500309.3.6.t12">sodobnejši</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="od" xml:id="GF2500309.3.6.t13">od</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slmer" msd="UPosTag=PROPN|Case=Gen|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.6.t14" join="right">Hezioda</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.6.t15">.</pc>
+<linkGrp corresp="#GF2500309.3.6" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:case" target="#GF2500309.3.6.t2 #GF2500309.3.6.t1"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.6.t3 #GF2500309.3.6.t2"/>
+<link ana="ud-syn:root" target="#GF2500309.3.6 #GF2500309.3.6.t3"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.6.t3 #GF2500309.3.6.t4"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.6.t3 #GF2500309.3.6.t5"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.6.t10 #GF2500309.3.6.t6"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.6.t10 #GF2500309.3.6.t7"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.6.t10 #GF2500309.3.6.t8"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.6.t10 #GF2500309.3.6.t9"/>
+<link ana="ud-syn:advcl" target="#GF2500309.3.6.t3 #GF2500309.3.6.t10"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.6.t10 #GF2500309.3.6.t11"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.6.t10 #GF2500309.3.6.t12"/>
+<link ana="ud-syn:case" target="#GF2500309.3.6.t14 #GF2500309.3.6.t13"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.6.t12 #GF2500309.3.6.t14"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.6.t3 #GF2500309.3.6.t15"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.6" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:dol" target="#GF2500309.3.6.t2 #GF2500309.3.6.t1"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.6.t3 #GF2500309.3.6.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.6 #GF2500309.3.6.t3"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.6.t3 #GF2500309.3.6.t4"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.6.t3 #GF2500309.3.6.t5"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.6 #GF2500309.3.6.t6"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.6.t10 #GF2500309.3.6.t7"/>
+<link ana="jos-syn:del" target="#GF2500309.3.6.t10 #GF2500309.3.6.t8"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.6.t10 #GF2500309.3.6.t9"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.6.t3 #GF2500309.3.6.t10"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.6 #GF2500309.3.6.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.6.t3 #GF2500309.3.6.t12"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.6.t14 #GF2500309.3.6.t13"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.6.t12 #GF2500309.3.6.t14"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.6 #GF2500309.3.6.t15"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.6" targFunc="head argument" type="SRL">
+<link ana="srl:MANN" target="#GF2500309.3.6.t10 #GF2500309.3.6.t9"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.7">
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="razlog" xml:id="GF2500309.3.7.t1">Razlog</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.7.t2">je</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.7.t3">v</w>
+<w ana="mte:Zk-sem" msd="UPosTag=DET|Case=Loc|Gender=Neut|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.7.t4" join="right">tem</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.7.t5">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.7.t6">da</w>
+<w ana="mte:Zstzeiem" msd="UPosTag=DET|Case=Nom|Gender=Fem|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs" lemma="njegov" xml:id="GF2500309.3.7.t7">njegova</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Nom|Gender=Fem|Number=Sing" lemma="ep" xml:id="GF2500309.3.7.t8">epa</w>
+<w ana="mte:L" msd="UPosTag=PART|Polarity=Neg" lemma="ne" xml:id="GF2500309.3.7.t9">ne</w>
+<w ana="mte:Ggnstd" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Dual|Person=3|Tense=Pres|VerbForm=Fin" lemma="vsebovati" xml:id="GF2500309.3.7.t10">vsebujeta</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.7.t11">v</w>
+<w ana="mte:Sozem" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" lemma="dikcija" xml:id="GF2500309.3.7.t12">dikciji</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="pisanje" xml:id="GF2500309.3.7.t13">pisanja</w>
+<w ana="mte:Zk-zer" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Sing|PronType=Dem" lemma="tisti" xml:id="GF2500309.3.7.t14">tiste</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="poučen" xml:id="GF2500309.3.7.t15">poučne</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="nota" xml:id="GF2500309.3.7.t16" join="right">note</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.7.t17">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.7.t18">ki</w>
+<w ana="mte:Zotzet--k" msd="UPosTag=PRON|Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.7.t19">jo</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="bralec" xml:id="GF2500309.3.7.t20">bralec</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="zaznati" xml:id="GF2500309.3.7.t21">zazna</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="pri" xml:id="GF2500309.3.7.t22">pri</w>
+<seg type="name" subtype="org">
+<w ana="mte:Slmem" msd="UPosTag=PROPN|Case=Loc|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.7.t23">Heziodu</w>
+               </seg>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.7.t24">in</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.7.t25">je</w>
+<w ana="mte:Ppnzed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Fem|Number=Sing" lemma="novoveški" xml:id="GF2500309.3.7.t26">novoveški</w>
+<w ana="mte:Sozed" msd="UPosTag=NOUN|Case=Dat|Gender=Fem|Number=Sing" lemma="miselnost" xml:id="GF2500309.3.7.t27">miselnosti</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="spričo" xml:id="GF2500309.3.7.t28">spričo</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="relativizacija" xml:id="GF2500309.3.7.t29">relativizacije</w>
+<w ana="mte:Ppnzmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Plur" lemma="etičen" xml:id="GF2500309.3.7.t30">etičnih</w>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="norma" xml:id="GF2500309.3.7.t31">norm</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.7.t32">in</w>
+<w ana="mte:Pdnser" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part" lemma="poznanstvenjen" xml:id="GF2500309.3.7.t33">poznanstvenjenega</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="razmišljanje" xml:id="GF2500309.3.7.t34">razmišljanja</w>
+<w ana="mte:Ppnsmt" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Sing" lemma="tuj" xml:id="GF2500309.3.7.t35" join="right">tuja</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.7.t36">.</pc>
+<linkGrp corresp="#GF2500309.3.7" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:nsubj" target="#GF2500309.3.7.t2 #GF2500309.3.7.t1"/>
+<link ana="ud-syn:root" target="#GF2500309.3.7 #GF2500309.3.7.t2"/>
+<link ana="ud-syn:case" target="#GF2500309.3.7.t4 #GF2500309.3.7.t3"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.7.t2 #GF2500309.3.7.t4"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.7.t10 #GF2500309.3.7.t5"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.7.t10 #GF2500309.3.7.t6"/>
+<link ana="ud-syn:det" target="#GF2500309.3.7.t8 #GF2500309.3.7.t7"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.7.t10 #GF2500309.3.7.t8"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.7.t10 #GF2500309.3.7.t9"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.7.t4 #GF2500309.3.7.t10"/>
+<link ana="ud-syn:case" target="#GF2500309.3.7.t12 #GF2500309.3.7.t11"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.7.t10 #GF2500309.3.7.t12"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.7.t12 #GF2500309.3.7.t13"/>
+<link ana="ud-syn:det" target="#GF2500309.3.7.t16 #GF2500309.3.7.t14"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.7.t16 #GF2500309.3.7.t15"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.7.t13 #GF2500309.3.7.t16"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.7.t21 #GF2500309.3.7.t17"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.7.t21 #GF2500309.3.7.t18"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.7.t21 #GF2500309.3.7.t19"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.7.t21 #GF2500309.3.7.t20"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.7.t16 #GF2500309.3.7.t21"/>
+<link ana="ud-syn:case" target="#GF2500309.3.7.t23 #GF2500309.3.7.t22"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.7.t21 #GF2500309.3.7.t23"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.7.t35 #GF2500309.3.7.t24"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.7.t35 #GF2500309.3.7.t25"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.7.t27 #GF2500309.3.7.t26"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.7.t35 #GF2500309.3.7.t27"/>
+<link ana="ud-syn:case" target="#GF2500309.3.7.t29 #GF2500309.3.7.t28"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.7.t35 #GF2500309.3.7.t29"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.7.t31 #GF2500309.3.7.t30"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.7.t29 #GF2500309.3.7.t31"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.7.t34 #GF2500309.3.7.t32"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.7.t34 #GF2500309.3.7.t33"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.7.t31 #GF2500309.3.7.t34"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.7.t21 #GF2500309.3.7.t35"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.7.t2 #GF2500309.3.7.t36"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.7" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:ena" target="#GF2500309.3.7.t2 #GF2500309.3.7.t1"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.7 #GF2500309.3.7.t2"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t4 #GF2500309.3.7.t3"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.7.t2 #GF2500309.3.7.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.7 #GF2500309.3.7.t5"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.7.t10 #GF2500309.3.7.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t8 #GF2500309.3.7.t7"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.7.t10 #GF2500309.3.7.t8"/>
+<link ana="jos-syn:del" target="#GF2500309.3.7.t10 #GF2500309.3.7.t9"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t4 #GF2500309.3.7.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t12 #GF2500309.3.7.t11"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.7.t10 #GF2500309.3.7.t12"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t12 #GF2500309.3.7.t13"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t16 #GF2500309.3.7.t14"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t16 #GF2500309.3.7.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t13 #GF2500309.3.7.t16"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.7 #GF2500309.3.7.t17"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.7.t21 #GF2500309.3.7.t18"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.7.t21 #GF2500309.3.7.t19"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.7.t21 #GF2500309.3.7.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t16 #GF2500309.3.7.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t23 #GF2500309.3.7.t22"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.7.t21 #GF2500309.3.7.t23"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.7.t25 #GF2500309.3.7.t24"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.7 #GF2500309.3.7.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t27 #GF2500309.3.7.t26"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.7.t25 #GF2500309.3.7.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t29 #GF2500309.3.7.t28"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.7.t25 #GF2500309.3.7.t29"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t31 #GF2500309.3.7.t30"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t29 #GF2500309.3.7.t31"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.7.t34 #GF2500309.3.7.t32"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t34 #GF2500309.3.7.t33"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.7.t31 #GF2500309.3.7.t34"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.7.t25 #GF2500309.3.7.t35"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.7 #GF2500309.3.7.t36"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.7" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.7.t10 #GF2500309.3.7.t8"/>
+<link ana="srl:MANN" target="#GF2500309.3.7.t10 #GF2500309.3.7.t9"/>
+<link ana="srl:LOC" target="#GF2500309.3.7.t10 #GF2500309.3.7.t12"/>
+<link ana="srl:PAT" target="#GF2500309.3.7.t21 #GF2500309.3.7.t19"/>
+<link ana="srl:ACT" target="#GF2500309.3.7.t21 #GF2500309.3.7.t20"/>
+<link ana="srl:LOC" target="#GF2500309.3.7.t21 #GF2500309.3.7.t23"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.8">
+<w ana="mte:Ppnmmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" lemma="star" xml:id="GF2500309.3.8.t1">Stari</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmmi" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Plur" lemma="Grk" xml:id="GF2500309.3.8.t2">Grki</w>
+               </seg>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.8.t3">pa</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="še" xml:id="GF2500309.3.8.t4">še</w>
+<w ana="mte:Gp-stm-d" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.8.t5">niso</w>
+<w ana="mte:Gp-d-mm" msd="UPosTag=AUX|Gender=Masc|Number=Plur|VerbForm=Part" lemma="biti" xml:id="GF2500309.3.8.t6">bili</w>
+<w ana="mte:Pdnmmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur|VerbForm=Part" lemma="obremenjen" xml:id="GF2500309.3.8.t7">obremenjeni</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="z" xml:id="GF2500309.3.8.t8">z</w>
+<w ana="mte:Ppnzeo" msd="UPosTag=ADJ|Case=Ins|Degree=Pos|Gender=Fem|Number=Sing" lemma="larpurlartističen" xml:id="GF2500309.3.8.t9" join="right">larpurlartistično</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t10">,</pc>
+<w ana="mte:Ppnzeo" msd="UPosTag=ADJ|Case=Ins|Degree=Pos|Gender=Fem|Number=Sing" lemma="esteticističen" xml:id="GF2500309.3.8.t11">esteticistično</w>
+<w ana="mte:Sozeo" msd="UPosTag=NOUN|Case=Ins|Gender=Fem|Number=Sing" lemma="miselnost" xml:id="GF2500309.3.8.t12" join="right">miselnostjo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t13">,</pc>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="danes" xml:id="GF2500309.3.8.t14">danes</w>
+<w ana="mte:Gp-g" msd="UPosTag=AUX|Mood=Cnd|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.8.t15">bi</w>
+<w ana="mte:Zk-sed" msd="UPosTag=DET|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.8.t16">temu</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="lahko" xml:id="GF2500309.3.8.t17">lahko</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="že" xml:id="GF2500309.3.8.t18">že</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="končno" xml:id="GF2500309.3.8.t19">končno</w>
+<w ana="mte:Ggdd-mm" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part" lemma="reči" xml:id="GF2500309.3.8.t20">rekli</w>
+<w ana="mte:Sommi" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" lemma="predsodek" xml:id="GF2500309.3.8.t21" join="right">predsodki</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t22">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.8.t23">ki</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="verjetno" xml:id="GF2500309.3.8.t24">verjetno</w>
+<w ana="mte:Ggvstm" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin" lemma="koreniniti" xml:id="GF2500309.3.8.t25">koreninijo</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.8.t26">v</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="svet" xml:id="GF2500309.3.8.t27" join="right">svetu</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t28">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="kjer" xml:id="GF2500309.3.8.t29">kjer</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="naj" xml:id="GF2500309.3.8.t30">naj</w>
+<w ana="mte:Gp-g" msd="UPosTag=AUX|Mood=Cnd|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.8.t31">bi</w>
+<w ana="mte:Gp-d-em" msd="UPosTag=AUX|Gender=Masc|Number=Sing|VerbForm=Part" lemma="biti" xml:id="GF2500309.3.8.t32">bil</w>
+<seg type="name" subtype="per">
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="bog" xml:id="GF2500309.3.8.t33">Bog</w>
+               </seg>
+<w ana="mte:Ppnmein" msd="UPosTag=ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing" lemma="mrtev" xml:id="GF2500309.3.8.t34" join="right">mrtev</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t35">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.8.t36">v</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="že" xml:id="GF2500309.3.8.t37">že</w>
+<w ana="mte:Pdnmem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part" lemma="omenjen" xml:id="GF2500309.3.8.t38">omenjenem</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="poznanstvenjenje" xml:id="GF2500309.3.8.t39">poznanstvenjenju</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="človeštvo" xml:id="GF2500309.3.8.t40" join="right">človeštva</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t41">,</pc>
+<w ana="mte:Psnmmi" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes" lemma="človekov" xml:id="GF2500309.3.8.t42">človekovi</w>
+<w ana="mte:Pdnzed" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part" lemma="priučen" xml:id="GF2500309.3.8.t43">priučeni</w>
+<w ana="mte:Sozed" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" lemma="nagnjenost" xml:id="GF2500309.3.8.t44">nagnjenosti</w>
+<w ana="mte:Dd" msd="UPosTag=ADP|Case=Dat" lemma="k" xml:id="GF2500309.3.8.t45">k</w>
+<w ana="mte:Ppnsed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Neut|Number=Sing" lemma="analitičen" xml:id="GF2500309.3.8.t46">analitičnemu</w>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="mišljenje" xml:id="GF2500309.3.8.t47" join="right">mišljenju</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t48">,</pc>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="abstrahiranje" xml:id="GF2500309.3.8.t49">abstrahiranju</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.8.t50">in</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="selekcioniranje" xml:id="GF2500309.3.8.t51" join="right">selekcioniranju</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t52">,</pc>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.3.8.t53">po</w>
+<w ana="mte:Ppnmmt" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Neut|Number=Sing" lemma="domače" xml:id="GF2500309.3.8.t54">domače</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="predalčkanje" xml:id="GF2500309.3.8.t55" join="right">predalčkanju</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.8.t56">.</pc>
+<linkGrp corresp="#GF2500309.3.8" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t2 #GF2500309.3.8.t1"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.8.t7 #GF2500309.3.8.t2"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t7 #GF2500309.3.8.t3"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t7 #GF2500309.3.8.t4"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.8.t7 #GF2500309.3.8.t5"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.8.t7 #GF2500309.3.8.t6"/>
+<link ana="ud-syn:root" target="#GF2500309.3.8 #GF2500309.3.8.t7"/>
+<link ana="ud-syn:case" target="#GF2500309.3.8.t12 #GF2500309.3.8.t8"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t12 #GF2500309.3.8.t9"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t11 #GF2500309.3.8.t10"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.8.t9 #GF2500309.3.8.t11"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.8.t7 #GF2500309.3.8.t12"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t20 #GF2500309.3.8.t13"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t20 #GF2500309.3.8.t14"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.8.t20 #GF2500309.3.8.t15"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.8.t20 #GF2500309.3.8.t16"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t20 #GF2500309.3.8.t17"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t20 #GF2500309.3.8.t18"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t20 #GF2500309.3.8.t19"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.8.t7 #GF2500309.3.8.t20"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.8.t20 #GF2500309.3.8.t21"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t25 #GF2500309.3.8.t22"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.8.t25 #GF2500309.3.8.t23"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t25 #GF2500309.3.8.t24"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.8.t21 #GF2500309.3.8.t25"/>
+<link ana="ud-syn:case" target="#GF2500309.3.8.t27 #GF2500309.3.8.t26"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.8.t25 #GF2500309.3.8.t27"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t34 #GF2500309.3.8.t28"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.8.t34 #GF2500309.3.8.t29"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t34 #GF2500309.3.8.t30"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.8.t34 #GF2500309.3.8.t31"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.8.t34 #GF2500309.3.8.t32"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.8.t34 #GF2500309.3.8.t33"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.8.t27 #GF2500309.3.8.t34"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t34 #GF2500309.3.8.t35"/>
+<link ana="ud-syn:case" target="#GF2500309.3.8.t39 #GF2500309.3.8.t36"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.8.t34 #GF2500309.3.8.t37"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t39 #GF2500309.3.8.t38"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.8.t34 #GF2500309.3.8.t39"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.8.t39 #GF2500309.3.8.t40"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t44 #GF2500309.3.8.t41"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t44 #GF2500309.3.8.t42"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t44 #GF2500309.3.8.t43"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.8.t39 #GF2500309.3.8.t44"/>
+<link ana="ud-syn:case" target="#GF2500309.3.8.t47 #GF2500309.3.8.t45"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t47 #GF2500309.3.8.t46"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.8.t44 #GF2500309.3.8.t47"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t49 #GF2500309.3.8.t48"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.8.t47 #GF2500309.3.8.t49"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.8.t51 #GF2500309.3.8.t50"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.8.t47 #GF2500309.3.8.t51"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t44 #GF2500309.3.8.t52"/>
+<link ana="ud-syn:case" target="#GF2500309.3.8.t55 #GF2500309.3.8.t53"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.8.t55 #GF2500309.3.8.t54"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.8.t51 #GF2500309.3.8.t55"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.8.t7 #GF2500309.3.8.t56"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.8" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t2 #GF2500309.3.8.t1"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.8.t6 #GF2500309.3.8.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t4"/>
+<link ana="jos-syn:del" target="#GF2500309.3.8.t6 #GF2500309.3.8.t5"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t6 #GF2500309.3.8.t7"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t12 #GF2500309.3.8.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t12 #GF2500309.3.8.t9"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t11 #GF2500309.3.8.t10"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.8.t9 #GF2500309.3.8.t11"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.8.t7 #GF2500309.3.8.t12"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t13"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.8.t20 #GF2500309.3.8.t14"/>
+<link ana="jos-syn:del" target="#GF2500309.3.8.t20 #GF2500309.3.8.t15"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.8.t20 #GF2500309.3.8.t16"/>
+<link ana="jos-syn:del" target="#GF2500309.3.8.t20 #GF2500309.3.8.t17"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t18"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.8.t20 #GF2500309.3.8.t19"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t20"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.8.t20 #GF2500309.3.8.t21"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t22"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t25 #GF2500309.3.8.t23"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.8.t25 #GF2500309.3.8.t24"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t21 #GF2500309.3.8.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t27 #GF2500309.3.8.t26"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.8.t25 #GF2500309.3.8.t27"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t28"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t32 #GF2500309.3.8.t29"/>
+<link ana="jos-syn:del" target="#GF2500309.3.8.t32 #GF2500309.3.8.t30"/>
+<link ana="jos-syn:del" target="#GF2500309.3.8.t32 #GF2500309.3.8.t31"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t27 #GF2500309.3.8.t32"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.8.t32 #GF2500309.3.8.t33"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t32 #GF2500309.3.8.t34"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t35"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t39 #GF2500309.3.8.t36"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t37"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t39 #GF2500309.3.8.t38"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t39"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t39 #GF2500309.3.8.t40"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t44 #GF2500309.3.8.t41"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t44 #GF2500309.3.8.t42"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t44 #GF2500309.3.8.t43"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.8.t39 #GF2500309.3.8.t44"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t47 #GF2500309.3.8.t45"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t47 #GF2500309.3.8.t46"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t44 #GF2500309.3.8.t47"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t49 #GF2500309.3.8.t48"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.8.t47 #GF2500309.3.8.t49"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.8.t51 #GF2500309.3.8.t50"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.8.t47 #GF2500309.3.8.t51"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t52"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t55 #GF2500309.3.8.t53"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.8.t55 #GF2500309.3.8.t54"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t55"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.8 #GF2500309.3.8.t56"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.8" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.8.t6 #GF2500309.3.8.t2"/>
+<link ana="srl:RESLT" target="#GF2500309.3.8.t6 #GF2500309.3.8.t7"/>
+<link ana="srl:TIME" target="#GF2500309.3.8.t20 #GF2500309.3.8.t14"/>
+<link ana="srl:REC" target="#GF2500309.3.8.t20 #GF2500309.3.8.t16"/>
+<link ana="srl:TIME" target="#GF2500309.3.8.t20 #GF2500309.3.8.t19"/>
+<link ana="srl:ACT" target="#GF2500309.3.8.t20 #GF2500309.3.8.t21"/>
+<link ana="srl:MANN" target="#GF2500309.3.8.t25 #GF2500309.3.8.t24"/>
+<link ana="srl:LOC" target="#GF2500309.3.8.t25 #GF2500309.3.8.t27"/>
+<link ana="srl:ACT" target="#GF2500309.3.8.t32 #GF2500309.3.8.t33"/>
+<link ana="srl:RESLT" target="#GF2500309.3.8.t32 #GF2500309.3.8.t34"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.9">
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="tako" xml:id="GF2500309.3.9.t1">Tako</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="lahko" xml:id="GF2500309.3.9.t2">lahko</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="danes" xml:id="GF2500309.3.9.t3" join="right">danes</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.9.t4">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.9.t5">v</w>
+<w ana="mte:Zk-mem" msd="UPosTag=DET|Case=Loc|Gender=Masc|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.9.t6">tem</w>
+<w ana="mte:Ppnmem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing" lemma="nov" xml:id="GF2500309.3.9.t7">novem</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="jezik" xml:id="GF2500309.3.9.t8" join="right">jeziku</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.9.t9">,</pc>
+<w ana="mte:Ggdspm" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin" lemma="reči" xml:id="GF2500309.3.9.t10">rečemo</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="za" xml:id="GF2500309.3.9.t11">za</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmetd" msd="UPosTag=PROPN|Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.9.t12" join="right">Hezioda</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.9.t13">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.9.t14">da</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.9.t15">je</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="pisec" xml:id="GF2500309.3.9.t16">pisec</w>
+<w ana="mte:Ppnsei" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" lemma="moralen" xml:id="GF2500309.3.9.t17" join="right">moralno</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.9.t18" join="right">-</pc>
+<w ana="mte:Ppnsmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Neut|Number=Plur" lemma="poučen" xml:id="GF2500309.3.9.t19">poučnih</w>
+<w ana="mte:Sosmr" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Plur" lemma="delo" xml:id="GF2500309.3.9.t20" join="right">del</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.9.t21">.</pc>
+<linkGrp corresp="#GF2500309.3.9" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:advmod" target="#GF2500309.3.9.t10 #GF2500309.3.9.t1"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.9.t10 #GF2500309.3.9.t2"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.9.t10 #GF2500309.3.9.t3"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.9.t8 #GF2500309.3.9.t4"/>
+<link ana="ud-syn:case" target="#GF2500309.3.9.t8 #GF2500309.3.9.t5"/>
+<link ana="ud-syn:det" target="#GF2500309.3.9.t8 #GF2500309.3.9.t6"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.9.t8 #GF2500309.3.9.t7"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.9.t3 #GF2500309.3.9.t8"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.9.t8 #GF2500309.3.9.t9"/>
+<link ana="ud-syn:root" target="#GF2500309.3.9 #GF2500309.3.9.t10"/>
+<link ana="ud-syn:case" target="#GF2500309.3.9.t12 #GF2500309.3.9.t11"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.9.t10 #GF2500309.3.9.t12"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.9.t16 #GF2500309.3.9.t13"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.9.t16 #GF2500309.3.9.t14"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.9.t16 #GF2500309.3.9.t15"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.9.t12 #GF2500309.3.9.t16"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.9.t20 #GF2500309.3.9.t17"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.9.t19 #GF2500309.3.9.t18"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.9.t17 #GF2500309.3.9.t19"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.9.t16 #GF2500309.3.9.t20"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.9.t10 #GF2500309.3.9.t21"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.9" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:tri" target="#GF2500309.3.9.t10 #GF2500309.3.9.t1"/>
+<link ana="jos-syn:del" target="#GF2500309.3.9.t10 #GF2500309.3.9.t2"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.9.t10 #GF2500309.3.9.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t4"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t8 #GF2500309.3.9.t5"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t8 #GF2500309.3.9.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t8 #GF2500309.3.9.t7"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t8"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t9"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t12 #GF2500309.3.9.t11"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.9.t10 #GF2500309.3.9.t12"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t13"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.9.t15 #GF2500309.3.9.t14"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.9.t10 #GF2500309.3.9.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t15 #GF2500309.3.9.t16"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t20 #GF2500309.3.9.t17"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.9.t19 #GF2500309.3.9.t18"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.9.t17 #GF2500309.3.9.t19"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.9.t16 #GF2500309.3.9.t20"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.9 #GF2500309.3.9.t21"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.9" targFunc="head argument" type="SRL">
+<link ana="srl:TIME" target="#GF2500309.3.9.t10 #GF2500309.3.9.t3"/>
+<link ana="srl:RESLT" target="#GF2500309.3.9.t10 #GF2500309.3.9.t12"/>
+<link ana="srl:RESLT" target="#GF2500309.3.9.t10 #GF2500309.3.9.t15"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.10">
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.10.t1">In</w>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="če" xml:id="GF2500309.3.10.t2">če</w>
+<w ana="mte:Gp-spm-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=1|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.10.t3">smo</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="tu" xml:id="GF2500309.3.10.t4">tu</w>
+<w ana="mte:Ppnmmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" lemma="dlakocepski" xml:id="GF2500309.3.10.t5">dlakocepski</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.10.t6">in</w>
+<w ana="mte:Ppnmmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" lemma="ozkosrčen" xml:id="GF2500309.3.10.t7" join="right">ozkosrčni</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.10.t8">,</pc>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="lahko" xml:id="GF2500309.3.10.t9">lahko</w>
+<w ana="mte:Ggdspm" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin" lemma="reči" xml:id="GF2500309.3.10.t10" join="right">rečemo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.10.t11">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.10.t12">da</w>
+<w ana="mte:Gp-stm-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.10.t13">so</w>
+<w ana="mte:Zk-set" msd="UPosTag=DET|Case=Nom|Gender=Neut|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.10.t14">to</w>
+<w ana="mte:Sosmi" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Plur" lemma="delo" xml:id="GF2500309.3.10.t15" join="right">dela</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.10.t16">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.10.t17">ki</w>
+<w ana="mte:Gp-stm-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.10.t18">so</w>
+<w ana="mte:Gp-d-ms" msd="UPosTag=AUX|Gender=Neut|Number=Plur|VerbForm=Part" lemma="biti" xml:id="GF2500309.3.10.t19">bila</w>
+<w ana="mte:Ppnsmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Plur" lemma="koristen" xml:id="GF2500309.3.10.t20">koristna</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="le" xml:id="GF2500309.3.10.t21">le</w>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="občestvo" xml:id="GF2500309.3.10.t22">občestvu</w>
+<w ana="mte:Pdnzmt" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part" lemma="določen" xml:id="GF2500309.3.10.t23">določene</w>
+<w ana="mte:Sozmt" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="era" xml:id="GF2500309.3.10.t24" join="right">ere</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.10.t25">,</pc>
+<w ana="mte:Ppnsed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Neut|Number=Sing" lemma="arhaičen" xml:id="GF2500309.3.10.t26">arhaičnemu</w>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="obdobje" xml:id="GF2500309.3.10.t27">obdobju</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="grški" xml:id="GF2500309.3.10.t28">grške</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="antika" xml:id="GF2500309.3.10.t29" join="right">antike</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.10.t30">.</pc>
+<linkGrp corresp="#GF2500309.3.10" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:cc" target="#GF2500309.3.10.t5 #GF2500309.3.10.t1"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.10.t5 #GF2500309.3.10.t2"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.10.t5 #GF2500309.3.10.t3"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.10.t5 #GF2500309.3.10.t4"/>
+<link ana="ud-syn:advcl" target="#GF2500309.3.10.t10 #GF2500309.3.10.t5"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.10.t7 #GF2500309.3.10.t6"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.10.t5 #GF2500309.3.10.t7"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.10.t5 #GF2500309.3.10.t8"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.10.t10 #GF2500309.3.10.t9"/>
+<link ana="ud-syn:root" target="#GF2500309.3.10 #GF2500309.3.10.t10"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.10.t26 #GF2500309.3.10.t11"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.10.t15 #GF2500309.3.10.t12"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.10.t15 #GF2500309.3.10.t13"/>
+<link ana="ud-syn:det" target="#GF2500309.3.10.t15 #GF2500309.3.10.t14"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.10.t26 #GF2500309.3.10.t15"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.10.t20 #GF2500309.3.10.t16"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.10.t20 #GF2500309.3.10.t17"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.10.t20 #GF2500309.3.10.t18"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.10.t20 #GF2500309.3.10.t19"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.10.t15 #GF2500309.3.10.t20"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.10.t20 #GF2500309.3.10.t21"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.10.t20 #GF2500309.3.10.t22"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.10.t24 #GF2500309.3.10.t23"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.10.t22 #GF2500309.3.10.t24"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.10.t20 #GF2500309.3.10.t25"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.10.t27 #GF2500309.3.10.t26"/>
+<link ana="ud-syn:ccomp" target="#GF2500309.3.10.t10 #GF2500309.3.10.t27"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.10.t29 #GF2500309.3.10.t28"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.10.t27 #GF2500309.3.10.t29"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.10.t10 #GF2500309.3.10.t30"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.10" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t3 #GF2500309.3.10.t1"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t3 #GF2500309.3.10.t2"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.10.t10 #GF2500309.3.10.t3"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.10.t3 #GF2500309.3.10.t4"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t3 #GF2500309.3.10.t5"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t7 #GF2500309.3.10.t6"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.10.t5 #GF2500309.3.10.t7"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t8"/>
+<link ana="jos-syn:del" target="#GF2500309.3.10.t10 #GF2500309.3.10.t9"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t10"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t11"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t13 #GF2500309.3.10.t12"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.10.t10 #GF2500309.3.10.t13"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t15 #GF2500309.3.10.t14"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.10.t13 #GF2500309.3.10.t15"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t16"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t19 #GF2500309.3.10.t17"/>
+<link ana="jos-syn:del" target="#GF2500309.3.10.t19 #GF2500309.3.10.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t15 #GF2500309.3.10.t19"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t19 #GF2500309.3.10.t20"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t21"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.10.t20 #GF2500309.3.10.t22"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t24 #GF2500309.3.10.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t22 #GF2500309.3.10.t24"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.10.t26 #GF2500309.3.10.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t27 #GF2500309.3.10.t26"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.10.t22 #GF2500309.3.10.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t29 #GF2500309.3.10.t28"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.10.t27 #GF2500309.3.10.t29"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.10 #GF2500309.3.10.t30"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.10" targFunc="head argument" type="SRL">
+<link ana="srl:COND" target="#GF2500309.3.10.t10 #GF2500309.3.10.t3"/>
+<link ana="srl:RESLT" target="#GF2500309.3.10.t10 #GF2500309.3.10.t13"/>
+<link ana="srl:RESLT" target="#GF2500309.3.10.t19 #GF2500309.3.10.t20"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.11">
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="potemtakem" xml:id="GF2500309.3.11.t1">Potemtakem</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.11.t2">je</w>
+<w ana="mte:Ppnsei" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" lemma="razumljiv" xml:id="GF2500309.3.11.t3" join="right">razumljivo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.11.t4">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.11.t5">da</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="smeti" xml:id="GF2500309.3.11.t6">sme</w>
+<w ana="mte:Gp-n" msd="UPosTag=AUX|VerbForm=Inf" lemma="biti" xml:id="GF2500309.3.11.t7">biti</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Nom|Gender=Masc|Number=Sing" lemma="Homer" xml:id="GF2500309.3.11.t8">Homer</w>
+               </seg>
+<w ana="mte:Pdnmein" msd="UPosTag=ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part" lemma="predpisan" xml:id="GF2500309.3.11.t9">predpisan</w>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="kot" xml:id="GF2500309.3.11.t10">kot</w>
+<w ana="mte:Ppnset" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" lemma="domač" xml:id="GF2500309.3.11.t11">domače</w>
+<w ana="mte:Ppnset" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Neut|Number=Sing" lemma="šolski" xml:id="GF2500309.3.11.t12">šolsko</w>
+<w ana="mte:Soset" msd="UPosTag=NOUN|Case=Nom|Gender=Neut|Number=Sing" lemma="čtivo" xml:id="GF2500309.3.11.t13" join="right">čtivo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.11.t14">,</pc>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="saj" xml:id="GF2500309.3.11.t15">saj</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="namreč" xml:id="GF2500309.3.11.t16">namreč</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="ustrezati" xml:id="GF2500309.3.11.t17">ustreza</w>
+<w ana="mte:Ppnsed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Neut|Number=Sing" lemma="današnji" xml:id="GF2500309.3.11.t18">današnjemu</w>
+<w ana="mte:Ppnsed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Neut|Number=Sing" lemma="larpurlartisičen" xml:id="GF2500309.3.11.t19">larpurlartisičnemu</w>
+<w ana="mte:Sosed" msd="UPosTag=NOUN|Case=Dat|Gender=Neut|Number=Sing" lemma="pojmovanje" xml:id="GF2500309.3.11.t20">pojmovanju</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.11.t21">in</w>
+<w ana="mte:Ppnmed" msd="UPosTag=ADJ|Case=Dat|Degree=Pos|Gender=Masc|Number=Sing" lemma="šolski" xml:id="GF2500309.3.11.t22">šolskemu</w>
+<w ana="mte:Somed" msd="UPosTag=NOUN|Case=Dat|Gender=Masc|Number=Sing" lemma="vzorec" xml:id="GF2500309.3.11.t23">vzorcu</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="literatura" xml:id="GF2500309.3.11.t24" join="right">literature</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.11.t25">,</pc>
+<w ana="mte:Zz-sei" msd="UPosTag=PRON|Case=Acc|Gender=Neut|Number=Sing|PronType=Rel" lemma="kar" xml:id="GF2500309.3.11.t26">kar</w>
+<w ana="mte:Gp-g" msd="UPosTag=AUX|Mood=Cnd|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.11.t27">bi</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="za" xml:id="GF2500309.3.11.t28">za</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmetd" msd="UPosTag=PROPN|Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.11.t29">Hezioda</w>
+               </seg>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="težko" xml:id="GF2500309.3.11.t30">težko</w>
+<w ana="mte:Ggdd-mm" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Plur|VerbForm=Part" lemma="reči" xml:id="GF2500309.3.11.t31">rekli</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.11.t32">in</w>
+<w ana="mte:Zotmet--k" msd="UPosTag=PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.11.t33">ga</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="verjetno" xml:id="GF2500309.3.11.t34">verjetno</w>
+<w ana="mte:Vp" msd="UPosTag=ADV|Degree=Pos" lemma="zato" xml:id="GF2500309.3.11.t35">zato</w>
+<w ana="mte:Gp-ste-d" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.11.t36">ni</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="med" xml:id="GF2500309.3.11.t37">med</w>
+<w ana="mte:Soseo" msd="UPosTag=NOUN|Case=Ins|Gender=Masc|Number=Sing" lemma="čtivo" xml:id="GF2500309.3.11.t38" join="right">čtivom</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.11.t39">.</pc>
+<linkGrp corresp="#GF2500309.3.11" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:advmod" target="#GF2500309.3.11.t3 #GF2500309.3.11.t1"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.11.t3 #GF2500309.3.11.t2"/>
+<link ana="ud-syn:root" target="#GF2500309.3.11 #GF2500309.3.11.t3"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.11.t6 #GF2500309.3.11.t4"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.11.t6 #GF2500309.3.11.t5"/>
+<link ana="ud-syn:csubj" target="#GF2500309.3.11.t3 #GF2500309.3.11.t6"/>
+<link ana="ud-syn:cop" target="#GF2500309.3.11.t9 #GF2500309.3.11.t7"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.11.t9 #GF2500309.3.11.t8"/>
+<link ana="ud-syn:xcomp" target="#GF2500309.3.11.t6 #GF2500309.3.11.t9"/>
+<link ana="ud-syn:case" target="#GF2500309.3.11.t13 #GF2500309.3.11.t10"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.11.t13 #GF2500309.3.11.t11"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.11.t13 #GF2500309.3.11.t12"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.11.t9 #GF2500309.3.11.t13"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.11.t6 #GF2500309.3.11.t14"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.11.t17 #GF2500309.3.11.t15"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.11.t17 #GF2500309.3.11.t16"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.11.t9 #GF2500309.3.11.t17"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.11.t20 #GF2500309.3.11.t18"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.11.t20 #GF2500309.3.11.t19"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.11.t17 #GF2500309.3.11.t20"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.11.t23 #GF2500309.3.11.t21"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.11.t23 #GF2500309.3.11.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.11.t20 #GF2500309.3.11.t23"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.11.t23 #GF2500309.3.11.t24"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.11.t31 #GF2500309.3.11.t25"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.11.t31 #GF2500309.3.11.t26"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.11.t31 #GF2500309.3.11.t27"/>
+<link ana="ud-syn:case" target="#GF2500309.3.11.t29 #GF2500309.3.11.t28"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.11.t31 #GF2500309.3.11.t29"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.11.t31 #GF2500309.3.11.t30"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.11.t3 #GF2500309.3.11.t31"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.11.t36 #GF2500309.3.11.t32"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.11.t36 #GF2500309.3.11.t33"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.11.t36 #GF2500309.3.11.t34"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.11.t36 #GF2500309.3.11.t35"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.11.t31 #GF2500309.3.11.t36"/>
+<link ana="ud-syn:case" target="#GF2500309.3.11.t38 #GF2500309.3.11.t37"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.11.t36 #GF2500309.3.11.t38"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.11.t3 #GF2500309.3.11.t39"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.11" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t1"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t2"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t2 #GF2500309.3.11.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t4"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t6 #GF2500309.3.11.t5"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.11.t2 #GF2500309.3.11.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t6 #GF2500309.3.11.t7"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.11.t7 #GF2500309.3.11.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t7 #GF2500309.3.11.t9"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t13 #GF2500309.3.11.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t13 #GF2500309.3.11.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t13 #GF2500309.3.11.t12"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.11.t9 #GF2500309.3.11.t13"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t14"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t17 #GF2500309.3.11.t15"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t16"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t17"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t20 #GF2500309.3.11.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t20 #GF2500309.3.11.t19"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.11.t17 #GF2500309.3.11.t20"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t23 #GF2500309.3.11.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t23 #GF2500309.3.11.t22"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.11.t20 #GF2500309.3.11.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t23 #GF2500309.3.11.t24"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t25"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t31 #GF2500309.3.11.t26"/>
+<link ana="jos-syn:del" target="#GF2500309.3.11.t31 #GF2500309.3.11.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t29 #GF2500309.3.11.t28"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.11.t31 #GF2500309.3.11.t29"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.11.t31 #GF2500309.3.11.t30"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t31"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.11.t36 #GF2500309.3.11.t32"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.11.t36 #GF2500309.3.11.t33"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.11.t36 #GF2500309.3.11.t34"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.11.t36 #GF2500309.3.11.t35"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t36"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.11.t38 #GF2500309.3.11.t37"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.11.t36 #GF2500309.3.11.t38"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.11 #GF2500309.3.11.t39"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.11" targFunc="head argument" type="SRL">
+<link ana="srl:MODAL" target="#GF2500309.3.11.t6 #GF2500309.3.11.t7"/>
+<link ana="srl:ACT" target="#GF2500309.3.11.t7 #GF2500309.3.11.t8"/>
+<link ana="srl:RESLT" target="#GF2500309.3.11.t7 #GF2500309.3.11.t9"/>
+<link ana="srl:PAT" target="#GF2500309.3.11.t17 #GF2500309.3.11.t20"/>
+<link ana="srl:RESLT" target="#GF2500309.3.11.t31 #GF2500309.3.11.t29"/>
+<link ana="srl:MANN" target="#GF2500309.3.11.t31 #GF2500309.3.11.t30"/>
+<link ana="srl:PAT" target="#GF2500309.3.11.t36 #GF2500309.3.11.t33"/>
+<link ana="srl:MANN" target="#GF2500309.3.11.t36 #GF2500309.3.11.t34"/>
+<link ana="srl:FREQ" target="#GF2500309.3.11.t36 #GF2500309.3.11.t35"/>
+<link ana="srl:PAT" target="#GF2500309.3.11.t36 #GF2500309.3.11.t38"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.12">
+<seg type="name" subtype="per">
+<w ana="mte:Psnzei" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes" lemma="Heziodov" xml:id="GF2500309.3.12.t1">Heziodova</w>
+<w ana="mte:Slmer" msd="UPosTag=PROPN|Case=Nom|Gender=Fem|Number=Sing" lemma="Teogoni" xml:id="GF2500309.3.12.t2" join="right">Teogonija</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t3">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.12.t4">ki</w>
+<w ana="mte:Zotzet--k" msd="UPosTag=PRON|Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.12.t5">jo</w>
+<w ana="mte:Ggvspe" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin" lemma="predlagati" xml:id="GF2500309.3.12.t6">predlagam</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="v" xml:id="GF2500309.3.12.t7">v</w>
+<w ana="mte:Soset" msd="UPosTag=NOUN|Case=Acc|Gender=Neut|Number=Sing" lemma="branje" xml:id="GF2500309.3.12.t8" join="right">branje</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t9">,</pc>
+<w ana="mte:Gp-ste-d" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.12.t10">ni</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.3.12.t11">po</w>
+<w ana="mte:Ppnzem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part" lemma="poznanstvenjen" xml:id="GF2500309.3.12.t12">poznanstvenjeni</w>
+<w ana="mte:Sozem" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" lemma="logika" xml:id="GF2500309.3.12.t13">logiki</w>
+<w ana="mte:Ppnser" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Neut|Number=Sing" lemma="današnji" xml:id="GF2500309.3.12.t14">današnjega</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="človeštvo" xml:id="GF2500309.3.12.t15">človeštva</w>
+<w ana="mte:Zl-sei" msd="UPosTag=PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Neg" lemma="nič" xml:id="GF2500309.3.12.t16">nič</w>
+<w ana="mte:Kbzser" msd="UPosTag=ADJ|Case=Gen|Gender=Neut|Number=Sing" lemma="drug" xml:id="GF2500309.3.12.t17" join="right">drugega</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t18">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="kot" xml:id="GF2500309.3.12.t19">kot</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="kup" xml:id="GF2500309.3.12.t20">kup</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="fantazm" xml:id="GF2500309.3.12.t21" join="right">fantazm</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t22">,</pc>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="kup" xml:id="GF2500309.3.12.t23">kup</w>
+<w ana="mte:Soser" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Sing" lemma="pomilovanje" xml:id="GF2500309.3.12.t24">pomilovanja</w>
+<w ana="mte:Ppnzmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Neut|Number=Plur" lemma="vreden" xml:id="GF2500309.3.12.t25">vrednih</w>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Neut|Number=Plur" lemma="blodnja" xml:id="GF2500309.3.12.t26">blodenj</w>
+<w ana="mte:Zn-mer" msd="UPosTag=DET|Case=Gen|Gender=Masc|Number=Sing|PronType=Ind" lemma="nek" xml:id="GF2500309.3.12.t27">nekega</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="domnevno" xml:id="GF2500309.3.12.t28">domnevno</w>
+<w ana="mte:Pdnmer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part" lemma="zaostal" xml:id="GF2500309.3.12.t29">zaostalega</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="svet" xml:id="GF2500309.3.12.t30" join="right">sveta</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t31">,</pc>
+<w ana="mte:L" msd="UPosTag=PART" lemma="še" xml:id="GF2500309.3.12.t32">še</w>
+<w ana="mte:Ppnser" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing" lemma="nesposoben" xml:id="GF2500309.3.12.t33">nesposobnega</w>
+<w ana="mte:Ggnn" msd="UPosTag=VERB|Aspect=Imp|VerbForm=Inf" lemma="obvladovati" xml:id="GF2500309.3.12.t34">obvladovati</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="narava" xml:id="GF2500309.3.12.t35" join="right">naravo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t36">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.12.t37">ki</w>
+<w ana="mte:Gp-stm-n" msd="UPosTag=AUX|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.12.t38">so</w>
+<w ana="mte:Zotzet--k" msd="UPosTag=PRON|Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.12.t39">jo</w>
+<w ana="mte:Ppnmmi" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Masc|Number=Plur" lemma="takraten" xml:id="GF2500309.3.12.t40">takratni</w>
+<w ana="mte:Sommi" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Plur" lemma="človek" xml:id="GF2500309.3.12.t41">ljudje</w>
+<w ana="mte:Ggnd-mm" msd="UPosTag=VERB|Aspect=Imp|Gender=Masc|Number=Plur|VerbForm=Part" lemma="dojemati" xml:id="GF2500309.3.12.t42">dojemali</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="skozi" xml:id="GF2500309.3.12.t43">skozi</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="prizma" xml:id="GF2500309.3.12.t44">prizmo</w>
+<w ana="mte:Zp-mer" msd="UPosTag=DET|Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs|Reflex=Yes" lemma="svoj" xml:id="GF2500309.3.12.t45">svojega</w>
+<w ana="mte:Somer" msd="UPosTag=PROPN|Case=Gen|Gender=Masc|Number=Sing" lemma="panteon" xml:id="GF2500309.3.12.t46" join="right">Panteona</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.12.t47">.</pc>
+<linkGrp corresp="#GF2500309.3.12" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t2 #GF2500309.3.12.t1"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.12.t10 #GF2500309.3.12.t2"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t6 #GF2500309.3.12.t3"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.12.t6 #GF2500309.3.12.t4"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.12.t6 #GF2500309.3.12.t5"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.12.t2 #GF2500309.3.12.t6"/>
+<link ana="ud-syn:case" target="#GF2500309.3.12.t8 #GF2500309.3.12.t7"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.12.t6 #GF2500309.3.12.t8"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t6 #GF2500309.3.12.t9"/>
+<link ana="ud-syn:root" target="#GF2500309.3.12 #GF2500309.3.12.t10"/>
+<link ana="ud-syn:case" target="#GF2500309.3.12.t13 #GF2500309.3.12.t11"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t13 #GF2500309.3.12.t12"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.12.t10 #GF2500309.3.12.t13"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t15 #GF2500309.3.12.t14"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t13 #GF2500309.3.12.t15"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t17 #GF2500309.3.12.t16"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.12.t10 #GF2500309.3.12.t17"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t34 #GF2500309.3.12.t18"/>
+<link ana="ud-syn:case" target="#GF2500309.3.12.t20 #GF2500309.3.12.t19"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.12.t34 #GF2500309.3.12.t20"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t20 #GF2500309.3.12.t21"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t23 #GF2500309.3.12.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.12.t20 #GF2500309.3.12.t23"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t23 #GF2500309.3.12.t24"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t26 #GF2500309.3.12.t25"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t24 #GF2500309.3.12.t26"/>
+<link ana="ud-syn:det" target="#GF2500309.3.12.t30 #GF2500309.3.12.t27"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.12.t29 #GF2500309.3.12.t28"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t30 #GF2500309.3.12.t29"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t26 #GF2500309.3.12.t30"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t20 #GF2500309.3.12.t31"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.12.t34 #GF2500309.3.12.t32"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.12.t34 #GF2500309.3.12.t33"/>
+<link ana="ud-syn:csubj" target="#GF2500309.3.12.t10 #GF2500309.3.12.t34"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.12.t34 #GF2500309.3.12.t35"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t42 #GF2500309.3.12.t36"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.12.t42 #GF2500309.3.12.t37"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.12.t42 #GF2500309.3.12.t38"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.12.t42 #GF2500309.3.12.t39"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.12.t41 #GF2500309.3.12.t40"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.12.t42 #GF2500309.3.12.t41"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.12.t35 #GF2500309.3.12.t42"/>
+<link ana="ud-syn:case" target="#GF2500309.3.12.t44 #GF2500309.3.12.t43"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.12.t42 #GF2500309.3.12.t44"/>
+<link ana="ud-syn:det" target="#GF2500309.3.12.t46 #GF2500309.3.12.t45"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.12.t44 #GF2500309.3.12.t46"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.12.t10 #GF2500309.3.12.t47"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.12" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t2 #GF2500309.3.12.t1"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.12.t10 #GF2500309.3.12.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t3"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.12.t6 #GF2500309.3.12.t4"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.12.t6 #GF2500309.3.12.t5"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t2 #GF2500309.3.12.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t8 #GF2500309.3.12.t7"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.12.t6 #GF2500309.3.12.t8"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t9"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t13 #GF2500309.3.12.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t13 #GF2500309.3.12.t12"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.12.t10 #GF2500309.3.12.t13"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t15 #GF2500309.3.12.t14"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t13 #GF2500309.3.12.t15"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.12.t10 #GF2500309.3.12.t16"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t16 #GF2500309.3.12.t17"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t18"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.12.t20 #GF2500309.3.12.t19"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.12.t34 #GF2500309.3.12.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t20 #GF2500309.3.12.t21"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.12.t23 #GF2500309.3.12.t22"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.12.t20 #GF2500309.3.12.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t23 #GF2500309.3.12.t24"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t26 #GF2500309.3.12.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t24 #GF2500309.3.12.t26"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t30 #GF2500309.3.12.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t29 #GF2500309.3.12.t28"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t30 #GF2500309.3.12.t29"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t26 #GF2500309.3.12.t30"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t31"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t32"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.12.t34 #GF2500309.3.12.t33"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.12.t10 #GF2500309.3.12.t34"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.12.t34 #GF2500309.3.12.t35"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t36"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.12.t42 #GF2500309.3.12.t37"/>
+<link ana="jos-syn:del" target="#GF2500309.3.12.t42 #GF2500309.3.12.t38"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.12.t42 #GF2500309.3.12.t39"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t41 #GF2500309.3.12.t40"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.12.t42 #GF2500309.3.12.t41"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t35 #GF2500309.3.12.t42"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t44 #GF2500309.3.12.t43"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.12.t42 #GF2500309.3.12.t44"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t46 #GF2500309.3.12.t45"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.12.t44 #GF2500309.3.12.t46"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.12 #GF2500309.3.12.t47"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.12" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.12.t10 #GF2500309.3.12.t2"/>
+<link ana="srl:PAT" target="#GF2500309.3.12.t6 #GF2500309.3.12.t5"/>
+<link ana="srl:GOAL" target="#GF2500309.3.12.t6 #GF2500309.3.12.t8"/>
+<link ana="srl:REG" target="#GF2500309.3.12.t10 #GF2500309.3.12.t13"/>
+<link ana="srl:ACT" target="#GF2500309.3.12.t10 #GF2500309.3.12.t16"/>
+<link ana="srl:REG" target="#GF2500309.3.12.t34 #GF2500309.3.12.t20"/>
+<link ana="srl:MANN" target="#GF2500309.3.12.t34 #GF2500309.3.12.t33"/>
+<link ana="srl:MWPRED" target="#GF2500309.3.12.t10 #GF2500309.3.12.t34"/>
+<link ana="srl:PAT" target="#GF2500309.3.12.t34 #GF2500309.3.12.t35"/>
+<link ana="srl:PAT" target="#GF2500309.3.12.t42 #GF2500309.3.12.t39"/>
+<link ana="srl:ACT" target="#GF2500309.3.12.t42 #GF2500309.3.12.t41"/>
+<link ana="srl:MANN" target="#GF2500309.3.12.t42 #GF2500309.3.12.t44"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.13">
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="zakaj" xml:id="GF2500309.3.13.t1">Zakaj</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slzet" msd="UPosTag=PROPN|Case=Acc|Gender=Fem|Number=Sing" lemma="Teogonija" xml:id="GF2500309.3.13.t2">Teogonijo</w>
+               </seg>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="potemtakem" xml:id="GF2500309.3.13.t3">potemtakem</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="sploh" xml:id="GF2500309.3.13.t4">sploh</w>
+<w ana="mte:Ggvspe" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin" lemma="predlagati" xml:id="GF2500309.3.13.t5" join="right">predlagam</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.13.t6">?</pc>
+<linkGrp corresp="#GF2500309.3.13" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:advmod" target="#GF2500309.3.13.t5 #GF2500309.3.13.t1"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.13.t5 #GF2500309.3.13.t2"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.13.t5 #GF2500309.3.13.t3"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.13.t5 #GF2500309.3.13.t4"/>
+<link ana="ud-syn:root" target="#GF2500309.3.13 #GF2500309.3.13.t5"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.13.t5 #GF2500309.3.13.t6"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.13" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:štiri" target="#GF2500309.3.13.t5 #GF2500309.3.13.t1"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.13.t5 #GF2500309.3.13.t2"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.13 #GF2500309.3.13.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.13 #GF2500309.3.13.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.13 #GF2500309.3.13.t5"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.13 #GF2500309.3.13.t6"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.13" targFunc="head argument" type="SRL">
+<link ana="srl:TIME" target="#GF2500309.3.13.t5 #GF2500309.3.13.t1"/>
+<link ana="srl:PAT" target="#GF2500309.3.13.t5 #GF2500309.3.13.t2"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.14">
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="ob" xml:id="GF2500309.3.14.t1">Ob</w>
+<w ana="mte:Zk-sem" msd="UPosTag=DET|Case=Loc|Gender=Neut|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.14.t2">tem</w>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.14.t3">se</w>
+<w ana="mte:Ggdspe" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin" lemma="spomniti" xml:id="GF2500309.3.14.t4">spomnim</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="na" xml:id="GF2500309.3.14.t5">na</w>
+<w ana="mte:Sozmt" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Plur" lemma="beseda" xml:id="GF2500309.3.14.t6">besede</w>
+<w ana="mte:Ppnmer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing" lemma="švicarski" xml:id="GF2500309.3.14.t7">švicarskega</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="psihoanalitik" xml:id="GF2500309.3.14.t8">psihoanalitika</w>
+<seg type="name" subtype="per">
+<w ana="mte:O" msd="UPosTag=X|Abbr=Yes" lemma="C." xml:id="GF2500309.3.14.t9">C.</w>
+<w ana="mte:O" msd="UPosTag=X|Abbr=Yes" lemma="G." xml:id="GF2500309.3.14.t10">G.</w>
+<w ana="mte:Slmer" msd="UPosTag=PROPN|Case=Gen|Gender=Masc|Number=Sing" lemma="Jung" xml:id="GF2500309.3.14.t11" join="right">Junga</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.14.t12">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.14.t13">ki</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.14.t14">je</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="nekoč" xml:id="GF2500309.3.14.t15">nekoč</w>
+<w ana="mte:Ggdd-em" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part" lemma="izjaviti" xml:id="GF2500309.3.14.t16" join="right">izjavil</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.14.t17">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="da" xml:id="GF2500309.3.14.t18">da</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=VERB|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.14.t19">je</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="šele" xml:id="GF2500309.3.14.t20">šele</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="takrat" xml:id="GF2500309.3.14.t21" join="right">takrat</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.14.t22">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ko" xml:id="GF2500309.3.14.t23">ko</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.14.t24">je</w>
+<w ana="mte:Ggdd-em" msd="UPosTag=VERB|Aspect=Perf|Gender=Masc|Number=Sing|VerbForm=Part" lemma="obiskati" xml:id="GF2500309.3.14.t25">obiskal</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slzet" msd="UPosTag=PROPN|Case=Acc|Gender=Fem|Number=Sing" lemma="Afrika" xml:id="GF2500309.3.14.t26" join="right">Afriko</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.14.t27">,</pc>
+<w ana="mte:Ggvd-em" msd="UPosTag=VERB|Gender=Masc|Number=Sing|VerbForm=Part" lemma="videti" xml:id="GF2500309.3.14.t28">videl</w>
+<w ana="mte:Zv-zei" msd="UPosTag=DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Int" lemma="kakšen" xml:id="GF2500309.3.14.t29">kakšna</w>
+<w ana="mte:Gp-ste-n" msd="UPosTag=AUX|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="biti" xml:id="GF2500309.3.14.t30">je</w>
+<seg type="name" subtype="loc">
+<w ana="mte:Slzei" msd="UPosTag=PROPN|Case=Nom|Gender=Fem|Number=Sing" lemma="Evropa" xml:id="GF2500309.3.14.t31" join="right">Evropa</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.14.t32">.</pc>
+<linkGrp corresp="#GF2500309.3.14" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:case" target="#GF2500309.3.14.t2 #GF2500309.3.14.t1"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.14.t4 #GF2500309.3.14.t2"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.14.t4 #GF2500309.3.14.t3"/>
+<link ana="ud-syn:root" target="#GF2500309.3.14 #GF2500309.3.14.t4"/>
+<link ana="ud-syn:case" target="#GF2500309.3.14.t6 #GF2500309.3.14.t5"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.14.t4 #GF2500309.3.14.t6"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.14.t8 #GF2500309.3.14.t7"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.14.t6 #GF2500309.3.14.t8"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.14.t8 #GF2500309.3.14.t9"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.14.t9 #GF2500309.3.14.t10"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.14.t10 #GF2500309.3.14.t11"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.14.t16 #GF2500309.3.14.t12"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.14.t16 #GF2500309.3.14.t13"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.14.t16 #GF2500309.3.14.t14"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.14.t16 #GF2500309.3.14.t15"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.14.t8 #GF2500309.3.14.t16"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.14.t19 #GF2500309.3.14.t17"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.14.t19 #GF2500309.3.14.t18"/>
+<link ana="ud-syn:ccomp" target="#GF2500309.3.14.t16 #GF2500309.3.14.t19"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.14.t19 #GF2500309.3.14.t20"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.14.t25 #GF2500309.3.14.t21"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.14.t21 #GF2500309.3.14.t22"/>
+<link ana="ud-syn:fixed" target="#GF2500309.3.14.t21 #GF2500309.3.14.t23"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.14.t25 #GF2500309.3.14.t24"/>
+<link ana="ud-syn:csubj" target="#GF2500309.3.14.t19 #GF2500309.3.14.t25"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.14.t25 #GF2500309.3.14.t26"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.14.t25 #GF2500309.3.14.t27"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.14.t4 #GF2500309.3.14.t28"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.14.t28 #GF2500309.3.14.t29"/>
+<link ana="ud-syn:aux" target="#GF2500309.3.14.t28 #GF2500309.3.14.t30"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.14.t28 #GF2500309.3.14.t31"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.14.t4 #GF2500309.3.14.t32"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.14" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t2 #GF2500309.3.14.t1"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.14.t4 #GF2500309.3.14.t2"/>
+<link ana="jos-syn:del" target="#GF2500309.3.14.t4 #GF2500309.3.14.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t4"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t6 #GF2500309.3.14.t5"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.14.t4 #GF2500309.3.14.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t8 #GF2500309.3.14.t7"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t6 #GF2500309.3.14.t8"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t9"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t9 #GF2500309.3.14.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t10 #GF2500309.3.14.t11"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t12"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.14.t16 #GF2500309.3.14.t13"/>
+<link ana="jos-syn:del" target="#GF2500309.3.14.t16 #GF2500309.3.14.t14"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.14.t16 #GF2500309.3.14.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t8 #GF2500309.3.14.t16"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t17"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.14.t28 #GF2500309.3.14.t18"/>
+<link ana="jos-syn:del" target="#GF2500309.3.14.t28 #GF2500309.3.14.t19"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t20"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.14.t25 #GF2500309.3.14.t21"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t22"/>
+<link ana="jos-syn:skup" target="#GF2500309.3.14.t21 #GF2500309.3.14.t23"/>
+<link ana="jos-syn:del" target="#GF2500309.3.14.t25 #GF2500309.3.14.t24"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.14.t28 #GF2500309.3.14.t25"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.14.t25 #GF2500309.3.14.t26"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t27"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.14.t16 #GF2500309.3.14.t28"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.14.t30 #GF2500309.3.14.t29"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.14.t28 #GF2500309.3.14.t30"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.14.t30 #GF2500309.3.14.t31"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.14 #GF2500309.3.14.t32"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.14" targFunc="head argument" type="SRL">
+<link ana="srl:PAT" target="#GF2500309.3.14.t4 #GF2500309.3.14.t2"/>
+<link ana="srl:RESLT" target="#GF2500309.3.14.t4 #GF2500309.3.14.t6"/>
+<link ana="srl:TIME" target="#GF2500309.3.14.t16 #GF2500309.3.14.t15"/>
+<link ana="srl:TIME" target="#GF2500309.3.14.t28 #GF2500309.3.14.t25"/>
+<link ana="srl:PAT" target="#GF2500309.3.14.t25 #GF2500309.3.14.t26"/>
+<link ana="srl:RESLT" target="#GF2500309.3.14.t16 #GF2500309.3.14.t28"/>
+<link ana="srl:PAT" target="#GF2500309.3.14.t28 #GF2500309.3.14.t30"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.15">
+<w ana="mte:Zn-sei" msd="UPosTag=PRON|Case=Nom|Gender=Neut|Number=Sing|PronType=Ind" lemma="nekaj" xml:id="GF2500309.3.15.t1">Nekaj</w>
+<w ana="mte:Ppnser" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Sing" lemma="podoben" xml:id="GF2500309.3.15.t2">podobnega</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="človek" xml:id="GF2500309.3.15.t3">človek</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="doživljati" xml:id="GF2500309.3.15.t4">doživlja</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="ob" xml:id="GF2500309.3.15.t5">ob</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="prebiranje" xml:id="GF2500309.3.15.t6">prebiranju</w>
+<seg type="name" subtype="per">
+<w ana="mte:Slmer" msd="UPosTag=PROPN|Case=Gen|Gender=Masc|Number=Sing" lemma="Heziod" xml:id="GF2500309.3.15.t7" join="right">Hezioda</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.15.t8">.</pc>
+<linkGrp corresp="#GF2500309.3.15" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:obj" target="#GF2500309.3.15.t4 #GF2500309.3.15.t1"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.15.t3 #GF2500309.3.15.t2"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.15.t4 #GF2500309.3.15.t3"/>
+<link ana="ud-syn:root" target="#GF2500309.3.15 #GF2500309.3.15.t4"/>
+<link ana="ud-syn:case" target="#GF2500309.3.15.t6 #GF2500309.3.15.t5"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.15.t4 #GF2500309.3.15.t6"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.15.t6 #GF2500309.3.15.t7"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.15.t4 #GF2500309.3.15.t8"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.15" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:ena" target="#GF2500309.3.15.t4 #GF2500309.3.15.t1"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.15.t1 #GF2500309.3.15.t2"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.15.t1 #GF2500309.3.15.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.15 #GF2500309.3.15.t4"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.15.t6 #GF2500309.3.15.t5"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.15.t4 #GF2500309.3.15.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.15.t6 #GF2500309.3.15.t7"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.15 #GF2500309.3.15.t8"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.15" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.15.t4 #GF2500309.3.15.t1"/>
+<link ana="srl:LOC" target="#GF2500309.3.15.t4 #GF2500309.3.15.t6"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.16">
+<w ana="mte:Zstmeiem" msd="UPosTag=DET|Case=Nom|Gender=Masc|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs" lemma="njegov" xml:id="GF2500309.3.16.t1">Njegov</w>
+<w ana="mte:Ppnmeid" msd="UPosTag=ADJ|Case=Nom|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing" lemma="miseln" xml:id="GF2500309.3.16.t2">miselni</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="topos" xml:id="GF2500309.3.16.t3">topos</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="doživeti" xml:id="GF2500309.3.16.t4">doživi</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="razlika" xml:id="GF2500309.3.16.t5">razliko</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.16.t6">v</w>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="mišljenje" xml:id="GF2500309.3.16.t7" join="right">mišljenju</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.16.t8">,</pc>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.16.t9">v</w>
+<w ana="mte:Ppnzmm" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Fem|Number=Plur" lemma="moralen" xml:id="GF2500309.3.16.t10">moralnih</w>
+<w ana="mte:Sozmm" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Plur" lemma="norma" xml:id="GF2500309.3.16.t11" join="right">normah</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.16.t12">,</pc>
+<w ana="mte:Sosem" msd="UPosTag=NOUN|Case=Loc|Gender=Neut|Number=Sing" lemma="čutenje" xml:id="GF2500309.3.16.t13" join="right">čutenju</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.16.t14">,</pc>
+<w ana="mte:Somed" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="odnos" xml:id="GF2500309.3.16.t15">odnosu</w>
+<w ana="mte:Dr" msd="UPosTag=ADP|Case=Gen" lemma="do" xml:id="GF2500309.3.16.t16">do</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="svet" xml:id="GF2500309.3.16.t17">sveta</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="v" xml:id="GF2500309.3.16.t18">v</w>
+<w ana="mte:Ppsmem" msd="UPosTag=ADJ|Case=Loc|Degree=Sup|Gender=Masc|Number=Sing" lemma="širok" xml:id="GF2500309.3.16.t19">najširšem</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="smisel" xml:id="GF2500309.3.16.t20">smislu</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="beseda" xml:id="GF2500309.3.16.t21" join="right">besede</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.16.t22">.</pc>
+<linkGrp corresp="#GF2500309.3.16" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:det" target="#GF2500309.3.16.t3 #GF2500309.3.16.t1"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.16.t3 #GF2500309.3.16.t2"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.16.t4 #GF2500309.3.16.t3"/>
+<link ana="ud-syn:root" target="#GF2500309.3.16 #GF2500309.3.16.t4"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.16.t4 #GF2500309.3.16.t5"/>
+<link ana="ud-syn:case" target="#GF2500309.3.16.t7 #GF2500309.3.16.t6"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.16.t5 #GF2500309.3.16.t7"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.16.t11 #GF2500309.3.16.t8"/>
+<link ana="ud-syn:case" target="#GF2500309.3.16.t11 #GF2500309.3.16.t9"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.16.t11 #GF2500309.3.16.t10"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.16.t7 #GF2500309.3.16.t11"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.16.t13 #GF2500309.3.16.t12"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.16.t11 #GF2500309.3.16.t13"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.16.t15 #GF2500309.3.16.t14"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.16.t11 #GF2500309.3.16.t15"/>
+<link ana="ud-syn:case" target="#GF2500309.3.16.t17 #GF2500309.3.16.t16"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.16.t15 #GF2500309.3.16.t17"/>
+<link ana="ud-syn:case" target="#GF2500309.3.16.t20 #GF2500309.3.16.t18"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.16.t20 #GF2500309.3.16.t19"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.16.t15 #GF2500309.3.16.t20"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.16.t20 #GF2500309.3.16.t21"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.16.t4 #GF2500309.3.16.t22"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.16" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t3 #GF2500309.3.16.t1"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t3 #GF2500309.3.16.t2"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.16.t4 #GF2500309.3.16.t3"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.16 #GF2500309.3.16.t4"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.16.t4 #GF2500309.3.16.t5"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t7 #GF2500309.3.16.t6"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t5 #GF2500309.3.16.t7"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.16.t11 #GF2500309.3.16.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t11 #GF2500309.3.16.t9"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t11 #GF2500309.3.16.t10"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.16.t7 #GF2500309.3.16.t11"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.16.t13 #GF2500309.3.16.t12"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.16.t7 #GF2500309.3.16.t13"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.16.t15 #GF2500309.3.16.t14"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.16.t5 #GF2500309.3.16.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t17 #GF2500309.3.16.t16"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t15 #GF2500309.3.16.t17"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t20 #GF2500309.3.16.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t20 #GF2500309.3.16.t19"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t15 #GF2500309.3.16.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.16.t20 #GF2500309.3.16.t21"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.16 #GF2500309.3.16.t22"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.16" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.16.t4 #GF2500309.3.16.t3"/>
+<link ana="srl:PAT" target="#GF2500309.3.16.t4 #GF2500309.3.16.t5"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.17">
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="obiskati" xml:id="GF2500309.3.17.t1">Obišče</w>
+<w ana="mte:Zn-met" msd="UPosTag=DET|Case=Acc|Gender=Masc|Number=Sing|PronType=Ind" lemma="nek" xml:id="GF2500309.3.17.t2">nek</w>
+<w ana="mte:Ppnmeid" msd="UPosTag=ADJ|Case=Acc|Definite=Def|Degree=Pos|Gender=Masc|Number=Sing" lemma="daljen" xml:id="GF2500309.3.17.t3">daljni</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing" lemma="svet" xml:id="GF2500309.3.17.t4" join="right">svet</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.17.t5">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.17.t6">ki</w>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.17.t7">se</w>
+<w ana="mte:Zotmed--k" msd="UPosTag=PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.17.t8">mu</w>
+<w ana="mte:L" msd="UPosTag=PART" lemma="sicer" xml:id="GF2500309.3.17.t9">sicer</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="zlahka" xml:id="GF2500309.3.17.t10">zlahka</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="zazdeti" xml:id="GF2500309.3.17.t11">zazdi</w>
+<w ana="mte:Ppnmein" msd="UPosTag=ADJ|Case=Nom|Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing" lemma="bedast" xml:id="GF2500309.3.17.t12">bedast</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.17.t13">in</w>
+<w ana="mte:Zotmet--k" msd="UPosTag=PRON|Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.17.t14">ga</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.3.17.t15">po</w>
+<w ana="mte:Ppnmem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing" lemma="običajen" xml:id="GF2500309.3.17.t16">običajnem</w>
+<w ana="mte:Ppnmem" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Masc|Number=Sing" lemma="notranji" xml:id="GF2500309.3.17.t17">notranjem</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="občutek" xml:id="GF2500309.3.17.t18">občutku</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="superiornost" xml:id="GF2500309.3.17.t19">superiornosti</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.17.t20">in</w>
+<w ana="mte:Somer" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="napuh" xml:id="GF2500309.3.17.t21">napuha</w>
+<w ana="mte:Rsn" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Sing" lemma="stežkoma" xml:id="GF2500309.3.17.t22">stežkoma</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="sprejeti" xml:id="GF2500309.3.17.t23" join="right">sprejme</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.17.t24">,</pc>
+<w ana="mte:Dd" msd="UPosTag=ADP|Case=Dat" lemma="kljub" xml:id="GF2500309.3.17.t25">kljub</w>
+<w ana="mte:Zk-sed" msd="UPosTag=DET|Case=Dat|Gender=Neut|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.17.t26">temu</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="pa" xml:id="GF2500309.3.17.t27">pa</w>
+<w ana="mte:Zotmed--k" msd="UPosTag=PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.17.t28">mu</w>
+<w ana="mte:Zk-mei" msd="UPosTag=DET|Case=Nom|Gender=Fem|Number=Sing|PronType=Dem" lemma="ta" xml:id="GF2500309.3.17.t29">ta</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="vendarle" xml:id="GF2500309.3.17.t30">vendarle</w>
+<w ana="mte:L" msd="UPosTag=PART|Polarity=Neg" lemma="ne" xml:id="GF2500309.3.17.t31">ne</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="dovoljevati" xml:id="GF2500309.3.17.t32">dovoljuje</w>
+<w ana="mte:Ggdn" msd="UPosTag=VERB|Aspect=Perf|VerbForm=Inf" lemma="izreči" xml:id="GF2500309.3.17.t33">izreči</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="dokončen" xml:id="GF2500309.3.17.t34">dokončne</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="sodba" xml:id="GF2500309.3.17.t35">sodbe</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="o" xml:id="GF2500309.3.17.t36">o</w>
+<w ana="mte:Zotmem" msd="UPosTag=PRON|Case=Loc|Gender=Masc|Number=Sing|Person=3|PronType=Prs" lemma="on" xml:id="GF2500309.3.17.t37" join="right">njem</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.17.t38">.</pc>
+<linkGrp corresp="#GF2500309.3.17" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:root" target="#GF2500309.3.17 #GF2500309.3.17.t1"/>
+<link ana="ud-syn:det" target="#GF2500309.3.17.t4 #GF2500309.3.17.t2"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.17.t4 #GF2500309.3.17.t3"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.17.t1 #GF2500309.3.17.t4"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.17.t11 #GF2500309.3.17.t5"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.17.t11 #GF2500309.3.17.t6"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.17.t11 #GF2500309.3.17.t7"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.17.t11 #GF2500309.3.17.t8"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.17.t11 #GF2500309.3.17.t9"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.17.t11 #GF2500309.3.17.t10"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.17.t4 #GF2500309.3.17.t11"/>
+<link ana="ud-syn:xcomp" target="#GF2500309.3.17.t11 #GF2500309.3.17.t12"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.17.t23 #GF2500309.3.17.t13"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.17.t23 #GF2500309.3.17.t14"/>
+<link ana="ud-syn:case" target="#GF2500309.3.17.t18 #GF2500309.3.17.t15"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.17.t18 #GF2500309.3.17.t16"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.17.t18 #GF2500309.3.17.t17"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.17.t23 #GF2500309.3.17.t18"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.17.t18 #GF2500309.3.17.t19"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.17.t21 #GF2500309.3.17.t20"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.17.t19 #GF2500309.3.17.t21"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.17.t21 #GF2500309.3.17.t22"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.17.t11 #GF2500309.3.17.t23"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.17.t11 #GF2500309.3.17.t24"/>
+<link ana="ud-syn:case" target="#GF2500309.3.17.t26 #GF2500309.3.17.t25"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.17.t32 #GF2500309.3.17.t26"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.17.t32 #GF2500309.3.17.t27"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.17.t32 #GF2500309.3.17.t28"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.17.t32 #GF2500309.3.17.t29"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.17.t32 #GF2500309.3.17.t30"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.17.t32 #GF2500309.3.17.t31"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.17.t1 #GF2500309.3.17.t32"/>
+<link ana="ud-syn:xcomp" target="#GF2500309.3.17.t32 #GF2500309.3.17.t33"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.17.t35 #GF2500309.3.17.t34"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.17.t33 #GF2500309.3.17.t35"/>
+<link ana="ud-syn:case" target="#GF2500309.3.17.t37 #GF2500309.3.17.t36"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.17.t35 #GF2500309.3.17.t37"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.17.t1 #GF2500309.3.17.t38"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.17" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t1"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t4 #GF2500309.3.17.t2"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t4 #GF2500309.3.17.t3"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.17.t1 #GF2500309.3.17.t4"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t5"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.17.t11 #GF2500309.3.17.t6"/>
+<link ana="jos-syn:del" target="#GF2500309.3.17.t11 #GF2500309.3.17.t7"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.17.t11 #GF2500309.3.17.t8"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t9"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.17.t11 #GF2500309.3.17.t10"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t4 #GF2500309.3.17.t11"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t11 #GF2500309.3.17.t12"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.17.t23 #GF2500309.3.17.t13"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.17.t23 #GF2500309.3.17.t14"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t18 #GF2500309.3.17.t15"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t18 #GF2500309.3.17.t16"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t18 #GF2500309.3.17.t17"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.17.t23 #GF2500309.3.17.t18"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t18 #GF2500309.3.17.t19"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.17.t21 #GF2500309.3.17.t20"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.17.t19 #GF2500309.3.17.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t21 #GF2500309.3.17.t22"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t23"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t24"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t26 #GF2500309.3.17.t25"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.17.t33 #GF2500309.3.17.t26"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t27"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.17.t32 #GF2500309.3.17.t28"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.17.t33 #GF2500309.3.17.t29"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t30"/>
+<link ana="jos-syn:del" target="#GF2500309.3.17.t32 #GF2500309.3.17.t31"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t32"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t32 #GF2500309.3.17.t33"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t35 #GF2500309.3.17.t34"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.17.t33 #GF2500309.3.17.t35"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t37 #GF2500309.3.17.t36"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.17.t35 #GF2500309.3.17.t37"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.17 #GF2500309.3.17.t38"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.17" targFunc="head argument" type="SRL">
+<link ana="srl:PAT" target="#GF2500309.3.17.t1 #GF2500309.3.17.t4"/>
+<link ana="srl:ACT" target="#GF2500309.3.17.t11 #GF2500309.3.17.t8"/>
+<link ana="srl:MANN" target="#GF2500309.3.17.t11 #GF2500309.3.17.t10"/>
+<link ana="srl:RESLT" target="#GF2500309.3.17.t11 #GF2500309.3.17.t12"/>
+<link ana="srl:PAT" target="#GF2500309.3.17.t23 #GF2500309.3.17.t14"/>
+<link ana="srl:ACT" target="#GF2500309.3.17.t23 #GF2500309.3.17.t18"/>
+<link ana="srl:CONTR" target="#GF2500309.3.17.t33 #GF2500309.3.17.t26"/>
+<link ana="srl:REC" target="#GF2500309.3.17.t32 #GF2500309.3.17.t28"/>
+<link ana="srl:ACT" target="#GF2500309.3.17.t33 #GF2500309.3.17.t29"/>
+<link ana="srl:MWPRED" target="#GF2500309.3.17.t32 #GF2500309.3.17.t33"/>
+<link ana="srl:PAT" target="#GF2500309.3.17.t33 #GF2500309.3.17.t35"/>
+</linkGrp>
+            </s>
+            <s xml:id="GF2500309.3.18">
+<w ana="mte:L" msd="UPosTag=PART" lemma="šele" xml:id="GF2500309.3.18.t1">Šele</w>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ko" xml:id="GF2500309.3.18.t2">ko</w>
+<w ana="mte:Somei" msd="UPosTag=NOUN|Case=Nom|Gender=Masc|Number=Sing" lemma="bralec" xml:id="GF2500309.3.18.t3">bralec</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="seči" xml:id="GF2500309.3.18.t4">seže</w>
+<w ana="mte:Rsr" msd="UPosTag=ADV|Degree=Cmp" lemma="globoko" xml:id="GF2500309.3.18.t5">globlje</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.3.18.t6">po</w>
+<w ana="mte:Somem" msd="UPosTag=NOUN|Case=Loc|Gender=Masc|Number=Sing" lemma="zemljevid" xml:id="GF2500309.3.18.t7">zemljevidu</w>
+<w ana="mte:Ppnzer" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Sing" lemma="antičen" xml:id="GF2500309.3.18.t8">antične</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="misel" xml:id="GF2500309.3.18.t9" join="right">misli</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t10">,</pc>
+<w ana="mte:Zp------k" msd="UPosTag=PRON|PronType=Prs|Reflex=Yes|Variant=Short" lemma="se" xml:id="GF2500309.3.18.t11">se</w>
+<w ana="mte:Zotmed--k" msd="UPosTag=PRON|Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Variant=Short" lemma="on" xml:id="GF2500309.3.18.t12">mu</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="pred" xml:id="GF2500309.3.18.t13">pred</w>
+<w ana="mte:Sozmt" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Plur" lemma="oči" xml:id="GF2500309.3.18.t14">oči</w>
+<w ana="mte:Ggdste" msd="UPosTag=VERB|Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="pričarati" xml:id="GF2500309.3.18.t15">pričara</w>
+<w ana="mte:Sozei" msd="UPosTag=NOUN|Case=Nom|Gender=Fem|Number=Sing" lemma="tehtnost" xml:id="GF2500309.3.18.t16">tehtnost</w>
+<seg type="name" subtype="deriv-per">
+<w ana="mte:Psnzmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Fem|Number=Plur|Poss=Yes" lemma="Heziodov" xml:id="GF2500309.3.18.t17">Heziodovih</w>
+               </seg>
+<w ana="mte:Sozmr" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Plur" lemma="beseda" xml:id="GF2500309.3.18.t18">besed</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.18.t19">in</w>
+<w ana="mte:Sozei" msd="UPosTag=NOUN|Case=Nom|Gender=Fem|Number=Sing" lemma="plehkost" xml:id="GF2500309.3.18.t20">plehkost</w>
+<w ana="mte:Ppnmmr" msd="UPosTag=ADJ|Case=Gen|Degree=Pos|Gender=Masc|Number=Plur" lemma="novodoben" xml:id="GF2500309.3.18.t21">novodobnih</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="predsodek" xml:id="GF2500309.3.18.t22">predsodkov</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="pred" xml:id="GF2500309.3.18.t23">pred</w>
+<w ana="mte:Ppnzeo" msd="UPosTag=ADJ|Case=Ins|Degree=Pos|Gender=Fem|Number=Sing" lemma="tovrsten" xml:id="GF2500309.3.18.t24">tovrstno</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t25" join="right">»</pc>
+<w ana="mte:Rsn" msd="UPosTag=ADJ|Case=Ins|Degree=Pos|Gender=Fem|Number=Sing" lemma="moralistično" xml:id="GF2500309.3.18.t26" join="right">moralistično</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t27">«</pc>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Ins|Gender=Fem|Number=Sing" lemma="literatura" xml:id="GF2500309.3.18.t28" join="right">literaturo</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t29">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.18.t30">ki</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="dandanes" xml:id="GF2500309.3.18.t31">dandanes</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="po" xml:id="GF2500309.3.18.t32">po</w>
+<w ana="mte:Sozem" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Sing" lemma="krivica" xml:id="GF2500309.3.18.t33">krivici</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="ležati" xml:id="GF2500309.3.18.t34">leži</w>
+<w ana="mte:Pdnzei" msd="UPosTag=ADJ|Case=Nom|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part" lemma="zaprašen" xml:id="GF2500309.3.18.t35">zaprašena</w>
+<w ana="mte:Dm" msd="UPosTag=ADP|Case=Loc" lemma="na" xml:id="GF2500309.3.18.t36">na</w>
+<w ana="mte:Ppnzmm" msd="UPosTag=ADJ|Case=Loc|Degree=Pos|Gender=Fem|Number=Plur" lemma="knjižen" xml:id="GF2500309.3.18.t37">knjižnih</w>
+<w ana="mte:Sozmm" msd="UPosTag=NOUN|Case=Loc|Gender=Fem|Number=Plur" lemma="polica" xml:id="GF2500309.3.18.t38">policah</w>
+<w ana="mte:Zspzerm" msd="UPosTag=DET|Case=Gen|Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs" lemma="naš" xml:id="GF2500309.3.18.t39">naše</w>
+<w ana="mte:Sozer" msd="UPosTag=NOUN|Case=Gen|Gender=Fem|Number=Sing" lemma="knjižnica" xml:id="GF2500309.3.18.t40">knjižnice</w>
+<w ana="mte:Vp" msd="UPosTag=CCONJ" lemma="in" xml:id="GF2500309.3.18.t41">in</w>
+<w ana="mte:Rsn" msd="UPosTag=ADV|Degree=Pos" lemma="žalostno" xml:id="GF2500309.3.18.t42">žalostno</w>
+<w ana="mte:Ggnste" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin" lemma="poslušati" xml:id="GF2500309.3.18.t43">posluša</w>
+<w ana="mte:Ppnsmt" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Neut|Number=Plur" lemma="papagajski" xml:id="GF2500309.3.18.t44">papagajska</w>
+<w ana="mte:Sosmt" msd="UPosTag=NOUN|Case=Acc|Gender=Neut|Number=Plur" lemma="ponavljanje" xml:id="GF2500309.3.18.t45">ponavljanja</w>
+<w ana="mte:Sommr" msd="UPosTag=NOUN|Case=Gen|Gender=Masc|Number=Plur" lemma="srednješolec" xml:id="GF2500309.3.18.t46" join="right">srednješolcev</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t47">,</pc>
+<w ana="mte:Vd" msd="UPosTag=SCONJ" lemma="ki" xml:id="GF2500309.3.18.t48">ki</w>
+<w ana="mte:Ggnstm" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin" lemma="prihajati" xml:id="GF2500309.3.18.t49">prihajajo</w>
+<w ana="mte:Dt" msd="UPosTag=ADP|Case=Acc" lemma="v" xml:id="GF2500309.3.18.t50">v</w>
+<w ana="mte:Sozet" msd="UPosTag=NOUN|Case=Acc|Gender=Fem|Number=Sing" lemma="knjižnica" xml:id="GF2500309.3.18.t51">knjižnico</w>
+<w ana="mte:Do" msd="UPosTag=ADP|Case=Ins" lemma="z" xml:id="GF2500309.3.18.t52">s</w>
+<w ana="mte:Pdnseo" msd="UPosTag=ADJ|Case=Ins|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part" lemma="predpisan" xml:id="GF2500309.3.18.t53">predpisanim</w>
+<w ana="mte:Soseo" msd="UPosTag=NOUN|Case=Ins|Gender=Neut|Number=Sing" lemma="naročilo" xml:id="GF2500309.3.18.t54" join="right">naročilom</w>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t55">:</pc>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t56" join="right">»</pc>
+<w ana="mte:Ggnsdm-n" msd="UPosTag=VERB|Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Polarity=Pos|Tense=Pres|VerbForm=Fin" lemma="imeti" xml:id="GF2500309.3.18.t57">Imate</w>
+<seg type="name" subtype="deriv-per">
+<w ana="mte:Psnzet" msd="UPosTag=ADJ|Case=Acc|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes" lemma="Homerjev" xml:id="GF2500309.3.18.t58">Homerjevo</w>
+               </seg>
+<seg type="name" subtype="per">
+<w ana="mte:Slmei" msd="UPosTag=PROPN|Case=Acc|Gender=Fem|Number=Sing" lemma="Iliado" xml:id="GF2500309.3.18.t59" join="right">Iliado</w>
+               </seg>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t60" join="right">?</pc>
+<pc ana="mte:U" msd="UPosTag=PUNCT" xml:id="GF2500309.3.18.t61">«</pc>
+<linkGrp corresp="#GF2500309.3.18" targFunc="head argument" type="UD-SYN">
+<link ana="ud-syn:mark" target="#GF2500309.3.18.t4 #GF2500309.3.18.t1"/>
+<link ana="ud-syn:fixed" target="#GF2500309.3.18.t1 #GF2500309.3.18.t2"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.18.t4 #GF2500309.3.18.t3"/>
+<link ana="ud-syn:advcl" target="#GF2500309.3.18.t15 #GF2500309.3.18.t4"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.18.t7 #GF2500309.3.18.t5"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t7 #GF2500309.3.18.t6"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.18.t4 #GF2500309.3.18.t7"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t9 #GF2500309.3.18.t8"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t7 #GF2500309.3.18.t9"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t4 #GF2500309.3.18.t10"/>
+<link ana="ud-syn:expl" target="#GF2500309.3.18.t15 #GF2500309.3.18.t11"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.18.t15 #GF2500309.3.18.t12"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t14 #GF2500309.3.18.t13"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.18.t15 #GF2500309.3.18.t14"/>
+<link ana="ud-syn:root" target="#GF2500309.3.18 #GF2500309.3.18.t15"/>
+<link ana="ud-syn:nsubj" target="#GF2500309.3.18.t15 #GF2500309.3.18.t16"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t18 #GF2500309.3.18.t17"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t16 #GF2500309.3.18.t18"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.18.t20 #GF2500309.3.18.t19"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.18.t16 #GF2500309.3.18.t20"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t22 #GF2500309.3.18.t21"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t20 #GF2500309.3.18.t22"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t28 #GF2500309.3.18.t23"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t28 #GF2500309.3.18.t24"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t26 #GF2500309.3.18.t25"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t28 #GF2500309.3.18.t26"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t26 #GF2500309.3.18.t27"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t20 #GF2500309.3.18.t28"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t34 #GF2500309.3.18.t29"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.18.t34 #GF2500309.3.18.t30"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.18.t34 #GF2500309.3.18.t31"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t33 #GF2500309.3.18.t32"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.18.t34 #GF2500309.3.18.t33"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.18.t28 #GF2500309.3.18.t34"/>
+<link ana="ud-syn:xcomp" target="#GF2500309.3.18.t34 #GF2500309.3.18.t35"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t38 #GF2500309.3.18.t36"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t38 #GF2500309.3.18.t37"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t35 #GF2500309.3.18.t38"/>
+<link ana="ud-syn:det" target="#GF2500309.3.18.t40 #GF2500309.3.18.t39"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t38 #GF2500309.3.18.t40"/>
+<link ana="ud-syn:cc" target="#GF2500309.3.18.t43 #GF2500309.3.18.t41"/>
+<link ana="ud-syn:advmod" target="#GF2500309.3.18.t43 #GF2500309.3.18.t42"/>
+<link ana="ud-syn:conj" target="#GF2500309.3.18.t34 #GF2500309.3.18.t43"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t45 #GF2500309.3.18.t44"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.18.t43 #GF2500309.3.18.t45"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t45 #GF2500309.3.18.t46"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t49 #GF2500309.3.18.t47"/>
+<link ana="ud-syn:mark" target="#GF2500309.3.18.t49 #GF2500309.3.18.t48"/>
+<link ana="ud-syn:acl" target="#GF2500309.3.18.t46 #GF2500309.3.18.t49"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t51 #GF2500309.3.18.t50"/>
+<link ana="ud-syn:obl" target="#GF2500309.3.18.t49 #GF2500309.3.18.t51"/>
+<link ana="ud-syn:case" target="#GF2500309.3.18.t54 #GF2500309.3.18.t52"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t54 #GF2500309.3.18.t53"/>
+<link ana="ud-syn:nmod" target="#GF2500309.3.18.t51 #GF2500309.3.18.t54"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t57 #GF2500309.3.18.t55"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t57 #GF2500309.3.18.t56"/>
+<link ana="ud-syn:parataxis" target="#GF2500309.3.18.t15 #GF2500309.3.18.t57"/>
+<link ana="ud-syn:amod" target="#GF2500309.3.18.t59 #GF2500309.3.18.t58"/>
+<link ana="ud-syn:obj" target="#GF2500309.3.18.t57 #GF2500309.3.18.t59"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t57 #GF2500309.3.18.t60"/>
+<link ana="ud-syn:punct" target="#GF2500309.3.18.t15 #GF2500309.3.18.t61"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.18" targFunc="head argument" type="JOS-SYN">
+<link ana="jos-syn:vez" target="#GF2500309.3.18.t4 #GF2500309.3.18.t1"/>
+<link ana="jos-syn:skup" target="#GF2500309.3.18.t1 #GF2500309.3.18.t2"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.18.t4 #GF2500309.3.18.t3"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t15 #GF2500309.3.18.t4"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t7 #GF2500309.3.18.t5"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t7 #GF2500309.3.18.t6"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t4 #GF2500309.3.18.t7"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t9 #GF2500309.3.18.t8"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t7 #GF2500309.3.18.t9"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t10"/>
+<link ana="jos-syn:del" target="#GF2500309.3.18.t15 #GF2500309.3.18.t11"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.18.t15 #GF2500309.3.18.t12"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t14 #GF2500309.3.18.t13"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t15 #GF2500309.3.18.t14"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t15"/>
+<link ana="jos-syn:ena" target="#GF2500309.3.18.t15 #GF2500309.3.18.t16"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t18 #GF2500309.3.18.t17"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t16 #GF2500309.3.18.t18"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.18.t20 #GF2500309.3.18.t19"/>
+<link ana="jos-syn:prir" target="#GF2500309.3.18.t16 #GF2500309.3.18.t20"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t22 #GF2500309.3.18.t21"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t20 #GF2500309.3.18.t22"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t28 #GF2500309.3.18.t23"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t28 #GF2500309.3.18.t24"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t25"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t28 #GF2500309.3.18.t26"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t27"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t20 #GF2500309.3.18.t28"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t29"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.18.t34 #GF2500309.3.18.t30"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t34 #GF2500309.3.18.t31"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t33 #GF2500309.3.18.t32"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t34 #GF2500309.3.18.t33"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t28 #GF2500309.3.18.t34"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t34 #GF2500309.3.18.t35"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t38 #GF2500309.3.18.t36"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t38 #GF2500309.3.18.t37"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t34 #GF2500309.3.18.t38"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t40 #GF2500309.3.18.t39"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t38 #GF2500309.3.18.t40"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.18.t43 #GF2500309.3.18.t41"/>
+<link ana="jos-syn:tri" target="#GF2500309.3.18.t43 #GF2500309.3.18.t42"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t43"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t45 #GF2500309.3.18.t44"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.18.t43 #GF2500309.3.18.t45"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t45 #GF2500309.3.18.t46"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t47"/>
+<link ana="jos-syn:vez" target="#GF2500309.3.18.t49 #GF2500309.3.18.t48"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t45 #GF2500309.3.18.t49"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t51 #GF2500309.3.18.t50"/>
+<link ana="jos-syn:štiri" target="#GF2500309.3.18.t49 #GF2500309.3.18.t51"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t54 #GF2500309.3.18.t52"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t54 #GF2500309.3.18.t53"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t51 #GF2500309.3.18.t54"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t55"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t56"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t57"/>
+<link ana="jos-syn:dol" target="#GF2500309.3.18.t59 #GF2500309.3.18.t58"/>
+<link ana="jos-syn:dve" target="#GF2500309.3.18.t57 #GF2500309.3.18.t59"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t60"/>
+<link ana="jos-syn:modra" target="#GF2500309.3.18 #GF2500309.3.18.t61"/>
+</linkGrp>
+<linkGrp corresp="#GF2500309.3.18" targFunc="head argument" type="SRL">
+<link ana="srl:ACT" target="#GF2500309.3.18.t4 #GF2500309.3.18.t3"/>
+<link ana="srl:TIME" target="#GF2500309.3.18.t15 #GF2500309.3.18.t4"/>
+<link ana="srl:LOC" target="#GF2500309.3.18.t4 #GF2500309.3.18.t7"/>
+<link ana="srl:REC" target="#GF2500309.3.18.t15 #GF2500309.3.18.t12"/>
+<link ana="srl:GOAL" target="#GF2500309.3.18.t15 #GF2500309.3.18.t14"/>
+<link ana="srl:ACT" target="#GF2500309.3.18.t15 #GF2500309.3.18.t16"/>
+<link ana="srl:TIME" target="#GF2500309.3.18.t34 #GF2500309.3.18.t31"/>
+<link ana="srl:LOC" target="#GF2500309.3.18.t34 #GF2500309.3.18.t33"/>
+<link ana="srl:RESLT" target="#GF2500309.3.18.t34 #GF2500309.3.18.t35"/>
+<link ana="srl:LOC" target="#GF2500309.3.18.t34 #GF2500309.3.18.t38"/>
+<link ana="srl:MANN" target="#GF2500309.3.18.t43 #GF2500309.3.18.t42"/>
+<link ana="srl:PAT" target="#GF2500309.3.18.t43 #GF2500309.3.18.t45"/>
+<link ana="srl:GOAL" target="#GF2500309.3.18.t49 #GF2500309.3.18.t51"/>
+<link ana="srl:PAT" target="#GF2500309.3.18.t57 #GF2500309.3.18.t59"/>
+</linkGrp>
+            </s>
+         </p>
+         <gap quantity="1" unit="paragraphs" reason="near-duplicates"/>
+      </body>
+   </text>
+</TEI>
+

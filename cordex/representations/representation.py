@@ -198,7 +198,7 @@ class WordFormAnyCR(ComponentRepresentation):
             elif lookup_lexicon is not None and not all(agreements_matched):
                 for i, agr in enumerate(self.agreement):
                     if not agr.match(word_msd, is_ud):
-                        msd, lemma, text = lookup_lexicon.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd)
+                        msd, lemma, text = lookup_lexicon.get_word_form(agr.lemma, agr.msd(), agr.data, align_msd=word_msd, align_lemma=word_lemma)
                         if msd is not None:
                             agr.msds[0] = msd
                             agr.words.append(WordDummy(msd, lemma, text))

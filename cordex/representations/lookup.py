@@ -158,16 +158,6 @@ class LookupApi:
 
         return forms_data
 
-    @staticmethod
-    def deduplicate_post_request(post_request):
-        deduplicated_post_request = []
-        unique_post_requests = set()
-        for el in post_request:
-            if el not in unique_post_requests:
-                unique_post_requests.add(post_request[0])
-                deduplicated_post_request.append(post_request[1])
-        return deduplicated_post_request, unique_post_requests
-
 class LookupLexicon:
     """ Object that access lookup lexicon file. """
     def __init__(self, file_path=''):
@@ -175,85 +165,45 @@ class LookupLexicon:
         self.init_file_reading(file_path)
 
     def init_file_reading(self, file_path):
+        """ Loads lookup lexicon file into memory. """
         with lzma.open(file_path, "rb") as f:
             self.file_data = pickle.load(f)
 
-    @staticmethod
-    def decypher_msd(msd):
-        """ Function that takes xpos tag and returns a dictionary that might be of interest in structures.
-
-        :param msd: Slovenian xpos tag
-        :return: Dictionary with attribute names as keys and attribute values as values. (i.e. {'case': 'nominative'})
-        """
-        decypher = {}
-        properties = msd_to_properties(''.join(msd), 'en')
-        if properties['pos'] == 'noun':
-            if not ('number' in properties and 'case' in properties):
-                return decypher
-            number = properties['number']
-            case = properties['case']
-            decypher = {'number': number, 'case': case}
-        elif properties['pos'] == 'verb':
-            if not ('vform' in properties and 'number' in properties):
-                return decypher
-            vform = properties['vform']
-            number = properties['number']
-            person = 'third'
-            decypher = {'vform': vform, 'number': number, 'person': person}
-        elif properties['pos'] == 'adjective':
-            if not ('gender' in properties and 'number' in properties and 'case' in properties):
-                return decypher
-            gender = properties['gender']
-            number = properties['number']
-            case = properties['case']
-            decypher = {'gender': gender, 'number': number, 'case': case}
-
-        return decypher
-
-    def get_word_form(self, lemma, msd, data, align_msd=False, find_lemma_msd=False):
-        """ Returns word form from lemma and msd that were stored in lookup lexicon. """
-        # modify msd as required
-        msd = list(msd)
-        if 'msd' in data:
-            for key, value in data['msd'].items():
-                t = msd[0]
-                v = TAGSET[t].index(key.lower())
-                if v + 1 >= len(msd):
-                    msd = msd + ['-' for _ in range(v - len(msd) + 2)]
-                msd[v + 1] = CODES[value]
-
-        if align_msd and 'agreement' in data:
-            align_msd = list(align_msd)
-            t_align_msd = align_msd[0]
-            t = msd[0]
-
-            for att in data['agreement']:
-                att_lower = att.lower()
-                # some attributes might not have desired properties with which we want alignment
-                if att_lower in TAGSET[t_align_msd]:
-                    v_align_msd = TAGSET[t_align_msd].index(att_lower)
-                    v = TAGSET[t].index(att_lower)
-                    # fix for verbs with short msds
-                    if v + 1 >= len(msd):
-                        msd = msd + ['-' for _ in range(v - len(msd) + 2)]
-
-                    msd[v + 1] = align_msd[v_align_msd + 1]
-
+    def get_word_form(self, lemma, msd, data, align_msd=False, find_lemma_msd=False, align_lemma=None):
+        """ Returns word form from lemma, msd restrictions and/or alignment msd. """
         # handles cases when we are searching msds of lemmas
         if lemma in self.file_data and find_lemma_msd:
             for (word_form_features, form_representations, xpos, form_frequency) in self.file_data[lemma]:
                 if lemma == form_representations:
                     return xpos, lemma, form_representations
 
-        decypher_msd = self.decypher_msd(msd)
+        # modify msd as required
+        form_features = {}
+        if 'msd' in data:
+            form_features = {k.lower(): v.lower() for k, v in data['msd'].items()}
 
-        if not decypher_msd:
-            return None, None, None
+        if align_msd and 'agreement' in data:
+            # get agreement feature properties
+            agreement_properties = default_msd_to_properties(align_msd, 'en', align_lemma)
+
+            missing_form_features = False
+            for agreement_name in data['agreement']:
+                if agreement_name in agreement_properties.form_feature_map:
+                    form_features[agreement_name] = agreement_properties.form_feature_map[agreement_name]
+                elif agreement_name in agreement_properties.lexeme_feature_map:
+                    form_features[agreement_name] = agreement_properties.lexeme_feature_map[agreement_name]
+
+                if agreement_name not in agreement_properties.form_feature_map and agreement_name not in agreement_properties.lexeme_feature_map:
+                    missing_form_features = True
+                    break
+
+            if missing_form_features:
+                return None, None, None
 
         if lemma in self.file_data:
             for (word_form_features, form_representations, xpos, form_frequency) in self.file_data[lemma]:
                 fits = True
-                for d_m_attribute, d_m_value in decypher_msd.items():
+                for d_m_attribute, d_m_value in form_features.items():
                     if d_m_attribute not in word_form_features or d_m_value != word_form_features[d_m_attribute]:
                         fits = False
                         break

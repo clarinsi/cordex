@@ -1,0 +1,353 @@
+Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distribution,C2_Lemma,C2_Representative_form,C2_RF_msd,C2_RF_scenario,C2_Distribution,C3_Lemma,C3_Representative_form,C3_RF_msd,C3_RF_scenario,C3_Distribution,C4_Lemma,C4_Representative_form,C4_RF_msd,C4_RF_scenario,C4_Distribution,C5_Lemma,C5_Representative_form,C5_RF_msd,C5_RF_scenario,C5_Distribution,Collocation_ID,Joint_representative_form_fixed,Joint_representative_form_variable,Frequency,Delta_p12,Delta_p21,LogDice_core,LogDice_all,Distinct_forms
+34,pesniški,pesniško,Agpnsn,ok,1,tekmovanje,tekmovanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,1,pesniško tekmovanje,pesniško tekmovanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,pisan,pisana,Agpfsn,ok,1,literatura,literatura,Ncfsn,ok,3,,,,,,,,,,,,,,,,2,pisana literatura,pisana literatura,1,0.25000,0.99754,12.67807,12.67807,1
+34,starogrški,starogrška,Agpfsn,ok,1,literatura,literatura,Ncfsn,ok,3,,,,,,,,,,,,,,,,3,starogrška literatura,starogrška literatura,1,0.25000,0.99754,12.67807,12.67807,1
+34,slep,slepi,Agpmsny,ok,1,rapsod,rapsod,Ncmsn,ok,1,,,,,,,,,,,,,,,,4,slepi rapsod,slepi rapsod,1,1.00000,1.00000,14.00000,14.00000,1
+34,križen,križni,Agpmsny,ok,1,ogenj,ogenj,Ncmsn,ok,1,,,,,,,,,,,,,,,,5,križni ogenj,križni ogenj,1,1.00000,1.00000,14.00000,14.00000,1
+34,duhovit,duhovito,Agpnsn,ok,1,citiranje,citiranje,Ncnsn,ok,1,,,,,,,,,,,,,,,,6,duhovito citiranje,duhovito citiranje,1,1.00000,1.00000,14.00000,14.00000,1
+34,posamezen,posamezni,Agpmpn,ok,1,verz,verzi,Ncmpn,ok,1,,,,,,,,,,,,,,,,7,posamezni verzi,posamezni verzi,1,1.00000,1.00000,14.00000,14.00000,1
+34,bronast,bronasti,Agpmsny,ok,1,trinožnik,trinožnik,Ncmsn,ok,1,,,,,,,,,,,,,,,,8,bronasti trinožnik,bronasti trinožnik,1,1.00000,1.00000,14.00000,14.00000,1
+34,mesarski,mesarsko,Agpnsn,ok,1,klanje,klanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,9,mesarsko klanje,mesarsko klanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,huronski,huronsko,Agpnsn,ok,1,vpitje,vpitje,Ncnsn,ok,1,,,,,,,,,,,,,,,,10,huronsko vpitje,huronsko vpitje,1,1.00000,1.00000,14.00000,14.00000,1
+34,različen,različen,Agpmsnn,ok,1,narod,narod,Ncmsn,ok,1,,,,,,,,,,,,,,,,11,različen narod,različen narod,1,1.00000,1.00000,14.00000,14.00000,1
+34,raznorazen,raznoraznim,Agpmpd,ok,1,huskač,huskač,,lemma_fallback,2,,,,,,,,,,,,,,,,12,raznoraznim huskač,raznoraznim huskač,1,1.00000,1.00000,14.00000,14.00000,1
+34,nacionalen,nacionalnim,Agpmpd,ok,1,huskač,huskač,,lemma_fallback,2,,,,,,,,,,,,,,,,13,nacionalnim huskač,nacionalnim huskač,1,1.00000,1.00000,14.00000,14.00000,1
+34,pameten,pameten,Agpmsnn,ok,1,kralj,kralj,Ncmsn,ok,1,,,,,,,,,,,,,,,,14,pameten kralj,pameten kralj,1,0.49918,0.49918,13.00000,13.00000,1
+34,poučen,poučna,Agpfsn,ok,1,nota,nota,Ncfsn,ok,1,,,,,,,,,,,,,,,,15,poučna nota,poučna nota,1,0.99918,0.50000,13.41504,13.41504,1
+34,novoveški,novoveška,Agpfsn,ok,1,miselnost,miselnost,Ncfsn,ok,2,,,,,,,,,,,,,,,,16,novoveška miselnost,novoveška miselnost,1,0.50000,0.99918,13.41504,13.41504,1
+34,etičen,etična,Agpfsn,ok,1,norma,norma,Ncfsn,ok,2,,,,,,,,,,,,,,,,17,etična norma,etična norma,1,0.50000,0.99918,13.41504,13.41504,1
+34,poznanstvenjen,poznanstvenjen,,lemma_fallback,2,razmišljanje,razmišljanje,,lemma_fallback,1,,,,,,,,,,,,,,,,18,poznanstvenjen razmišljanje,poznanstvenjen razmišljanje,1,0.99918,0.50000,13.41504,13.41504,1
+34,star,Stari,Agpmpn,ok,1,Grk,Grki,Npmpn,ok,1,,,,,,,,,,,,,,,,19,Stari Grki,Stari Grki,1,1.00000,1.00000,14.00000,14.00000,1
+34,larpurlartističen,larpurlartistična,Agpfsn,ok,1,miselnost,miselnost,Ncfsn,ok,2,,,,,,,,,,,,,,,,20,larpurlartistična miselnost,larpurlartistična miselnost,1,0.50000,0.99918,13.41504,13.41504,1
+34,omenjen,omenjenem,Appnsl,ok,1,poznanstvenjenje,poznanstvenjenje,,lemma_fallback,1,,,,,,,,,,,,,,,,21,omenjenem poznanstvenjenje,omenjenem poznanstvenjenje,1,1.00000,1.00000,14.00000,14.00000,1
+34,človekov,človekova,Aspfsn,ok,1,nagnjenost,nagnjenost,Ncfsn,ok,2,,,,,,,,,,,,,,,,22,človekova nagnjenost,človekova nagnjenost,1,1.00000,1.00000,14.00000,14.00000,1
+34,priučen,priučena,Appfsn,ok,1,nagnjenost,nagnjenost,Ncfsn,ok,2,,,,,,,,,,,,,,,,23,priučena nagnjenost,priučena nagnjenost,1,1.00000,1.00000,14.00000,14.00000,1
+34,analitičen,analitično,Agpnsn,ok,1,mišljenje,mišljenje,Ncnsn,ok,1,,,,,,,,,,,,,,,,24,analitično mišljenje,analitično mišljenje,1,0.50000,0.99918,13.41504,13.41504,1
+34,domače,domače,Rgp,ok,1,predalčkanje,predalčkanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,25,domače predalčkanje,domače predalčkanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,nov,novi,Agpmsny,ok,4,jezik,jezik,Ncmsn,ok,1,,,,,,,,,,,,,,,,26,novi jezik,novi jezik,1,0.99754,0.25000,12.67807,12.67807,1
+34,moralen,moralno,Agpnsn,ok,2,delo,delo,Ncnsn,ok,1,,,,,,,,,,,,,,,,27,moralno delo,moralno delo,1,0.49918,0.49918,13.00000,13.00000,1
+34,določen,določena,Appfsn,ok,1,era,era,Ncfsn,ok,1,,,,,,,,,,,,,,,,28,določena era,določena era,1,1.00000,1.00000,14.00000,14.00000,1
+34,grški,grška,Agpfsn,ok,1,antika,antika,Ncfsn,ok,1,,,,,,,,,,,,,,,,29,grška antika,grška antika,1,1.00000,1.00000,14.00000,14.00000,1
+34,domač,domače,Agpnsn,ok,1,čtivo,čtivo,Ncnsn,ok,2,,,,,,,,,,,,,,,,30,domače čtivo,domače čtivo,1,0.50000,0.99918,13.41504,13.41504,1
+34,šolski,šolsko,Agpnsn,ok,2,čtivo,čtivo,Ncnsn,ok,2,,,,,,,,,,,,,,,,31,šolsko čtivo,šolsko čtivo,1,0.49918,0.49918,13.00000,13.00000,1
+34,današnji,današnje,Agpnsn,ok,3,pojmovanje,pojmovanje,Ncnsn,ok,2,,,,,,,,,,,,,,,,32,današnje pojmovanje,današnje pojmovanje,1,0.99836,0.33333,13.00000,13.00000,1
+34,larpurlartisičen,larpurlartisičen,,lemma_fallback,1,pojmovanje,pojmovanje,,lemma_fallback,2,,,,,,,,,,,,,,,,33,larpurlartisičen pojmovanje,larpurlartisičen pojmovanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,šolski,šolski,Agpmsny,ok,2,vzorec,vzorec,Ncmsn,ok,1,,,,,,,,,,,,,,,,34,šolski vzorec,šolski vzorec,1,0.99918,0.50000,13.41504,13.41504,1
+34,Heziodov,Heziodov,,lemma_fallback,2,Teogoni,Teogoni,,lemma_fallback,1,,,,,,,,,,,,,,,,35,Heziodov Teogoni,Heziodov Teogoni,1,0.99918,0.50000,13.41504,13.41504,1
+34,poznanstvenjen,poznanstvenjen,,lemma_fallback,2,logika,logika,,lemma_fallback,1,,,,,,,,,,,,,,,,36,poznanstvenjen logika,poznanstvenjen logika,1,0.99918,0.50000,13.41504,13.41504,1
+34,današnji,današnje,Agpnsn,ok,3,človeštvo,človeštvo,Ncnsn,ok,1,,,,,,,,,,,,,,,,37,današnje človeštvo,današnje človeštvo,1,0.49836,0.33251,12.67807,12.67807,1
+34,vreden,vredne,Agpfpn,ok,1,blodnja,blodnje,Ncfpn,ok,1,,,,,,,,,,,,,,,,38,vredne blodnje,vredne blodnje,1,1.00000,1.00000,14.00000,14.00000,1
+34,zaostal,zaostali,Appmsny,ok,1,svet,svet,Ncmsn,ok,2,,,,,,,,,,,,,,,,39,zaostali svet,zaostali svet,1,0.20000,0.99672,12.41504,12.41504,1
+34,takraten,takratni,Agpmpn,ok,1,človek,ljudje,Ncmpn,ok,1,,,,,,,,,,,,,,,,40,takratni ljudje,takratni ljudje,1,0.33333,0.99836,13.00000,13.00000,1
+34,švicarski,švicarski,Agpmsny,ok,1,psihoanalitik,psihoanalitik,Ncmsn,ok,1,,,,,,,,,,,,,,,,41,švicarski psihoanalitik,švicarski psihoanalitik,1,1.00000,1.00000,14.00000,14.00000,1
+34,miseln,miselni,Agpmsny,ok,1,topos,topos,Ncmsn,ok,1,,,,,,,,,,,,,,,,42,miselni topos,miselni topos,1,1.00000,1.00000,14.00000,14.00000,1
+34,moralen,moralna,Agpfsn,ok,2,norma,norma,Ncfsn,ok,2,,,,,,,,,,,,,,,,43,moralna norma,moralna norma,1,0.49918,0.49918,13.00000,13.00000,1
+34,širok,širok,Agpmsnn,ok,2,smisel,smisel,Ncmsn,ok,1,,,,,,,,,,,,,,,,44,širok smisel,širok smisel,1,0.99918,0.50000,13.41504,13.41504,1
+34,daljen,daljni,Agpmsny,ok,1,svet,svet,Ncmsn,ok,2,,,,,,,,,,,,,,,,45,daljni svet,daljni svet,1,0.20000,0.99672,12.41504,12.41504,1
+34,običajen,običajen,Agpmsnn,ok,1,občutek,občutek,Ncmsn,ok,2,,,,,,,,,,,,,,,,46,običajen občutek,običajen občutek,1,1.00000,1.00000,14.00000,14.00000,1
+34,notranji,notranji,Agpmsny,ok,1,občutek,občutek,Ncmsn,ok,2,,,,,,,,,,,,,,,,47,notranji občutek,notranji občutek,1,1.00000,1.00000,14.00000,14.00000,1
+34,dokončen,dokončna,Agpfsn,ok,1,sodba,sodba,Ncfsn,ok,1,,,,,,,,,,,,,,,,48,dokončna sodba,dokončna sodba,1,1.00000,1.00000,14.00000,14.00000,1
+34,antičen,antična,Agpfsn,ok,1,misel,misel,Ncfsn,ok,1,,,,,,,,,,,,,,,,49,antična misel,antična misel,1,1.00000,1.00000,14.00000,14.00000,1
+34,Heziodov,Heziodova,Aspfsn,ok,2,beseda,beseda,Ncfsn,ok,1,,,,,,,,,,,,,,,,50,Heziodova beseda,Heziodova beseda,1,0.33251,0.49836,12.67807,12.67807,1
+34,novodoben,novodobni,Agpmpn,ok,1,predsodek,predsodki,Ncmpn,ok,1,,,,,,,,,,,,,,,,51,novodobni predsodki,novodobni predsodki,1,0.50000,0.99918,13.41504,13.41504,1
+34,tovrsten,tovrstna,Agpfsn,ok,1,literatura,literatura,Ncfsn,ok,3,,,,,,,,,,,,,,,,52,tovrstna literatura,tovrstna literatura,1,0.25000,0.99754,12.67807,12.67807,1
+34,knjižen,knjižne,Agpfpn,ok,1,polica,police,Ncfpn,ok,1,,,,,,,,,,,,,,,,53,knjižne police,knjižne police,1,1.00000,1.00000,14.00000,14.00000,1
+34,papagajski,papagajsko,Agpnsn,ok,1,ponavljanje,ponavljanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,54,papagajsko ponavljanje,papagajsko ponavljanje,1,1.00000,1.00000,14.00000,14.00000,1
+34,predpisan,predpisana,Appnpn,ok,1,naročilo,naročila,Ncnpn,ok,1,,,,,,,,,,,,,,,,55,predpisana naročila,predpisana naročila,1,0.99918,0.50000,13.41504,13.41504,1
+34,Homerjev,Homerjev,Aspmsnn,ok,1,Iliado,Iliado,Npmsn,ok,1,,,,,,,,,,,,,,,,56,Homerjev Iliado,Homerjev Iliado,1,1.00000,1.00000,14.00000,14.00000,1
+34,prvovrsten,prvovrsten,Agpmsnn,ok,1,sejem,sejem,Ncmsn,ok,2,,,,,,,,,,,,,,,,189,prvovrsten sejem,prvovrsten sejem,1,0.20000,0.99672,12.41504,12.41504,1
+34,pomemben,najpomembnejši,Agsmpn,ok,1,proizvajalec,proizvajalci,Ncmpn,ok,2,,,,,,,,,,,,,,,,190,najpomembnejši proizvajalci,najpomembnejši proizvajalci,1,0.33333,0.99836,13.00000,13.00000,1
+34,svetoven,svetovni,Agpmpn,ok,1,proizvajalec,proizvajalci,Ncmpn,ok,2,,,,,,,,,,,,,,,,191,svetovni proizvajalci,svetovni proizvajalci,1,0.33333,0.99836,13.00000,13.00000,1
+34,lahek,lahka,Agpfsn,ok,1,predstava,predstava,Ncfsn,ok,1,,,,,,,,,,,,,,,,192,lahka predstava,lahka predstava,1,1.00000,1.00000,14.00000,14.00000,1
+34,današnji,današnja,Agpfsn,ok,3,stopnja,stopnja,Ncfsn,ok,1,,,,,,,,,,,,,,,,193,današnja stopnja,današnja stopnja,1,0.99836,0.33333,13.00000,13.00000,1
+34,nov,nova,Agpfsn,ok,4,tehnologija,tehnologija,Ncfsn,ok,1,,,,,,,,,,,,,,,,194,nova tehnologija,nova tehnologija,1,0.49754,0.24918,12.41504,12.41504,1
+34,sam,sam,Agpmsnn,ok,1,čip,čip,Ncmsn,ok,1,,,,,,,,,,,,,,,,195,sam čip,sam čip,1,1.00000,1.00000,14.00000,14.00000,1
+34,kompleten,kompleten,Agpmsnn,ok,1,računalnik,računalnik,Ncmsn,ok,2,,,,,,,,,,,,,,,,196,kompleten računalnik,kompleten računalnik,1,1.00000,1.00000,14.00000,14.00000,1
+34,oseben,osebni,Agpmsny,ok,1,računalnik,računalnik,Ncmsn,ok,2,,,,,,,,,,,,,,,,197,osebni računalnik,osebni računalnik,1,1.00000,1.00000,14.00000,14.00000,1
+34,nov,nova,Agpfsn,ok,4,generacija,generacija,Ncfsn,ok,1,,,,,,,,,,,,,,,,198,nova generacija,nova generacija,1,0.99754,0.25000,12.67807,12.67807,1
+34,obiskan,obiskana,Appfsn,ok,1,predstavitev,predstavitev,Ncfsn,ok,1,,,,,,,,,,,,,,,,199,obiskana predstavitev,obiskana predstavitev,1,0.50000,0.99918,13.41504,13.41504,1
+34,živ,živ,Agpmsnn,ok,1,moderator,moderator,Ncmsn,ok,1,,,,,,,,,,,,,,,,200,živ moderator,živ moderator,1,0.99918,0.50000,13.41504,13.41504,1
+34,sinhroniziran,sinhroniziran,Appmsnn,ok,1,gib,gib,Ncmsn,ok,1,,,,,,,,,,,,,,,,201,sinhroniziran gib,sinhroniziran gib,1,1.00000,1.00000,14.00000,14.00000,1
+34,nepoučen,nepoučeni,Agpmpn,ok,1,obiskovalec,obiskovalci,Ncmpn,ok,1,,,,,,,,,,,,,,,,202,nepoučeni obiskovalci,nepoučeni obiskovalci,1,0.33333,0.99836,13.00000,13.00000,1
+34,voden,vodne,Agpfpn,ok,1,kapljica,kapljice,Ncfpn,ok,1,,,,,,,,,,,,,,,,203,vodne kapljice,vodne kapljice,1,1.00000,1.00000,14.00000,14.00000,1
+34,vetrobranski,vetrobransko,Agpnsn,ok,1,steklo,steklo,Ncnsn,ok,1,,,,,,,,,,,,,,,,204,vetrobransko steklo,vetrobransko steklo,1,1.00000,1.00000,14.00000,14.00000,1
+34,elektronski,elektronski,Agpmsny,ok,1,del,del,Ncmsn,ok,1,,,,,,,,,,,,,,,,205,elektronski del,elektronski del,1,1.00000,1.00000,14.00000,14.00000,1
+34,električen,električna,Agpfsn,ok,1,povezava,povezava,Ncfsn,ok,1,,,,,,,,,,,,,,,,206,električna povezava,električna povezava,1,1.00000,1.00000,14.00000,14.00000,1
+34,fleksibilen,fleksibilno,Agpnsn,ok,1,vezje,vezje,Ncnsn,ok,3,,,,,,,,,,,,,,,,207,fleksibilno vezje,fleksibilno vezje,1,0.33333,0.99836,13.00000,13.00000,1
+34,tiskan,tiskano,Appnsn,ok,1,vezje,vezje,Ncnsn,ok,3,,,,,,,,,,,,,,,,208,tiskano vezje,tiskano vezje,2,0.66667,0.99918,13.67807,13.67807,2
+34,klasičen,klasična,Agpfsn,ok,1,ključavnica,ključavnica,Ncfsn,ok,1,,,,,,,,,,,,,,,,209,klasična ključavnica,klasična ključavnica,1,1.00000,1.00000,14.00000,14.00000,1
+34,poseben,posebna,Agpfsn,ok,1,kartica,kartica,Ncfsn,ok,2,,,,,,,,,,,,,,,,210,posebna kartica,posebna kartica,1,1.00000,1.00000,14.00000,14.00000,1
+34,brezkontakten,brezkontakten,,lemma_fallback,1,kartica,kartica,,lemma_fallback,2,,,,,,,,,,,,,,,,211,brezkontakten kartica,brezkontakten kartica,1,1.00000,1.00000,14.00000,14.00000,1
+34,vzvraten,vzvratno,Agpnsn,ok,1,ogledalo,ogledalo,Ncnsn,ok,1,,,,,,,,,,,,,,,,212,vzvratno ogledalo,vzvratno ogledalo,1,1.00000,1.00000,14.00000,14.00000,1
+34,varnosten,varnostni,Agpmsny,ok,1,sistem,sistem,Ncmsn,ok,1,,,,,,,,,,,,,,,,213,varnostni sistem,varnostni sistem,1,0.50000,0.99918,13.41504,13.41504,1
+34,zračen,zračna,Agpfsn,ok,1,blazina,blazina,Ncfsn,ok,1,,,,,,,,,,,,,,,,214,zračna blazina,zračna blazina,1,1.00000,1.00000,14.00000,14.00000,1
+34,elektrostatičen,elektrostatična,Agpfsn,ok,1,črpalka,črpalka,Ncfsn,ok,1,,,,,,,,,,,,,,,,215,elektrostatična črpalka,elektrostatična črpalka,1,1.00000,1.00000,14.00000,14.00000,1
+34,dodaten,dodaten,Agpmsnn,ok,1,mw,mW,Ncmsn,ok,1,,,,,,,,,,,,,,,,216,dodaten mW,dodaten mW,1,0.50000,0.99918,13.41504,13.41504,1
+34,slovenski,slovensko,Agpnsn,ok,1,podjetje,podjetje,Ncnsn,ok,1,,,,,,,,,,,,,,,,217,slovensko podjetje,slovensko podjetje,1,0.20000,0.99672,12.41504,12.41504,1
+34,zaščiten,zaščitni,Agpmsny,ok,1,element,element,Ncmsn,ok,1,,,,,,,,,,,,,,,,218,zaščitni element,zaščitni element,1,0.50000,0.99918,13.41504,13.41504,1
+34,razstaven,razstavni,Agpmsny,ok,2,prostor,prostor,Ncmsn,ok,2,,,,,,,,,,,,,,,,219,razstavni prostor,razstavni prostor,1,0.49918,0.49918,13.00000,13.00000,1
+34,sklenjen,sklenjen,Appmsnn,ok,1,posel,posel,Ncmsn,ok,1,,,,,,,,,,,,,,,,220,sklenjen posel,sklenjen posel,1,1.00000,1.00000,14.00000,14.00000,1
+34,integriran,integrirano,Appnsn,ok,1,vezje,vezje,Ncnsn,ok,3,,,,,,,,,,,,,,,,221,integrirano vezje,integrirano vezje,1,0.33333,0.99836,13.00000,13.00000,1
+34,industrijski,industrijska,Agpfsn,ok,1,elektronika,elektronika,Ncfsn,ok,3,,,,,,,,,,,,,,,,222,industrijska elektronika,industrijska elektronika,1,0.12500,0.99426,11.83007,11.83007,1
+34,avtomobilski,avtomobilska,Agpfsn,ok,1,elektronika,elektronika,Ncfsn,ok,3,,,,,,,,,,,,,,,,223,avtomobilska elektronika,avtomobilska elektronika,1,0.12500,0.99426,11.83007,11.83007,1
+34,širok,široka,Agpfsn,ok,2,poraba,poraba,Ncfsn,ok,1,,,,,,,,,,,,,,,,224,široka poraba,široka poraba,1,0.99918,0.50000,13.41504,13.41504,1
+34,pisarniški,pisarniška,Agpfsn,ok,1,elektronika,elektronika,Ncfsn,ok,3,,,,,,,,,,,,,,,,225,pisarniška elektronika,pisarniška elektronika,1,0.12500,0.99426,11.83007,11.83007,1
+34,naslednji,Naslednji,Agpmsny,ok,1,sejem,sejem,Ncmsn,ok,2,,,,,,,,,,,,,,,,226,Naslednji sejem,Naslednji sejem,1,0.19918,0.49672,12.19265,12.19265,1
+34,nov,novi,Agpmsny,ok,4,prostor,prostor,Ncmsn,ok,2,,,,,,,,,,,,,,,,227,novi prostor,novi prostor,1,0.49754,0.24918,12.41504,12.41504,1
+34,razstaven,razstavna,Agpfsn,ok,2,površina,površina,Ncfsn,ok,1,,,,,,,,,,,,,,,,228,razstavna površina,razstavna površina,1,0.99918,0.50000,13.41504,13.41504,1
+36,koristen,koristen,Agpmsnn,ok,1,občestvo,občestvu,Ncnsd,ok,1,,,,,,biti,,,,,,,,,,57,koristen občestvu,koristen občestvu,1,1.00000,1.00000,14.00000,14.00000,1
+57,Homer,Homer,Npmsn,ok,2,biti,je,Va-r3s-n,ok,10,sodoben,sodobnejši,Agcmsny,ok,1,,,,,,,,,,,58,Homer je sodobnejši,je Homer sodobnejši,1,0.20000,0.99672,12.41504,9.33703,1
+57,Grk,Grki,Npmpn,ok,1,biti,so,Va-r3p-n,ok,10,obremenjen,obremenjeni,Appmpn,ok,1,,,,,,,,,,,59,Grki so obremenjeni,Grki so obremenjeni,1,1.00000,1.00000,14.00000,9.41504,1
+57,bog,Bog,Ncmsn,ok,1,biti,je,Va-r3s-n,ok,10,mrtev,mrtev,Agpmsnn,ok,1,,,,,,,,,,,60,Bog je mrtev,je Bog mrtev,1,1.00000,1.00000,14.00000,9.41504,1
+57,Homer,Homer,Npmsn,ok,2,biti,je,Va-r3s-n,ok,10,predpisan,predpisan,Appmsnn,ok,1,,,,,,,,,,,61,Homer je predpisan,je Homer predpisan,1,0.19918,0.49672,12.19265,9.31818,1
+57,obiskovalec,obiskovalci,Ncmpn,ok,2,biti,so,Va-r3p-n,ok,10,oblečen,oblečeni,Appmpn,ok,2,,,,,,,,,,,229,obiskovalci so oblečeni,obiskovalci so oblečeni,1,0.33333,0.99836,13.00000,9.37551,1
+57,robot,robot,Ncmsn,ok,1,biti,je,Va-r3s-n,ok,10,oblečen,oblečen,Appmsnn,ok,2,,,,,,,,,,,230,robot je oblečen,je robot oblečen,1,0.50000,0.99918,13.41504,9.39514,1
+57,večina,večina,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,10,izveden,izvedena,Appfsn,ok,1,,,,,,,,,,,231,večina je izvedena,je večina izvedena,1,0.50000,0.99918,13.41504,9.39514,1
+57,tipkovnica,Tipkovnica,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,10,vključen,vključena,Appfsn,ok,1,,,,,,,,,,,232,Tipkovnica je vključena,Tipkovnica je vključena,1,0.50000,0.99918,13.41504,9.39514,1
+57,podatek,podatki,Ncmpn,ok,1,biti,so,Va-r3p-n,ok,10,shranjen,shranjeni,Appmpn,ok,1,,,,,,,,,,,233,podatki so shranjeni,so shranjeni podatki,1,0.33333,0.99836,13.00000,9.37551,1
+57,obiskovalec,obiskovalci,Ncmpn,ok,2,biti,so,Va-r3p-n,ok,10,naslednji,naslednji,Agpmpn,ok,1,,,,,,,,,,,234,obiskovalci so naslednji,obiskovalci so naslednji,1,0.33251,0.49836,12.67807,9.35614,1
+22,ploskati,ploskati,Vmpn,ok,1,Homer,Homerju,Npmsd,ok,1,,,,,,,,,,,,,,,,62,ploskati Homerju,ploskati Homerju,1,0.99672,0.20000,12.41504,12.41504,1
+22,ustrezati,ustrezati,Vmpn,ok,1,pojmovanje,pojmovanju,Ncnsd,ok,1,,,,,,,,,,,,,,,,63,ustrezati pojmovanju,ustrezati pojmovanju,1,1.00000,1.00000,14.00000,14.00000,1
+23,pripovedovati,pripovedovati,Vmpn,ok,1,opis,opise,Ncmpa,ok,1,,,,,,,,,,,,,,,,64,pripovedovati opise,pripovedovati opise,1,0.99918,0.50000,13.41504,13.41504,1
+23,prisoditi,prisoditi,Vmen,ok,1,zmaga,zmago,Ncfsa,ok,1,,,,,,,,,,,,,,,,65,prisoditi zmago,zmago prisoditi,2,1.00000,1.00000,14.00000,14.00000,2
+23,nagovarjati,nagovarjati,Vmpn,ok,1,človek,ljudi,Ncmpa,ok,1,,,,,,,,,,,,,,,,66,nagovarjati ljudi,nagovarjati ljudi,1,0.99836,0.33333,13.00000,13.00000,1
+23,opevati,opevati,Vmpn,ok,1,boj,boj,Ncmsan,ok,1,,,,,,,,,,,,,,,,67,opevati boj,opevati boj,1,0.99918,0.50000,13.41504,13.41504,1
+23,slišati,slišati,Vmbn,ok,1,vpitje,vpitja,Ncnpa,ok,1,,,,,,,,,,,,,,,,68,slišati vpitja,slišati vpitja,1,1.00000,1.00000,14.00000,14.00000,1
+23,obvladovati,obvladovati,Vmpn,ok,1,narava,naravo,Ncfsa,ok,1,,,,,,,,,,,,,,,,69,obvladovati naravo,obvladovati naravo,1,1.00000,1.00000,14.00000,14.00000,1
+23,predlagati,predlagati,Vmbn,ok,1,Teogonija,Teogonijo,Npfsa,ok,1,,,,,,,,,,,,,,,,70,predlagati Teogonijo,Teogonijo predlagati,1,0.50000,0.99918,13.41504,13.41504,1
+23,obiskati,obiskati,Vmen,ok,1,Afrika,Afriko,Npfsa,ok,1,,,,,,,,,,,,,,,,71,obiskati Afriko,obiskati Afriko,1,0.50000,0.99918,13.41504,13.41504,1
+23,doživeti,doživeti,Vmen,ok,1,razlika,razliko,Ncfsa,ok,1,,,,,,,,,,,,,,,,72,doživeti razliko,doživeti razliko,1,1.00000,1.00000,14.00000,14.00000,1
+23,poslušati,poslušati,Vmpn,ok,1,ponavljanje,ponavljanja,Ncnpa,ok,1,,,,,,,,,,,,,,,,73,poslušati ponavljanja,poslušati ponavljanja,1,1.00000,1.00000,14.00000,14.00000,1
+23,združiti,združiti,Vmen,ok,1,procesor,procesor,Ncmsan,ok,1,,,,,,,,,,,,,,,,235,združiti procesor,združiti procesor,1,0.99918,0.50000,13.41504,13.41504,1
+23,uporabiti,uporabiti,Vmen,ok,1,robot,robota,Ncmsay,ok,1,,,,,,,,,,,,,,,,236,uporabiti robota,uporabiti robota,1,0.99918,0.50000,13.41504,13.41504,1
+23,voditi,voditi,Vmpn,ok,1,predstavitev,predstavitev,Ncfsa,ok,1,,,,,,,,,,,,,,,,237,voditi predstavitev,voditi predstavitev,1,0.99918,0.50000,13.41504,13.41504,1
+23,pomeniti,pomeniti,Vmbn,ok,1,zmanjševanje,zmanjševanje,Ncnsa,ok,1,,,,,,,,,,,,,,,,238,pomeniti zmanjševanje,pomeniti zmanjševanje,1,0.50000,0.99918,13.41504,13.41504,1
+23,dodati,dodati,Vmen,ok,1,tipka,tipke,Ncfpa,ok,1,,,,,,,,,,,,,,,,239,dodati tipke,dodati tipke,1,1.00000,1.00000,14.00000,14.00000,1
+23,predstaviti,predstaviti,Vmen,ok,2,avtomobil,avtomobil,Ncmsan,ok,1,,,,,,,,,,,,,,,,240,predstaviti avtomobil,predstaviti avtomobil,1,0.24671,0.19753,11.83007,11.83007,1
+23,ugotavljati,ugotavljati,Vmpn,ok,1,velikost,velikost,Ncfsa,ok,1,,,,,,,,,,,,,,,,241,ugotavljati velikost,ugotavljati velikost,1,1.00000,1.00000,14.00000,14.00000,1
+23,sprožiti,sprožiti,Vmen,ok,1,blazina,blazino,Ncfsa,ok,1,,,,,,,,,,,,,,,,242,sprožiti blazino,sprožiti blazino,1,1.00000,1.00000,14.00000,14.00000,1
+23,predstaviti,predstaviti,Vmen,ok,2,črpalka,črpalko,Ncfsa,ok,1,,,,,,,,,,,,,,,,243,predstaviti črpalko,predstaviti črpalko,1,0.25000,0.99754,12.67807,12.67807,1
+23,deliti,deliti,Vmpn,ok,1,literatura,literaturo,Ncfsa,ok,1,,,,,,,,,,,,,,,,244,deliti literaturo,deliti literaturo,1,0.99754,0.25000,12.67807,12.67807,1
+70,legenda,Legenda,Ncfsn,ok,1,praviti,pravi,Vmbr3s,ok,1,,,,,,,,,,,,,,,,74,Legenda pravi,Legenda pravi,1,0.99918,0.50000,13.41504,13.41504,1
+70,začetnik,začetnik,Ncmsn,ok,1,nastopiti,nastopi,Vmer3s,ok,1,,,,,,,,,,,,,,,,75,začetnik nastopi,nastopi začetnik,1,1.00000,1.00000,14.00000,14.00000,1
+70,Homer,Homer,Npmsn,ok,1,brati,bere,Vmpr3s,ok,1,,,,,,,,,,,,,,,,76,Homer bere,Homer bere,1,0.99672,0.20000,12.41504,12.41504,1
+70,občinstvo,Občinstvo,Ncnsn,ok,1,ploskati,ploska,Vmpr3s,ok,1,,,,,,,,,,,,,,,,77,Občinstvo ploska,Občinstvo ploska,1,1.00000,1.00000,14.00000,14.00000,1
+70,kralj,kralj,Ncmsn,ok,1,prisoditi,prisodi,Vmer3s,ok,1,,,,,,,,,,,,,,,,78,kralj prisodi,kralj prisodi,1,0.49918,0.49918,13.00000,13.00000,1
+70,ep,ep,Ncmsn,ok,1,vsebovati,vsebuje,Vmpr3s,ok,1,,,,,,,,,,,,,,,,79,ep vsebuje,ep vsebuje,1,1.00000,1.00000,14.00000,14.00000,1
+70,bralec,bralec,Ncmsn,ok,2,zaznati,zazna,Vmer3s,ok,1,,,,,,,,,,,,,,,,80,bralec zazna,bralec zazna,1,0.99918,0.50000,13.41504,13.41504,1
+70,predsodek,predsodki,Ncmpn,ok,1,reči,rečejo,Vmer3p,ok,1,,,,,,,,,,,,,,,,81,predsodki rečejo,rečejo predsodki,1,0.24918,0.49754,12.41504,12.41504,1
+70,človek,ljudje,Ncmpn,ok,1,dojemati,dojemajo,Vmpr3p,ok,1,,,,,,,,,,,,,,,,82,ljudje dojemajo,ljudje dojemajo,1,0.99836,0.33333,13.00000,13.00000,1
+70,topos,topos,Ncmsn,ok,1,doživeti,doživi,Vmer3s,ok,1,,,,,,,,,,,,,,,,83,topos doživi,topos doživi,1,1.00000,1.00000,14.00000,14.00000,1
+70,bralec,bralec,Ncmsn,ok,2,seči,seže,Vmer3s,ok,1,,,,,,,,,,,,,,,,84,bralec seže,bralec seže,1,0.99918,0.50000,13.41504,13.41504,1
+70,proizvajalec,proizvajalci,Ncmpn,ok,2,dosegati,dosegajo,Vmpr3p,ok,1,,,,,,,,,,,,,,,,245,proizvajalci dosegajo,proizvajalci dosegajo,1,0.99836,0.33333,13.00000,13.00000,1
+70,firma,firma,Ncfsn,ok,1,pripraviti,pripravi,Vmer3s,ok,1,,,,,,,,,,,,,,,,246,firma pripravi,pripravi firma,1,0.99918,0.50000,13.41504,13.41504,1
+70,proizvajalec,proizvajalec,Ncmsn,ok,2,dodati,doda,Vmer3s,ok,1,,,,,,,,,,,,,,,,247,proizvajalec doda,proizvajalec doda,1,0.99836,0.33333,13.00000,13.00000,1
+70,podjetje,Podjetje,Ncnsn,ok,3,predstaviti,predstavi,Vmer3s,ok,2,,,,,,,,,,,,,,,,248,Podjetje predstavi,Podjetje predstavi,1,0.24671,0.19753,11.83007,11.83007,1
+70,podjetje,podjetje,Ncnsn,ok,3,razviti,razvije,Vmer3s,ok,2,,,,,,,,,,,,,,,,249,podjetje razvije,podjetje razvije,1,0.99672,0.20000,12.41504,12.41504,1
+70,sistem,sistem,Ncmsn,ok,1,razviti,razvije,Vmer3s,ok,2,,,,,,,,,,,,,,,,250,sistem razvije,razvije sistem,1,0.99918,0.50000,13.41504,13.41504,1
+70,Institut,Institut,Npmsn,ok,1,predstaviti,predstavi,Vmer3s,ok,2,,,,,,,,,,,,,,,,251,Institut predstavi,Institut predstavi,1,0.25000,0.99754,12.67807,12.67807,1
+70,mw,mW,Ncmsn,ok,1,porabiti,porabi,Vmer3s,ok,1,,,,,,,,,,,,,,,,252,mW porabi,porabi mW,1,0.99918,0.50000,13.41504,13.41504,1
+70,čas,časi,Ncmpn,ok,1,miniti,minejo,Vmer3p,ok,1,,,,,,,,,,,,,,,,253,časi minejo,minejo časi,1,1.00000,1.00000,14.00000,14.00000,1
+70,večina,večina,Ncfsn,ok,1,deliti,deli,Vmpr3s,ok,1,,,,,,,,,,,,,,,,254,večina deli,večina deli,1,0.99918,0.50000,13.41504,13.41504,1
+70,podjetje,podjetje,Ncnsn,ok,3,razstavljati,razstavlja,Vmpr3s,ok,1,,,,,,,,,,,,,,,,255,podjetje razstavlja,razstavlja podjetje,1,0.99672,0.20000,12.41504,12.41504,1
+71,tehtnost,tehtnost,Ncfsn,ok,1,se,se,Px------y,ok,4,pričarati,pričara,Vmer3s,ok,1,,,,,,,,,,,85,tehtnost se pričara,se pričara tehtnost,1,1.00000,1.00000,14.00000,12.00000,1
+71,elita,elita,Ncfsn,ok,1,se,se,Px------y,ok,4,zbrati,zbere,Vmer3s,ok,1,,,,,,,,,,,256,elita se zbere,se zbere elita,1,1.00000,1.00000,14.00000,12.00000,1
+71,proizvajalec,proizvajalci,Ncmpn,ok,1,se,se,Px------y,ok,4,predstaviti,predstavijo,Vmer3p,ok,2,,,,,,,,,,,257,proizvajalci se predstavijo,se predstavijo proizvajalci,1,0.24836,0.33087,12.19265,11.49750,1
+71,podjetje,podjetje,Ncnsn,ok,1,se,se,Px------y,ok,4,predstaviti,predstavi,Vmer3s,ok,2,,,,,,,,,,,258,podjetje se predstavi,se predstavi podjetje,1,0.24671,0.19753,11.83007,11.33703,1
+72,ep,ep,Ncmsn,ok,1,ne,ne,Q,ok,1,vsebovati,vsebuje,Vmpr3s,ok,1,,,,,,,,,,,86,ep ne vsebuje,ep ne vsebuje,1,1.00000,1.00000,14.00000,13.00000,1
+74,ne,ne,Q,ok,1,imeti,imeti,Vmpn,ok,1,ključavnica,ključavnice,Ncfsg,ok,1,,,,,,,,,,,259,ne imeti ključavnice,ne imeti ključavnice,1,0.50000,0.99918,13.41504,12.77761,1
+76,kup,kup,Ncmsn,ok,1,fantazm,fantazm,Ncmsn,ok,1,,,,,,,,,,,,,,,,87,kup fantazm,kup fantazm,1,0.50000,0.99918,13.41504,13.41504,1
+53,začetnik,začetnik,Ncmsn,ok,1,literatura,literature,Ncfsg,ok,2,,,,,,,,,,,,,,,,88,začetnik literature,začetnik literature,1,0.99754,0.25000,12.67807,12.67807,1
+53,ogenj,ogenj,Ncmsn,ok,1,vprašanje,vprašanj,Ncnpg,ok,1,,,,,,,,,,,,,,,,89,ogenj vprašanj,ogenj vprašanj,1,1.00000,1.00000,14.00000,14.00000,1
+53,citiranje,citiranje,Ncnsn,ok,1,verz,verzov,Ncmpg,ok,1,,,,,,,,,,,,,,,,90,citiranje verzov,citiranje verzov,1,1.00000,1.00000,14.00000,14.00000,1
+53,citranje,citranje,Ncnsn,ok,1,poezija,poezije,Ncfsg,ok,1,,,,,,,,,,,,,,,,91,citranje poezije,citranje poezije,1,1.00000,1.00000,14.00000,14.00000,1
+53,opis,opis,Ncmsn,ok,2,boj,bojev,Ncmpg,ok,1,,,,,,,,,,,,,,,,92,opis bojev,opis bojev,1,0.49918,0.49918,13.00000,13.00000,1
+53,opis,opis,Ncmsn,ok,2,oranje,oranja,Ncnsg,ok,1,,,,,,,,,,,,,,,,93,opis oranja,opis oranja,1,0.50000,0.99918,13.41504,13.41504,1
+53,vpitje,vpitje,Ncnsn,ok,1,narod,narodov,Ncmpg,ok,1,,,,,,,,,,,,,,,,94,vpitje narodov,vpitje narodov,1,1.00000,1.00000,14.00000,14.00000,1
+53,dikcija,dikcija,Ncfsn,ok,1,pisanje,pisanja,Ncnsg,ok,1,,,,,,,,,,,,,,,,95,dikcija pisanja,dikcija pisanja,1,1.00000,1.00000,14.00000,14.00000,1
+53,pisanje,pisanje,Ncnsn,ok,1,nota,note,Ncfsg,ok,1,,,,,,,,,,,,,,,,96,pisanje note,pisanje note,1,1.00000,1.00000,14.00000,14.00000,1
+53,relativizacija,relativizacija,Ncfsn,ok,1,norma,norm,Ncfpg,ok,1,,,,,,,,,,,,,,,,97,relativizacija norm,relativizacija norm,1,0.99918,0.50000,13.41504,13.41504,1
+53,poznanstvenjenje,poznanstvenjenje,,lemma_fallback,1,človeštvo,človeštva,Ncnsg,ok,2,,,,,,,,,,,,,,,,98,poznanstvenjenje človeštva,poznanstvenjenje človeštva,1,0.99918,0.50000,13.41504,13.41504,1
+53,pisec,pisec,Ncmsn,ok,1,delo,del,Ncnpg,ok,1,,,,,,,,,,,,,,,,99,pisec del,pisec del,1,0.99918,0.50000,13.41504,13.41504,1
+53,obdobje,obdobje,Ncnsn,ok,1,antika,antike,Ncfsg,ok,1,,,,,,,,,,,,,,,,100,obdobje antike,obdobje antike,1,1.00000,1.00000,14.00000,14.00000,1
+53,vzorec,vzorec,Ncmsn,ok,1,literatura,literature,Ncfsg,ok,2,,,,,,,,,,,,,,,,101,vzorec literature,vzorec literature,1,0.99754,0.25000,12.67807,12.67807,1
+53,logika,logika,Ncfsn,ok,1,človeštvo,človeštva,Ncnsg,ok,2,,,,,,,,,,,,,,,,102,logika človeštva,logika človeštva,1,0.99918,0.50000,13.41504,13.41504,1
+53,kup,kup,Ncmsn,ok,1,pomilovanje,pomilovanja,Ncnsg,ok,1,,,,,,,,,,,,,,,,103,kup pomilovanja,kup pomilovanja,1,0.50000,0.99918,13.41504,13.41504,1
+53,pomilovanje,pomilovanje,Ncnsn,ok,1,blodnja,blodenj,Ncfpg,ok,1,,,,,,,,,,,,,,,,104,pomilovanje blodenj,pomilovanje blodenj,1,1.00000,1.00000,14.00000,14.00000,1
+53,blodnja,blodnje,Ncfpn,ok,1,svet,sveta,Ncmsg,ok,1,,,,,,,,,,,,,,,,105,blodnje sveta,blodnje sveta,1,0.99672,0.20000,12.41504,12.41504,1
+53,prizma,prizma,Ncfsn,ok,1,panteon,Panteona,Ncmsg,ok,1,,,,,,,,,,,,,,,,106,prizma Panteona,prizma Panteona,1,1.00000,1.00000,14.00000,14.00000,1
+53,beseda,beseda,Ncfsn,ok,1,psihoanalitik,psihoanalitika,Ncmsg,ok,1,,,,,,,,,,,,,,,,107,beseda psihoanalitika,beseda psihoanalitika,1,0.33333,0.99836,13.00000,13.00000,1
+53,prebiranje,prebiranje,Ncnsn,ok,1,Heziod,Hezioda,Npmsg,ok,1,,,,,,,,,,,,,,,,108,prebiranje Hezioda,prebiranje Hezioda,1,0.99508,0.14286,12.00000,12.00000,1
+53,smisel,smisel,Ncmsn,ok,1,beseda,besede,Ncfsg,ok,2,,,,,,,,,,,,,,,,109,smisel besede,smisel besede,1,0.99836,0.33333,13.00000,13.00000,1
+53,občutek,občutek,Ncmsn,ok,1,superiornost,superiornosti,Ncfsg,ok,1,,,,,,,,,,,,,,,,110,občutek superiornosti,občutek superiornosti,1,1.00000,1.00000,14.00000,14.00000,1
+53,zemljevid,zemljevid,Ncmsn,ok,1,misel,misli,Ncfsg,ok,1,,,,,,,,,,,,,,,,111,zemljevid misli,zemljevid misli,1,1.00000,1.00000,14.00000,14.00000,1
+53,tehtnost,tehtnost,Ncfsn,ok,1,beseda,besed,Ncfpg,ok,2,,,,,,,,,,,,,,,,112,tehtnost besed,tehtnost besed,1,0.99836,0.33333,13.00000,13.00000,1
+53,plehkost,plehkost,Ncfsn,ok,1,predsodek,predsodkov,Ncmpg,ok,1,,,,,,,,,,,,,,,,113,plehkost predsodkov,plehkost predsodkov,1,0.99918,0.50000,13.41504,13.41504,1
+53,polica,police,Ncfpn,ok,1,knjižnica,knjižnice,Ncfsg,ok,1,,,,,,,,,,,,,,,,114,police knjižnice,police knjižnice,1,0.99836,0.33333,13.00000,13.00000,1
+53,ponavljanje,ponavljanje,Ncnsn,ok,1,srednješolec,srednješolcev,Ncmpg,ok,1,,,,,,,,,,,,,,,,115,ponavljanje srednješolcev,ponavljanje srednješolcev,1,1.00000,1.00000,14.00000,14.00000,1
+53,prestolnica,prestolnica,Ncfsn,ok,1,Bavarska,Bavarske,Npfsg,ok,1,,,,,,,,,,,,,,,,260,prestolnica Bavarske,prestolnica Bavarske,1,1.00000,1.00000,14.00000,14.00000,1
+53,svet,svet,Ncmsn,ok,1,elektronika,elektronike,Ncfsg,ok,2,,,,,,,,,,,,,,,,261,svet elektronike,svet elektronike,1,0.19424,0.12170,11.29956,11.29956,1
+53,podatek,podatek,Ncmsn,ok,1,mikron,mikrona,Ncmsg,ok,2,,,,,,,,,,,,,,,,262,podatek mikrona,podatek mikrona,1,0.33251,0.49836,12.67807,12.67807,1
+53,stopnja,stopnja,Ncfsn,ok,1,integracija,integracije,Ncfsg,ok,1,,,,,,,,,,,,,,,,263,stopnja integracije,stopnja integracije,1,1.00000,1.00000,14.00000,14.00000,1
+53,integracija,integracija,Ncfsn,ok,1,elektronika,elektronike,Ncfsg,ok,2,,,,,,,,,,,,,,,,264,integracija elektronike,integracija elektronike,1,0.99426,0.12500,11.83007,11.83007,1
+53,elektronika,elektronika,Ncfsn,ok,1,mikron,mikrona,Ncmsg,ok,2,,,,,,,,,,,,,,,,265,elektronika mikrona,elektronika mikrona,1,0.12418,0.49426,11.67807,11.67807,1
+53,hitrost,hitrosti,Ncfpn,ok,1,procesor,procesorja,Ncmsg,ok,1,,,,,,,,,,,,,,,,266,hitrosti procesorja,hitrosti procesorja,1,0.99918,0.50000,13.41504,13.41504,1
+53,računalnik,računalnik,Ncmsn,ok,1,generacija,generacije,Ncfsg,ok,1,,,,,,,,,,,,,,,,267,računalnik generacije,računalnik generacije,1,1.00000,1.00000,14.00000,14.00000,1
+53,steklo,steklo,Ncnsn,ok,1,avtomobil,avtomobila,Ncmsg,ok,3,,,,,,,,,,,,,,,,268,steklo avtomobila,steklo avtomobila,1,0.99672,0.20000,12.41504,12.41504,1
+53,sestavljanje,sestavljanje,Ncnsn,ok,1,del,delov,Ncmpg,ok,1,,,,,,,,,,,,,,,,269,sestavljanje delov,sestavljanje delov,1,1.00000,1.00000,14.00000,14.00000,1
+53,zmanjševanje,zmanjševanje,Ncnsn,ok,1,število,števila,Ncnsg,ok,1,,,,,,,,,,,,,,,,270,zmanjševanje števila,zmanjševanje števila,1,1.00000,1.00000,14.00000,14.00000,1
+53,število,število,Ncnsn,ok,1,priključek,priključkov,Ncmpg,ok,1,,,,,,,,,,,,,,,,271,število priključkov,število priključkov,1,1.00000,1.00000,14.00000,14.00000,1
+53,odpravljanje,odpravljanje,Ncnsn,ok,1,žica,žic,Ncfpg,ok,1,,,,,,,,,,,,,,,,272,odpravljanje žic,odpravljanje žic,1,1.00000,1.00000,14.00000,14.00000,1
+53,večina,večina,Ncfsn,ok,2,povezava,povezav,Ncfpg,ok,1,,,,,,,,,,,,,,,,273,večina povezav,večina povezav,1,0.50000,0.99918,13.41504,13.41504,1
+53,proizvajalec,proizvajalec,Ncmsn,ok,1,avtomobil,avtomobila,Ncmsg,ok,3,,,,,,,,,,,,,,,,274,proizvajalec avtomobila,proizvajalec avtomobila,1,0.33005,0.19836,12.00000,12.00000,1
+53,avtomobil,avtomobil,Ncmsn,ok,1,prihodnost,prihodnosti,Ncfsg,ok,1,,,,,,,,,,,,,,,,275,avtomobil prihodnosti,avtomobil prihodnosti,1,0.20000,0.99672,12.41504,12.41504,1
+53,voznik,voznik,Ncmsn,ok,1,avtomobil,avtomobila,Ncmsg,ok,3,,,,,,,,,,,,,,,,276,voznik avtomobila,voznik avtomobila,1,0.99672,0.20000,12.41504,12.41504,1
+53,višina,višina,Ncfsn,ok,1,sedež,sedeža,Ncmsg,ok,1,,,,,,,,,,,,,,,,277,višina sedeža,višina sedeža,1,0.99918,0.50000,13.41504,13.41504,1
+53,položaj,položaj,Ncmsn,ok,1,ogledalo,ogledal,Ncnpg,ok,1,,,,,,,,,,,,,,,,278,položaj ogledal,položaj ogledal,1,1.00000,1.00000,14.00000,14.00000,1
+53,doseganje,doseganje,Ncnsn,ok,1,pretok,pretoka,Ncmsg,ok,1,,,,,,,,,,,,,,,,279,doseganje pretoka,doseganje pretoka,1,1.00000,1.00000,14.00000,14.00000,1
+53,proizvodnja,proizvodnja,Ncfsn,ok,1,vezje,vezij,Ncnpg,ok,1,,,,,,,,,,,,,,,,280,proizvodnja vezij,proizvodnja vezij,1,0.99836,0.33333,13.00000,13.00000,1
+53,paleta,paleta,Ncfsn,ok,1,komponenta,komponent,Ncfpg,ok,1,,,,,,,,,,,,,,,,281,paleta komponent,paleta komponent,1,1.00000,1.00000,14.00000,14.00000,1
+53,dan,dan,Ncmsn,ok,1,sejem,sejma,Ncmsg,ok,1,,,,,,,,,,,,,,,,282,dan sejma,dan sejma,1,0.49672,0.19918,12.19265,12.19265,1
+53,obisk,obisk,Ncmsn,ok,1,prostor,prostorov,Ncmpg,ok,1,,,,,,,,,,,,,,,,283,obisk prostorov,obisk prostorov,1,0.99918,0.50000,13.41504,13.41504,1
+53,obseg,obseg,Ncmsn,ok,1,posel,poslov,Ncmpg,ok,1,,,,,,,,,,,,,,,,284,obseg poslov,obseg poslov,1,1.00000,1.00000,14.00000,14.00000,1
+53,večina,večina,Ncfsn,ok,2,podjetje,podjetij,Ncnpg,ok,1,,,,,,,,,,,,,,,,285,večina podjetij,večina podjetij,1,0.49672,0.19918,12.19265,12.19265,1
+53,sejem,sejem,Ncmsn,ok,1,Electronic,Electronica,Npmsg,ok,1,,,,,,,,,,,,,,,,286,sejem Electronica,sejem Electronica,1,0.20000,0.99672,12.41504,12.41504,1
+53,m2,m2,Ncmsn,ok,1,površina,površin,Ncfpg,ok,1,,,,,,,,,,,,,,,,287,m2 površin,m2 površin,1,1.00000,1.00000,14.00000,14.00000,1
+54,zmaga,zmaga,Ncfsn,ok,1,pesnik,pesniku,Ncmsd,ok,1,,,,,,,,,,,,,,,,116,zmaga pesniku,zmaga pesniku,1,0.50000,0.99918,13.41504,13.41504,1
+54,podpora,podpora,Ncfsn,ok,1,huskač,huskačem,Ncmpd,ok,1,,,,,,,,,,,,,,,,117,podpora huskačem,podpora huskačem,1,1.00000,1.00000,14.00000,14.00000,1
+18,ležati,ležati,Vmpn,ok,1,zaprašen,zaprašena,Appfsn,ok,1,,,,,,,,,,,,,,,,118,ležati zaprašena,ležati zaprašena,1,1.00000,1.00000,14.00000,14.00000,1
+78,zazdeti,zazdeti,Vmen,ok,1,se,se,Px------y,ok,1,bedast,bedast,Agpmsnn,ok,1,,,,,,,,,,,119,zazdeti se bedast,se zazdeti bedast,1,1.00000,1.00000,14.00000,12.00000,1
+43,skupaj,skupaj,Rgp,ok,1,nastopiti,nastopiti,Vmen,ok,2,,,,,,,,,,,,,,,,120,skupaj nastopiti,skupaj nastopiti,1,1.00000,1.00000,14.00000,14.00000,1
+43,nekoč,nekoč,Rgp,ok,2,nastopiti,nastopiti,Vmen,ok,2,,,,,,,,,,,,,,,,121,nekoč nastopiti,nekoč nastopiti,1,0.99918,0.50000,13.41504,13.41504,1
+43,zmeraj,zmeraj,Rgp,ok,1,slišati,slišati,Vmbn,ok,1,,,,,,,,,,,,,,,,122,zmeraj slišati,zmeraj slišati,1,1.00000,1.00000,14.00000,14.00000,1
+43,danes,danes,Rgp,ok,2,reči,reči,Vmen,ok,4,,,,,,,,,,,,,,,,123,danes reči,danes reči,2,0.49836,0.49836,13.00000,13.00000,2
+43,končno,končno,Rgp,ok,1,reči,reči,Vmen,ok,4,,,,,,,,,,,,,,,,124,končno reči,končno reči,1,0.25000,0.99754,12.67807,12.67807,1
+43,verjetno,verjetno,Rgp,ok,1,koreniniti,koreniniti,Vmbn,ok,1,,,,,,,,,,,,,,,,125,verjetno koreniniti,verjetno koreniniti,1,0.99918,0.50000,13.41504,13.41504,1
+43,tako,tako,Rgp,ok,1,reči,reči,Vmen,ok,4,,,,,,,,,,,,,,,,126,tako reči,tako reči,1,0.24753,0.24753,12.00000,12.00000,1
+43,težko,težko,Rgp,ok,1,reči,reči,Vmen,ok,4,,,,,,,,,,,,,,,,127,težko reči,težko reči,1,0.25000,0.99754,12.67807,12.67807,1
+43,zakaj,zakaj,Rgp,ok,1,predlagati,predlagati,Vmbn,ok,1,,,,,,,,,,,,,,,,128,zakaj predlagati,zakaj predlagati,1,0.50000,0.99918,13.41504,13.41504,1
+43,nekoč,nekoč,Rgp,ok,2,izjaviti,izjaviti,Vmen,ok,1,,,,,,,,,,,,,,,,129,nekoč izjaviti,nekoč izjaviti,1,0.99918,0.50000,13.41504,13.41504,1
+43,dandanes,dandanes,Rgp,ok,1,ležati,ležati,Vmpn,ok,1,,,,,,,,,,,,,,,,130,dandanes ležati,dandanes ležati,1,0.99918,0.50000,13.41504,13.41504,1
+43,žalostno,žalostno,Rgp,ok,1,poslušati,poslušati,Vmpn,ok,1,,,,,,,,,,,,,,,,131,žalostno poslušati,žalostno poslušati,1,1.00000,1.00000,14.00000,14.00000,1
+43,elegantno,elegantno,Rgp,ok,1,voditi,voditi,Vmpn,ok,1,,,,,,,,,,,,,,,,288,elegantno voditi,elegantno voditi,1,1.00000,1.00000,14.00000,14.00000,1
+43,več,več,Rgc,ok,1,zaznavati,zaznavati,Vmpn,ok,2,,,,,,,,,,,,,,,,289,več zaznavati,več zaznavati,1,0.50000,0.99918,13.41504,13.41504,1
+43,vedno,vedno,Rgp,ok,1,zaznavati,zaznavati,Vmpn,ok,2,,,,,,,,,,,,,,,,290,vedno zaznavati,vedno zaznavati,1,0.50000,0.99918,13.41504,13.41504,1
+43,praktično,praktično,Rgp,ok,1,pomeniti,pomeniti,Vmbn,ok,1,,,,,,,,,,,,,,,,291,praktično pomeniti,praktično pomeniti,1,0.50000,0.99918,13.41504,13.41504,1
+43,primerno,primerno,Rgp,ok,1,sprožiti,sprožiti,Vmen,ok,1,,,,,,,,,,,,,,,,292,primerno sprožiti,primerno sprožiti,1,1.00000,1.00000,14.00000,14.00000,1
+43,dokončno,dokončno,Rgp,ok,1,miniti,miniti,Vmen,ok,1,,,,,,,,,,,,,,,,293,dokončno miniti,dokončno miniti,1,1.00000,1.00000,14.00000,14.00000,1
+43,brezplačno,brezplačno,Rgp,ok,1,deliti,deliti,Vmpn,ok,2,,,,,,,,,,,,,,,,294,brezplačno deliti,deliti brezplačno,1,1.00000,1.00000,14.00000,14.00000,1
+43,danes,danes,Rgp,ok,2,deliti,deliti,Vmpn,ok,2,,,,,,,,,,,,,,,,295,danes deliti,danes deliti,1,0.99754,0.25000,12.67807,12.67807,1
+81,najprej,najprej,Rgs,ok,1,se,se,Px------y,ok,3,pomeriti,pomeriti,Vmen,ok,1,,,,,,,,,,,132,najprej se pomeriti,najprej se pomeriti,1,1.00000,1.00000,14.00000,12.00000,1
+81,tako,tako,Rgp,ok,1,se,se,Px------y,ok,3,izraziti,izraziti,Vmen,ok,1,,,,,,,,,,,133,tako se izraziti,se tako izraziti,1,0.99754,0.25000,12.67807,11.67807,1
+81,zlahka,zlahka,Rgp,ok,1,se,se,Px------y,ok,3,zazdeti,zazdeti,Vmen,ok,1,,,,,,,,,,,134,zlahka se zazdeti,se zlahka zazdeti,1,1.00000,1.00000,14.00000,12.00000,1
+82,obvladovati,obvladovati,Vmpn,ok,1,kot,kot,Cs,ok,1,kup,kup,Ncmsn,ok,1,,,,,,,,,,,135,obvladovati kot kup,kot kup obvladovati,1,0.99918,0.50000,13.41504,13.00000,1
+46,domnevno,domnevno,Rgp,ok,1,zaostal,zaostal,Appmsnn,ok,1,,,,,,,,,,,,,,,,136,domnevno zaostal,domnevno zaostal,1,1.00000,1.00000,14.00000,14.00000,1
+46,najbolj,najbolj,Rgs,ok,1,obiskan,obiskan,Appmsnn,ok,1,,,,,,,,,,,,,,,,296,najbolj obiskan,najbolj obiskan,1,1.00000,1.00000,14.00000,14.00000,1
+46,brezhibno,brezhibno,Rgp,ok,1,sinhroniziran,sinhroniziran,Appmsnn,ok,1,,,,,,,,,,,,,,,,297,brezhibno sinhroniziran,brezhibno sinhroniziran,1,1.00000,1.00000,14.00000,14.00000,1
+55,tako,tako,Rgp,ok,1,elegantno,elegantno,Rgp,ok,1,,,,,,,,,,,,,,,,298,tako elegantno,tako elegantno,1,0.99754,0.25000,12.67807,12.67807,1
+85,sodoben,sodoben,Agpmsnn,ok,1,danes,danes,Rgp,ok,1,biti,,,,,,,,,,,,,,,137,sodoben danes,danes sodoben,1,0.99754,0.25000,12.67807,12.67807,1
+85,dlakocepski,dlakocepski,Agpmpn,ok,1,tu,tu,Rgp,ok,1,biti,,,,,,,,,,,,,,,138,dlakocepski tu,tu dlakocepski,1,1.00000,1.00000,14.00000,14.00000,1
+85,izveden,izveden,Appmsnn,ok,1,sčasoma,sčasoma,Rgp,ok,1,biti,,,,,,,,,,,,,,,299,izveden sčasoma,sčasoma izveden,1,1.00000,1.00000,14.00000,14.00000,1
+47,stežkoma,stežkoma,Rgp,ok,1,napuh,napuha,Ncmsg,ok,1,,,,,,,,,,,,,,,,139,stežkoma napuha,napuha stežkoma,1,1.00000,1.00000,14.00000,14.00000,1
+48,verz,verzi,Ncmpn,ok,1,iz,iz,Sg,ok,5,pesnitev,pesnitev,Ncfpg,ok,1,,,,,,,,,,,140,verzi iz pesnitev,verzi iz pesnitev,1,1.00000,1.00000,14.00000,12.77761,1
+48,boj,boj,Ncmsn,ok,1,iz,iz,Sg,ok,5,Iliada,Iliade,Npfsg,ok,1,,,,,,,,,,,141,boj iz Iliade,boj iz Iliade,1,0.50000,0.99918,13.41504,12.58496,1
+48,žetev,žetev,Ncfsn,ok,1,iz,iz,Sg,ok,5,Delo,Dela,Npnsg,ok,1,,,,,,,,,,,142,žetev iz Dela,žetev iz Dela,1,1.00000,1.00000,14.00000,12.77761,1
+48,odnos,odnos,Ncmsn,ok,1,do,do,Sg,ok,1,svet,sveta,Ncmsg,ok,2,,,,,,,,,,,143,odnos do sveta,odnos do sveta,1,0.99672,0.20000,12.41504,12.26303,1
+48,elita,elita,Ncfsn,ok,1,iz,iz,Sg,ok,5,svet,sveta,Ncmsg,ok,2,,,,,,,,,,,300,elita iz sveta,elita iz sveta,1,0.99672,0.20000,12.41504,12.12553,1
+48,obiskovalec,obiskovalci,Ncmpn,ok,1,iz,iz,Sg,ok,5,država,držav,Ncfpg,ok,1,,,,,,,,,,,301,obiskovalci iz držav,obiskovalci iz držav,1,0.33333,0.99836,13.00000,12.41504,1
+49,človek,ljudje,Ncmpn,ok,1,k,k,Sd,ok,2,poljedelstvo,poljedelstvu,Ncnsd,ok,1,,,,,,,,,,,144,ljudje k poljedelstvu,ljudje k poljedelstvu,1,0.33333,0.99836,13.00000,13.00000,1
+49,nagnjenost,nagnjenost,Ncfsn,ok,1,k,k,Sd,ok,2,mišljenje,mišljenju,Ncnsd,ok,1,,,,,,,,,,,145,nagnjenost k mišljenju,nagnjenost k mišljenju,1,0.99918,0.50000,13.41504,13.26303,1
+51,knjižnica,knjižnica,Ncfsn,ok,1,za,za,Sa,ok,5,tehnologija,tehnologijo,Ncfsa,ok,1,,,,,,,,,,,302,knjižnica za tehnologijo,knjižnica za tehnologijo,1,0.33251,0.49836,12.67807,11.67807,1
+51,gonilnik,gonilniki,Ncmpn,ok,1,za,za,Sa,ok,5,disk,diske,Ncmpa,ok,1,,,,,,,,,,,303,gonilniki za diske,gonilniki za diske,1,1.00000,1.00000,14.00000,12.00000,1
+51,sistem,sistem,Ncmsn,ok,1,za,za,Sa,ok,5,sopotnik,sopotnika,Ncmsay,ok,1,,,,,,,,,,,304,sistem za sopotnika,sistem za sopotnika,1,0.50000,0.99918,13.41504,11.88452,1
+51,elektronika,elektronika,Ncfsn,ok,2,za,za,Sa,ok,5,krmiljenje,krmiljenje,Ncnsa,ok,1,,,,,,,,,,,305,elektronika za krmiljenje,elektronika za krmiljenje,1,0.12500,0.99426,11.83007,11.33703,1
+51,elektronika,elektronika,Ncfsn,ok,2,za,za,Sa,ok,5,poraba,porabo,Ncfsa,ok,1,,,,,,,,,,,306,elektronika za porabo,elektronika za porabo,1,0.12500,0.99426,11.83007,11.33703,1
+52,razlika,razlika,Ncfsn,ok,1,v,v,Sl,ok,2,mišljenje,mišljenju,Ncnsl,ok,1,,,,,,,,,,,146,razlika v mišljenju,razlika v mišljenju,1,0.99918,0.50000,13.41504,10.83007,1
+52,odnos,odnos,Ncmsn,ok,1,v,v,Sl,ok,2,smisel,smislu,Ncmsl,ok,1,,,,,,,,,,,147,odnos v smislu,odnos v smislu,1,1.00000,1.00000,14.00000,10.88452,1
+52,predstavitev,predstavitev,Ncfsn,ok,1,na,na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,1,,,,,,,,,,,307,predstavitev na sejmu,predstavitev na sejmu,1,0.49672,0.19918,12.19265,11.26303,1
+52,kapljica,kapljice,Ncfpn,ok,1,na,na,Sl,ok,2,steklo,steklu,Ncnsl,ok,1,,,,,,,,,,,308,kapljice na steklu,kapljice na steklu,1,1.00000,1.00000,14.00000,11.67807,1
+52,podatek,podatki,Ncmpn,ok,2,o,o,Sl,ok,2,voznik,vozniku,Ncmsl,ok,1,,,,,,,,,,,309,podatki o vozniku,podatki o vozniku,1,0.33333,0.99836,13.00000,12.58496,1
+52,podatek,podatki,Ncmpn,ok,2,o,o,Sl,ok,2,vezje,vezjih,Ncnpl,ok,1,,,,,,,,,,,310,podatki o vezjih,podatki o vezjih,1,0.33169,0.33169,12.41504,12.26303,1
+50,klanje,klanje,Ncnsn,ok,1,pred,pred,Si,ok,1,Troja,Trojo,Npfsi,ok,1,,,,,,,,,,,148,klanje pred Trojo,klanje pred Trojo,1,1.00000,1.00000,14.00000,13.26303,1
+50,knjižnica,knjižnica,Ncfsn,ok,1,z,s,Si,ok,4,naročilo,naročilom,Ncnsi,ok,1,,,,,,,,,,,149,knjižnica s naročilom,knjižnica s naročilom,1,0.33333,0.99836,13.00000,11.26303,1
+50,črpalka,črpalka,Ncfsn,ok,1,z,z,Si,ok,4,mikrodiafragma,mikrodiafragmo,Ncfsi,ok,1,,,,,,,,,,,311,črpalka z mikrodiafragmo,črpalka z mikrodiafragmo,1,1.00000,1.00000,14.00000,11.41504,1
+50,Iskra,Iskra,Npfsn,ok,1,z,s,Si,ok,4,paleta,paleto,Ncfsi,ok,1,,,,,,,,,,,312,Iskra s paleto,Iskra s paleto,1,1.00000,1.00000,14.00000,11.41504,1
+50,Tipro,Tipro,Npmsn,ok,1,z,s,Si,ok,4,tipkovnica,tipkovnicami,Ncfpi,ok,1,,,,,,,,,,,313,Tipro s tipkovnicami,Tipro s tipkovnicami,1,0.99918,0.50000,13.41504,11.33703,1
+13,biti,biti,Va-n,ok,2,spričo,spričo,Sg,ok,1,relativizacija,relativizacije,Ncfsg,ok,1,,,,,,,,,,,150,biti spričo relativizacije,biti spričo relativizacije,1,0.01429,0.94344,8.85025,9.41504,1
+13,uporabiti,uporabiti,Vmen,ok,1,namesto,Namesto,Sg,ok,1,moderator,moderatorja,Ncmsg,ok,1,,,,,,,,,,,314,uporabiti Namesto moderatorja,Namesto moderatorja uporabiti,1,1.00000,1.00000,14.00000,14.00000,1
+13,biti,biti,Va-n,ok,2,prek,prek,Sg,ok,1,razstavljalec,razstavljalcev,Ncmpg,ok,1,,,,,,,,,,,315,biti prek razstavljalcev,biti prek razstavljalcev,1,0.01429,0.94344,8.85025,9.41504,1
+14,slišati,slišati,Vmbn,ok,1,v,v,Sa,ok,4,podpora,podporo,Ncfsa,ok,1,,,,,,,,,,,151,slišati v podporo,slišati v podporo,1,1.00000,1.00000,14.00000,10.88452,1
+14,reči,reči,Vmen,ok,1,za,za,Sa,ok,3,Heziod,Hezioda,Npmsay,ok,1,,,,,,,,,,,152,reči za Hezioda,reči za Hezioda,2,0.49589,0.28407,12.54057,12.19265,2
+14,predlagati,predlagati,Vmbn,ok,1,v,v,Sa,ok,4,branje,branje,Ncnsa,ok,1,,,,,,,,,,,153,predlagati v branje,predlagati v branje,1,0.50000,0.99918,13.41504,10.83007,1
+14,dojemati,dojemati,Vmpn,ok,1,skozi,skozi,Sa,ok,1,prizma,prizmo,Ncfsa,ok,1,,,,,,,,,,,154,dojemati skozi prizmo,dojemati skozi prizmo,1,1.00000,1.00000,14.00000,14.00000,1
+14,prihajati,prihajati,Vmpn,ok,1,v,v,Sa,ok,4,knjižnica,knjižnico,Ncfsa,ok,1,,,,,,,,,,,155,prihajati v knjižnico,prihajati v knjižnico,1,0.99836,0.33333,13.00000,10.77761,1
+14,povedati,povedati,Vmen,ok,1,za,Za,Sa,ok,3,predstava,predstavo,Ncfsa,ok,1,,,,,,,,,,,316,povedati Za predstavo,Za predstavo povedati,1,1.00000,1.00000,14.00000,12.00000,1
+14,biti,biti,Va-n,ok,3,v,v,Sa,ok,4,sistem,sistem,Ncmsan,ok,1,,,,,,,,,,,317,biti v sistem,biti v sistem,1,0.01342,0.44340,8.83007,9.00000,1
+14,porabiti,porabiti,Vmen,ok,1,za,za,Sa,ok,3,doseganje,doseganje,Ncnsa,ok,1,,,,,,,,,,,318,porabiti za doseganje,za doseganje porabiti,1,1.00000,1.00000,14.00000,12.00000,1
+14,biti,biti,Va-n,ok,3,na,na,Sa,ok,2,volja,voljo,Ncfsa,ok,1,,,,,,,,,,,319,biti na voljo,na voljo biti,1,0.01429,0.94344,8.85025,9.19265,1
+14,biti,biti,Va-n,ok,3,na,na,Sa,ok,2,tematika,tematiko,Ncfsa,ok,1,,,,,,,,,,,320,biti na tematiko,biti na tematiko,1,0.01429,0.94344,8.85025,9.19265,1
+88,spomniti,spomniti,Vmen,ok,1,se,se,Px------y,ok,3,na,na,Sa,ok,1,beseda,besede,Ncfpa,ok,1,,,,,,156,spomniti se na besede,se spomniti na besede,1,0.99836,0.33333,13.00000,11.24511,1
+88,pričarati,pričarati,Vmen,ok,1,se,se,Px------y,ok,3,pred,pred,Sa,ok,1,oči,oči,Ncfpa,ok,1,,,,,,157,pričarati se pred oči,se pred oči pričarati,1,1.00000,1.00000,14.00000,12.09311,1
+88,boriti,boriti,Vmpn,ok,1,se,se,Px------y,ok,3,za,za,Sa,ok,1,podatek,podatke,Ncmpa,ok,1,,,,,,321,boriti se za podatke,se boriti za podatke,1,0.99836,0.33333,13.00000,11.41504,1
+15,nastopiti,nastopiti,Vmen,ok,1,na,na,Sl,ok,6,tekmovanje,tekmovanju,Ncnsl,ok,1,,,,,,,,,,,158,nastopiti na tekmovanju,na tekmovanju nastopiti,1,1.00000,1.00000,14.00000,11.67807,1
+15,vsebovati,vsebovati,Vmpn,ok,1,v,v,Sl,ok,5,dikcija,dikciji,Ncfsl,ok,1,,,,,,,,,,,159,vsebovati v dikciji,vsebovati v dikciji,1,1.00000,1.00000,14.00000,10.88452,1
+15,zaznati,zaznati,Vmen,ok,1,pri,pri,Sl,ok,2,Heziod,Heziodu,Npmsl,ok,1,,,,,,,,,,,160,zaznati pri Heziodu,zaznati pri Heziodu,1,0.99508,0.14286,12.00000,12.26303,1
+15,koreniniti,koreniniti,Vmbn,ok,1,v,v,Sl,ok,5,svet,svetu,Ncmsl,ok,1,,,,,,,,,,,161,koreniniti v svetu,koreniniti v svetu,1,0.99672,0.20000,12.41504,10.67807,1
+15,biti,biti,Va-n,ok,6,po,po,Sl,ok,5,logika,logiki,Ncfsl,ok,1,,,,,,,,,,,162,biti po logiki,biti po logiki,1,0.01429,0.94344,8.85025,9.29956,1
+15,doživljati,doživljati,Vmpn,ok,1,ob,ob,Sl,ok,1,prebiranje,prebiranju,Ncnsl,ok,1,,,,,,,,,,,163,doživljati ob prebiranju,doživljati ob prebiranju,1,1.00000,1.00000,14.00000,13.58496,1
+15,sprejeti,sprejeti,Vmen,ok,1,po,po,Sl,ok,5,občutek,občutku,Ncmsl,ok,1,,,,,,,,,,,164,sprejeti po občutku,po občutku sprejeti,1,1.00000,1.00000,14.00000,12.41504,1
+15,seči,seči,Vmen,ok,1,po,po,Sl,ok,5,zemljevid,zemljevidu,Ncmsl,ok,1,,,,,,,,,,,165,seči po zemljevidu,seči po zemljevidu,1,1.00000,1.00000,14.00000,12.41504,1
+15,ležati,ležati,Vmpn,ok,2,po,po,Sl,ok,5,krivica,krivici,Ncfsl,ok,1,,,,,,,,,,,166,ležati po krivici,po krivici ležati,1,1.00000,1.00000,14.00000,12.41504,1
+15,ležati,ležati,Vmpn,ok,2,na,na,Sl,ok,6,polica,policah,Ncfpl,ok,1,,,,,,,,,,,167,ležati na policah,ležati na policah,1,1.00000,1.00000,14.00000,11.67807,1
+15,delati,delati,Vmpn,ok,2,pri,Pri,Sl,ok,2,firma,firmi,Ncfsl,ok,1,,,,,,,,,,,322,delati Pri firmi,Pri firmi delati,1,0.99918,0.50000,13.41504,13.26303,1
+15,delati,delati,Vmpn,ok,2,na,na,Sl,ok,6,knjižnica,knjižnicah,Ncfpl,ok,1,,,,,,,,,,,323,delati na knjižnicah,delati na knjižnicah,1,0.99836,0.33333,13.00000,11.49750,1
+15,združiti,združiti,Vmen,ok,1,v,v,Sl,ok,5,čip,čipu,Ncmsl,ok,1,,,,,,,,,,,324,združiti v čipu,v čipu združiti,1,1.00000,1.00000,14.00000,10.88452,1
+15,zaznavati,zaznavati,Vmpn,ok,1,v,V,Sl,ok,5,elektronika,elektroniki,Ncfsl,ok,1,,,,,,,,,,,325,zaznavati V elektroniki,V elektroniki zaznavati,1,0.49426,0.12418,11.67807,10.49750,1
+15,biti,biti,Va-n,ok,6,v,v,Sl,ok,5,avtomobil,avtomobilu,Ncmsl,ok,1,,,,,,,,,,,326,biti v avtomobilu,biti v avtomobilu,1,0.01081,0.14326,8.77118,8.95561,1
+15,biti,biti,Va-n,ok,6,po,po,Sl,ok,5,dan,dneh,Ncmdl,ok,1,,,,,,,,,,,327,biti po dneh,biti po dneh,1,0.01342,0.44340,8.83007,9.28118,1
+15,biti,biti,Va-n,ok,6,na,na,Sl,ok,6,zgoščenka,zgoščenkah,Ncfpl,ok,1,,,,,,,,,,,328,biti na zgoščenkah,biti na zgoščenkah,1,0.01429,0.94344,8.85025,9.19265,1
+15,biti,biti,Va-n,ok,6,na,na,Sl,ok,6,internet,internetu,Ncmsl,ok,1,,,,,,,,,,,329,biti na internetu,biti na internetu,1,0.01429,0.94344,8.85025,9.19265,1
+15,biti,biti,Va-n,ok,6,na,na,Sl,ok,6,prostor,prostoru,Ncmsl,ok,1,,,,,,,,,,,330,biti na prostoru,biti na prostoru,1,0.01342,0.44340,8.83007,9.17557,1
+89,pomeriti,pomeriti,Vmen,ok,1,se,se,Px------y,ok,4,v,v,Sl,ok,2,stihomitija,stihomitijah,Npfpl,ok,1,,,,,,168,pomeriti se v stihomitijah,se pomeriti v stihomitijah,1,1.00000,1.00000,14.00000,10.83007,1
+89,zbrati,zbrati,Vmen,ok,2,se,se,Px------y,ok,4,v,v,Sl,ok,2,prestolnica,prestolnici,Ncfsl,ok,1,,,,,,331,zbrati se v prestolnici,se v prestolnici zbrati,1,1.00000,1.00000,14.00000,10.83007,1
+89,zbrati,zbrati,Vmen,ok,2,se,se,Px------y,ok,4,na,na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,2,,,,,,332,zbrati se na sejmu,se zbrati na sejmu,1,0.99672,0.20000,12.41504,11.14202,1
+89,predstaviti,predstaviti,Vmen,ok,1,se,se,Px------y,ok,4,na,Na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,2,,,,,,333,predstaviti se Na sejmu,Na sejmu se predstaviti,1,0.24671,0.19753,11.83007,11.00000,1
+16,biti,biti,Va-n,ok,2,med,med,Si,ok,2,čtivo,čtivom,Ncnsi,ok,1,,,,,,,,,,,169,biti med čtivom,biti med čtivom,1,0.01342,0.44340,8.83007,9.35614,1
+16,združiti,združiti,Vmen,ok,1,z,z,Si,ok,4,tehnologija,tehnologijo,Ncfsi,ok,1,,,,,,,,,,,334,združiti z tehnologijo,z tehnologijo združiti,1,0.99918,0.50000,13.41504,11.33703,1
+16,biti,biti,Va-n,ok,2,med,Med,Si,ok,2,predstavitev,predstavitvami,Ncfpi,ok,1,,,,,,,,,,,335,biti Med predstavitvami,Med predstavitvami biti,1,0.01342,0.44340,8.83007,9.35614,1
+16,voditi,voditi,Vmpn,ok,1,z,z,Si,ok,4,gib,gibi,Ncmpi,ok,1,,,,,,,,,,,336,voditi z gibi,z gibi voditi,1,1.00000,1.00000,14.00000,11.41504,1
+16,odpirati,odpirati,Vmpn,ok,1,z,s,Si,ok,4,kartica,kartico,Ncfsi,ok,1,,,,,,,,,,,337,odpirati s kartico,odpirati s kartico,1,1.00000,1.00000,14.00000,11.41504,1
+16,ugotavljati,ugotavljati,Vmpn,ok,1,z,s,Si,ok,4,pomoč,pomočjo,Ncfsi,ok,1,,,,,,,,,,,338,ugotavljati s pomočjo,s pomočjo ugotavljati,1,1.00000,1.00000,14.00000,11.41504,1
+26,sodoben,sodoben,Agpmsnn,ok,1,od,od,Sg,ok,1,Heziod,Hezioda,Npmsg,ok,1,,,,,,,,,,,170,sodoben od Hezioda,sodoben od Hezioda,1,0.99508,0.14286,12.00000,12.12553,1
+29,obremenjen,obremenjen,Appmsnn,ok,1,z,z,Si,ok,3,miselnost,miselnostjo,Ncfsi,ok,1,,,,,,,,,,,171,obremenjen z miselnostjo,obremenjen z miselnostjo,1,0.99918,0.50000,13.41504,11.33703,1
+29,izveden,izveden,Appmsnn,ok,1,z,s,Si,ok,3,vezje,vezji,Ncnpi,ok,1,,,,,,,,,,,339,izveden s vezji,izveden s vezji,1,0.99836,0.33333,13.00000,11.26303,1
+29,zadovoljen,zadovoljen,Agpmsnn,ok,1,z,z,Si,ok,3,obisk,obiskom,Ncmsi,ok,1,,,,,,,,,,,340,zadovoljen z obiskom,zadovoljen z obiskom,1,1.00000,1.00000,14.00000,11.41504,1
+41,glede,glede,Rgp,ok,1,na,na,Sa,ok,1,tematika,tematiko,Ncfsa,ok,1,,,,,,,,,,,341,glede na tematiko,glede na tematiko,1,1.00000,1.00000,14.00000,11.67807,1
+40,globoko,globoko,Rgp,ok,1,po,po,Sl,ok,1,zemljevid,zemljevidu,Ncmsl,ok,1,,,,,,,,,,,172,globoko po zemljevidu,globoko po zemljevidu,1,1.00000,1.00000,14.00000,12.41504,1
+12,smeti,smeti,Vmpn,ok,1,biti,biti,Va-n,ok,1,,,,,,,,,,,,,,,,173,smeti biti,smeti biti,1,0.94344,0.01429,8.85025,8.85025,1
+25,ne,ne,Q,ok,1,dovoljevati,dovoljevati,Vmpn,ok,1,izreči,izreči,Vmen,ok,1,,,,,,,,,,,174,ne dovoljevati izreči,ne dovoljevati izreči,1,1.00000,1.00000,14.00000,13.00000,1
+99,treba,treba,Rgp,ok,1,boriti,boriti,Vmpn,ok,1,se,se,Px------y,ok,1,biti,,,,,,,,,,342,treba boriti se,se treba boriti,1,1.00000,1.00000,14.00000,12.00000,1
+30,dlakocepski,dlakocepski,Agpmpn,ok,1,in,in,Cc,ok,2,ozkosrčen,ozkosrčen,Agpmsnn,ok,1,,,,,,,,,,,175,dlakocepski in ozkosrčen,dlakocepski in ozkosrčen,1,1.00000,1.00000,14.00000,10.41504,1
+30,vzvraten,vzvraten,Agpmsan,ok,1,in,in,Cc,ok,2,zunanji,zunanji,Agpmsny,ok,1,,,,,,,,,,,343,vzvraten in zunanji,vzvraten in zunanji,1,1.00000,1.00000,14.00000,10.41504,1
+106,rapsod,rapsod,Ncmsn,ok,1,in,in,Cc,ok,21,sodobnik,sodobnik,Ncmsn,ok,1,,,,,,,,,,,176,rapsod in sodobnik,rapsod in sodobnik,1,1.00000,1.00000,14.00000,10.41504,1
+106,vprašanje,vprašanje,Ncnsn,ok,2,in,in,Cc,ok,21,odgovor,odgovor,Ncmsn,ok,1,,,,,,,,,,,177,vprašanje in odgovor,vprašanje in odgovor,1,1.00000,1.00000,14.00000,10.41504,1
+106,vprašanje,vprašanje,Ncnsn,ok,2,in,in,Cc,ok,21,rešitev,rešitev,Ncfsn,ok,1,,,,,,,,,,,178,vprašanje in rešitev,vprašanje in rešitev,1,1.00000,1.00000,14.00000,10.41504,1
+106,opis,opis,Ncmsn,ok,1,in,in,Cc,ok,21,dan,dan,Ncmsn,ok,1,,,,,,,,,,,179,opis in dan,opis in dan,1,0.49918,0.49918,13.00000,10.33703,1
+106,oranje,oranje,Ncnsn,ok,1,in,in,Cc,ok,21,žetev,žetev,Ncfsn,ok,1,,,,,,,,,,,180,oranje in žetev,oranje in žetev,1,1.00000,1.00000,14.00000,10.41504,1
+106,zmaga,zmaga,Ncfsn,ok,1,in,in,Cc,ok,21,nagrada,nagrada,Ncfsn,ok,1,,,,,,,,,,,181,zmaga in nagrada,zmaga in nagrada,1,0.50000,0.99918,13.41504,10.37551,1
+106,poljedelstvo,poljedelstvo,Ncnsn,ok,1,in,in,Cc,ok,21,mir,mir,Ncmsn,ok,1,,,,,,,,,,,182,poljedelstvo in mir,poljedelstvo in mir,1,1.00000,1.00000,14.00000,10.41504,1
+106,boj,boj,Ncmsn,ok,1,in,in,Cc,ok,21,klanje,klanje,Ncnsn,ok,1,,,,,,,,,,,183,boj in klanje,boj in klanje,1,0.50000,0.99918,13.41504,10.37551,1
+106,norma,norma,Ncfsn,ok,1,in,in,Cc,ok,21,razmišljanje,razmišljanje,Ncnsn,ok,1,,,,,,,,,,,184,norma in razmišljanje,norma in razmišljanje,1,0.50000,0.99918,13.41504,10.37551,1
+106,mišljenje,mišljenje,Ncnsn,ok,1,in,in,Cc,ok,21,selekcioniranje,selekcioniranje,Ncnsn,ok,1,,,,,,,,,,,185,mišljenje in selekcioniranje,mišljenje in selekcioniranje,1,0.50000,0.99918,13.41504,10.37551,1
+106,pojmovanje,pojmovanje,Ncnsn,ok,1,in,in,Cc,ok,21,vzorec,vzorec,Ncmsn,ok,1,,,,,,,,,,,186,pojmovanje in vzorec,pojmovanje in vzorec,1,1.00000,1.00000,14.00000,10.41504,1
+106,superiornost,superiornost,Ncfsn,ok,1,in,in,Cc,ok,21,napuh,napuh,Ncmsn,ok,1,,,,,,,,,,,187,superiornost in napuh,superiornost in napuh,1,1.00000,1.00000,14.00000,10.41504,1
+106,tehtnost,tehtnost,Ncfsn,ok,1,in,in,Cc,ok,21,plehkost,plehkost,Ncfsn,ok,1,,,,,,,,,,,188,tehtnost in plehkost,tehtnost in plehkost,1,1.00000,1.00000,14.00000,10.41504,1
+106,del,del,Ncmsn,ok,1,in,in,Cc,ok,21,ožičenje,ožičenje,Ncnsn,ok,1,,,,,,,,,,,344,del in ožičenje,del in ožičenje,1,1.00000,1.00000,14.00000,10.41504,1
+106,zmanjševanje,zmanjševanje,Ncnsn,ok,1,in,in,Cc,ok,21,odpravljanje,odpravljanje,Ncnsn,ok,1,,,,,,,,,,,345,zmanjševanje in odpravljanje,zmanjševanje in odpravljanje,1,1.00000,1.00000,14.00000,10.41504,1
+106,voznik,voznik,Ncmsn,ok,1,in,in,Cc,ok,21,nastavitev,nastavitev,Ncfsn,ok,1,,,,,,,,,,,346,voznik in nastavitev,voznik in nastavitev,1,1.00000,1.00000,14.00000,10.41504,1
+106,sedež,sedež,Ncmsn,ok,1,in,in,Cc,ok,21,kabina,kabina,Ncfsn,ok,1,,,,,,,,,,,347,sedež in kabina,sedež in kabina,1,0.50000,0.99918,13.41504,10.37551,1
+106,ml,ml,Ncmsn,ok,1,in,in,Cc,ok,21,pritisk,pritisk,Ncmsn,ok,1,,,,,,,,,,,348,ml in pritisk,ml in pritisk,1,1.00000,1.00000,14.00000,10.41504,1
+106,tipkovnica,tipkovnica,Ncfsn,ok,1,in,in,Cc,ok,21,Varicon,Varicon,Npmsn,ok,1,,,,,,,,,,,349,tipkovnica in Varicon,tipkovnica in Varicon,1,0.50000,0.99918,13.41504,10.37551,1
+106,obisk,obisk,Ncmsn,ok,1,in,in,Cc,ok,21,obseg,obseg,Ncmsn,ok,1,,,,,,,,,,,350,obisk in obseg,obisk in obseg,1,1.00000,1.00000,14.00000,10.41504,1
+106,vezje,vezje,Ncnsn,ok,1,in,in,Cc,ok,21,element,element,Ncmsn,ok,1,,,,,,,,,,,351,vezje in element,vezje in element,1,0.33251,0.49836,12.67807,10.29956,1
+44,elegantno,elegantno,Rgp,ok,1,in,in,Cc,ok,1,hkrati,hkrati,Rgp,ok,1,,,,,,,,,,,352,elegantno in hkrati,elegantno in hkrati,1,1.00000,1.00000,14.00000,10.41504,1
