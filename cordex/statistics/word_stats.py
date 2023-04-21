@@ -114,26 +114,18 @@ class WordStats:
         if cur.rowcount > 0:
             return cur.fetchone()[0]
 
-    def available_words(self, lemma, existing_texts):
+    def available_words(self, lemma):
         """ Lists possible words for agreements and lists them in descending order. """
-        counted_texts = Counter(existing_texts)
-        for (pos, text), _n in counted_texts.most_common():
-            if self.is_ud:
-                pos = literal_eval(pos)
-            yield pos, text, lemma
-
         if self.is_ud:
             statement = """SELECT udpos, text, frequency FROM UniqWords WHERE 
                         lemma=:lemma ORDER BY frequency DESC"""
             for udpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
-                if (udpos, text) not in counted_texts:
-                    yield literal_eval(udpos), text, lemma
+                yield literal_eval(udpos), text, lemma
         else:
             statement = """SELECT xpos, text, frequency FROM UniqWords WHERE 
                         lemma=:lemma ORDER BY frequency DESC"""
             for xpos, text, _f in self.db.execute(statement, {'lemma': lemma}):
-                if (xpos, text) not in counted_texts:
-                    yield xpos, text, lemma
+                yield xpos, text, lemma
 
     def num_words(self, lemma, msd0):
         """ Returns first word frequency when lemma and msd match. """

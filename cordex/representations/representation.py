@@ -33,9 +33,14 @@ class ComponentRepresentation:
         self.words.append(word)
 
     def render(self, is_ud, lookup_lexicon=None, lookup_api=None):
+        if self.rendition_text == 'Glavni' or self.rendition_text == 'glaven':
+            print('here')
         """ Render when text is not already rendered. """
         if self.rendition_text is None:
             self.rendition_text, self.rendition_msd = self._render(is_ud, lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
+            if self.rendition_text == 'Glavni':
+                print('here')
+
 
     # Convert output to same format as in conllu
     @staticmethod
@@ -136,6 +141,8 @@ class WordFormAnyCR(ComponentRepresentation):
 
         # so lets got through all words, sorted by frequency
         for word_msd, word_lemma in sorted_words:
+            if word_lemma == 'glaven':
+                print('here')
             # check if agreements match
             agreements_matched = [agr.match(word_msd, is_ud) for agr in self.agreement]
 
@@ -354,12 +361,7 @@ class WordFormAgreementCR(WordFormMsdCR):
 
     def match(self, word_msd, is_ud):
         """ Checks if word_msd matches any of possible words in agreements. """
-        if is_ud:
-            existing = [(str(w.udpos), w.text) for w in self.words]
-        else:
-            existing = [(w.xpos, w.text) for w in self.words]
-
-        lemma_available_words = self.word_renderer.available_words(self.lemma, existing)
+        lemma_available_words = self.word_renderer.available_words(self.lemma)
         for candidate_pos, candidate_text, candidate_lemma in lemma_available_words:
             if is_ud:
                 if self.msd()['POS'] != candidate_pos['POS']:
@@ -384,6 +386,8 @@ class WordFormAgreementCR(WordFormMsdCR):
 
     def confirm_match(self):
         """ Stores final state.  """
+        if self.rendition_text == 'Glavni':
+            print('here')
         self.rendition_text = self.rendition_candidate
         self.rendition_msd = self.rendition_msd_candidate
 
