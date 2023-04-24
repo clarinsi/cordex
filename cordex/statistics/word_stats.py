@@ -65,7 +65,7 @@ class WordStats:
 
         self.db.execute("INSERT INTO NumWords (n) VALUES (?)", (len(words),))
 
-    def lowercase_words_under_treshold(self):
+    def lowercase_words_under_threshold(self):
         """ Lowercase words that have lowercased version that occur more than 10 % of times in corpus. """
         threshold = 0.1
         all_data = self.db.execute("""SELECT * FROM UniqWords""")
