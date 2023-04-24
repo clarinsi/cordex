@@ -78,6 +78,7 @@ class Pipeline:
             time_info.info()
 
         # get word renders for lemma/msd
+        self.word_stats.lowercase_words_under_treshold()
         self.word_stats.generate_renders()
         self.match_store.determine_collocation_dispersions()
 

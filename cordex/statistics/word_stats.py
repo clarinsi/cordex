@@ -65,6 +65,30 @@ class WordStats:
 
         self.db.execute("INSERT INTO NumWords (n) VALUES (?)", (len(words),))
 
+    def lowercase_words_under_treshold(self):
+        """ Lowercase words that have lowercased version that occur more than 10 % of times in corpus. """
+        threshold = 0.1
+        all_data = self.db.execute("""SELECT * FROM UniqWords""")
+        for i, lemma, pos, text, freq in all_data:
+            if text[0].isupper():
+                if self.is_ud:
+                    lowercased_options = self.db.execute("""SELECT text, frequency FROM UniqWords WHERE lemma=? AND udpos=? AND text=?""", (lemma, pos, text.lower(),))
+                else:
+                    lowercased_options = self.db.execute(
+                        """SELECT text, frequency FROM UniqWords WHERE lemma=? AND xpos=? AND text=?""", (lemma, pos, text.lower(),))
+
+                for lc_text, lc_freq in lowercased_options:
+                    if freq >= lc_freq >= freq * threshold:
+                        if self.is_ud:
+                            self.db.execute(
+                                """UPDATE UniqWords SET text=? WHERE lemma=? AND udpos=? AND text=?""",
+                                (text.lower(), lemma, pos, text,))
+                        else:
+                            self.db.execute(
+                                """UPDATE UniqWords SET text=? WHERE lemma=? AND xpos=? AND text=?""",
+                                (text.lower(), lemma, pos, text,))
+
+
     def num_all_words(self):
         """ Counts all words. """
 
