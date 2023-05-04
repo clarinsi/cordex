@@ -76,7 +76,7 @@ def load_conllu(filename, args):
             words[lfrom].add_link(ana, words[ldest])
         result.extend(words.values())
 
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding="UTF-8") as f:
         data = f.read()
 
         conlls = conllu.parse_incr(StringIO(data))

@@ -152,9 +152,9 @@ class Writer:
 
         def fp_open(snum=None):
             if snum is None:
-                return open(self.output_file, "w")
+                return open(self.output_file, "w", encoding="UTF-8")
             else:
-                return open("{}.csv".format(os.path.join(self.output_file, snum)), "w")
+                return open("{}.csv".format(os.path.join(self.output_file, snum)), "w", encoding="UTF-8")
 
         if not self.multiple_output:
 

@@ -129,7 +129,7 @@ def build_structures(args):
     no_stats = not args['statistics']
 
     max_num_components = -1
-    with open(filename, 'r') as fp:
+    with open(filename, 'r', encoding="UTF-8") as fp:
         et = ElementTree.XML(fp.read())
 
     assert 'system_type' in et.attrib, ValueError('Please update file containing structure descriptions.')
