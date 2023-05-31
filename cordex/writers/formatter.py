@@ -9,10 +9,12 @@ from cordex.structures.component import ComponentType
 
 
 class Formatter:
-    def __init__(self, collocation_ids, word_renderer, is_ud):
+    def __init__(self, collocation_ids, word_renderer, is_ud, args):
         self.collocation_ids = collocation_ids
         self.word_renderer = word_renderer
         self.is_ud = is_ud
+        self.decimal_separator = args['decimal_separator']
+        self.args = args
         self.additional_init()
     
     def header_repeat(self):
@@ -94,8 +96,11 @@ class StatsFormatter(Formatter):
         self.corew = None
     
     @staticmethod
-    def stat_str(num):
-        return "{:.5f}".format(num) if isinstance(num, float) else str(num)
+    def stat_str(num, decimal_separator):
+        string = "{:.5f}".format(num) if isinstance(num, float) else str(num)
+        if decimal_separator != '.':
+            string = string.replace('.', decimal_separator)
+        return string
     
     def set_structure(self, structure):
         """ Gets full meaning words positions from structure. """
@@ -178,7 +183,7 @@ class StatsFormatter(Formatter):
             distribution = self.collocation_ids.dispersions[key]
         else:
             distribution = 1
-        return [self.stat_str(distribution)]
+        return [self.stat_str(distribution, self.decimal_separator)]
     
     def content_right(self, freq):
         """ Returns stats for columns that occur one time only. """
@@ -191,7 +196,7 @@ class StatsFormatter(Formatter):
         fi = [f for f in fi if f > 0]
         logdice_all = 14 + log2(len(fi) * freq / sum(fi))
 
-        return [self.stat_str(x) for x in (
+        return [self.stat_str(x, self.decimal_separator) for x in (
             self.stats["d12"], self.stats["d21"], logdice_core, logdice_all, self.stats['df']
         )]
     
@@ -203,8 +208,8 @@ class OutFormatter(Formatter):
     Formats regular output text.
     """
     def additional_init(self):
-        self.f1 = OutNoStatFormatter(self.collocation_ids, self.word_renderer, self.is_ud)
-        self.f2 = StatsFormatter(self.collocation_ids, self.word_renderer, self.is_ud)
+        self.f1 = OutNoStatFormatter(self.collocation_ids, self.word_renderer, self.is_ud, self.args)
+        self.f2 = StatsFormatter(self.collocation_ids, self.word_renderer, self.is_ud, self.args)
 
     def header_repeat(self):
         """ Combines and returns no stats header with stats header on columns that might appear multiple times. """

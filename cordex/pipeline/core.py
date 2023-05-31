@@ -87,9 +87,10 @@ class Pipeline:
 
         return self
 
-    def write(self, path, separator=',', sort_by=-1, sort_reversed=False):
+    def write(self, path, separator='\t', sort_by=-1, sort_reversed=False, decimal_separator='.'):
         self.args['out'] = path
         self.args['separator'] = separator
+        self.args['decimal_separator'] = decimal_separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed
         self.args['multiple_output'] = '.' not in Path(path).name
@@ -107,19 +108,20 @@ class Pipeline:
                                               self.args['is_ud']).write_out(
                 self.structures, self.match_store)
 
-    def get_list(self, separator=',', sort_by=-1, sort_reversed=False):
+    def get_list(self, separator='\t', sort_by=-1, sort_reversed=False, decimal_separator='.'):
         self.args['separator'] = separator
+        self.args['decimal_separator'] = decimal_separator
         self.args['sort_by'] = sort_by
         self.args['sort_reversed'] = sort_reversed
         self.args['multiple_output'] = False
 
         params = Writer.other_params(self.args)
         if self.args['statistics']:
-            writer = Writer(None, self.max_num_components, OutFormatter(self.match_store, self.word_stats, self.args['is_ud']),
+            writer = Writer(None, self.max_num_components, OutFormatter(self.match_store, self.word_stats, self.args['is_ud'], self.args),
                             self.args['collocation_sentence_map_dest'], params, self.args['separator'])
         else:
             writer = Writer(None, self.max_num_components,
-                            OutNoStatFormatter(self.match_store, self.word_stats, self.args['is_ud']),
+                            OutNoStatFormatter(self.match_store, self.word_stats, self.args['is_ud'], self.args),
                             self.args['collocation_sentence_map_dest'], params, self.args['separator'])
         return writer.write_out(self.structures, self.match_store, return_list=True)
 

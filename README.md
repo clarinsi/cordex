@@ -124,7 +124,10 @@ results = extraction.get_list(sort_by=1, sort_reversed=True)
 Required in `write` function. Destination where results are going to be written. If this is a path to a folder, results are going to be stored in multiple files, otherwise in a single file.
 
 #### separator
-Default value `,`. Optional parameter in `write` and `get_list` functions, that tells us what output files should be separated by. For `.tbl` files shis should be `\t`.
+Default value `\t`. Optional parameter in `write` and `get_list` functions, that tells us what output files should be separated by. For `.csv` files shis should be `,`.
+
+#### decimal_separator
+Default value `.`. Optional parameter in `write` and `get_list` functions, that tells us what should be a separator for decimal numbers.
 
 #### sort_by
 Default value `-1`. Parameter in `write` and `get_list` functions indicating by which column processing results will be sorted. Value `-1` indicates that results will be sorted by the order of structures given in structure definitions file.
