@@ -55,16 +55,12 @@ def fix_msd(msd, word_form):
 def main(args):
     with open(args.sloleks_csv, newline='', encoding='utf-8') as f:
         sloleks_csv = csv.reader(f, delimiter='|')
-        # sloleks_db = csv.reader(f)
-        # data = sloleks_db.create_file_from_sloleks()
         next(sloleks_csv, None)
 
         filtered_sloleks_csv = {}
         unique_lemma_msds = {}
         for row in sloleks_csv:
             lemma, msd, word_form, frequency = row
-            if word_form == 'težek':
-                print('HERE!')
             frequency = int(frequency) if frequency else 0
             if (lemma, msd) not in filtered_sloleks_csv or filtered_sloleks_csv[(lemma, msd)]['frequency'] < frequency:
                 filtered_sloleks_csv[(lemma, msd)] = {'word_form': word_form, 'frequency': frequency}
@@ -80,8 +76,6 @@ def main(args):
         # appending distinct lemma+word_form combinations
         print('Processing lemma+word_form combinations')
         for i, (k, v) in enumerate(filtered_sloleks_csv.items()):
-            if word_form == 'težek':
-                print('HERE!')
             lemma, msd = k
             word_form = v['word_form']
             frequency = v['frequency']
@@ -100,8 +94,6 @@ def main(args):
         print('Processing distinct lemmas')
         progress = 0.01
         for i, (k, v) in enumerate(unique_lemma_msds.items()):
-            if word_form == 'težek':
-                print('HERE!')
             lemma = k
             msd = v['msd']
             word_form = v['word_form']

@@ -117,8 +117,6 @@ class SyntacticStructure:
         forms[n].append(to_add)
 
     def match(self, word):
-        if len(self.components) == 0:
-            print('WHAAT')
         matches = self.components[0].match(word)
         return [] if matches is None else matches
 
