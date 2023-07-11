@@ -1,10 +1,11 @@
 from setuptools import setup, find_packages
+from cordex._version import __cordex_version__
 
 setup(name='cordex',
-  version='1.0.0',
+  version=__cordex_version__,
   description=u"Parser for collocability",
-  author=u"CJVT",
-  author_email='fake@mail.com',
+  author='CLARIN.SI',
+  author_email='info@clarin.si',
   license='MIT',
   packages=find_packages(),
   install_requires=[

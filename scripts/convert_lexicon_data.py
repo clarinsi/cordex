@@ -118,15 +118,15 @@ def main(args):
         for k, v in connected_lemmas.items():
             if len(v) > 1:
                 connected_lemmas[k] = sorted(v, reverse=True, key=lambda x: x[3])
-    with lzma.open(args.pkl_path, "wb") as f:
+    with lzma.open(args.output, "wb") as f:
         pickle.dump(connected_lemmas, f)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Original csv containing 4 columns - lemma, msd, form and frequency.')
-    parser.add_argument('--sloleks_csv', type=str, help='Sloleks database credentials')
-    parser.add_argument('--pkl_path', type=str, help='Sloleks database credentials')
-    parser.add_argument('--lang', type=str, default='sl', help='Sloleks database credentials')
+        description='A script that prepares and formats lookup lexicon for cordex.')
+    parser.add_argument('--sloleks_csv', type=str, help='Path to csv containing data saved as lemma|msd|form|frequency.')
+    parser.add_argument('--output', type=str, help='Path to output file that will be used by cordex.')
+    parser.add_argument('--lang', type=str, default='sl', help='Language of msds ("sl" or "en").')
     args = parser.parse_args()
 
     start = time.time()
