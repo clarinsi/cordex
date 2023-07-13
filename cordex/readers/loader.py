@@ -196,7 +196,8 @@ def tei_sentence_generator(et, args):
                     if lfrom in words:
                         if dest in words:
                             next_word = words[dest]
-                            words[lfrom].add_link(ana, next_word)
+                            translated_ana = translate_jos_depparse(ana, args['jos_depparse_lang'] != 'sl')
+                            words[lfrom].add_link(translated_ana, next_word)
                         else:
                             logging.error("Unknown id: {}".format(dest))
                             sys.exit(1)

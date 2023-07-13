@@ -51,4 +51,6 @@ def translate_jos_depparse(tag, translate_jos_depparse_to_sl):
     """ Translates jos depparse using conversion_utils library. """
     if not translate_jos_depparse_to_sl:
         return tag
+    if tag not in syn_map:
+        raise ValueError(f'Tag "{tag}" is not recognized as a valid English tag. You might be using Slovenian depparse system in which case set "jos_depparse_lang" to "sl".')
     return syn_map[tag]

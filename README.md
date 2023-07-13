@@ -87,7 +87,7 @@ Default value `True`. Parameter that indicates whether we want statistics in out
 Default value `sl`. Parameter that enables postprocessing for specific languages. Should contain lowercased 2-letter country abbreviation. 
 
 #### jos_depparse_lang
-Default value `en`. When using JOS system, extraction will work with Slovenian (`sl`) or English (`en`) dependency parsing tags. This is not connected to UD dependency parsing in any way. 
+Default value `sl`. When using JOS system, extraction will work with Slovenian (`sl`) or English (`en`) dependency parsing tags. This is not connected to UD dependency parsing in any way. 
 
 ## Execution
 During this step extraction executes.

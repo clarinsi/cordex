@@ -16,7 +16,7 @@ Ensure that the following parameters are set correctly when running the `convert
 
 - `--sloleks_csv`: Provide the path to the CSV file containing data from external sources. The data should be saved in the format `<lemma>|<msd>|<form>|<frequency>`.
 - `--output`: Specify the path to the output file that will be used by cordex.
-- `--lang`: Select the language of the MSDs. Choose either "sl" for Slovenian or "en" for English.
+- `--lang`: Select the language of the MSDs. Choose either "sl" for Slovenian (default) or "en" for English.
 
 ## Step 3 (Optional): Update Resources on clarin.si Repository
 

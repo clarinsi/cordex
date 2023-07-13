@@ -67,7 +67,7 @@ def test_conllu_single_jos_document(clear_output):
     output_mapper_dir, output_dir = clear_output
 
     extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir)
+                           collocation_sentence_map_dest=output_mapper_dir, jos_depparse_lang="en")
     extraction = extractor(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"))
     extraction.write(output_dir, separator=',')
 
@@ -124,7 +124,7 @@ def test_lookup_api(clear_output):
     output_mapper_dir, output_dir = clear_output
 
     extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, lookup_api=True)
+                           collocation_sentence_map_dest=output_mapper_dir, lookup_api=True, jos_depparse_lang="en")
     extraction = extractor(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"))
     extraction.write(output_dir, separator=',')
 

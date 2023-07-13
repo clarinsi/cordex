@@ -161,7 +161,7 @@ class Pipeline:
             'statistics': True,
             'lang': 'sl',
             'collocation_sentence_map_dest': None,
-            'jos_depparse_lang': 'en'
+            'jos_depparse_lang': 'sl'
         }
 
         return {**default_args, **kwargs}
