@@ -37,6 +37,9 @@ class ComponentRepresentation:
         if self.rendition_text is None:
             self.rendition_text, self.rendition_msd = self._render(is_ud, lookup_lexicon=lookup_lexicon, lookup_api=lookup_api)
 
+        if 'format' in self.data and self.data['format'] == 'lowercase':
+            self.rendition_text = self.rendition_text.lower()
+
 
     # Convert output to same format as in conllu
     @staticmethod
@@ -381,6 +384,8 @@ class WordFormAgreementCR(WordFormMsdCR):
     def confirm_match(self):
         """ Stores final state.  """
         self.rendition_text = self.rendition_candidate
+        if 'format' in self.data and self.data['format'] == 'lowercase':
+            self.rendition_text = self.rendition_text.lower()
         self.rendition_msd = self.rendition_msd_candidate
 
     @staticmethod

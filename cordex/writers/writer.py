@@ -174,7 +174,8 @@ class Writer:
                 else:
                     fp = fp_open(s.id)
                     self.write_header(fp, return_list)
-                Path(self.collocation_sentence_map_dest).mkdir(parents=True, exist_ok=True)
+                if self.collocation_sentence_map_dest:
+                    Path(self.collocation_sentence_map_dest).mkdir(parents=True, exist_ok=True)
                 col_sent_map = CollocationSentenceMapper(os.path.join(self.collocation_sentence_map_dest, f'{s.id}.tsv')) \
                     if self.collocation_sentence_map_dest else None
 

@@ -10,11 +10,11 @@ We suggest usage of pypy3 for faster processing.
 
 # About
 
-This script was developed to extract collocations from text in conllu or TEI format. Collocations are extracted and presented based on rules provided in structure file (examples in `tests/test_data/structures`).
+This library was developed to extract collocations from text in conllu or TEI format. Leveraging rules defined in the structure file (examples in tests/test_data/structures), it efficiently extracts and presents collocations.
 
 # Setup
 
-Script may be run via python3 or pypy3. We suggest usage of virtual environments.
+You can run the library using either python3 or pypy3. For a better experience, we recommend utilizing virtual environments.
 
 ```bash
 pip install -r requirements.txt
@@ -75,7 +75,7 @@ Default value `False`. When this is `True`, results containing punctuations will
 Default value `False`. When this is `True`, results, where structure components are not in the same order as in structure definition files, will be ignored.
 
 #### lookup_lexicon
-Default value `None`. Path to lookup lexicon. Lexicon is used to improved representations when JOS system is used. Value `None` indicates that we are not using lookup lexicon.
+Default value `None`. Path to lookup lexicon. Lexicon is used to improve representations when JOS system is used. Value `None` indicates that we are not using lookup lexicon.
 
 #### lookup_api
 Default value `False`. When this is `True`, program will use api to improve representations when JOS system is used. Lookup lexicon will be ignored in this case.
