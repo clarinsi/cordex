@@ -18,8 +18,6 @@ class RepresentationAssigner:
             elif feature['rendition'] == "word_form":
                 # just by default, changes with selection
                 self.representation_factory = WordFormAnyCR
-                if 'format' in feature:
-                    self.more['format'] = feature['format']
             elif feature['rendition'] == "lexis":
                 self.representation_factory = LexisCR
                 self.more['lexis'] = feature['string']
@@ -41,6 +39,8 @@ class RepresentationAssigner:
                 self.more['other'] = feature['head_cid']
             else:
                 raise NotImplementedError("Representation selection: {}".format(feature))
+        elif 'format' in feature:
+            self.more['format'] = feature['format']
 
     def create_component_representation(self, word_renderer):
         """ Creates component representation. """

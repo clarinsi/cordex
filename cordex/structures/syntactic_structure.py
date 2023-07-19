@@ -108,7 +108,7 @@ class SyntacticStructure:
         to_add = []
         for el in rep_el:
             assert el.tag == "feature"
-            if 'rendition' in el.attrib or 'selection' in el.attrib:
+            if 'rendition' in el.attrib or 'selection' in el.attrib or 'format' in el.attrib:
                 to_add.append(el)
             else:
                 logging.warning("Strange representation feature in structure {}. Skipping"
