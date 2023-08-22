@@ -1,8 +1,16 @@
+import re
+from os import path
+
 from setuptools import setup, find_packages
-from cordex._version import __cordex_version__
+
+here = path.abspath(path.dirname(__file__))
+
+# read the version from classla/_version.py
+version_file_contents = open(path.join(here, 'classla/_version.py'), encoding='utf-8').read()
+VERSION = re.compile('__version__ = \"(.*)\"').search(version_file_contents).group(1)
 
 setup(name='cordex',
-  version=__cordex_version__,
+  version=VERSION,
   description=u"Parser for collocability",
   author='CLARIN.SI',
   author_email='info@clarin.si',
