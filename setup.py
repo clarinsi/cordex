@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 
 # read the version from classla/_version.py
 version_file_contents = open(path.join(here, 'cordex/_version.py'), encoding='utf-8').read()
-VERSION = re.compile('__version__ = \"(.*)\"').search(version_file_contents).group(1)
+VERSION = re.compile('__cordex_version__ = \'(.*)\'').search(version_file_contents).group(1)
 
 setup(name='cordex',
   version=VERSION,
