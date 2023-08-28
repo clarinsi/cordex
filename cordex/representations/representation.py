@@ -114,7 +114,15 @@ class WordFormAllCR(ComponentRepresentation):
             else:
                 msds = [w.xpos for w in self.words]
 
-            return "/".join(set(forms)), "/".join(set(msds))
+            # sorts unique forms by alphabet and finds corresponding msds
+            representation_forms = []
+            representation_msds = []
+            for form in sorted(set(forms)):
+                ind = forms.index(form)
+                representation_forms.append(forms[ind])
+                representation_msds.append(msds[ind])
+
+            return "/".join(representation_forms), "/".join(representation_msds)
 
 
 class WordFormAnyCR(ComponentRepresentation):
@@ -126,7 +134,11 @@ class WordFormAnyCR(ComponentRepresentation):
         else:
             msd_lemma_txt_triplets = Counter([(w.xpos, w.lemma, w.text) for w in self.words])
 
-        for (msd, lemma, text), _n in reversed(msd_lemma_txt_triplets.most_common()):
+        # lambda doesn't work if None is in a Tuple, hence workaround with '_'
+        triplets_sorted = sorted(msd_lemma_txt_triplets.most_common(),
+                                 key=lambda x: (x[1], True, x[0]) if None not in x[0] else (x[1], False, '_'))
+
+        for (msd, lemma, text), _n in triplets_sorted:
             text_forms[(msd, lemma)] = text
 
         words_counter = []
@@ -135,8 +147,10 @@ class WordFormAnyCR(ComponentRepresentation):
                 words_counter.append((str(word.udpos), word.lemma))
             else:
                 words_counter.append((word.xpos, word.lemma))
+        words_counter_ordered = sorted(list(set(words_counter)),
+                                 key=lambda x: (True, x[0], x[1]) if x[1] is not None else (False, '_', '_'))
         sorted_words = sorted(
-            set(words_counter), key=lambda x: -words_counter.count(x) + (sum(ord(l) for l in x[1]) / 1e5 if x[1] is not None else .5))
+            words_counter_ordered, key=lambda x: -words_counter.count(x) + (sum(ord(l) for l in x[1]) / 1e5 if x[1] is not None else .5))
 
         # so lets got through all words, sorted by frequency
         for word_msd, word_lemma in sorted_words:
