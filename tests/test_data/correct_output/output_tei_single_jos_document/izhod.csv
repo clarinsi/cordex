@@ -8,7 +8,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 34,latinski,latinska,Agpfsn,ok,1,Amerika,Amerika,Npfsn,ok,1,,,,,,,,,,,,,,,,7,latinska Amerika,latinska Amerika,1,1.00000,1.00000,14.00000,14.00000,1
 34,zel,zli,Agpmsny,ok,1,duh,duh,Ncmsn,ok,1,,,,,,,,,,,,,,,,8,zli duh,zli duh,1,1.00000,1.00000,14.00000,14.00000,1
 34,eksotičen,eksotična,Agpfsn,ok,1,dežela,dežela,Ncfsn,ok,1,,,,,,,,,,,,,,,,9,eksotična dežela,eksotična dežela,1,1.00000,1.00000,14.00000,14.00000,1
-36,odprt,odprt,Appmsnn,ok,1,raziskovalec,raziskovalcem,Ncmpd,ok,1,,,,,,biti,,,,,,,,,,10,odprt raziskovalcem,raziskovalcem odprt,1,1.00000,1.00000,14.00000,14.00000,1
+36,odprt,odprt,Appmsnn,ok,1,raziskovalec,raziskovalcem,Ncmpd,ok,1,,,,,,,,,,,,,,,,10,odprt raziskovalcem,raziskovalcem odprt,1,1.00000,1.00000,14.00000,14.00000,1
 57,pot,pot,Ncfsn,ok,1,biti,je,Va-r3s-n,ok,1,odprt,odprta,Appfsn,ok,1,,,,,,,,,,,11,pot je odprta,je odprta pot,1,1.00000,1.00000,14.00000,11.49750,1
 23,najti,najti,Vmen,ok,1,vzrok,vzrok,Ncmsan,ok,1,,,,,,,,,,,,,,,,12,najti vzrok,najti vzrok,1,1.00000,1.00000,14.00000,14.00000,1
 23,prijeti,prijeti,Vmen,ok,1,nož,nož,Ncmsan,ok,1,,,,,,,,,,,,,,,,13,prijeti nož,prijeti nož,1,1.00000,1.00000,14.00000,14.00000,1
@@ -39,6 +39,6 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 90,slediti,slediti,Vmpn,ok,1,se,si,Px---d--y,ok,1,z,z,Si,ok,1,zamik,zamiki,Ncmpi,ok,1,,,,,,38,slediti si z zamiki,si slediti z zamiki,1,1.00000,1.00000,14.00000,12.29956,1
 28,resen,resen,Agpmsnn,ok,1,v,v,Sl,ok,1,Amerika,Ameriki,Npfsl,ok,1,,,,,,,,,,,39,resen v Ameriki,resen v Ameriki,1,1.00000,1.00000,14.00000,12.26303,1
 12,začeti,začeti,Vmen,ok,1,vpiti,vpiti,Vmbn,ok,1,,,,,,,,,,,,,,,,40,začeti vpiti,začeti vpiti,1,0.50000,0.99528,13.41504,13.41504,1
-98,treba,treba,Rgp,ok,1,najti,najti,Vmen,ok,1,,,,,,biti,,,,,,,,,,41,treba najti,treba najti,1,1.00000,1.00000,14.00000,14.00000,1
+98,treba,treba,Rgp,ok,1,najti,najti,Vmen,ok,1,,,,,,,,,,,,,,,,41,treba najti,treba najti,1,1.00000,1.00000,14.00000,14.00000,1
 106,razumevanje,razumevanje,Ncnsn,ok,1,in,in,Cc,ok,2,vključevanje,vključevanje,Ncnsn,ok,1,,,,,,,,,,,42,razumevanje in vključevanje,razumevanje in vključevanje,1,1.00000,1.00000,14.00000,12.77761,1
 106,Amerika,Amerika,Npfsn,ok,1,in,in,Cc,ok,2,Karibi,Karibi,Npmpn,ok,1,,,,,,,,,,,43,Amerika in Karibi,Amerika in Karibi,1,1.00000,1.00000,14.00000,12.77761,1

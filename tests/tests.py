@@ -45,7 +45,7 @@ def test_tei_single_jos_document(clear_output):
     output_mapper_dir, output_dir = clear_output
 
     extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir)
+                           collocation_sentence_map_dest=output_mapper_dir, jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.xml"))
     extraction.write(output_dir, separator=',')
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_tei_single_jos_document'), os.path.join(OUTPUT_DIR))
@@ -113,7 +113,7 @@ def test_tei_multiple_jos_documents(clear_output):
 
     extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
                            collocation_sentence_map_dest=output_mapper_dir,
-                           lang='en')
+                           lang='en', jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_tei_small"))
     extraction.write(output_dir, separator=',')
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_tei_multiple_jos_documents'), os.path.join(OUTPUT_DIR))
@@ -136,7 +136,7 @@ def test_no_lookup_jos(clear_output):
     output_mapper_dir, output_dir = clear_output
 
     extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
-                           collocation_sentence_map_dest=output_mapper_dir, lookup_lexicon=None)
+                           collocation_sentence_map_dest=output_mapper_dir, lookup_lexicon=None, jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_tei_small"))
     extraction.write(output_dir, separator=',')
     compare_directories(os.path.join(CORRECT_OUTPUT_DIR, 'output_no_lookup'), os.path.join(OUTPUT_DIR))

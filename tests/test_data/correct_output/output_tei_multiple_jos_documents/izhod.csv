@@ -95,7 +95,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 34,naslednji,Naslednji,Agpmsny,ok,1,sejem,sejem,Ncmsn,ok,2,,,,,,,,,,,,,,,,226,Naslednji sejem,Naslednji sejem,1,0.19918,0.49672,12.19265,12.19265,1
 34,nov,novi,Agpmsny,ok,4,prostor,prostor,Ncmsn,ok,2,,,,,,,,,,,,,,,,227,novi prostor,novi prostor,1,0.49754,0.24918,12.41504,12.41504,1
 34,razstaven,razstavna,Agpfsn,ok,2,površina,površina,Ncfsn,ok,1,,,,,,,,,,,,,,,,228,razstavna površina,razstavna površina,1,0.99918,0.50000,13.41504,13.41504,1
-36,koristen,koristen,Agpmsnn,ok,1,občestvo,občestvu,Ncnsd,ok,1,,,,,,biti,,,,,,,,,,57,koristen občestvu,koristen občestvu,1,1.00000,1.00000,14.00000,14.00000,1
+36,koristen,koristen,Agpmsnn,ok,1,občestvo,občestvu,Ncnsd,ok,1,,,,,,,,,,,,,,,,57,koristen občestvu,koristen občestvu,1,1.00000,1.00000,14.00000,14.00000,1
 57,Homer,Homer,Npmsn,ok,2,biti,je,Va-r3s-n,ok,10,sodoben,sodobnejši,Agcmsny,ok,1,,,,,,,,,,,58,Homer je sodobnejši,je Homer sodobnejši,1,0.20000,0.99672,12.41504,9.33703,1
 57,Grk,Grki,Npmpn,ok,1,biti,so,Va-r3p-n,ok,10,obremenjen,obremenjeni,Appmpn,ok,1,,,,,,,,,,,59,Grki so obremenjeni,Grki so obremenjeni,1,1.00000,1.00000,14.00000,9.41504,1
 57,bog,Bog,Ncmsn,ok,1,biti,je,Va-r3s-n,ok,10,mrtev,mrtev,Agpmsnn,ok,1,,,,,,,,,,,60,Bog je mrtev,je Bog mrtev,1,1.00000,1.00000,14.00000,9.41504,1
@@ -245,9 +245,9 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 46,najbolj,najbolj,Rgs,ok,1,obiskan,obiskan,Appmsnn,ok,1,,,,,,,,,,,,,,,,296,najbolj obiskan,najbolj obiskan,1,1.00000,1.00000,14.00000,14.00000,1
 46,brezhibno,brezhibno,Rgp,ok,1,sinhroniziran,sinhroniziran,Appmsnn,ok,1,,,,,,,,,,,,,,,,297,brezhibno sinhroniziran,brezhibno sinhroniziran,1,1.00000,1.00000,14.00000,14.00000,1
 55,tako,tako,Rgp,ok,1,elegantno,elegantno,Rgp,ok,1,,,,,,,,,,,,,,,,298,tako elegantno,tako elegantno,1,0.99754,0.25000,12.67807,12.67807,1
-85,sodoben,sodoben,Agpmsnn,ok,1,danes,danes,Rgp,ok,1,biti,,,,,,,,,,,,,,,137,sodoben danes,danes sodoben,1,0.99754,0.25000,12.67807,12.67807,1
-85,dlakocepski,dlakocepski,Agpmpn,ok,1,tu,tu,Rgp,ok,1,biti,,,,,,,,,,,,,,,138,dlakocepski tu,tu dlakocepski,1,1.00000,1.00000,14.00000,14.00000,1
-85,izveden,izveden,Appmsnn,ok,1,sčasoma,sčasoma,Rgp,ok,1,biti,,,,,,,,,,,,,,,299,izveden sčasoma,sčasoma izveden,1,1.00000,1.00000,14.00000,14.00000,1
+85,sodoben,sodoben,Agpmsnn,ok,1,danes,danes,Rgp,ok,1,,,,,,,,,,,,,,,,137,sodoben danes,danes sodoben,1,0.99754,0.25000,12.67807,12.67807,1
+85,dlakocepski,dlakocepski,Agpmpn,ok,1,tu,tu,Rgp,ok,1,,,,,,,,,,,,,,,,138,dlakocepski tu,tu dlakocepski,1,1.00000,1.00000,14.00000,14.00000,1
+85,izveden,izveden,Appmsnn,ok,1,sčasoma,sčasoma,Rgp,ok,1,,,,,,,,,,,,,,,,299,izveden sčasoma,sčasoma izveden,1,1.00000,1.00000,14.00000,14.00000,1
 47,stežkoma,stežkoma,Rgp,ok,1,napuh,napuha,Ncmsg,ok,1,,,,,,,,,,,,,,,,139,stežkoma napuha,napuha stežkoma,1,1.00000,1.00000,14.00000,14.00000,1
 48,verz,verzi,Ncmpn,ok,1,iz,iz,Sg,ok,5,pesnitev,pesnitev,Ncfpg,ok,1,,,,,,,,,,,140,verzi iz pesnitev,verzi iz pesnitev,1,1.00000,1.00000,14.00000,12.77761,1
 48,boj,boj,Ncmsn,ok,1,iz,iz,Sg,ok,5,Iliada,Iliade,Npfsg,ok,1,,,,,,,,,,,141,boj iz Iliade,boj iz Iliade,1,0.50000,0.99918,13.41504,12.58496,1
@@ -326,7 +326,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 40,globoko,globoko,Rgp,ok,1,po,po,Sl,ok,1,zemljevid,zemljevidu,Ncmsl,ok,1,,,,,,,,,,,172,globoko po zemljevidu,globoko po zemljevidu,1,1.00000,1.00000,14.00000,12.41504,1
 12,smeti,smeti,Vmpn,ok,1,biti,biti,Va-n,ok,1,,,,,,,,,,,,,,,,173,smeti biti,smeti biti,1,0.94344,0.01429,8.85025,8.85025,1
 25,ne,ne,Q,ok,1,dovoljevati,dovoljevati,Vmpn,ok,1,izreči,izreči,Vmen,ok,1,,,,,,,,,,,174,ne dovoljevati izreči,ne dovoljevati izreči,1,1.00000,1.00000,14.00000,13.00000,1
-99,treba,treba,Rgp,ok,1,boriti,boriti,Vmpn,ok,1,se,se,Px------y,ok,1,biti,,,,,,,,,,342,treba boriti se,se treba boriti,1,1.00000,1.00000,14.00000,12.00000,1
+99,treba,treba,Rgp,ok,1,boriti,boriti,Vmpn,ok,1,se,se,Px------y,ok,1,,,,,,,,,,,342,treba boriti se,se treba boriti,1,1.00000,1.00000,14.00000,12.00000,1
 30,dlakocepski,dlakocepski,Agpmpn,ok,1,in,in,Cc,ok,2,ozkosrčen,ozkosrčen,Agpmsnn,ok,1,,,,,,,,,,,175,dlakocepski in ozkosrčen,dlakocepski in ozkosrčen,1,1.00000,1.00000,14.00000,10.41504,1
 30,vzvraten,vzvraten,Agpmsan,ok,1,in,in,Cc,ok,2,zunanji,zunanji,Agpmsny,ok,1,,,,,,,,,,,343,vzvraten in zunanji,vzvraten in zunanji,1,1.00000,1.00000,14.00000,10.41504,1
 106,rapsod,rapsod,Ncmsn,ok,1,in,in,Cc,ok,21,sodobnik,sodobnik,Ncmsn,ok,1,,,,,,,,,,,176,rapsod in sodobnik,rapsod in sodobnik,1,1.00000,1.00000,14.00000,10.41504,1

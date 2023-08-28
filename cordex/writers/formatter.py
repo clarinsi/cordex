@@ -61,7 +61,7 @@ class OutNoStatFormatter(Formatter):
         """ Returns no stats content for columns that might appear multiple times. """
         word = words[idx]
         if idx not in representations:
-            return [word.lemma, "", ""]
+            return ["", "", ""]
 
         rep_text, rep_msd = representations[idx]
         if rep_text is None:

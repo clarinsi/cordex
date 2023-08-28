@@ -18,13 +18,15 @@ class OptimizedConverter(object):
         category_name, category_properties = self.properties[msd[0]]
 
         properties = {'pos': category_name}
-
-        for i in range(len(msd) - 1):
-            property_char = msd[i + 1]
-            if property_char != '-':
-                property_type, property_value = category_properties[i][property_char]
-                properties[property_type] = property_value
-        return properties
+        try:
+            for i in range(len(msd) - 1):
+                property_char = msd[i + 1]
+                if property_char != '-':
+                    property_type, property_value = category_properties[i][property_char]
+                    properties[property_type] = property_value
+            return properties
+        except IndexError:
+            raise 'Msd language might be set incorrectly. Try switching `jos_msd_lang` parameter to `sl`'
 
 
 optimized_converter = OptimizedConverter()

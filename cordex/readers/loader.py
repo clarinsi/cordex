@@ -59,7 +59,7 @@ def load_files(args, database):
 def load_conllu(filename, args):
     """ Loads corpus file in conllu format. """
     if args['jos_msd_lang'] == 'sl':
-        raise NotImplementedError('no_msd_translate = True is not implemented for conllu data!')
+        raise NotImplementedError('jos_msd_lang == "sl" is not implemented for conllu data!')
     result = []
 
     words = {}
@@ -130,7 +130,7 @@ def load_tei(filename):
 
 def tei_sentence_generator(et, args):
     """ Generates sentences from TEI format. """
-    do_msd_translate = not args['jos_msd_lang'] == 'sl'
+    do_msd_translate = not args['jos_msd_lang'] == 'en'
     do_msd_translate = Converter() if do_msd_translate else False
 
     words = {}
