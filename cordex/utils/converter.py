@@ -25,7 +25,7 @@ class OptimizedConverter(object):
                     property_type, property_value = category_properties[i][property_char]
                     properties[property_type] = property_value
             return properties
-        except IndexError:
+        except:
             raise 'Msd language might be set incorrectly. Try switching `jos_msd_lang` parameter to `sl`'
 
 
