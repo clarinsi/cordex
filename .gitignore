@@ -15,5 +15,5 @@ __pycache__
 run.sh
 old
 data
-venv
+venv*
 build

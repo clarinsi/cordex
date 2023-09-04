@@ -3,6 +3,7 @@ A file for forming and saving outputs.
 """
 import logging
 import os
+import shutil
 from pathlib import Path
 
 from cordex.utils.progress_bar import progress
@@ -155,6 +156,14 @@ class Writer:
                 return open(self.output_file, "w", encoding="UTF-8")
             else:
                 return open("{}.csv".format(os.path.join(self.output_file, snum)), "w", encoding="UTF-8")
+
+        # erase file/folder if exists
+        if type(self.collocation_sentence_map_dest) == str and os.path.exists(self.collocation_sentence_map_dest):
+            if os.path.isdir(self.collocation_sentence_map_dest):
+                shutil.rmtree(self.collocation_sentence_map_dest)
+            else:
+                os.remove(self.collocation_sentence_map_dest)
+
 
         if not self.multiple_output:
 
