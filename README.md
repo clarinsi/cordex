@@ -31,6 +31,8 @@ Execution consists of three parts:
 ```python
 import cordex
 
+# OPTIONAL: improve processing by downloading lookup lexicon (currently only available for Slovene) 
+cordex.download('sl')
 # setup
 extractor = cordex.Pipeline("tests/test_data/structures/structures_UD.xml")
 # execution
@@ -135,10 +137,13 @@ Default value `-1`. Parameter in `write` and `get_list` functions indicating by 
 #### sort_reversed
 Default value `False`. This parameter is related to `sort_by`. When set to `True`, results will be sorted in reverse order of selected column.
 
-
-
-```bash
-python3 cordex.py <LOCATION TO STRUCTURES> <EXTRACTION TEXT> --out <RESULTS FILE>
+## Optional: download lookup lexicon
+You may download lookup lexicon, that enhances representations of collocations. By default, the lexicon will be downloaded to `~/cordex_resources` directory. 
+You may change this to other location by specifying `dir` parameter in download function. Keep in mind that if custom path is selected, lexicon will only be used if an appropriate `lookup_lexicon` path is given during Setup step. 
+If lexicon is on default path it will be used automatically. Lookup lexicon is currently only available for Slovenian language. You may download it using the following command. You may manually download lexicon from [clarin repository](
+http://hdl.handle.net/11356/1854).
+```python
+cordex.download('sl')
 ```
 
 ## Instructions for running on big files (ie. Gigafida)
