@@ -116,8 +116,7 @@ def download(
         dir=DEFAULT_MODEL_DIR,
         resources_url=DEFAULT_RESOURCES_URL,
         resources_branch=None,
-        resources_version=DEFAULT_RESOURCES_VERSION,
-        model_url=DEFAULT_MODEL_URL
+        resources_version=DEFAULT_RESOURCES_VERSION
     ):
 
 
@@ -126,11 +125,10 @@ def download(
     # Download resources.json to obtain latest packages.
     logger.debug('Downloading resource file...')
     # make request
-    # TODO ADD REQUEST FILE TO CORRECT GIT REPO
-    # request_file(
-    #     f'{resources_url}/resources_{resources_version}.json',
-    #     os.path.join(dir, 'resources.json')
-    # )
+    request_file(
+        f'{resources_url}/resources_{resources_version}.json',
+        os.path.join(dir, 'resources.json')
+    )
     # unpack results
     try:
         resources = json.load(open(os.path.join(dir, 'resources.json')))

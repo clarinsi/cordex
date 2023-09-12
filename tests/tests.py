@@ -28,6 +28,11 @@ def compare_directories(cor_output, output):
             assert filecmp.cmp(os.path.join(c_o_subdir, c_o_f), os.path.join(o_subdir, o_f))
 
 
+def test_download(clear_output):
+    """ Test for cordex download. """
+    cordex.download()
+
+
 def test_tei_multiple_ud_documents(clear_output):
     """ Test for tei multiple documents. """
     output_mapper_dir, output_dir = clear_output
