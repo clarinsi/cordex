@@ -21,7 +21,7 @@ setup(name='cordex',
     'conversion-utils @ git+https://gitea.cjvt.si/generic/conversion_utils@89be60310380339f97ccd2feee65d5d69859e7f9',
     'importlib-resources>=5.4.0',
     'lxml>=4.9.1',
-    'tqdm>=4.64.1',
+    'tqdm>=4.62.3',
     'zipp>=3.6.0',
     'requests>=2.21.0'
   ],
