@@ -3,7 +3,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 34,zdrav,zdrava,Agpfsn,ok,1,pamet,pamet,Ncfsn,ok,2,,,,,,,,,,,,,,,,2,zdrava pamet,zdrava pamet,1,1.00000,1.00000,14.00000,14.00000,1
 34,kmečki,kmečka,Agpfsn,ok,1,pamet,pamet,Ncfsn,ok,2,,,,,,,,,,,,,,,,3,kmečka pamet,kmečka pamet,1,1.00000,1.00000,14.00000,14.00000,1
 34,lasten,lastne,Agpfpn,ok,1,izkušnja,izkušnje,Ncfpn,ok,1,,,,,,,,,,,,,,,,4,lastne izkušnje,lastne izkušnje,1,1.00000,1.00000,14.00000,14.00000,1
-34,drugačen,drugačen,Agpmsnn,ok,1,način,način,Ncmsn,ok,1,,,,,,,,,,,,,,,,5,drugačen način,drugačen način,1,0.50000,0.99565,13.41504,13.41504,1
+34,drugačen,drugačen,Agpmsnn,ok,1,način,Način,Ncmsn,ok,1,,,,,,,,,,,,,,,,5,drugačen Način,drugačen Način,1,0.50000,0.99565,13.41504,13.41504,1
 34,sedanji,sedanje,Agpnsn,ok,1,stanje,stanje,Ncnsn,ok,1,,,,,,,,,,,,,,,,6,sedanje stanje,sedanje stanje,1,1.00000,1.00000,14.00000,14.00000,1
 34,odločilen,Odločilen,Agpmsnn,ok,1,element,element,Ncmsn,ok,1,,,,,,,,,,,,,,,,7,Odločilen element,Odločilen element,1,1.00000,1.00000,14.00000,14.00000,1
 34,izbran,izbrani,Appmsny,ok,1,zdravnik,zdravnik,Ncmsn,ok,1,,,,,,,,,,,,,,,,8,izbrani zdravnik,izbrani zdravnik,1,1.00000,1.00000,14.00000,14.00000,1
@@ -62,7 +62,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 52,zdravnik,zdravnik,Ncmsn,ok,1,na,na,Sl,ok,2,nivo,nivoju,Ncmsl,ok,2,,,,,,,,,,,61,zdravnik na nivoju,zdravnik na nivoju,1,0.99565,0.50000,13.41504,12.58496,1
 52,specialist,specialist,Ncmsn,ok,1,na,na,Sl,ok,2,nivo,nivoju,Ncmsl,ok,2,,,,,,,,,,,62,specialist na nivoju,specialist na nivoju,1,0.99565,0.50000,13.41504,12.58496,1
 52,želja,želja,Ncfsn,ok,1,o,o,Sl,ok,1,vrsta,vrsti,Ncfsl,ok,1,,,,,,,,,,,63,želja o vrsti,želja o vrsti,1,0.99565,0.50000,13.41504,13.58496,1
-50,primerjava,primerjava,Ncfsn,ok,1,z,s,Si,ok,1,krompir,krompirjem,Ncmsi,ok,1,,,,,,,,,,,64,primerjava s krompirjem,primerjava s krompirjem,1,1.00000,1.00000,14.00000,13.26303,1
+50,primerjava,primerjava,Ncfsn,ok,1,z,z,Si,ok,1,krompir,krompirjem,Ncmsi,ok,1,,,,,,,,,,,64,primerjava z krompirjem,primerjava z krompirjem,1,1.00000,1.00000,14.00000,13.26303,1
 13,uživati,uživati,Vmpn,ok,1,brez,brez,Sg,ok,1,bojazen,bojazni,Ncfsg,ok,1,,,,,,,,,,,65,uživati brez bojazni,brez bojazni uživati,1,1.00000,1.00000,14.00000,14.00000,1
 17,napotiti,napotiti,Vmen,ok,1,k,k,Sd,ok,1,specialist,specialistu,Ncmsd,ok,1,,,,,,,,,,,66,napotiti k specialistu,napotiti k specialistu,1,1.00000,1.00000,14.00000,14.00000,1
 14,iti,iti,Vmbn,ok,1,za,za,Sa,ok,1,stvar,stvari,Ncfpa,ok,1,,,,,,,,,,,67,iti za stvari,iti za stvari,1,1.00000,1.00000,14.00000,13.26303,1
@@ -70,8 +70,8 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 15,prinesti,prinesti,Vmen,ok,1,po,po,Sl,ok,2,pamet,pameti,Ncfsl,ok,1,,,,,,,,,,,69,prinesti po pameti,po pameti prinesti,1,1.00000,1.00000,14.00000,13.26303,1
 15,napotiti,napotiti,Vmen,ok,2,v,v,Sl,ok,2,primer,primeru,Ncmsl,ok,1,,,,,,,,,,,70,napotiti v primeru,v primeru napotiti,1,1.00000,1.00000,14.00000,13.58496,1
 15,napotiti,napotiti,Vmen,ok,2,po,po,Sl,ok,2,presoja,presoji,Ncfsl,ok,1,,,,,,,,,,,71,napotiti po presoji,po presoji napotiti,1,1.00000,1.00000,14.00000,13.26303,1
-15,sodelovati,sodelovati,Vmpn,ok,1,na,Na,Sl,ok,1,turnir,turnirju,Ncmsl,ok,1,,,,,,,,,,,72,sodelovati Na turnirju,Na turnirju sodelovati,1,1.00000,1.00000,14.00000,12.77761,1
-15,uživati,uživati,Vmpn,ok,1,v,V,Sl,ok,2,primerjava,primerjavi,Ncfsl,ok,1,,,,,,,,,,,73,uživati V primerjavi,V primerjavi uživati,1,1.00000,1.00000,14.00000,13.58496,1
+15,sodelovati,sodelovati,Vmpn,ok,1,na,na,Sl,ok,1,turnir,turnirju,Ncmsl,ok,1,,,,,,,,,,,72,sodelovati na turnirju,na turnirju sodelovati,1,1.00000,1.00000,14.00000,12.77761,1
+15,uživati,uživati,Vmpn,ok,1,v,v,Sl,ok,2,primerjava,primerjavi,Ncfsl,ok,1,,,,,,,,,,,73,uživati v primerjavi,v primerjavi uživati,1,1.00000,1.00000,14.00000,13.58496,1
 16,napotiti,napotiti,Vmen,ok,1,z,z,Si,ok,1,napotnica,napotnico,Ncfsi,ok,1,,,,,,,,,,,74,napotiti z napotnico,napotiti z napotnico,1,1.00000,1.00000,14.00000,13.26303,1
 90,strinjati,strinjati,Vmpn,ok,1,se,se,Px------y,ok,1,z,z,Si,ok,1,del,delom,Ncmsi,ok,1,,,,,,75,strinjati se z delom,se strinjati z delom,1,1.00000,1.00000,14.00000,12.83007,1
 96,biti,ne,Q,ok,1,uspeti,uspeti,Vmen,ok,1,povzpeti,povzpeti,Vmen,ok,1,se,se,Px------y,ok,1,,,,,,76,ne uspeti povzpeti se,se ne uspeti povzpeti,1,1.00000,1.00000,14.00000,12.00000,1

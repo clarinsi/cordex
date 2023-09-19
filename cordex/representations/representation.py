@@ -1,4 +1,17 @@
-""" A file containing classes related to component representation. """
+"""
+A file containing classes related to component representation.
+There are currently 6 different ways of processing representations. The type of processing is selected based on
+structures.xml file in the following way:
+if rendition="lemma" --> LemmaCR
+elif rendition="lexis" --> LexisCR
+elif rendition="word_form" and selection="agreement" --> WordFormAgreementCR
+elif rendition="word_form" and selection="msd" --> WordFormMsdCR
+elif rendition="word_form" and selection="all" --> WordFormAllCR
+elif rendition="word_form" --> WordFormAnyCR
+
+Combining selections has so far been needed only for selection="agreement" and selection="msd", so this was tested,
+whereas combinations with selection="all" have so far not been needed, and hence haven't been tested.
+"""
 
 import logging
 from ast import literal_eval
@@ -128,19 +141,6 @@ class WordFormAllCR(ComponentRepresentation):
 class WordFormAnyCR(ComponentRepresentation):
     """ Returns any possible word form as component representation. """
     def _render(self, is_ud, lookup_lexicon=None, lookup_api=None):
-        text_forms = {}
-        if is_ud:
-            msd_lemma_txt_triplets = Counter([(str(w.udpos), w.lemma, w.text) for w in self.words])
-        else:
-            msd_lemma_txt_triplets = Counter([(w.xpos, w.lemma, w.text) for w in self.words])
-
-        # lambda doesn't work if None is in a Tuple, hence workaround with '_'
-        triplets_sorted = sorted(msd_lemma_txt_triplets.most_common(),
-                                 key=lambda x: (x[1], True, x[0]) if None not in x[0] else (x[1], False, '_'))
-
-        for (msd, lemma, text), _n in triplets_sorted:
-            text_forms[(msd, lemma)] = text
-
         words_counter = []
         for word in self.words:
             if is_ud:
@@ -152,7 +152,7 @@ class WordFormAnyCR(ComponentRepresentation):
         sorted_words = sorted(
             words_counter_ordered, key=lambda x: -words_counter.count(x) + (sum(ord(l) for l in x[1]) / 1e5 if x[1] is not None else .5))
 
-        # so lets got through all words, sorted by frequency
+        # so lets get through all words, sorted by frequency
         for word_msd, word_lemma in sorted_words:
             # check if agreements match
             agreements_matched = [agr.match(word_msd, is_ud) for agr in self.agreement]
@@ -245,7 +245,16 @@ class WordFormAnyCR(ComponentRepresentation):
                     word_msd_eval = self.convert_dict_to_string(literal_eval(word_msd))
                 else:
                     word_msd_eval = word_msd
-                return text_forms[(word_msd, word_lemma)], word_msd_eval
+
+                text = self.word_renderer.render(word_lemma, word_msd)
+
+                if text:
+                    return self.word_renderer.render(word_lemma, word_msd), word_msd_eval
+                else:
+                    if len(self.words) != 1:
+                        raise ValueError('Internal database is not setup correctly! All msd - lemma combinations should be in UniqWords table. In this situation they are not.')
+                    else:
+                        return self.words[0].text, word_msd_eval
         return None, None
 
 
@@ -335,7 +344,6 @@ class WordFormMsdCR(WordFormAnyCR):
                     word_appended = True
             if not word_appended:
                 self.words.append(WordDummy(self._common_xpos()))
-
         return super()._render(is_ud, lookup_lexicon, lookup_api)
     
     def _common_xpos(self):
@@ -379,7 +387,7 @@ class WordFormAgreementCR(WordFormMsdCR):
                     continue
 
                 if WordFormAgreementCR.check_agreement_udpos(word_msd, candidate_pos, self.data['agreement']):
-                    if self.check_xpos(candidate_pos, candidate_lemma):
+                    if self.check_udpos(candidate_pos):
                         self.rendition_candidate = candidate_text
                         self.rendition_msd_candidate = self.convert_dict_to_string(candidate_pos)
                         return True

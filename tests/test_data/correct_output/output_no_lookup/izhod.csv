@@ -271,8 +271,8 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 50,klanje,klanje,,lemma_fallback,1,pred,pred,Si,ok,1,Troja,Trojo,Npfsi,ok,1,,,,,,,,,,,148,klanje pred Trojo,klanje pred Trojo,1,1.00000,1.00000,14.00000,13.26303,1
 50,knjižnica,knjižnica,,lemma_fallback,1,z,z,Si,ok,2,naročilo,naročilom,Ncnsi,ok,1,,,,,,,,,,,149,knjižnica z naročilom,knjižnica z naročilom,1,0.33333,0.99836,13.00000,11.26303,1
 50,črpalka,črpalka,,lemma_fallback,1,z,z,Si,ok,2,mikrodiafragma,mikrodiafragmo,Ncfsi,ok,1,,,,,,,,,,,311,črpalka z mikrodiafragmo,črpalka z mikrodiafragmo,1,1.00000,1.00000,14.00000,11.41504,1
-50,Iskra,Iskra,Npfsn,ok,1,z,s,Si,ok,2,paleta,paleto,Ncfsi,ok,1,,,,,,,,,,,312,Iskra s paleto,Iskra s paleto,1,1.00000,1.00000,14.00000,11.41504,1
-50,Tipro,Tipro,Npmsn,ok,1,z,s,Si,ok,2,tipkovnica,tipkovnicami,Ncfpi,ok,1,,,,,,,,,,,313,Tipro s tipkovnicami,Tipro s tipkovnicami,1,0.99918,0.50000,13.41504,11.33703,1
+50,Iskra,Iskra,Npfsn,ok,1,z,z,Si,ok,2,paleta,paleto,Ncfsi,ok,1,,,,,,,,,,,312,Iskra z paleto,Iskra z paleto,1,1.00000,1.00000,14.00000,11.41504,1
+50,Tipro,Tipro,Npmsn,ok,1,z,z,Si,ok,2,tipkovnica,tipkovnicami,Ncfpi,ok,1,,,,,,,,,,,313,Tipro z tipkovnicami,Tipro z tipkovnicami,1,0.99918,0.50000,13.41504,11.33703,1
 13,biti,biti,Va-r3s-n,ok,2,spričo,spričo,Sg,ok,1,relativizacija,relativizacije,Ncfsg,ok,1,,,,,,,,,,,150,biti spričo relativizacije,biti spričo relativizacije,1,0.01429,0.94344,8.85025,9.41504,1
 13,uporabiti,uporabiti,Vmep-sm,ok,1,namesto,Namesto,Sg,ok,1,moderator,moderatorja,Ncmsg,ok,1,,,,,,,,,,,314,uporabiti Namesto moderatorja,Namesto moderatorja uporabiti,1,1.00000,1.00000,14.00000,14.00000,1
 13,biti,biti,Va-p-sn,ok,2,prek,prek,Sg,ok,1,razstavljalec,razstavljalcev,Ncmpg,ok,1,,,,,,,,,,,315,biti prek razstavljalcev,biti prek razstavljalcev,1,0.01429,0.94344,8.85025,9.41504,1
@@ -281,7 +281,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 14,predlagati,predlagati,Vmbr1s,ok,1,v,v,Sa,ok,4,branje,branje,Ncnsa,ok,1,,,,,,,,,,,153,predlagati v branje,predlagati v branje,1,0.50000,0.99918,13.41504,10.83007,1
 14,dojemati,dojemati,Vmpp-pm,ok,1,skozi,skozi,Sa,ok,1,prizma,prizmo,Ncfsa,ok,1,,,,,,,,,,,154,dojemati skozi prizmo,dojemati skozi prizmo,1,1.00000,1.00000,14.00000,14.00000,1
 14,prihajati,prihajati,Vmpr3p,ok,1,v,v,Sa,ok,4,knjižnica,knjižnico,Ncfsa,ok,1,,,,,,,,,,,155,prihajati v knjižnico,prihajati v knjižnico,1,0.99836,0.33333,13.00000,10.77761,1
-14,povedati,povedati,Vmem1p,ok,1,za,Za,Sa,ok,3,predstava,predstavo,Ncfsa,ok,1,,,,,,,,,,,316,povedati Za predstavo,Za predstavo povedati,1,1.00000,1.00000,14.00000,12.00000,1
+14,povedati,povedati,Vmem1p,ok,1,za,za,Sa,ok,3,predstava,predstavo,Ncfsa,ok,1,,,,,,,,,,,316,povedati za predstavo,za predstavo povedati,1,1.00000,1.00000,14.00000,12.00000,1
 14,biti,biti,Va-f3s-n,ok,3,v,v,Sa,ok,4,sistem,sistem,Ncmsan,ok,1,,,,,,,,,,,317,biti v sistem,biti v sistem,1,0.01342,0.44340,8.83007,9.00000,1
 14,porabiti,porabiti,Vmer3s,ok,1,za,za,Sa,ok,3,doseganje,doseganje,Ncnsa,ok,1,,,,,,,,,,,318,porabiti za doseganje,za doseganje porabiti,1,1.00000,1.00000,14.00000,12.00000,1
 14,biti,biti,Va-r3s-n,ok,3,na,na,Sa,ok,2,volja,voljo,Ncfsa,ok,1,,,,,,,,,,,319,biti na voljo,na voljo biti,1,0.01429,0.94344,8.85025,9.19265,1
@@ -299,10 +299,10 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 15,seči,seči,Vmer3s,ok,1,po,po,Sl,ok,5,zemljevid,zemljevidu,Ncmsl,ok,1,,,,,,,,,,,165,seči po zemljevidu,seči po zemljevidu,1,1.00000,1.00000,14.00000,12.41504,1
 15,ležati,ležati,Vmpr3s,ok,2,po,po,Sl,ok,5,krivica,krivici,Ncfsl,ok,1,,,,,,,,,,,166,ležati po krivici,po krivici ležati,1,1.00000,1.00000,14.00000,12.41504,1
 15,ležati,ležati,Vmpr3s,ok,2,na,na,Sl,ok,6,polica,policah,Ncfpl,ok,1,,,,,,,,,,,167,ležati na policah,ležati na policah,1,1.00000,1.00000,14.00000,11.67807,1
-15,delati,delati,Vmpr3p,ok,2,pri,Pri,Sl,ok,2,firma,firmi,Ncfsl,ok,1,,,,,,,,,,,322,delati Pri firmi,Pri firmi delati,1,0.99918,0.50000,13.41504,13.26303,1
+15,delati,delati,Vmpr3p,ok,2,pri,pri,Sl,ok,2,firma,firmi,Ncfsl,ok,1,,,,,,,,,,,322,delati pri firmi,pri firmi delati,1,0.99918,0.50000,13.41504,13.26303,1
 15,delati,delati,Vmpr3p,ok,2,na,na,Sl,ok,6,knjižnica,knjižnicah,Ncfpl,ok,1,,,,,,,,,,,323,delati na knjižnicah,delati na knjižnicah,1,0.99836,0.33333,13.00000,11.49750,1
 15,združiti,združiti,Vmen,ok,1,v,v,Sl,ok,5,čip,čipu,Ncmsl,ok,1,,,,,,,,,,,324,združiti v čipu,v čipu združiti,1,1.00000,1.00000,14.00000,10.88452,1
-15,zaznavati,zaznavati,Vmpp-sm,ok,1,v,V,Sl,ok,5,elektronika,elektroniki,Ncfsl,ok,1,,,,,,,,,,,325,zaznavati V elektroniki,V elektroniki zaznavati,1,0.49426,0.12418,11.67807,10.49750,1
+15,zaznavati,zaznavati,Vmpp-sm,ok,1,v,v,Sl,ok,5,elektronika,elektroniki,Ncfsl,ok,1,,,,,,,,,,,325,zaznavati v elektroniki,v elektroniki zaznavati,1,0.49426,0.12418,11.67807,10.49750,1
 15,biti,biti,Va-p-sf,ok,6,v,v,Sl,ok,5,avtomobil,avtomobilu,Ncmsl,ok,1,,,,,,,,,,,326,biti v avtomobilu,biti v avtomobilu,1,0.01081,0.14326,8.77118,8.95561,1
 15,biti,biti,Va-p-pm,ok,6,po,po,Sl,ok,5,dan,dneh,Ncmdl,ok,1,,,,,,,,,,,327,biti po dneh,biti po dneh,1,0.01342,0.44340,8.83007,9.28118,1
 15,biti,biti,Va-r3s-n,ok,6,na,na,Sl,ok,6,zgoščenka,zgoščenkah,Ncfpl,ok,1,,,,,,,,,,,328,biti na zgoščenkah,biti na zgoščenkah,1,0.01429,0.94344,8.85025,9.19265,1
@@ -311,13 +311,13 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 89,pomeriti,pomeriti,Vmep-sf,ok,1,se,se,Px------y,ok,4,v,v,Sl,ok,2,stihomitija,stihomitijah,Npfpl,ok,1,,,,,,168,pomeriti se v stihomitijah,se pomeriti v stihomitijah,1,1.00000,1.00000,14.00000,10.83007,1
 89,zbrati,zbrati,Vmer3s,ok,2,se,se,Px------y,ok,4,v,v,Sl,ok,2,prestolnica,prestolnici,Ncfsl,ok,1,,,,,,331,zbrati se v prestolnici,se v prestolnici zbrati,1,1.00000,1.00000,14.00000,10.83007,1
 89,zbrati,zbrati,Vmer3s,ok,2,se,se,Px------y,ok,4,na,na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,2,,,,,,332,zbrati se na sejmu,se zbrati na sejmu,1,0.99672,0.20000,12.41504,11.14202,1
-89,predstaviti,predstaviti,Vmep-pn,ok,1,se,se,Px------y,ok,4,na,Na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,2,,,,,,333,predstaviti se Na sejmu,Na sejmu se predstaviti,1,0.24671,0.19753,11.83007,11.00000,1
+89,predstaviti,predstaviti,Vmep-pn,ok,1,se,se,Px------y,ok,4,na,na,Sl,ok,2,sejem,sejmu,Ncmsl,ok,2,,,,,,333,predstaviti se na sejmu,na sejmu se predstaviti,1,0.24671,0.19753,11.83007,11.00000,1
 16,biti,biti,Va-r3s-y,ok,2,med,med,Si,ok,2,čtivo,čtivom,Ncnsi,ok,1,,,,,,,,,,,169,biti med čtivom,biti med čtivom,1,0.01342,0.44340,8.83007,9.35614,1
-16,združiti,združiti,Vmen,ok,1,z,s,Si,ok,1,tehnologija,tehnologijo,Ncfsi,ok,1,,,,,,,,,,,334,združiti s tehnologijo,s tehnologijo združiti,1,0.99918,0.50000,13.41504,11.33703,1
-16,biti,biti,Va-p-sf,ok,2,med,Med,Si,ok,2,predstavitev,predstavitvami,Ncfpi,ok,1,,,,,,,,,,,335,biti Med predstavitvami,Med predstavitvami biti,1,0.01342,0.44340,8.83007,9.35614,1
+16,združiti,združiti,Vmen,ok,1,z,z,Si,ok,1,tehnologija,tehnologijo,Ncfsi,ok,1,,,,,,,,,,,334,združiti z tehnologijo,z tehnologijo združiti,1,0.99918,0.50000,13.41504,11.33703,1
+16,biti,biti,Va-p-sf,ok,2,med,med,Si,ok,2,predstavitev,predstavitvami,Ncfpi,ok,1,,,,,,,,,,,335,biti med predstavitvami,med predstavitvami biti,1,0.01342,0.44340,8.83007,9.35614,1
 16,voditi,voditi,Vmpp-sm,ok,1,z,z,Si,ok,1,gib,gibi,Ncmpi,ok,1,,,,,,,,,,,336,voditi z gibi,z gibi voditi,1,1.00000,1.00000,14.00000,11.41504,1
-16,odpirati,odpirati,Vmpp-pm,ok,1,z,s,Si,ok,1,kartica,kartico,Ncfsi,ok,1,,,,,,,,,,,337,odpirati s kartico,odpirati s kartico,1,1.00000,1.00000,14.00000,11.41504,1
-16,ugotavljati,ugotavljati,Vmpr3s,ok,1,z,s,Si,ok,1,pomoč,pomočjo,Ncfsi,ok,1,,,,,,,,,,,338,ugotavljati s pomočjo,s pomočjo ugotavljati,1,1.00000,1.00000,14.00000,11.41504,1
+16,odpirati,odpirati,Vmpp-pm,ok,1,z,z,Si,ok,1,kartica,kartico,Ncfsi,ok,1,,,,,,,,,,,337,odpirati z kartico,odpirati z kartico,1,1.00000,1.00000,14.00000,11.41504,1
+16,ugotavljati,ugotavljati,Vmpr3s,ok,1,z,z,Si,ok,1,pomoč,pomočjo,Ncfsi,ok,1,,,,,,,,,,,338,ugotavljati z pomočjo,z pomočjo ugotavljati,1,1.00000,1.00000,14.00000,11.41504,1
 26,sodoben,sodoben,Agcmsny,ok,1,od,od,Sg,ok,1,Heziod,Hezioda,Npmsg,ok,1,,,,,,,,,,,170,sodoben od Hezioda,sodoben od Hezioda,1,0.99508,0.14286,12.00000,12.12553,1
 29,obremenjen,obremenjen,Appmpn,ok,1,z,z,Si,ok,3,miselnost,miselnostjo,Ncfsi,ok,1,,,,,,,,,,,171,obremenjen z miselnostjo,obremenjen z miselnostjo,1,0.99918,0.50000,13.41504,11.33703,1
 29,izveden,izveden,Appfsn,ok,1,z,z,Si,ok,3,vezje,vezji,Ncnpi,ok,1,,,,,,,,,,,339,izveden z vezji,izveden z vezji,1,0.99836,0.33333,13.00000,11.26303,1

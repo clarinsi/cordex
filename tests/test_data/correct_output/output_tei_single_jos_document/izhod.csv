@@ -24,7 +24,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 43,najprej,najprej,Rgs,ok,1,najti,najti,Vmen,ok,1,,,,,,,,,,,,,,,,23,najprej najti,najprej najti,1,1.00000,1.00000,14.00000,14.00000,1
 43,preveč,preveč,Rgp,ok,1,popiti,popiti,Vmen,ok,1,,,,,,,,,,,,,,,,24,preveč popiti,preveč popiti,1,1.00000,1.00000,14.00000,14.00000,1
 46,nekoliko,nekoliko,Rgp,ok,1,resen,resen,Agpmsnn,ok,1,,,,,,,,,,,,,,,,25,nekoliko resen,nekoliko resen,1,1.00000,1.00000,14.00000,14.00000,1
-48,raziskovalec,raziskovalci,Ncmpn,ok,1,z,z,Sg,ok,1,Gora,Gore,Npfsg,ok,1,,,,,,,,,,,26,raziskovalci z Gore,raziskovalci z Gore,1,1.00000,1.00000,14.00000,12.41504,1
+48,raziskovalec,raziskovalci,Ncmpn,ok,1,z,s,Sg,ok,1,Gora,Gore,Npfsg,ok,1,,,,,,,,,,,26,raziskovalci s Gore,raziskovalci s Gore,1,1.00000,1.00000,14.00000,12.41504,1
 48,pot,pot,Ncfsn,ok,1,do,do,Sg,ok,1,spoznanje,spoznanj,Ncnpg,ok,1,,,,,,,,,,,27,pot do spoznanj,pot do spoznanj,1,1.00000,1.00000,14.00000,13.58496,1
 51,vključevanje,vključevanje,Ncnsn,ok,1,v,v,Sa,ok,1,družba,družbo,Ncfsa,ok,1,,,,,,,,,,,28,vključevanje v družbo,vključevanje v družbo,1,0.99528,0.50000,13.41504,12.12553,1
 51,možnost,možnosti,Ncfpn,ok,1,za,za,Sa,ok,1,transgresija,transgresijo,Ncfsa,ok,1,,,,,,,,,,,29,možnosti za transgresijo,možnosti za transgresijo,1,1.00000,1.00000,14.00000,14.00000,1
@@ -32,7 +32,7 @@ Structure_ID,C1_Lemma,C1_Representative_form,C1_RF_msd,C1_RF_scenario,C1_Distrib
 13,priti,priti,Vmen,ok,1,do,do,Sg,ok,1,prerivanje,prerivanja,Ncnsg,ok,1,,,,,,,,,,,31,priti do prerivanja,priti do prerivanja,1,1.00000,1.00000,14.00000,13.58496,1
 13,biti,biti,Va-n,ok,1,z,s,Sg,ok,1,stališče,stališča,Ncnsg,ok,1,,,,,,,,,,,32,biti s stališča,biti s stališča,1,0.06667,0.93396,11.00000,11.06140,1
 86,začeti,začeti,Vmen,ok,1,se,se,Px------y,ok,1,okrog,Okrog,Sg,ok,1,ura,ure,Ncfsg,ok,1,,,,,,33,začeti se Okrog ure,Okrog ure se začeti,1,0.50000,0.99528,13.41504,13.00000,1
-15,biti,biti,Va-n,ok,2,po,Po,Sl,ok,1,mnenje,mnenju,Ncnsl,ok,1,,,,,,,,,,,34,biti Po mnenju,Po mnenju biti,1,0.06667,0.93396,11.00000,11.41504,1
+15,biti,biti,Va-n,ok,2,po,po,Sl,ok,1,mnenje,mnenju,Ncnsl,ok,1,,,,,,,,,,,34,biti po mnenju,po mnenju biti,1,0.06667,0.93396,11.00000,11.41504,1
 15,vpiti,vpiti,Vmbn,ok,1,ob,ob,Sl,ok,1,vožnja,vožnji,Ncfsl,ok,1,,,,,,,,,,,35,vpiti ob vožnji,ob vožnji vpiti,1,1.00000,1.00000,14.00000,14.00000,1
 15,biti,biti,Va-n,ok,2,pri,pri,Sl,ok,1,preganjanje,preganjanju,Ncnsl,ok,1,,,,,,,,,,,36,biti pri preganjanju,biti pri preganjanju,1,0.06667,0.93396,11.00000,11.49750,1
 15,izpasti,izpasti,Vmen,ok,1,v,v,Sl,ok,1,primerjava,primerjavi,Ncfsl,ok,1,,,,,,,,,,,37,izpasti v primerjavi,izpasti v primerjavi,1,1.00000,1.00000,14.00000,12.26303,1

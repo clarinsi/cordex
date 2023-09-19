@@ -130,13 +130,21 @@ class WordStats:
 
     def render(self, lemma, msd):
         """ Returns most frequent word for specific lemma+msd pair. """
+        if self.is_ud:
+            statement = """SELECT text FROM UniqWords WHERE 
+                           lemma=:lemma AND udpos=:udpos ORDER BY frequency DESC"""
 
-        statement = """SELECT msd, frequency FROM UniqWords WHERE 
-        lemma=:lemma AND msd=:msd ORDER BY frequency DESC"""
+            cur = self.db.execute(statement, {"lemma": lemma, "udpos": msd})
+        else:
+            statement = """SELECT text FROM UniqWords WHERE 
+                        lemma=:lemma AND xpos=:xpos ORDER BY frequency DESC"""
 
-        cur = self.db.execute(statement, {"lemma": lemma, "msd": msd})
-        if cur.rowcount > 0:
-            return cur.fetchone()[0]
+            cur = self.db.execute(statement, {"lemma": lemma, "xpos": msd})
+        fetch = cur.fetchone()
+        if fetch is None:
+            return None
+
+        return fetch[0]
 
     def available_words(self, lemma):
         """ Lists possible words for agreements and lists them in descending order. """
