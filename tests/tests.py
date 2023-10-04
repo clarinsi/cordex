@@ -49,7 +49,7 @@ def test_tei_single_jos_document(clear_output):
     """ Test for tei single document. """
     output_mapper_dir, output_dir = clear_output
 
-    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_JOS.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "ssj500k.small.xml"))
     extraction.write(output_dir, separator=',')
@@ -71,7 +71,7 @@ def test_conllu_single_jos_document(clear_output):
     """ Test for conllu single jos document. """
     output_mapper_dir, output_dir = clear_output
 
-    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_JOS.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, jos_depparse_lang="en")
     extraction = extractor(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"))
     extraction.write(output_dir, separator=',')
@@ -116,7 +116,7 @@ def test_tei_multiple_jos_documents(clear_output):
     """ Test for tei multiple documents. """
     output_mapper_dir, output_dir = clear_output
 
-    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_JOS.xml"),
                            collocation_sentence_map_dest=output_mapper_dir,
                            lang='en', jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_tei_small"))
@@ -128,7 +128,7 @@ def test_lookup_api(clear_output):
     """ Test for conllu single jos document. """
     output_mapper_dir, output_dir = clear_output
 
-    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_JOS.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, lookup_api=True, jos_depparse_lang="en")
     extraction = extractor(os.path.join(INPUT_DIR, "test_conllu_jos_small.conllu"))
     extraction.write(output_dir, separator=',')
@@ -140,7 +140,7 @@ def test_no_lookup_jos(clear_output):
     """ Test for lookup api. """
     output_mapper_dir, output_dir = clear_output
 
-    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures.xml"),
+    extractor = cordex.Pipeline(os.path.join(STRUCTURES_DIR, "structures_JOS.xml"),
                            collocation_sentence_map_dest=output_mapper_dir, lookup_lexicon=None, jos_msd_lang='sl')
     extraction = extractor(os.path.join(INPUT_DIR, "gigafida_example_tei_small"))
     extraction.write(output_dir, separator=',')
